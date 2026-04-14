@@ -1,0 +1,32 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: einleitung
+options:
+  numbered: 3
+chapters:
+  - file: präambel/einleitung.md
+    sections:
+      - file: präambel/lernziele.md
+      - file: präambel/technische-voraussetzungen.md
+      - file: präambel/vorkenntnisse.md
+  - file: inhaltskapitel/einleitung.md
+    sections:
+      - file: inhaltskapitel/unterkapitel.md
+      - file: inhaltskapitel/zweites-unterkapitel.ipynb
+      - file: inhaltskapitel/r-beispiel.ipynb
+      - file: inhaltskapitel/sparql-beispiel.md
+  - file: reflexion-und-resümee/einleitung.md
+    sections:
+      - file: reflexion-und-resümee/reflexion.md
+      - file: reflexion-und-resümee/abschlussassessment.md
+      - file: reflexion-und-resümee/zusammenfassung.md
+      - file: reflexion-und-resümee/resümee.md
+  - file: epilog/toc
+    sections:
+      - file: epilog/fragen-und-feedback
+      - file: epilog/literaturverzeichnis
+      - file: epilog/authors
+      - file: epilog/quadriga
+      - file: epilog/impressum
