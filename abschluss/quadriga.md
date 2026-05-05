@@ -13,7 +13,7 @@ Weitere Informationen sowie Publikationen finden Sie auf der <a href="https://ww
 
 Das Datenkompetenzzentrum QUADRIGA wird vom <a href="https://www.bmftr.bund.de/DE/Forschung/Wissenschaftssystem/Forschungsdaten/DatenkompetenzenInDerWissenschaft/datenkompetenzeninderwissenschaft.html?templateQueryString=datenkompetenzzentren" class="external-link" target="_blank">Bundesministerium für Forschung, Technologie und Raumfahrt</a> unter dem Kennzeichen 16DKZ2034 gefördert und von der Europäischen Union im Rahmen von "NextGenerationEU" finanziert. Zu den Verbundpartern zählen:
 - Universität Potsdam (Verbundkoordination) <span style="font-size: small">(Förderkennzeichen: 16DKZ2034A)</span>
-- Filmuniversität Babelsberg <span style="font-size: small">(Förderkennzeichen: 16DKZ2034B)</span>
+- Filmuniversität Babelsberg KONRAD WOLF <span style="font-size: small">(Förderkennzeichen: 16DKZ2034B)</span>
 - Fachhochschule Potsdam <span style="font-size: small">(Förderkennzeichen: 16DKZ2034C)</span>
 - Fraunhofer FOKUS <span style="font-size: small">(Förderkennzeichen: 16DKZ2034D)</span>
 - Freie Universität Berlin <span style="font-size: small">(Förderkennzeichen: 16DKZ2034E)</span>
