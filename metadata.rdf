@@ -194,7 +194,7 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
         <schema:name>Content</schema:name>
       </schema:CreativeWork>
     </schema:license>
-    <schema:name>Workflows zur automatisierten Erstellung von Annotationen anhand der Filme Konrad Wolfs</schema:name>
+    <schema:name>Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs</schema:name>
     <schema:schemaVersion>1.0.0</schema:schemaVersion>
     <schema:timeRequired>PT10H15M</schema:timeRequired>
     <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/" />
