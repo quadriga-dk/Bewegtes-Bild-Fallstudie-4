@@ -1,4 +1,5 @@
-# Reflexion und Resümee
+(annotation:einleitung)=
+# Automatisierte Annotation von Filmen
 
 ````{margin}
 ```{admonition} Fragen oder Feedback
@@ -15,3 +16,10 @@ Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse
 
 ```
 ````
+
+```{include} ../einstieg/lernziele.md
+:start-after: "<!-- START: Annotation -->"
+:end-before: "<!-- END: Annotation -->"
+```
+
+

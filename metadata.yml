@@ -1,40 +1,34 @@
 # yaml-language-server: $schema=https://quadriga-dk.github.io/quadriga-schema/v1.0.0/schema.json
-title: 'QUADRIGA-OER-Template. QUADRIGA Open Educational Resources: Template'
+title: 'Workflows zur automatisierten Filmannotation - Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs'
 authors:
-- given-names: Hannes
-  family-names: Schnaitter
-  orcid: https://orcid.org/0000-0002-1602-6032
-  affiliation: Humboldt-Universität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft
-  credit:
-  - Writing – original draft
-  - Writing – review & editing
-  - Software
-- given-names: Evgenia
-  family-names: Samoilova
-  orcid: https://orcid.org/0000-0003-3858-901X
-  affiliation: Universität Potsdam
-  credit:
-  - Writing – original draft
-  - Writing – review & editing
-- given-names: Lamia
-  family-names: Islam
-  affiliation: Universität Potsdam
-  credit:
-  - Software
+- given-names: Thomas
+  family-names: Schick
+  orcid: https://orcid.org/0009-0007-3292-8611
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
+- given-names: Marco
+  family-names: Winter
+  orcid: https://orcid.org/0009-0000-0239-9682
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
+- given-names: Skadi
+  family-names: Loist
+  orcid: https://orcid.org/0000-0002-8299-4103
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF / Norwegian University for Science
+    and Technology (NTNU)
+- given-names: Lena
+  family-names: Gieseke
+  orcid: https://orcid.org/0000-0001-8421-103X
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
 keywords:
 - Open Educational Resources
-- de: Offene Bildungsressource
-- en: Jupyter Book
-- en: Data Literacy
-  de: Datenkompetenz
+- de: Digital Humanities
+- de: Filmwissenschaft
+- de: Datenkompetenz
+- de: Filmannotation
+- de: Filmanalyse
 - open-educational-resources
-description: Dieses interaktive Lehrbuch führt in die Erstellung von Open Educational
-  Resources (OER) nach den Empfehlungen und Vorgaben des Datenkompetenzzentrumgs QUADRIGA
-  als <a href="https://jupyterbook.org">Jupyter Book</a> ein. Diese Empfehlungen und
-  Vorgaben sind einerseits inhaltlicher und didaktischer andererseits technischer
-  Natur. Diese OER richtet sich vorrangig an OER-Erstellende und kann als Startpunkt
-  (Template) für die Erstellung eigener OER genutzt werden. Einzelne (Unter-)Kapitel
-  bieten zudem Erläuterungen zu Funktionalitäten für Lernende.
+description: Diese Open Educational Resource (OER) stellt anhand einer Fallstudie
+  dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale
+  Verfahren eingesetzt werden können.
 table-of-contents: '- Einstieg
 
   - Inhaltskapitel
@@ -43,31 +37,32 @@ table-of-contents: '- Einstieg
 
   - Abschluss'
 discipline:
-- übergreifend
+- Digital Humanities
 research-object-type:
-- übergreifend
+- Bewegtes Bild
 target-group:
 - Forschende (PostDoc)
 - Forschende (Projektleitung)
 - Promovierende
 - Hochschullehrende
-time-required: PT16H15M
+time-required: PT10H15M
 language: de
 contributors:
-- family-names: Seltmann
-  given-names: Melanie
-  orcid: https://orcid.org/0000-0002-7588-4395
+- given-names: Hannes
+  family-names: Schnaitter
+  orcid: https://orcid.org/0000-0002-1602-6032
   affiliation: Humboldt-Universität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft
-- family-names: Walter
-  given-names: Paul
-  orcid: https://orcid.org/0000-0002-9236-3268
-  affiliation: Fachhochschule Potsdam
-- family-names: Zhang
-  given-names: Yue
-  orcid: https://orcid.org/0009-0007-6432-1259
-identifier: https://doi.org/10.5281/zenodo.14970672
-git: https://github.com/quadriga-dk/Book_Template
-url: https://quadriga-dk.github.io/Book_Template/
+- given-names: Evgenia
+  family-names: Samoilova
+  orcid: https://orcid.org/0000-0003-3858-901X
+  affiliation: Universität Potsdam
+- given-names: Lamia
+  family-names: Islam
+  orcid: https://orcid.org/0009-0001-1879-9880
+  affiliation: Universität Potsdam
+identifier: https://doi.org/10.5281/zenodo.TODO
+git: https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4
+url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/
 used-tools:
 - name: Jupyter Book
   url: https://jupyterbook.org
@@ -89,7 +84,7 @@ chapters:
     blooms-category: 3 Anwenden
 date-issued: '2024-05-06'
 date-modified: '2026-03-11'
-version: 0.63.0
+version: 0.1.0
 context-of-creation: 'Die vorliegenden Open Educational Resources wurden durch das
   Datenkompetenzzentrum QUADRIGA erstellt.
 

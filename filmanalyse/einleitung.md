@@ -1,4 +1,5 @@
-# Reflexion und Resümee
+(filmanalyse:einleitung)=
+# Filmanalyse und automatisierte Annotation
 
 ````{margin}
 ```{admonition} Fragen oder Feedback
@@ -15,3 +16,10 @@ Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse
 
 ```
 ````
+
+```{include} ../einstieg/lernziele.md
+:start-after: "<!-- START: Filmanalyse -->"
+:end-before: "<!-- END: Filmanalyse -->"
+```
+
+

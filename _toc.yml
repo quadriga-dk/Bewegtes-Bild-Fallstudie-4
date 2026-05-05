@@ -11,10 +11,10 @@ chapters:
       - file: einstieg/lernziele.md
       - file: einstieg/technische-voraussetzungen.md
       - file: einstieg/vorkenntnisse.md
-  - file: inhaltskapitel/einleitung.md
-    sections:
-      - file: inhaltskapitel/unterkapitel.md
-      - file: inhaltskapitel/zweites-unterkapitel.ipynb
+  - file: filmanalyse/einleitung.md
+  - file: vision/einleitung.md
+  - file: annotation/einleitung.md
+  - file: auswertung/einleitung.md
   - file: reflexion-und-resümee/einleitung.md
     sections:
       - file: reflexion-und-resümee/reflexion.md

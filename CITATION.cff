@@ -1,35 +1,41 @@
 # yaml-language-server: $schema=https://citation-file-format.github.io/1.2.0/schema.json
 cff-version: 1.2.0
-version: 0.63.0
-title: 'QUADRIGA-OER-Template. QUADRIGA Open Educational Resources: Template'
+version: 0.1.0
+title: 'Workflows zur automatisierten Filmannotation - Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs'
 type: software
 message: Please cite this software using the metadata from `preferred-citation` in
   `CITATION.cff`.
 authors: &id001
-- given-names: Hannes
-  family-names: Schnaitter
-  orcid: https://orcid.org/0000-0002-1602-6032
-  affiliation: Humboldt-Universität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft
-- given-names: Evgenia
-  family-names: Samoilova
-  orcid: https://orcid.org/0000-0003-3858-901X
-  affiliation: Universität Potsdam
-- given-names: Lamia
-  family-names: Islam
-  affiliation: Universität Potsdam
+- given-names: Thomas
+  family-names: Schick
+  orcid: https://orcid.org/0009-0007-3292-8611
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
+- given-names: Marco
+  family-names: Winter
+  orcid: https://orcid.org/0009-0000-0239-9682
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
+- given-names: Skadi
+  family-names: Loist
+  orcid: https://orcid.org/0000-0002-8299-4103
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF / Norwegian University for Science
+    and Technology (NTNU)
+- given-names: Lena
+  family-names: Gieseke
+  orcid: https://orcid.org/0000-0001-8421-103X
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
 identifiers:
 - type: doi
-  value: 10.5281/zenodo.14970672
+  value: 10.5281/zenodo.ToDo
   description: Zenodo
-repository-code: https://github.com/quadriga-dk/Book_Template
-url: https://quadriga-dk.github.io/Book_Template/
+repository-code: https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4
+url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/
 keywords: &id002
 - Open Educational Resources
-- Offene Bildungsressource
-- Jupyter Book
-- Data Literacy
+- Digital Humanities
+- Filmwissenschaft
 - Datenkompetenz
-- open-educational-resources
+- Filmannotation
+- Filmanalyses
 license: CC BY-SA 4.0
 references:
 - title: Jupyter Book
@@ -39,22 +45,17 @@ references:
     website: https://github.com/jupyter-book/jupyter-book/graphs/contributors
 preferred-citation:
   year: '2026'
-  version: 0.63.0
+  version: 0.1.0
   authors: *id001
-  title: 'QUADRIGA-OER-Template. QUADRIGA Open Educational Resources: Template'
+  title: 'Workflows zur automatisierten Filmannotation - Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs'
   type: book
-  doi: 10.5281/zenodo.14970672
-  url: https://quadriga-dk.github.io/Book_Template/
-  repository-code: https://github.com/quadriga-dk/Book_Template
-  license: CC BY-SA 4.0
+  doi: 10.5281/zenodo.ToDo
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/
+  repository-code: https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4
   languages:
   - deu
   copyright: CC-BY-SA-4.0
   keywords: *id002
-abstract: Dieses interaktive Lehrbuch führt in die Erstellung von Open Educational
-  Resources (OER) nach den Empfehlungen und Vorgaben des Datenkompetenzzentrumgs QUADRIGA
-  als <a href="https://jupyterbook.org">Jupyter Book</a> ein. Diese Empfehlungen und
-  Vorgaben sind einerseits inhaltlicher und didaktischer andererseits technischer
-  Natur. Diese OER richtet sich vorrangig an OER-Erstellende und kann als Startpunkt
-  (Template) für die Erstellung eigener OER genutzt werden. Einzelne (Unter-)Kapitel
-  bieten zudem Erläuterungen zu Funktionalitäten für Lernende.
+abstract: Diese Open Educational Resource (OER) stellt anhand einer Fallstudie
+  dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale
+  Verfahren eingesetzt werden können.

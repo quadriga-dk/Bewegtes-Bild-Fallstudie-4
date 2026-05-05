@@ -1,4 +1,5 @@
-# Reflexion und Resümee
+(auswertung:einleitung)=
+# Auswertung der automatisierten Annotationen
 
 ````{margin}
 ```{admonition} Fragen oder Feedback
@@ -15,3 +16,10 @@ Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse
 
 ```
 ````
+
+```{include} ../einstieg/lernziele.md
+:start-after: "<!-- START: Auswertung -->"
+:end-before: "<!-- END: Auswertung -->"
+```
+
+

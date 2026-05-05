@@ -1,4 +1,5 @@
-# Reflexion und Resümee
+(vision:einleitung)=
+# Computer Vision für die Filmanalyse
 
 ````{margin}
 ```{admonition} Fragen oder Feedback
@@ -15,3 +16,10 @@ Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse
 
 ```
 ````
+
+```{include} ../einstieg/lernziele.md
+:start-after: "<!-- START: Computer-Vision -->"
+:end-before: "<!-- END: Computer-Vision -->"
+```
+
+
