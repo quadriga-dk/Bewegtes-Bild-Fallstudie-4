@@ -11,25 +11,91 @@
     "Book",
     "LearningResource"
   ],
-  "name": "QUADRIGA-OER-Template. QUADRIGA Open Educational Resources: Template",
-  "description": "Dieses interaktive Lehrbuch führt in die Erstellung von Open Educational Resources (OER) nach den Empfehlungen und Vorgaben des Datenkompetenzzentrumgs QUADRIGA als <a href=\"https://jupyterbook.org\">Jupyter Book</a> ein. Diese Empfehlungen und Vorgaben sind einerseits inhaltlicher und didaktischer andererseits technischer Natur. Diese OER richtet sich vorrangig an OER-Erstellende und kann als Startpunkt (Template) für die Erstellung eigener OER genutzt werden. Einzelne (Unter-)Kapitel bieten zudem Erläuterungen zu Funktionalitäten für Lernende.",
+  "name": "Workflows zur automatisierten Erstellung von Annotationen anhand der Filme Konrad Wolfs",
+  "description": "Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
-    "value": "10.5281/zenodo.14970672",
-    "url": "https://doi.org/10.5281/zenodo.14970672"
+    "value": "10.5281/zenodo.TODO",
+    "url": "https://doi.org/10.5281/zenodo.TODO"
   },
-  "version": "0.63.0",
+  "version": "0.1.0",
   "schemaVersion": "1.0.0",
-  "url": "https://quadriga-dk.github.io/Book_Template/",
+  "url": "https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/",
   "workExample": {
     "@type": "SoftwareSourceCode",
     "name": "Source Code Repository",
-    "codeRepository": "https://github.com/quadriga-dk/Book_Template"
+    "codeRepository": "https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4"
   },
   "datePublished": "2024-05-06",
   "dateModified": "2026-03-11",
   "author": [
+    {
+      "@type": "Person",
+      "givenName": "Thomas",
+      "familyName": "Schick",
+      "name": "Thomas Schick",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0007-3292-8611",
+        "url": "https://orcid.org/0009-0007-3292-8611"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Filmuniversität Babelsberg KONRAD WOLF"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Marco",
+      "familyName": "Winter",
+      "name": "Marco Winter",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0000-0239-9682",
+        "url": "https://orcid.org/0009-0000-0239-9682"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Filmuniversität Babelsberg KONRAD WOLF"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Skadi",
+      "familyName": "Loist",
+      "name": "Skadi Loist",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0002-8299-4103",
+        "url": "https://orcid.org/0000-0002-8299-4103"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Filmuniversität Babelsberg KONRAD WOLF / Norwegian University for Science and Technology (NTNU)"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Lena",
+      "familyName": "Gieseke",
+      "name": "Lena Gieseke",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0001-8421-103X",
+        "url": "https://orcid.org/0000-0001-8421-103X"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Filmuniversität Babelsberg KONRAD WOLF"
+      }
+    }
+  ],
+  "contributor": [
     {
       "@type": "Person",
       "givenName": "Hannes",
@@ -67,65 +133,26 @@
       "givenName": "Lamia",
       "familyName": "Islam",
       "name": "Lamia Islam",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0001-1879-9880",
+        "url": "https://orcid.org/0009-0001-1879-9880"
+      },
       "affiliation": {
         "@type": "Organization",
         "name": "Universität Potsdam"
       }
     }
   ],
-  "contributor": [
-    {
-      "@type": "Person",
-      "givenName": "Melanie",
-      "familyName": "Seltmann",
-      "name": "Melanie Seltmann",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "ORCID",
-        "value": "0000-0002-7588-4395",
-        "url": "https://orcid.org/0000-0002-7588-4395"
-      },
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Humboldt-Universität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft"
-      }
-    },
-    {
-      "@type": "Person",
-      "givenName": "Paul",
-      "familyName": "Walter",
-      "name": "Paul Walter",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "ORCID",
-        "value": "0000-0002-9236-3268",
-        "url": "https://orcid.org/0000-0002-9236-3268"
-      },
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Fachhochschule Potsdam"
-      }
-    },
-    {
-      "@type": "Person",
-      "givenName": "Yue",
-      "familyName": "Zhang",
-      "name": "Yue Zhang",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "ORCID",
-        "value": "0009-0007-6432-1259",
-        "url": "https://orcid.org/0009-0007-6432-1259"
-      }
-    }
-  ],
   "inLanguage": "de",
   "keywords": [
     "Open Educational Resources",
-    "Offene Bildungsressource",
-    "Jupyter Book",
-    "Data Literacy",
+    "Digital Humanities",
+    "Filmwissenschaft",
     "Datenkompetenz",
+    "Filmannotation",
+    "Filmanalyse",
     "open-educational-resources"
   ],
   "about": [
@@ -135,15 +162,11 @@
     },
     {
       "@type": "Thing",
-      "name": "Offene Bildungsressource"
+      "name": "Digital Humanities"
     },
     {
       "@type": "Thing",
-      "name": "Jupyter Book"
-    },
-    {
-      "@type": "Thing",
-      "name": "Data Literacy"
+      "name": "Filmwissenschaft"
     },
     {
       "@type": "Thing",
@@ -151,15 +174,23 @@
     },
     {
       "@type": "Thing",
+      "name": "Filmannotation"
+    },
+    {
+      "@type": "Thing",
+      "name": "Filmanalyse"
+    },
+    {
+      "@type": "Thing",
       "name": "open-educational-resources"
     },
     {
       "@type": "Thing",
-      "name": "übergreifend"
+      "name": "Digital Humanities"
     },
     {
       "@type": "Thing",
-      "name": "übergreifend"
+      "name": "Bewegtes Bild"
     }
   ],
   "audience": [
@@ -180,7 +211,7 @@
       "audienceType": "Hochschullehrende"
     }
   ],
-  "timeRequired": "PT16H15M",
+  "timeRequired": "PT10H15M",
   "license": [
     {
       "@type": "CreativeWork",
@@ -217,7 +248,7 @@
       ]
     }
   ],
-  "dcterms:tableOfContents": "- Einstieg\n- Inhaltskapitel\n- Reflexion und Resümee\n- Abschluss",
+  "dcterms:tableOfContents": "- Einstieg\n- Filmanalyse und automatisierte Annotation\n- Computer Vision für die Filmanalyse\n- Automatisierte Annotation von Filmen\n- Auswertung der automatisierten Annotationen\n- Reflexion und Resümee\n- Abschluss",
   "funding": "Die vorliegenden Open Educational Resources wurden durch das Datenkompetenzzentrum QUADRIGA erstellt.\n\nFörderkennzeichen: 16DKZ2034",
   "learningResourceType": "Jupyter Book",
   "lrmi:learningResourceType": "Jupyter Book",

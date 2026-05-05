@@ -1,7 +1,8 @@
 # yaml-language-server: $schema=https://citation-file-format.github.io/1.2.0/schema.json
 cff-version: 1.2.0
 version: 0.1.0
-title: 'Workflows zur automatisierten Filmannotation - Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs'
+title: Workflows zur automatisierten Erstellung von Annotationen anhand der Filme
+  Konrad Wolfs
 type: software
 message: Please cite this software using the metadata from `preferred-citation` in
   `CITATION.cff`.
@@ -35,7 +36,8 @@ keywords: &id002
 - Filmwissenschaft
 - Datenkompetenz
 - Filmannotation
-- Filmanalyses
+- Filmanalyse
+- open-educational-resources
 license: CC BY-SA 4.0
 references:
 - title: Jupyter Book
@@ -47,7 +49,8 @@ preferred-citation:
   year: '2026'
   version: 0.1.0
   authors: *id001
-  title: 'Workflows zur automatisierten Filmannotation - Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs'
+  title: Workflows zur automatisierten Erstellung von Annotationen anhand der Filme
+    Konrad Wolfs
   type: book
   doi: 10.5281/zenodo.ToDo
   url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/
@@ -56,6 +59,7 @@ preferred-citation:
   - deu
   copyright: CC-BY-SA-4.0
   keywords: *id002
-abstract: Diese Open Educational Resource (OER) stellt anhand einer Fallstudie
-  dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale
-  Verfahren eingesetzt werden können.
+  license: CC BY-SA 4.0
+abstract: Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar,
+  wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren
+  eingesetzt werden können.

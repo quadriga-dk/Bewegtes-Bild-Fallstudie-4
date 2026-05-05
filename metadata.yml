@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=https://quadriga-dk.github.io/quadriga-schema/v1.0.0/schema.json
-title: 'Workflows zur automatisierten Filmannotation - Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs'
+title: Workflows zur automatisierten Erstellung von Annotationen anhand der Filme
+  Konrad Wolfs
 authors:
 - given-names: Thomas
   family-names: Schick
@@ -31,7 +32,13 @@ description: Diese Open Educational Resource (OER) stellt anhand einer Fallstudi
   Verfahren eingesetzt werden können.
 table-of-contents: '- Einstieg
 
-  - Inhaltskapitel
+  - Filmanalyse und automatisierte Annotation
+
+  - Computer Vision für die Filmanalyse
+
+  - Automatisierte Annotation von Filmen
+
+  - Auswertung der automatisierten Annotationen
 
   - Reflexion und Resümee
 
