@@ -13,12 +13,6 @@
   ],
   "name": "Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs",
   "description": "Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können.",
-  "identifier": {
-    "@type": "PropertyValue",
-    "propertyID": "DOI",
-    "value": "10.5281/zenodo.TODO",
-    "url": "https://doi.org/10.5281/zenodo.TODO"
-  },
   "version": "0.1.0",
   "schemaVersion": "1.0.0",
   "url": "https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/",
