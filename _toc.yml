@@ -12,6 +12,11 @@ chapters:
       - file: einstieg/technische-voraussetzungen.md
       - file: einstieg/vorkenntnisse.md
   - file: filmanalyse/einleitung.md
+    sections:
+      - file: filmanalyse/filmanalyse.md
+      - file: filmanalyse/annotation.md
+      - file: filmanalyse/quantitativ.md
+      - file: filmanalyse/fragestellungen.md
   - file: vision/einleitung.md
   - file: annotation/einleitung.md
   - file: auswertung/einleitung.md
