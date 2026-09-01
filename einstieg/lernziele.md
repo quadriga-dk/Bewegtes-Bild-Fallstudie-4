@@ -19,9 +19,9 @@
 
 <!-- learning-goal: Computer Vision für die Filmanalyse -->
 1. Die grundlegende Funktionsweise von Computer Vision kann beschrieben werden. <!-- competency: Orientierungswissen | bloom: 2 Verstehen-->
-2. Die Einsatzmöglichkeiten von Computer Vision für filmanalytische Aufgaben können benannt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
-3. Grundlegende Begriffe wie Machine Learning, Algorithmus und Modell können definiert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
-4. Die Funktion von Schwellenwerten kann erklärt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
+2. Grundlegende Begriffe wie Machine Learning, Algorithmus und Modell können definiert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
+3. Die Funktion von Schwellenwerten kann erklärt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
+4. Die Einsatzmöglichkeiten von Computer Vision für filmanalytische Aufgaben können benannt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 5. Die Möglichkeiten und Grenzen von Computer Vision Modellen können beurteilt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 ```
 <!-- END: Computer-Vision -->

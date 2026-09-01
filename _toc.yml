@@ -18,6 +18,12 @@ chapters:
       - file: filmanalyse/quantitativ.md
       - file: filmanalyse/fragestellungen.md
   - file: vision/einleitung.md
+    sections:
+      - file: vision/grundlagen.md
+      - file: vision/begriffe.md
+      - file: vision/funktion.md
+      - file: vision/einsatz.md
+      - file: vision/grenzen.md
   - file: annotation/einleitung.md
   - file: auswertung/einleitung.md
   - file: reflexion-und-resümee/einleitung.md
