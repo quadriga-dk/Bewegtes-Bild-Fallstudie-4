@@ -25,6 +25,17 @@ chapters:
       - file: vision/einsatz.md
       - file: vision/grenzen.md
   - file: annotation/einleitung.md
+    sections:
+      - file: annotation/workflow.md
+      - file: annotation/modelle.md
+      - file: annotation/technik.md
+      - file: annotation/einstellung_intro.md
+      - file: annotation/einstellung_notebook.md
+      - file: annotation/einstellung_datensichtung.md
+      - file: annotation/figuren_intro.md
+      - file: annotation/figuren_notebook.md
+      - file: annotation/figuren_datensichtung.md
+      - file: annotation/resumee_annotation.md
   - file: auswertung/einleitung.md
   - file: reflexion-und-resümee/einleitung.md
     sections:
