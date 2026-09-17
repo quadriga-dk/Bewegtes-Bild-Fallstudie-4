@@ -26,6 +26,7 @@ chapters:
       - file: vision/grenzen.md
   - file: annotation/einleitung.md
     sections:
+      - file: annotation/intro.md
       - file: annotation/workflow.md
       - file: annotation/modelle.md
       - file: annotation/technik.md
