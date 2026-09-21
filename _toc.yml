@@ -31,7 +31,7 @@ chapters:
       - file: annotation/modelle.md
       - file: annotation/technik.md
       - file: annotation/einstellung_intro.md
-      - file: annotation/einstellung_notebook.md
+      - file: annotation/einstellung_notebook.ipynb
       - file: annotation/einstellung_datensichtung.md
       - file: annotation/figuren_intro.md
       - file: annotation/figuren_notebook.md
