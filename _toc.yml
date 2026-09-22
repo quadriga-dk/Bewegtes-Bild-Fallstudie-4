@@ -17,6 +17,7 @@ chapters:
       - file: filmanalyse/annotation.md
       - file: filmanalyse/quantitativ.md
       - file: filmanalyse/fragestellungen.md
+      - file: filmanalyse/resumee_filmanalyse.md
   - file: vision/einleitung.md
     sections:
       - file: vision/grundlagen.md

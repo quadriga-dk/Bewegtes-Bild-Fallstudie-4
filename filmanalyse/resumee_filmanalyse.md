@@ -1,0 +1,29 @@
+# Resümee
+In diesem Kapitel werden einige Grundlagen und verschiedene Herangehensweisen an Filmanalyse dargestellt. Der Begriff Annotation wird geklärt und thematisiert, wie automatisierte Annotationsprozesse die filmanalytische Arbeit und quantitative Ansätze in der Filmwissenschaft unterstützen können. Schließlich wird auf mögliche Fragestellungen für die vorliegende Fallstudie eingegangen. Dabei werden folgende Teilbereiche behandelt:
+
+
+```{admonition} Keypoints
+:class: keypoint
+
+**Grundlagen der Filmanalyse**
+
+Digitale Tools unterstützen die filmanalytische Arbeit und erleichtern aufwändige manuelle Prozesse. Bei der Filmanalyse existiert keine standardisierte Vorgehensweise, die Art der Analyse und das Vorgehen wird immer durch die konkreten Fragestellungen und den mit ihnen verbundenen (film)theoretischen Ansätzen bestimmt. Dabei werden bestimmte Eigenschaften, formale Elemente und Strukturmerkmale von Filmen systematisch erfasst und in einer schriftlichen Form festgehalten bzw. in diese ‘übersetzt’. Hierfür kommen verschiedene Werkzeuge zum Einsatz, u.a. auch digitale Tools, die insbesondere für die Auswertung der stetig wachsenden Zahl an digital vorliegenden Quellen nützlich sein können. Die mit digitalen Tools erstellten Annotationsdaten werden für die Analyse von Filmen verwendet und können dort neue Perspektiven eröffnen, zudem machen sie als Metadaten digitale Ressourcen besser zugänglich.
+
+
+**Annotation**
+
+Durch Annotationen werden Objekte mit zusätzlichen Informationen versehen. In der Film- und Medienwissenschaft sind Annotationen zu Merkmalen wie Mise-en-scene, Einstellungslängen oder Montagearten gängige Formen, auch Annotationen zu Parametern wie Einstellungsgröße, Kameraperspektive, Kamerabewegung, Ton, Farbe oder Licht. Der Austausch und die Wiederverwendung von Annotationen zu Filmen und der daraus resultierenden Metadaten gestaltet sich jedoch oft schwierig, da bisher keine einheitliche Annotationstandards für audiovisuelle Medien existieren. Der Annotationsprozess kann in manueller, semi-automatischer oder automatisierter Form stattfinden. Mit der manuellen Annotationen können auch sehr komplexe Bedeutungen und Strukturen notiert werden, die sich einer automatisierten Annotation entziehen, sie ist jedoch meist sehr zeitaufwändig. Durch neue Deep-Learning Modelle und Computer-Vision-Technologien werden immer komplexere automatisierte Annotationen möglich. Dabei werden Wahrscheinlichkeiten berechnet, ob bestimmte filmische Eigenschaften oder Merkmale zu einem bestimmten Zeitpunkt eines Films vorliegen. Der automatisierten Annotation sind dabei aber auch durch die Art der verfügbaren Modelle zur automatisierten Erkennung Grenzen gesetzt,
+ 
+
+**Quantitative Ansätze in der Filmwissenschaft**
+
+Quantitative Ansätze haben in der Filmwissenschaft eine lange Tradition und wurden bereits in den 1970er Jahren etwa von Barry Salt verfolgt. Bei einer statistischen Stilanalyse werden z.B. filmische Merkmale wie Länge und Anzahl der der einzelnen Einstellungen, die Anzahl unterschiedlichen Einstellungsgrößen oder auch verschiedener Formen der Kamerabewegungen erfasst. Dabei geht es häufig darum, durch diese quantitative Auswertung individuelle Stilmerkmale von Regisseur:innen herauszuarbeiten und deutlich zu machen, wie sich deren 'Handschrift' von zeitgenössischen Normen oder den stilistischen Eigenheiten anderer Filmemacher:innen unterscheidet. Durch die fortschreitende Digitalisierung von Filmen und die Anwendung computergestützte Verfahren im Rahmen der Digital Humanities in den letzten Jahren werden quantitative Ansätze auch in der Filmwissenschaft wichtiger. Eine rein quantitative Erfassung stilistischer Merkmale reicht jedoch nicht aus, es müssen auch immer deren konkreten Funktionen und Bedeutungen berücksichtigt werden. Die quantitative Auswertung sollte daher mit qualitativen Herangehensweisen ergänzt werden. Quantitative Ansätze und computergestützte Verfahren ermöglichen die Untersuchung großer Filmkorpora, in denen nach wiederkehrenden Mustern gesucht werden kann. Im Rahmen des 'Scalable Viewing' kann das Untersuchungsmaterial immer wieder neu angeordnet werden, wodurch sich neue Perspektiven ergeben können.
+
+
+**Fragestellungen zur Fallstudie**
+
+In der OER sollen Workflows zur automatisierten Annotation von Filmen entwickelt werden. Dabei stellen sich zunächst zwei Ausgangsfragen: Welche Annotationsdaten sollen automatisiert erhoben werden? Und wie können diese Annotationen mithilfe von welchen Modellen und Algorithmen automatisiert werden? Als Untersuchungskorpus für die Fallstudie haben wir die Filme Konrad Wolfs ausgewählt, die in digitaler Form vorliegen. Das Korpus bleibt mit 14 Filmen dabei überschaubar und technisch innerhalb der OER handhabbar, weist aber dennoch eine interessante Heterogenität hinsichtlich Genres, Themen, Erzählweisen und verschiedener Schaffensphasen auf. Für die Fallstudie beschränken wir uns auf die Erkennung von Einstellungsübergängen bzw. Einstellungslängen und die Bestimmung des Auftretens von bestimmten Figuren in Filmen. Diese Annotationen zu automatisieren ist technisch umsetzbar, die Bestimmung der Einstellungslänge bildet die Grundlage für viele weitere Annotationen und die Figurenannotation ist in vielen verschiedenen Kontexten einsetzbar. Bei der Auswertung der erhobenen Annotationen wird nicht immer eine konkrete Fragestellung im Mittelpunkt stehen, vielmehr werden wir explorativ vorgehen, also die Daten hinsichtlich möglicher auftretender Muster untersuchen.
+
+```
+
+Insgesamt werden im Kapitel Einsatzbereiche, Möglichkeiten und Grenzen von automatisierten Annotationen im Rahmen von Filmanalysen aufgezeigt.
