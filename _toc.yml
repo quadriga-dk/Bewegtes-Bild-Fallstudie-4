@@ -25,6 +25,7 @@ chapters:
       - file: vision/funktion.md
       - file: vision/einsatz.md
       - file: vision/grenzen.md
+      - file: vision/resumee_vision.md
   - file: annotation/einleitung.md
     sections:
       - file: annotation/intro.md
