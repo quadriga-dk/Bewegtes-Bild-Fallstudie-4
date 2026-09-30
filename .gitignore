@@ -24,3 +24,6 @@ __pycache__
 annotation/export/
 annotation/videos/
 annotation/*.zip
+
+# test notebooks
+/notebooks_test_3/
