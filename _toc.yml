@@ -40,6 +40,13 @@ chapters:
       - file: annotation/figuren_datensichtung.md
       - file: annotation/resumee_annotation.md
   - file: auswertung/einleitung.md
+    sections:
+      - file: auswertung/grundlagen.md
+      - file: auswertung/datenstruktur.md
+      - file: auswertung/visualisierung_einstellungen.md
+      - file: auswertung/visualisierung_figuren.md
+      - file: auswertung/explorative_auswertung.md
+      - file: auswertung/resumee_auswertung.md
   - file: reflexion-und-resümee/einleitung.md
     sections:
       - file: reflexion-und-resümee/reflexion.md

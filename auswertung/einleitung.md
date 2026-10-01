@@ -1,5 +1,5 @@
 (auswertung:einleitung)=
-# Auswertung der automatisierten Annotationen
+# Auswertung der Annotationsdaten
 
 ````{margin}
 ```{admonition} Fragen oder Feedback
