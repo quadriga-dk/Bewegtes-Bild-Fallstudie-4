@@ -36,7 +36,7 @@ chapters:
       - file: annotation/einstellung_notebook.ipynb
       - file: annotation/einstellung_datensichtung.md
       - file: annotation/figuren_intro.md
-      - file: annotation/figuren_notebook.md
+      - file: annotation/figuren_notebook.ipynb
       - file: annotation/figuren_datensichtung.md
       - file: annotation/resumee_annotation.md
   - file: auswertung/einleitung.md

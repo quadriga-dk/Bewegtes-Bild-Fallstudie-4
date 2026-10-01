@@ -26,6 +26,7 @@ annotation/videos/
 annotation/export_face/
 annotation/videos_face/
 annotation/*.zip
+annotation/.insightface
 
 # test notebooks
 /notebooks_test_3/

@@ -1,1 +1,0 @@
-# Figurenerkennung: Jupyter Notebook
