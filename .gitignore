@@ -23,6 +23,8 @@ __pycache__
 # export annotation data and video data
 annotation/export/
 annotation/videos/
+annotation/export_face/
+annotation/videos_face/
 annotation/*.zip
 
 # test notebooks
