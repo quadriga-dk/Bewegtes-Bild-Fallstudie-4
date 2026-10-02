@@ -23,10 +23,30 @@ jobs:
 
     # Set up Python with pip caching
     - name: Set up Python
+      id: setup-python
       uses: actions/setup-python@v7
       with:
         python-version-file: '.python-version'
         cache: pip
+
+    # Restore the cached installed packages (virtual environment).
+    # Note: setup-python's `cache: pip` only caches pip's download cache
+    # (~/.cache/pip); the install step still re-installs every package on each
+    # run. Caching .venv lets us skip `pip install` entirely on an exact hit.
+    # Key on the *resolved* Python version (not .python-version, which is the
+    # constant "3.10"): the venv's bin/python symlink and pyvenv.cfg point into
+    # the runner's Python toolcache, so a patch bump must invalidate the cache.
+    # Split into restore + save (below) instead of the monolithic actions/cache
+    # so the installed venv is persisted even if a later step (the book build)
+    # fails.
+    - name: Restore cached Python dependencies
+      id: deps-cache
+      uses: actions/cache/restore@v5
+      with:
+        path: .venv
+        key: python-deps-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          python-deps-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-
 
     # Cache executed notebooks
     # only caches if set up in _config.yml with:
@@ -38,10 +58,36 @@ jobs:
         path: _build/.jupyter_cache
         key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
 
-    # Install Python dependencies
-    - name: Install Python dependencies
+    # Only create the venv and install dependencies on a cache miss.
+    # Install with `.venv/bin/python -m pip`, NOT a bare `pip`: the venv is only
+    # added to PATH by the "Activate" step below (which affects subsequent
+    # steps), so a bare `python`/`pip` here targets setup-python's global
+    # site-packages and leaves the venv empty -- and an empty venv then gets
+    # cached, poisoning every later run.
+    - name: Create virtual environment and install dependencies
+      if: steps.deps-cache.outputs.cache-hit != 'true'
       run: |
-        pip install -r requirements.txt
+        python -m venv .venv
+        .venv/bin/python -m pip install --upgrade pip
+        .venv/bin/python -m pip install -r requirements.txt
+
+    # Persist the venv immediately after installing, before the build runs, so
+    # a failure in a later step (e.g. `jupyter-book build`) does not throw away
+    # the install. On a restore-key partial hit this writes the updated venv
+    # under the new requirements hash. A concurrent-run save race is handled by
+    # the action as a non-fatal warning, so this step cannot fail the job for
+    # that reason.
+    - name: Save cached Python dependencies
+      if: steps.deps-cache.outputs.cache-hit != 'true'
+      uses: actions/cache/save@v5
+      with:
+        path: .venv
+        key: python-deps-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
+
+    # Expose the venv's binaries (jupyter-book, jupyter, python, ...) to all
+    # subsequent steps
+    - name: Activate virtual environment
+      run: echo "$GITHUB_WORKSPACE/.venv/bin" >> "$GITHUB_PATH"
 
     # Check all kernels
     - name: Log all available kernels
