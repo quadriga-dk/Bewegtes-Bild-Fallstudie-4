@@ -81,6 +81,12 @@ jobs:
           .venv/bin/python -m pip install --upgrade pip
           .venv/bin/python -m pip install -r dev-requirements.txt
 
+      # Fail loudly if the venv is empty/missing packages, so a broken
+      # environment is never written to the cache (and a bad restored cache is
+      # caught instead of silently failing later).
+      - name: Verify virtual environment
+        run: .venv/bin/python -c "import yaml, rdflib"
+
       - name: Save cached Python dependencies
         if: steps.deps-cache.outputs.cache-hit != 'true'
         uses: actions/cache/save@v5

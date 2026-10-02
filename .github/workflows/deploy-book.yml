@@ -71,6 +71,12 @@ jobs:
         .venv/bin/python -m pip install --upgrade pip
         .venv/bin/python -m pip install -r requirements.txt
 
+    # Fail loudly if the venv is empty/missing packages, so a broken
+    # environment is never written to the cache (and a bad restored cache is
+    # caught instead of silently failing later).
+    - name: Verify virtual environment
+      run: .venv/bin/python -c "import jupyter_book, matplotlib"
+
     # Persist the venv immediately after installing, before the build runs, so
     # a failure in a later step (e.g. `jupyter-book build`) does not throw away
     # the install. On a restore-key partial hit this writes the updated venv
