@@ -23,7 +23,7 @@ jobs:
 
     # Set up Python with pip caching
     - name: Set up Python
-      uses: actions/setup-python@v6
+      uses: actions/setup-python@v7
       with:
         python-version-file: '.python-version'
         cache: pip
@@ -64,7 +64,7 @@ jobs:
         echo "Copied metadata files to _build/html for discovery"
 
     - name: Upload book artifact
-      uses: actions/upload-pages-artifact@v4
+      uses: actions/upload-pages-artifact@v7
       with:
         path: "_build/html"
 
