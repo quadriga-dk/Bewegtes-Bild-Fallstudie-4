@@ -3,7 +3,7 @@
 import logging
 import os
 import sys
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 
 from .utils import get_file_path, load_yaml_file, save_yaml_file
 
@@ -57,7 +57,7 @@ def update_version_from_tag() -> bool:
             logger.info("version already matches tag version: %s", version)
 
         # Update date-modified
-        current_date = datetime.now(UTC).strftime("%Y-%m-%d")
+        current_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         old_date = metadata.get("date-modified")
         if old_date != current_date:
             metadata["date-modified"] = current_date
