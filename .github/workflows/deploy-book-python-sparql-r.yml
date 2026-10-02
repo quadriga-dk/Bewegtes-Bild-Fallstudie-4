@@ -1,4 +1,4 @@
-name: Deploy book with Python, SPARQL, and R
+name: Deploy book
 
 on:
   workflow_run:
@@ -28,10 +28,6 @@ jobs:
         python-version-file: '.python-version'
         cache: pip
 
-    # Set up R with dependency caching
-    - name: Set up R
-      uses: r-lib/actions/setup-r@v2
-
     # Cache executed notebooks
     # only caches if set up in _config.yml with:
     # execute:
@@ -46,28 +42,6 @@ jobs:
     - name: Install Python dependencies
       run: |
         pip install -r requirements.txt
-
-    # Install R dependencies with caching
-    - name: Install R dependencies
-      uses: r-lib/actions/setup-r-dependencies@v2
-      with:
-        cache: true
-        cache-version: 2
-        packages: |
-          any::tidyverse
-          any::IRkernel
-        install-pandoc: false
-        install-quarto: false
-
-    # Register kernels with Jupyter
-    - name: Set up IRkernel
-      run: |
-        IRkernel::installspec(name="ir", displayname="R")
-      shell: Rscript {0}
-
-    - name: Install SPARQL kernel
-      run: |
-        jupyter sparqlkernel install --user
 
     # Check all kernels
     - name: Log all available kernels
