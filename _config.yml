@@ -26,7 +26,9 @@ exclude_patterns:
 execute:
   execute_notebooks: cache
   timeout: 1500
-  exclude_patterns: []
+  exclude_patterns:
+    - "einstellungen_notebook.ipynb"
+    - "figuren_notebook.ipynb"
 
 parse:
   myst_enable_extensions: # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
