@@ -40,7 +40,7 @@ Schritt 1: Filmanalyse und automatisierte Annotation
 
 ```{admonition} Bearbeitungszeit
 :class: zeitinfo
-Die geschätzte Bearbeitungszeit dieser Lerneinheit beträgt ca. **xx** Minuten. Dies schließt die gekennzeichneten Übungsaufgaben, deren Bearbeitungsdauer individuell variiert, aus.
+Die geschätzte Bearbeitungszeit dieser Lerneinheit beträgt ca. 45 Minuten. Dies schließt die gekennzeichneten Übungsaufgaben, deren Bearbeitungsdauer individuell variiert, aus.
 
 Die geschätzte Bearbeitungsdauer **inklusive** der einzelnen Übungsaufgaben beträgt ca. **xx** Minuten.
 
