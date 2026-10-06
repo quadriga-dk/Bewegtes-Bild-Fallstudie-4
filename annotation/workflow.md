@@ -91,7 +91,7 @@ Eine EAF-Datei kann in *VIAN* oder anderen geeigneten Annotationsprogrammen geö
 ## Sichtung der Ergebnisse
 Die folgenden Schritte unseres Workflows finden nun außerhalb der Jupyter Notebooks zur automatisierten Annotation von Videodateien statt. Da es während der automatisierten Annotation zu Fehler kommen kann, ist es essenziell wichtig, die Ergebnisse zu sichten und zu überprüfen. Während einer Sichtung sollten falsche oder übersehene Treffer korrigiert, vor allem aber auch die generelle Qualität des Verfahrens eingeschätzt werden. Häufig bedürfen etwa die Parameter und Schwellenwerte einer Feinjustierung, die vom jeweiligen Film abhängig ist und erst nach einem ersten Durchlauf eingeschätzt werden kann. Nach den Feinjustierungen können die Ergebnisse erneut gesichtet und beurteilt werden, ob sich die Qualität der automatisiert erhobenen Annotationen verbessert hat.
 
-Innerhalb dieser OER verwenden wir zur Sichtung ***VIAN***, ein open-source Annotationsprogramm für die Filmanalyse, das momentan an der Universität Zürich entwickelt wird. In VIAN können die Ergebnisse als EAF-Datei importiert und mit dem analysierten Videomaterial verknüpft werden. So lassen sich Annotationen framegenau mit dem Material abgleichen, anhand dessen sie erstellt wurden. 
+Innerhalb dieser OER verwenden wir zur Sichtung ***VIAN***, ein open-source Annotationsprogramm für die Filmanalyse, das an der Universität Zürich entwickelt wird. In VIAN können die Ergebnisse als EAF-Datei importiert und mit dem analysierten Videomaterial verknüpft werden. So lassen sich Annotationen framegenau mit dem Material abgleichen, anhand dessen sie erstellt wurden. 
 
 Das spätere Kapitel zu den [Technischen Grundlagen](technik.md) führt in die Installation und Nutzung von VIAN ein.
 
