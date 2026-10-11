@@ -18,6 +18,7 @@ chapters:
       - file: filmanalyse/quantitativ.md
       - file: filmanalyse/fragestellungen.md
       - file: filmanalyse/resumee_filmanalyse.md
+      - file: filmanalyse/assessment_filmanalyse.md
   - file: vision/einleitung.md
     sections:
       - file: vision/grundlagen.md
@@ -26,6 +27,7 @@ chapters:
       - file: vision/einsatz.md
       - file: vision/grenzen.md
       - file: vision/resumee_vision.md
+      - file: vision/assessment_vision.md
   - file: annotation/einleitung.md
     sections:
       - file: annotation/intro.md
@@ -39,6 +41,7 @@ chapters:
       - file: annotation/figuren_notebook.ipynb
       - file: annotation/figuren_datensichtung.md
       - file: annotation/resumee_annotation.md
+      - file: annotation/assessment_annotation.md
   - file: auswertung/einleitung.md
     sections:
       - file: auswertung/grundlagen.md
@@ -47,6 +50,7 @@ chapters:
       - file: auswertung/visualisierung_figuren.md
       - file: auswertung/explorative_auswertung.md
       - file: auswertung/resumee_auswertung.md
+      - file: auswertung/assessment_auswertung.md
   - file: reflexion-und-resümee/einleitung.md
     sections:
       - file: reflexion-und-resümee/reflexion.md
