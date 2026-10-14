@@ -1,12 +1,5 @@
 # Technische Grundlagen
 
-<iframe
-  src="../_static/html/character_network_gravis.html"
-  width="100%"
-  height="800"
-  style="border:0;">
-</iframe>
-
 Dieser Abschnitt stellt technische Grundlagen vor, die für das Verständnis und die Ausführung der Schritte des Workflows hilfreich sind. Dazu gehören die Qualität des Materials, die Bedeutung der Hardware, die Arbeit mit der Cloud-Umgebung *Google Colab*, die Einstellungsmöglichkeiten in den Jupyter Notebooks und die Verwendung der Annotationssoftware *VIAN*. Nach der Klärung der technischen Grundlagen können sich die folgenden Kapitel auf die Annotationsverfahren selbst konzentrieren.
 
 ## Qualität des Materials
@@ -55,8 +48,6 @@ Um in Colab eine GPU auszuwählen, öffnen Sie im Menü **Laufzeit** den Punkt *
 
 Die Notebooks enthalten Einstellungsmöglichkeiten, mit denen sich der jeweilige Workflow anpassen lässt. Diese werden im Code als **Variablen** gespeichert. Eine Variable ist ein benannter Platzhalter für einen Wert, den das Programm später verwendet.
 
-**[Winter]Hier gibt es ein bisschen wiederholung, da Parameter und Schwellwerte bereits zuvor eingeführt wurden. -> nochmal durchdenken, an welcher Stelle diese Infos am sinnvollsten eingeführt werden, ansonsten Verweis mit Link**
-
 - **Variablen:** Eine Variable speichert einen Wert unter einem Namen, damit der Code ihn später verwenden kann. So kann eine Variable beispielsweise den Pfad zu einem Ordner enthalten.
 - **Parameter:** Parameter sind Variablen, mit denen grundlegende Einstellungen des Workflows festgelegt werden. Dazu gehören zum Beispiel die Ordner für Eingabedateien und Exporte.
 - **Schwellenwerte:** Ein Schwellenwert legt fest, ab welchem berechneten Wert ein Ergebnis als Treffer gilt. Bei einer Einstellungsübergangserkennung werden zum Beispiel nur Übergänge berücksichtigt, deren Wahrscheinlichkeit mindestens den festgelegten Schwellwert erreicht. Ein höherer Wert führt tendenziell zu weniger, aber sichereren Treffern. Ein niedrigerer Wert kann mehr Treffer, aber auch mehr Fehlalarme erzeugen.
@@ -81,9 +72,9 @@ alt: Das Startmenü von VIAN.
 Das Startmenü von VIAN.
 ```
 
-Anschließend gelangen Sie zum Hauptfenster von VIAN, in dem die in unserem Workflow automatisiert erstellten Annotationen gesichtet werden können. Diese Annotationsdaten müssen zunächst importiert werden. Wählen Sie dazu in der linken Seitenleiste den Menüpunkt `Daten importieren`. Anschließend können Sie zwischen den Dateiformaten `.eaf` und `.tsv` wählen. 
+Anschließend gelangen Sie zum Hauptfenster von VIAN, in dem die in unserem Workflow automatisiert erstellten Annotationen gesichtet werden können. Diese Annotationsdaten müssen zunächst importiert werden. Wählen Sie dazu in der linken Seitenleiste den Menüpunkt `Daten importieren`. Anschließend können Sie zwischen den Dateiformaten `.eaf` und `.tsv` wählen. Die folgenden Schritte sind eine Demonstration, die passenden `.eaf`-Dateien folgen später.
 
-Wie wir im folgenden Kapitel genauer darstellen werden, wird nach den Ausführen des Jupyter Notebooks eine `ELAN-Datei` mit der Dateiendung `.eaf` im Export-Ordner generiert, die für den Import der Annotationsergebnisse in VIAN gedacht ist. Klicken sie also auf "ELAN-Annotationsergebnisse importieren" und wählen sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
+Wie wir im folgenden Kapitel genauer darstellen werden, wird nach den Ausführen des Jupyter Notebooks eine `ELAN-Datei` mit der Dateiendung `.eaf` im Export-Ordner generiert, die für den Import der Annotationsergebnisse in VIAN gedacht ist. Klicken Sie auf "ELAN-Annotationsergebnisse importieren" und wählen sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
 
 ```{figure} ../assets/annotation/VIAN_ImportMenu.png
 ---
@@ -94,8 +85,6 @@ alt: Das Importmenü von VIAN.
 ---
 Das Importmenü von VIAN.
 ```
-
-**[Winter] Ab hier können die Nutzer:innen nicht mehr selbstständig folgen. Ist das so intendiert? Sollten wir einen Hinweis hinzufüfgen?**
 
 Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste Klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
