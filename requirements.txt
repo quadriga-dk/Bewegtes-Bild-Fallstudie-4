@@ -24,3 +24,7 @@ transnetv2-pytorch==1.0.5
 
 opencv-python==5.0.0.93
 static-ffmpeg==3.0
+
+networkx
+gravis==0.1.0
+setuptools<82

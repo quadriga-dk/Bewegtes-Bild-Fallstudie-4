@@ -1,1 +1,0 @@
-# Visualisierung der Figurenannotationen

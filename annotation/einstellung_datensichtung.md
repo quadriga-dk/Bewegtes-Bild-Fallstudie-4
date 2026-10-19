@@ -11,7 +11,7 @@ Nach dem Verlinken des Trailer und dem Import der dazugehörigen `.eaf`-Datei ka
 ---
 align: center
 width: 100%
-name: VIAN_postImport
+name: VIAN_Himmel
 alt: Die Einstellungsannotationen nach dem Import in VIAN.
 ---
 Die Einstellungsannotationen nach dem Import in VIAN.
