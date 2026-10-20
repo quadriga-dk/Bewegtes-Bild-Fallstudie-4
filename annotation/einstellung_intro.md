@@ -9,10 +9,12 @@ Zunächst werden das TransNetV2-Modells zur Einstellungserkennung und das zur De
 Das Modell wurde mit harten Schnitten und graduellen Übergängen sowie Überblendungen trainiert. Das Modell kann Übergänge übersehen oder Veränderungen innerhalb einer Einstellung fälschlich als Übergang werten. Weitere Informationen bieten das [Paper von Souček und Lokoč (2020)](https://arxiv.org/abs/2008.04838) und das [offizielle TransNetV2-Repositorium](https://github.com/soCzech/TransNetV2).
 
 ## Analysematerial
-Wie bereits im Kapitel xx diskutiert können wir im Rahmen dieser OER aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs selbst zur Verfügung stellen. Freundlicherweise haben wir jedoch seitens der DEFA-Stiftung die Genehmigung erhalten, die Trailer der Filme nutzen zu können.
-Für die Demonstration der Einstellungserkennung haben wir die Trailer zu den Filmen XX und YY ausgewählt. Wir haben uns für diese Trailer entschieden, da...
+Wie bereits in den [Vorbemerkungen dieses Kapitels](intro.md) diskutiert, können wir im Rahmen dieser OER aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs selbst zur Verfügung stellen. Freundlicherweise haben wir jedoch seitens der DEFA-Stiftung die Genehmigung erhalten, die Trailer der Filme nutzen zu können.
+Für die Demonstration der Einstellungserkennung haben wir den Trailer zum Film *Der geteilte Himmel* von 1964 ausgewählt. 
 
 Im Jupyter Notebook werden die Trailer automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt. Ein ZIP-Archiv bündelt mehrere Dateien und Ordner in einer komprimierten Datei. Ein separater Download der Trailer ist daher nicht erforderlich. Neben den Trailern enthält das Archiv auch eine `readme.md`-Datei sowie die Datei `DEFA_Nutzungshinweis.md` mit den genauen Angaben zur Nutzungslizenz der Trailer.
+
+Für die Auswertung eigener Filme können die entsprechenden Dateien im Import-Ordner abgelegt werden. 
 
 ## Ablauf des Jupyter Notebooks zur Einstellungserkennung
 

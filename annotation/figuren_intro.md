@@ -95,14 +95,12 @@ Wie im Abschnitt [Auswahl der Modelle](modelle.md#auswahl-für-die-gesichtsanaly
 
 ## Analysematerial
 
-Wie bereits in Kapitel xx diskutiert, können wir die Langfilme Konrad Wolfs aus urheberrechtlichen Gründen nicht im Rahmen dieser OER zur Verfügung stellen. Freundlicherweise haben wir jedoch von der DEFA-Stiftung die Genehmigung erhalten, die Trailer der Filme zu nutzen.
-Für die Demonstration der Einstellungserkennung haben wir die Trailer zu den Filmen XX und YY ausgewählt. Wir haben uns für diese Trailer entschieden, da …
+Auch für dieses Jupyter Notebook stellen wir als Testmaterial den Trailer zum Film Konrad Wolfs *Der geteilte Himmtel* zur Verfügung. Der Trailer ist erneut Teil des automatischen Downloads einer ZIP-Datei. Diese enthält neben der `readme.md`-Datei und der `DEFA_Nutzungshinweis.md` diesmal auch die Datei `xx_shots.csv` mit den Ergebnissen der Einstellungserkennung zum *Der geteilte Himmel-Trailer*. 
+Im Jupyter Notebook werden die Trailer automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt.
 
-Im Jupyter Notebook werden die Trailer automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt. Ein ZIP-Archiv bündelt mehrere Dateien und Ordner in einer komprimierten Datei. Ein separater Download der Trailer ist daher nicht erforderlich. Neben den Trailern enthält das Archiv auch eine `readme.md`-Datei sowie die Datei `DEFA_Nutzungshinweis.md` mit den genauen Angaben zur Nutzungslizenz der Trailer.
+Zur Erstellung der Vergleichs-Embeddings liefern wir die erwähnten Screenshots der Hauptfiguren mit. Für den *Der geteilte Himmel*-Trailer haben wir Bilder der Figuren Rita und Manfred ausgewählt.
 
-Auch für dieses Jupyter Notebook stellen wir als Testmaterial einen Trailer zu einem Film Konrad Wolfs zur Verfügung, in diesem Fall XX. Der Trailer ist erneut Teil des automatischen Downloads einer ZIP-Datei. Diese enthält neben der `readme.md`-Datei und der `DEFA_Nutzungshinweis.md` diesmal auch die Datei `xx_shots.csv` mit den Ergebnissen der Einstellungserkennung zum XX-Trailer. Diese Ergebnisse werden später im Notebook verwendet ([siehe xx](#xx)).
-
-Zur Erstellung der Vergleichs-Embeddings liefern wir die erwähnten Screenshots der Hauptfiguren mit. Für den XX-Trailer haben wir Bilder der Figuren XX und YY ausgewählt.
+Wie in den [Vorbemerkungen zu diesem Kapitels](intro.md) angemerkt, können wir aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs zum Download zur Verfügung stellen. Selbstständig können jedoch auch Langfilme ausgewertet werden.  
 
 ## Ablauf des Jupyter Notebooks zur Figurenerkennung
 
