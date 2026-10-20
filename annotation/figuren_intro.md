@@ -15,16 +15,24 @@ Der Ablauf der Gesichtserkennung lässt sich in vier Schritte einteilen:
 - Representation
 - Recognition (beim Vergleich zweier Gesichter auch *Verification*)
 
-Verfahren zur Gesichtserkennung gehen grundsätzlich davon aus, dass Einzelbilder analysiert werden. Im Folgenden ist daher von Bildern die Rede, die im Fall der Filmanalyse zuvor aus einer Videodatei extrahiert werden (siehe **#xxx**).
+Verfahren zur Gesichtserkennung gehen grundsätzlich davon aus, dass Einzelbilder analysiert werden. Im Folgenden ist daher von Bildern die Rede, die im Fall der Filmanalyse zuvor aus einer Videodatei extrahiert werden (siehe Abschnitt [Funktionsweise Computer Vision](../vision/funktion.md)).
 
-**[Winter]: Auch hier: blieben wir bei den englischen Begriffen?**
 
 ### Detection
 
 Im ersten Schritt *Detection* gilt es, Gesichter in einem Bild zu erkennen. Für diesen Prozess wird ein spezialisiertes ML-Modell benötigt. Die Position eines erkannten Gesichts wird anhand von vier Koordinaten bestimmt, die einen Rahmen um das Gesicht bilden:
 
-**[Winter]: Hier fehlt noch ein Bild.**
+```{figure} ../assets/annotation/detection.png
+---
+align: center
+width: 100%
+name: detection
+alt: Ein Beispiel für das Ergebnis der Gesichtserkennung mit der Python-Bibliothek Insightface.
+---
+Ein Beispiel für das Ergebnis der Gesichtserkennung mit der Python-Bibliothek *Insightface*.
+```
 
+In diesem Beispiel wurde das erkannte Gesicht außerdem als das eines `36` jährigen Mannes (`M`) identifiziert. Die Punkte im Gesicht zeigen die erkannten Gesichtsmerkmale an: Augen, Nase, Mund. Die Merkmale auf der linken Gesichtshälfte sind grün, die der rechten Seite rot.
 Dem auf diese Weise identifizierten Gesicht wird zusätzlich ein Konfidenzwert zugeordnet. Dieser gibt an, wie sicher sich das Modell bei der Erkennung eines Gesichts ist.
 
 ### Alignment
@@ -33,15 +41,13 @@ Im zweiten Schritt *Alignment* wird das erkannte Gesicht begradigt und zugeschni
 Teilweise wird zusätzlich der Hintergrund des Gesichts entfernt.
 In Python-Bibliotheken wie InsightFace und DeepFace ist dieser Schritt in andere Funktionen integriert und muss nicht im eigenen Code umgesetzt werden.
 
-**[Winter]Sollen wir hier auch die Normalisierung erwähnen? Das ist ein kleiner Schritt, aber wichtig und ich weiß gerade nicht recht, wohin damit. Vielleicht genügt auch der Stichpunkt unten.**
-
 ### Representation
 
 Im dritten Schritt *Representation* werden aus dem erkannten Gesicht Vektorrepräsentationen, sogenannte Embeddings, erstellt. Hierfür ist ebenfalls ein spezialisiertes ML-Modell nötig.
 
 Das vorherige Kapitel erläutert im Abschnitt [Zentrale Begriffe](../vision/begriffe.md#embeddings) im Detail, worum es sich bei einem Embedding handelt. In aller Kürze wird eine mathematische Repräsentation eines Gesichts erstellt, anhand derer sich Gesichter im nächsten Schritt miteinander vergleichen lassen.
 
-**[Winter]: Sollte ich hier noch ausführlicher auf Vektoren eingehen und vielleicht im nächsten Schritt den Vergleich visualisieren?**
+**[Anmerkung]: Sollten wir hier noch ausführlicher auf Vektoren eingehen und vielleicht im nächsten Schritt den Vergleich visualisieren?**
 
 ### Recognition
 
@@ -59,7 +65,27 @@ Aus diesen Gründen verwendet unser Notebook die folgende nicht-explorative Meth
 
 Für den späteren Schritt der *Recognition* erstellt unser Notebook noch vor der Analyse *Vergleichs-Embeddings* für jene Figuren, die tatsächlich erkannt werden sollen.
 
-Hierzu wird nicht eine Videodatei ausgewertet, sondern mehrere ausgesuchte Frames, welche die Figuren idealerweise aus mehreren Perspektiven und in unterschiedlichen Szenen zeigen. Diese Frames (oder Screenshots) müssen händisch ausgewählt und vorbereitet werden. Der Name der Figur lässt sich automatisch aus dem Dateinamen der Bilddateien ermitteln. Dieser muss sich daher aus dem Namen und einer zweistelligen Zahl zusammensetzen, z. B. `ErikaMusterfrau01.png`. Die Bilder dürfen nur ein einziges Gesicht enthalten, da ansonsten unklar bleibt, welches Gesicht zur Figur gehört. Bei einer begrenzten Auswahl an Material, etwa aufgrund eines kurzen Trailers, ist es daher sinnvoll, das Bild auf das Gesicht der Figur zuzuschneiden oder die Gesichter anderer Figuren abzudecken. **[Winter]Wollen wir hier noch ausführlicher werden? Oder mit Bildern als Beispielen arbeiten?**
+Hierzu wird nicht eine Videodatei ausgewertet, sondern mehrere ausgesuchte Frames, welche die Figuren idealerweise aus mehreren Perspektiven und in unterschiedlichen Szenen zeigen. Diese Frames (oder Screenshots) müssen händisch ausgewählt und vorbereitet werden. Der Name der Figur lässt sich automatisch aus dem Dateinamen der Bilddateien ermitteln. Dieser muss sich daher aus dem Namen und einer zweistelligen Zahl zusammensetzen, z. B. `ErikaMusterfrau01.png`. Die Bilder dürfen nur ein einziges Gesicht enthalten, da ansonsten unklar bleibt, welches Gesicht zur Figur gehört. Bei einer begrenzten Auswahl an Material, etwa aufgrund eines kurzen Trailers, ist es daher sinnvoll, das Bild auf das Gesicht der Figur zuzuschneiden oder die Gesichter anderer Figuren abzudecken:
+
+```{figure} ../assets/annotation/Zuschnitt.png
+---
+align: center
+width: 50%
+name: Zuschnitt
+alt: Ein auf das Gesicht zugeschnittener Screenshot.
+---
+Ein auf das Gesicht zugeschnittener Screenshot.
+```
+
+```{figure} ../assets/annotation/Abdeckung.jpg
+---
+align: center
+width: 100%
+name: Abdeckung
+alt: Ein Screenshot mit abgedeckten Gesichtern, die so von der Figurenerkennung ausgeschlossen sind. 
+---
+Ein Screenshot mit abgedeckten Gesichtern, die so von der Figurenerkennung ausgeschlossen sind. 
+```
 
 Liegen passende Bilddateien vor, wird pro Figur ein Vergleichs-Embedding vorbereitet, anhand dessen sich später in der Analyse ein erkanntes Gesicht einer Figur zuordnen lässt. Die Schritte bis dahin folgen dem oben beschriebenen Muster, abgesehen vom letzten Schritt: *Detection*, *Alignment* und *Representation*.
 
@@ -69,14 +95,12 @@ Wie im Abschnitt [Auswahl der Modelle](modelle.md#auswahl-für-die-gesichtsanaly
 
 ## Analysematerial
 
-Wie bereits in Kapitel xx diskutiert, können wir die Langfilme Konrad Wolfs aus urheberrechtlichen Gründen nicht im Rahmen dieser OER zur Verfügung stellen. Freundlicherweise haben wir jedoch von der DEFA-Stiftung die Genehmigung erhalten, die Trailer der Filme zu nutzen.
-Für die Demonstration der Einstellungserkennung haben wir die Trailer zu den Filmen XX und YY ausgewählt. Wir haben uns für diese Trailer entschieden, da …
+Auch für dieses Jupyter Notebook stellen wir als Testmaterial den Trailer zum Film Konrad Wolfs *Der geteilte Himmtel* zur Verfügung. Der Trailer ist erneut Teil des automatischen Downloads einer ZIP-Datei. Diese enthält neben der `readme.md`-Datei und der `DEFA_Nutzungshinweis.md` diesmal auch die Datei `xx_shots.csv` mit den Ergebnissen der Einstellungserkennung zum *Der geteilte Himmel-Trailer*. 
+Im Jupyter Notebook werden die Trailer automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt.
 
-Im Jupyter Notebook werden die Trailer automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt. Ein ZIP-Archiv bündelt mehrere Dateien und Ordner in einer komprimierten Datei. Ein separater Download der Trailer ist daher nicht erforderlich. Neben den Trailern enthält das Archiv auch eine `readme.md`-Datei **(Wird das so sein?)** sowie die Datei `DEFA_Nutzungshinweis.md` mit den genauen Angaben zur Nutzungslizenz der Trailer.
+Zur Erstellung der Vergleichs-Embeddings liefern wir die erwähnten Screenshots der Hauptfiguren mit. Für den *Der geteilte Himmel*-Trailer haben wir Bilder der Figuren Rita und Manfred ausgewählt.
 
-Auch für dieses Jupyter Notebook stellen wir als Testmaterial einen Trailer zu einem Film Konrad Wolfs zur Verfügung, in diesem Fall XX. Der Trailer ist erneut Teil des automatischen Downloads einer ZIP-Datei. Diese enthält neben der `readme.md`-Datei und der `DEFA_Nutzungshinweis.md` diesmal auch die Datei `xx_shots.csv` mit den Ergebnissen der Einstellungserkennung zum XX-Trailer. Diese Ergebnisse werden später im Notebook verwendet ([siehe xx](#xx)).
-
-Zur Erstellung der Vergleichs-Embeddings liefern wir die erwähnten Screenshots der Hauptfiguren mit. Für den XX-Trailer haben wir Bilder der Figuren XX und YY ausgewählt.
+Wie in den [Vorbemerkungen zu diesem Kapitels](intro.md) angemerkt, können wir aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs zum Download zur Verfügung stellen. Selbstständig können jedoch auch Langfilme ausgewertet werden.  
 
 ## Ablauf des Jupyter Notebooks zur Figurenerkennung
 

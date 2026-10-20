@@ -29,6 +29,8 @@ execute:
   exclude_patterns:
     - "einstellungen_notebook.ipynb"
     - "figuren_notebook.ipynb"
+    - "visualisierung_einstellungen.ipynb"
+    - "visualisierung_figuren.ipynb"
 
 parse:
   myst_enable_extensions: # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html

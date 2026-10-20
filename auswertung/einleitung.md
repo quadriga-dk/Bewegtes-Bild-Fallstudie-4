@@ -47,3 +47,6 @@ Die geschätzte Bearbeitungsdauer **inklusive** der einzelnen Übungsaufgaben be
 Bitte beachten Sie: Die tatsächliche Bearbeitungsdauer kann je nach Ihren Vorkenntnissen unterschiedlich ausfallen. Die angegebene Zeitangabe dient lediglich als Orientierungshilfe.
 ```
 
+**Die Jupyter Notebooks zur Erstellung von Visualisierungen können bereits ausprobiert werden, sind allerdings noch nicht final.**
+[Einstellungs-Visualisierung](visualisierung_einstellungen.ipynb)
+[Figuren-Visualisierung](visualisierung_figuren.ipynb)

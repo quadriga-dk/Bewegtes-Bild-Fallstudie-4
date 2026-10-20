@@ -35,7 +35,7 @@ chapters:
       - file: annotation/modelle.md
       - file: annotation/technik.md
       - file: annotation/einstellung_intro.md
-      - file: annotation/einstellung_notebook.ipynb
+      - file: annotation/einstellungen_notebook.ipynb
       - file: annotation/einstellung_datensichtung.md
       - file: annotation/figuren_intro.md
       - file: annotation/figuren_notebook.ipynb
@@ -46,8 +46,8 @@ chapters:
     sections:
       - file: auswertung/grundlagen.md
       - file: auswertung/datenstruktur.md
-      - file: auswertung/visualisierung_einstellungen.md
-      - file: auswertung/visualisierung_figuren.md
+      - file: auswertung/visualisierung_einstellungen.ipynb
+      - file: auswertung/visualisierung_figuren.ipynb
       - file: auswertung/explorative_auswertung.md
       - file: auswertung/resumee_auswertung.md
       - file: auswertung/assessment_auswertung.md
