@@ -19,6 +19,7 @@ exclude_patterns:
     useful_documentation.md,
     .github,
     Checkliste_Qualitätssicherung.md,
+    python3,
   ]
 
 # Force re-execution of notebooks on each build.
