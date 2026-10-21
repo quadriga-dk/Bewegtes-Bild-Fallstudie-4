@@ -102,121 +102,17 @@ Zur Erstellung der Vergleichs-Embeddings liefern wir die erwähnten Screenshots 
 
 Wie in den [Vorbemerkungen zu diesem Kapitels](intro.md) angemerkt, können wir aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs zum Download zur Verfügung stellen. Selbstständig können jedoch auch Langfilme ausgewertet werden.  
 
-## Ablauf des Jupyter Notebooks zur Figurenerkennung
+## Ausgabe
 
-### Festlegen von Parametern und Schwellwerten
+Für jede analysierte Videodatei werden bis zu vier Ergebnisdateien erstellt. Im Exportordner (`EXPORT_PATH`) wird für jeden Film ein eigener Unterordner angelegt, dessen Name dem jeweiligen Eingabeordner entspricht.
 
-- `VIDEO_PATH`: Ordner für die Eingabedateien. Standardmäßig heißt er `videos_face`.
-- Pro Video ein eigener Unterordner direkt in `videos_face`. Darin liegen eine Videodatei, die Referenzbilder und gegebenenfalls die passende Einstellungs-CSV.
-- `EXPORT_PATH`: Ordner für die Ergebnisse. Standardmäßig heißt er `export_face`. Beide Ordner werden bei Bedarf automatisch erstellt.
-- `FACE_DETECTION_THRESHOLD`: Schwellwert für die Erkennung eines Gesichts. Voreingestellt ist `0.3`.
-- `CHARACTER_RECOGNITION_THRESHOLD`: Schwellwert für die Zuordnung zu einer Figur. Voreingestellt ist `0.3`.
-- `SKIP_FRAMES`: Anzahl der zwischen zwei Analysen übersprungenen Frames. Bei `4` wird jeder fünfte Frame analysiert.
-- `TOLERANCE_FRAMES`: Zusätzliche Lücken zwischen Treffern, die beim Zusammenfügen der Annotationen toleriert werden. Voreingestellt sind `25` Frames.
-- `DOWNLOAD_TESTFILES`: Download der Testdateien ein- oder ausschalten.
-- `CUSTOM_ZIP_LINK` und `CUSTOM_ARCHIVE_NAME`: Direktlink und Dateiname für ein eigenes ZIP-Archiv.
+Die Datei **`Filmname_characters_frames.csv`** dokumentiert die Erkennung einzelner Figuren in den analysierten Videoframes. Sie enthält für jede erfolgreiche Erkennung den Figurennamen, den Zeitpunkt in Sekunden und im Format Stunden:Minuten:Sekunden sowie den Ähnlichkeitswert (*Dot Product*) und den Konfidenzwert der Gesichtserkennung (*Detection Score*).
 
-### Technische Vorbereitung
+Die Datei **`Filmname_characters_annotations.csv`** fasst aufeinanderfolgende Erkennungen einer Figur zu längeren Zeitintervallen zusammen. Jede Zeile enthält den Namen der Videodatei, die erkannte Figur sowie den Beginn und das Ende ihres Auftretens in Frames, Sekunden und im Format Stunden:Minuten:Sekunden.
 
-#### Installation der Programmbibliotheken
+Die Datei **`Filmname_characters_metadata.csv`** enthält die technischen Metadaten und die Analyseparameter. Hierzu zählen unter anderem die Bildrate, die Anzahl der analysierten Frames, die verwendeten Schwellenwerte und die benötigte Rechenzeit. Zusätzlich werden für jede erkannte Figur Metadaten gespeichert, beispielsweise die Anzahl erfolgreicher Erkennungen, die durchschnittlichen Erkennungswerte und die geschätzte Gesamtdauer ihres Auftretens.
 
-- Erkennung der Colab-Umgebung und des Betriebssystems.
-- Prüfung auf eine NVIDIA-GPU mit `nvidia-smi`.
-- `insightface`: Modelle zur Gesichtsanalyse.
-- `onnxruntime` bzw. `onnxruntime-gpu`: Ausführung der Modelle auf CPU oder GPU.
-- Prüfung, ob ONNX Runtime den CUDA-Anbieter bereitstellt. Andernfalls Auswahl der CPU-Version.
-- `torch`: Bei lokaler GPU-Ausführung Bereitstellung benötigter CUDA-Bibliotheken.
-- `pandas` und `numpy`: Tabellen und Berechnungen mit Zahlenarrays.
-- `opencv-python`: Einlesen von Videos und Referenzbildern.
-- `pympi-ling`: Erstellung von EAF-Dateien.
-- `tqdm`: Anzeige des Analysefortschritts.
+Schließlich wird eine **`Filmname_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN überprüfen und weiterbearbeiten.
+Für jede erkannte Figur enthält diese eine eigene Annotationsebene mit ihren Auftritten im Film. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung bereitgestellt, werden die Einstellungen auf der Ebene  `shots` gespeichert. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Ebene jene Einstellungen zugeordnet, in  denen sie für mindestens einen Frame erkannt wurden(`Figurenname_matched`).
 
-#### Import der Programmbibliotheken
-
-- Einbindung der Bibliotheken in die aktuelle Notebook-Sitzung.
-- `os`, `sys` und `Path`: Betriebssystemabfragen und Verwaltung der Dateipfade.
-- `time` und `datetime`: Messung der Rechenzeit und Darstellung von Zeitangaben.
-- `urlretrieve` und `zipfile`: Download und Entpacken der Archive.
-- `warnings`: Ausblenden bestimmter Hinweise zu künftigen Bibliotheksänderungen.
-
-#### Download des Analysematerials
-
-- `download_zip`: Funktion zum Herunterladen und Entpacken der ZIP-Archive.
-- Speicherung der Archive im Arbeitsverzeichnis. Bereits vorhandene Archive werden nicht erneut heruntergeladen.
-- Entpacken in `VIDEO_PATH`. Die enthaltenen Unterordner bleiben erhalten.
-
-#### Vorbereitung des ML-Modells
-
-- Download des Modellpakets `antelopev2` für die GPU oder `buffalo_m` für die CPU.
-- Speicherung der Modelle im Ordner `.insightface/models`.
-- Vorbereitung mit `FaceAnalysis` und `model.prepare`.
-- Festlegung des Schwellwerts für die Gesichtsdetektion und der Eingabegröße von 640 × 640 Pixeln.
-
-#### Definition der Hilfsfunktion
-
-- `insightface_embed`: Gemeinsame Funktion für Gesichtsdetektion und Erstellung der Embeddings.
-- Berücksichtigung von Gesichtern, deren Konfidenzwert den Schwellwert erreicht.
-- Rückgabe normierter Embeddings mit 512 Werten. Zusätzlich Rückgabe der Gesichtsrahmen und Konfidenzwerte.
-
-### Einlesen und Analyse des Videomaterials
-
-#### Erfassung des Analysematerials
-
-- Suche in den direkten Unterordnern von `VIDEO_PATH`. Keine Suche auf der obersten Ebene oder in tiefer verschachtelten Ordnern.
-- Pro Unterordner Erfassung einer Videodatei, aller Referenzbilder und einer CSV-Datei mit `_shots` im Dateinamen.
-- Weitere Videos oder Einstellungs-CSV-Dateien im selben Unterordner werden ignoriert.
-- Speicherung im Dictionary `videos`. Der Unterordnername dient als Bezeichnung für das Video.
-
-#### Erstellung und Prüfung der Vergleichs-Embeddings
-
-- Ermittlung des Figurennamens aus dem Bilddateinamen. Die letzten beiden Zeichen vor der Dateiendung werden entfernt.
-- Erkennung der Gesichter in den Referenzbildern mit einem festen Schwellwert von `0.6`.
-- Verwendung eines Referenzbildes nur dann, wenn genau ein Gesicht erkannt wird.
-- Mittelung der Embeddings aller geeigneten Bilder einer Figur. Anschließend erneute Normierung.
-- Ausgabe der Ähnlichkeitswerte zwischen den Figuren und beim Vergleich jeder Figur mit sich selbst.
-
-#### Anwendung des Modells
-
-- Einlesen der Videos mit OpenCV. Erfassung von Bildrate und Frameanzahl.
-- Auswahl der zu analysierenden Frames anhand von `SKIP_FRAMES`.
-- Erstellung von Embeddings für die erkannten Gesichter.
-- Vergleich mit allen Vergleichs-Embeddings über das Skalarprodukt.
-- Zuordnung zur ähnlichsten Figur, wenn `CHARACTER_RECOGNITION_THRESHOLD` erreicht wird.
-- Speicherung von Frameposition, Zeitpunkt, Ähnlichkeitswert und Konfidenzwert im Dictionary.
-- Anzeige des Fortschritts und Messung der Rechenzeit.
-
-#### Tabellarische Aufbereitung der Ergebnisse
-
-- Erstellung eines DataFrames pro erkannter Figur. Jede Zeile entspricht einem Treffer in einem analysierten Frame.
-- Erfassung der Trefferanzahl und der mittleren Ähnlichkeits- und Konfidenzwerte.
-- Schätzung der Auftrittsdauer anhand der Trefferanzahl, der Bildrate und von `SKIP_FRAMES`.
-- Speicherung dieser Angaben zusammen mit den Analyseparametern und der Rechenzeit als Metadaten.
-
-#### Zusammenfügen der Frames zu Annotationen
-
-- Sortierung der Treffer nach Frameposition.
-- Zusammenfügen benachbarter Treffer derselben Figur zu Zeitintervallen.
-- Berücksichtigung des regulären Frameabstands und von `TOLERANCE_FRAMES`.
-- Speicherung von Figurennamen sowie Start- und Endpositionen als Frames und Zeitangaben.
-- Zusammenfassung der Annotationen aller Figuren eines Videos in einer Tabelle.
-
-### Export der Ergebnisse
-
-#### Export der Tabellen als CSV-Dateien
-
-- Drei Dateien pro Video. Einzelbildtreffer als `…_frames.csv`, Zeitintervalle als `…_annotations.csv` und Metadaten als `…_meta.csv`.
-- Speicherung in einem Unterordner von `export_face`. Dieser trägt denselben Namen wie der Eingabe-Unterordner.
-- Vorhandene Dateien gleichen Namens werden überschrieben.
-
-#### Export der Figurenannotationen als EAF-Datei
-
-- Eine Annotationsspur pro erkannter Figur. Umrechnung der Zeitangaben in Millisekunden.
-- Falls eine Einstellungs-CSV vorhanden ist, zusätzliche Spur `shots` mit den Einstellungen.
-- Zusätzliche Spuren `…_matched` mit den vollständigen Einstellungen, die sich mit Figurenauftritten überschneiden.
-- Speicherung als `…_annotations.eaf` im jeweiligen Export-Unterordner.
-- Ohne Figurenannotationen wird keine EAF-Datei erzeugt.
-
-#### Download des Exportordners in Google Colab
-
-- Verpacken des gesamten Exportordners als ZIP-Archiv und Download über den Browser.
-- Bei lokaler Ausführung bleiben die Ergebnisse im Exportordner.
+Alle Ergebnisdateien eines Films werden in einem eigenem Unterordner gespeichert. In Google Colab kann der gesamte Exportordner als ZIP-Archiv heruntergeladen werden.
