@@ -12,16 +12,18 @@ Das Modell wurde mit harten Schnitten und graduellen Übergängen sowie Überble
 Wie bereits in den [Vorbemerkungen dieses Kapitels](intro.md) diskutiert, können wir im Rahmen dieser OER aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs selbst zur Verfügung stellen. Freundlicherweise haben wir jedoch seitens der DEFA-Stiftung die Genehmigung erhalten, die Trailer der Filme nutzen zu können.
 Für die Demonstration der Einstellungserkennung haben wir den Trailer zum Film *Der geteilte Himmel* von 1964 ausgewählt. 
 
-<figure style="text-align: center; margin: 1.5em 0;">
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/1LKLZNsU3_o"
-    title="Der geteilte Himmel - DEFA-Trailer"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe>
+<figure style="max-width: 640px; margin: 1.5em auto; text-align: center;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      src="https://www.youtube.com/embed/1LKLZNsU3_o"
+      title="Der geteilte Himmel - DEFA-Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
   <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
-    Trailer zu Konrad Wolfs <em>Der geteilte Himmel</em>
+     Trailer zu Konrad Wolfs <em>Der geteilte Himmel</em>
   </figcaption>
 </figure>
 
