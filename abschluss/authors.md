@@ -23,7 +23,7 @@
 <table style="margin-left: 0">
 <tr>
 <td><b>Rolle in QUADRIGA:</b></td>
-<td>Studentischer Mitarbeiter, Mitarbeit Konzeption und Umsetzung der Fallstudie, Konzeption und Programmierung der Jupyter Notebooks zur Einstellungs- und Figurenerkennung, Datenvisualisierung und Datenauswertung </td>
+<td>Projektmitarbeiter, Mitarbeit Konzeption und Umsetzung der Fallstudie, Konzeption und Programmierung der Jupyter Notebooks zur Einstellungs- und Figurenerkennung, Datenvisualisierung und Datenauswertung </td>
 </tr>
 <tr>
 <td><b>Einrichtung:</b></td>
