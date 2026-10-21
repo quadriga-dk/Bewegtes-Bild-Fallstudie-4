@@ -95,12 +95,26 @@ Wie im Abschnitt [Auswahl der Modelle](modelle.md#auswahl-für-die-gesichtsanaly
 
 ## Analysematerial
 
-Auch für dieses Jupyter Notebook stellen wir als Testmaterial den Trailer zum Film Konrad Wolfs *Der geteilte Himmtel* zur Verfügung. Der Trailer ist erneut Teil des automatischen Downloads einer ZIP-Datei. Diese enthält neben der `readme.md`-Datei und der `DEFA_Nutzungshinweis.md` diesmal auch die Datei `xx_shots.csv` mit den Ergebnissen der Einstellungserkennung zum *Der geteilte Himmel-Trailer*. 
-Im Jupyter Notebook werden die Trailer automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt.
+Auch für dieses Jupyter Notebook stellen wir als Testmaterial den Trailer zum Film Konrad Wolfs *Der geteilte Himmtel* zur Verfügung.
+
+<figure style="text-align: center; margin: 1.5em 0;">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/1LKLZNsU3_o"
+    title="Der geteilte Himmel - DEFA-Trailer"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+  <figcaption style="font-size: 0.9em; color: gray; margin-top: 0.5em;">
+    Trailer zu Konrad Wolfs <em>Der geteilte Himmel</em>
+  </figcaption>
+</figure>
+
+Im Jupyter Notebook wird der Trailer erneut automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt. Die ZIP-Datei enthält neben der `readme.md` und der `DEFA_Nutzungshinweis.md`-Datei diesmal auch die Datei `xx_shots.csv` mit den Ergebnissen der Einstellungserkennung zum *Der geteilte Himmel-Trailer*. 
 
 Zur Erstellung der Vergleichs-Embeddings liefern wir die erwähnten Screenshots der Hauptfiguren mit. Für den *Der geteilte Himmel*-Trailer haben wir Bilder der Figuren Rita und Manfred ausgewählt.
 
-Wie in den [Vorbemerkungen zu diesem Kapitels](intro.md) angemerkt, können wir aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs zum Download zur Verfügung stellen. Selbstständig können jedoch auch Langfilme ausgewertet werden.  
+Wie in den [Vorbemerkungen zu diesem Kapitels](intro.md) angemerkt, können wir aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs zum Download zur Verfügung stellen. Mit dem Notebook können jedoch auch Langfilme ausgewertet werden.  
 
 ## Ablauf des Jupyter Notebooks zur Figurenerkennung
 
