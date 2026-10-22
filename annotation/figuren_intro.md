@@ -32,8 +32,23 @@ alt: Ein Beispiel für das Ergebnis der Gesichtserkennung mit der Python-Bibliot
 Ein Beispiel für das Ergebnis der Gesichtserkennung mit der Python-Bibliothek *Insightface*.
 ```
 
-In diesem Beispiel wurde das erkannte Gesicht außerdem als das eines `36` jährigen Mannes (`M`) identifiziert. Die Punkte im Gesicht zeigen die erkannten Gesichtsmerkmale an: Augen, Nase, Mund. Die Merkmale auf der linken Gesichtshälfte sind grün, die der rechten Seite rot.
-Dem auf diese Weise identifizierten Gesicht wird zusätzlich ein Konfidenzwert zugeordnet. Dieser gibt an, wie sicher sich das Modell bei der Erkennung eines Gesichts ist.
+Die Punkte im Gesicht zeigen die erkannten Gesichtsmerkmale an: Augen, Nase, Mund. Die Merkmale auf der linken Gesichtshälfte sind grün, die der rechten Seite rot.Dem auf diese Weise identifizierten Gesicht wird zusätzlich ein Konfidenzwert zugeordnet. Dieser gibt an, mit welcher Wahrscheinlichkeit es sich bei dem markierten Bildausschnitt tatsächlich um ein Gesicht handelt.
+
+In diesem Beispiel wurde dem erkannten Gesicht außerdem ein geschätztes Alter von `36` Jahren sowie die Geschlechtskategorie „männlich“ (`M`) zugewiesen. Solche Schätzungen werden von Modellen zur automatisierten Gesichtsanalyse häufig zusätzlich bereitgestellt, sind jedoch mit erheblichen Einschränkungen verbunden. Insbesondere zwischen unterschiedlichen Filmeinstellungen können die Ergebnisse stark variieren und deutlich vom tatsächlichen Alter der Schauspieler:innen bzw. den dargestellten Figuren abweichen. So wurde beispielsweise dem Gesicht der Figur Rita aus dem Film *Der geteilte Himmel* ein Alter von `57` Jahren und die Geschlechtskategorie „männlich“ (`M`) zugewiesen:
+
+```{figure} ../assets/annotation/detection2.png
+---
+align: center
+width: 100%
+name: detection2
+alt: Ein Beispiel für eine deutlich fehlerhafte Erkennung von Alter und Geschlecht mit der Python-Bibliothek Insightface.
+---
+Ein Beispiel für eine deutlich fehlerhafte Erkennung von Alter und Geschlecht mit der Python-Bibliothek *Insightface*.
+```
+
+Solche Fehler erklären sich zum Teil auch aus der grundlegenden Funktionsweise der Modelle. Die automatisierte Geschlechtsklassifikation basiert auf erlernten Zusammenhängen zwischen äußeren Erscheinungsmerkmalen und den Geschlechtskategorien der Trainingsdaten. Daher werden im Trainingsprozess häufig Geschlechtsstereotype reproduziert. Zudem beschränken sich viele Modelle, darunter auch das hier verwendete, auf eine binäre Unterscheidung zwischen „männlich“ und „weiblich“. Geschlechtsidentitäten, insbesondere nicht-binäre Identitäten, lassen sich jedoch nicht aus dem äußeren Erscheinungsbild einer Person ableiten.
+
+Aus Perspektive der feministischen Filmtheorie ist eine solche automatisierte Geschlechtszuschreibung daher grundsätzlich kritisch zu betrachten. Im Rahmen dieser OER werden die entsprechenden Schätzwerte daher weder gespeichert noch für weitere Analysen verwendet.
 
 ### Alignment
 
@@ -57,7 +72,7 @@ Stellt man sich die Vektoren als Richtungsangaben oder Pfeile in einem Raum vor,
 
 Eine wichtige Frage bei der konkreten Implementierung der Gesichtserkennung ist, welche Gesichter miteinander verglichen werden.
 Eine Möglichkeit ist ein exploratives Vorgehen, bei dem alle Gesichter miteinander verglichen und anhand eines Schwellwerts in Gruppen eingeteilt werden, die dasselbe Gesicht bzw. dieselbe Figur repräsentieren.
-Bei der Auswertung eines Langfilms ergibt diese Methode allerdings eine sehr große Anzahl an Figuren, da neben dem zentralen Ensemble auch Statist:innen auftauchen. Die Anzahl der Figuren lässt sich zwar durch die Einführung eines zweiten Schwellwerts reduzieren, dieser bedarf allerdings einer schrittweisen Feinjustierung. Ein weiteres Problem der Methode ist, dass die erkannten Figuren namenlos bleiben und händisch klassifiziert werden müssen.
+Bei der Auswertung eines Langfilms ergibt diese Methode allerdings eine sehr große Anzahl an Figuren, da neben dem zentralen Ensemble auch Statist:innen auftauchen. Ein weiteres Problem der Methode ist, dass die erkannten Figuren namenlos bleiben und händisch klassifiziert werden müssen.
 
 Aus diesen Gründen verwendet unser Notebook die folgende nicht-explorative Methode, bei der die zu findenden Figuren bereits vor der Analyse festgelegt werden.
 
@@ -65,7 +80,7 @@ Aus diesen Gründen verwendet unser Notebook die folgende nicht-explorative Meth
 
 Für den späteren Schritt der *Recognition* erstellt unser Notebook noch vor der Analyse *Vergleichs-Embeddings* für jene Figuren, die tatsächlich erkannt werden sollen.
 
-Hierzu wird nicht eine Videodatei ausgewertet, sondern mehrere ausgesuchte Frames, welche die Figuren idealerweise aus mehreren Perspektiven und in unterschiedlichen Szenen zeigen. Diese Frames (oder Screenshots) müssen händisch ausgewählt und vorbereitet werden. Der Name der Figur lässt sich automatisch aus dem Dateinamen der Bilddateien ermitteln. Dieser muss sich daher aus dem Namen und einer zweistelligen Zahl zusammensetzen, z. B. `ErikaMusterfrau01.png`. Die Bilder dürfen nur ein einziges Gesicht enthalten, da ansonsten unklar bleibt, welches Gesicht zur Figur gehört. Bei einer begrenzten Auswahl an Material, etwa aufgrund eines kurzen Trailers, ist es daher sinnvoll, das Bild auf das Gesicht der Figur zuzuschneiden oder die Gesichter anderer Figuren abzudecken:
+Hierzu wird nicht eine Videodatei ausgewertet, sondern mehrere ausgesuchte Frames, welche die Figuren idealerweise aus mehreren Perspektiven und in unterschiedlichen Szenen zeigen. Diese Frames (oder Screenshots) müssen händisch ausgewählt und vorbereitet werden. Der Name der Figur lässt sich automatisch aus dem Dateinamen der Bilddateien ermitteln. Dieser muss sich daher aus dem Namen und einer zweistelligen Zahl zusammensetzen, z. B. `Erika01.png`. Die Bilder dürfen nur ein einziges Gesicht enthalten, da ansonsten unklar bleibt, welches Gesicht zur Figur gehört. Bei einer begrenzten Auswahl an Material, etwa aufgrund eines kurzen Trailers, ist es daher sinnvoll, das Bild auf das Gesicht der Figur zuzuschneiden oder die Gesichter anderer Figuren abzudecken:
 
 ```{figure} ../assets/annotation/Zuschnitt.png
 ---
