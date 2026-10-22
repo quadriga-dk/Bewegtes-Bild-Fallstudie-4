@@ -1,6 +1,6 @@
 # Figurenerkennung: Einführung
 
-Dieser Abschnitt widmet sich der Vorstellung des zweiten Jupyter Notebooks: der automatisierten Erkennung von Figuren in Filmen.
+Dieser Abschnitt widmet sich der Vorstellung des Jupyter Notebooks zur automatisierten Erkennung von Figuren in Filmen.
 
 Auch dieses Notebook verwendet den [zuvor vorgestellten Workflow](workflow.md) und bezieht sich auf die [etablierten technischen Grundlagen](technik.md).
 
@@ -20,7 +20,7 @@ Verfahren zur Gesichtserkennung gehen grundsätzlich davon aus, dass Einzelbilde
 
 ### Detection
 
-Im ersten Schritt *Detection* gilt es, Gesichter in einem Bild zu erkennen. Für diesen Prozess wird ein spezialisiertes ML-Modell benötigt. Die Position eines erkannten Gesichts wird anhand von vier Koordinaten bestimmt, die einen Rahmen um das Gesicht bilden:
+Im ersten Schritt *Detection* gilt es, Gesichter in einem Bild zu erkennen. Für diesen Prozess wird ein spezialisiertes Machine-Learning-Modell benötigt. Die Position eines erkannten Gesichts wird anhand von vier Koordinaten bestimmt, die einen Rahmen um das Gesicht bilden:
 
 ```{figure} ../assets/annotation/detection.png
 ---
@@ -32,9 +32,9 @@ alt: Ein Beispiel für das Ergebnis der Gesichtserkennung mit der Python-Bibliot
 Ein Beispiel für das Ergebnis der Gesichtserkennung mit der Python-Bibliothek *Insightface*.
 ```
 
-Die Punkte im Gesicht zeigen die erkannten Gesichtsmerkmale an: Augen, Nase, Mund. Die Merkmale auf der linken Gesichtshälfte sind grün, die der rechten Seite rot.Dem auf diese Weise identifizierten Gesicht wird zusätzlich ein Konfidenzwert zugeordnet. Dieser gibt an, mit welcher Wahrscheinlichkeit es sich bei dem markierten Bildausschnitt tatsächlich um ein Gesicht handelt.
+Die Punkte im Gesicht zeigen die erkannten Gesichtsmerkmale an: Augen, Nase, Mund. Die Merkmale auf der linken Gesichtshälfte sind grün, die der rechten Seite rot. Dem auf diese Weise identifizierten Gesicht wird zusätzlich ein Konfidenzwert zugeordnet. Dieser Wert gibt an, mit welcher Wahrscheinlichkeit es sich bei dem markierten Bildausschnitt tatsächlich um ein Gesicht handelt.
 
-In diesem Beispiel wurde dem erkannten Gesicht außerdem ein geschätztes Alter von `36` Jahren sowie die Geschlechtskategorie „männlich“ (`M`) zugewiesen. Solche Schätzungen werden von Modellen zur automatisierten Gesichtsanalyse häufig zusätzlich bereitgestellt, sind jedoch mit erheblichen Einschränkungen verbunden. Insbesondere zwischen unterschiedlichen Filmeinstellungen können die Ergebnisse stark variieren und deutlich vom tatsächlichen Alter der Schauspieler:innen bzw. den dargestellten Figuren abweichen. So wurde beispielsweise dem Gesicht der Figur Rita aus dem Film *Der geteilte Himmel* ein Alter von `57` Jahren und die Geschlechtskategorie „männlich“ (`M`) zugewiesen:
+In diesem Beispiel wurde dem erkannten Gesicht außerdem ein geschätztes Alter von `36` Jahren sowie die Geschlechtskategorie „männlich“ (`M`) zugewiesen - erkennbar an dem grünen Wert "M.36" an der linken oberen Ecke des Rahmens um das Gesicht. Solche Schätzungen werden von Modellen zur automatisierten Gesichtsanalyse häufig zusätzlich bereitgestellt, sind jedoch mit erheblicher Vorsicht zu behandeln, da sie häufig keine korrekten oder verwertbaren Ergebnisse liefern. Insbesondere zwischen unterschiedlichen Filmeinstellungen können die Ergebnisse stark variieren und deutlich vom tatsächlichen Alter der Schauspieler:innen bzw. den dargestellten Figuren abweichen. So wurde beispielsweise dem Gesicht der Figur Rita aus dem Film *Der geteilte Himmel* in einer Einstellung ein Alter von `57` Jahren und die Geschlechtskategorie „männlich“ (`M`) zugewiesen:
 
 ```{figure} ../assets/annotation/detection2.png
 ---
@@ -48,7 +48,7 @@ Ein Beispiel für eine deutlich fehlerhafte Erkennung von Alter und Geschlecht m
 
 Solche Fehler erklären sich zum Teil auch aus der grundlegenden Funktionsweise der Modelle. Die automatisierte Geschlechtsklassifikation basiert auf erlernten Zusammenhängen zwischen äußeren Erscheinungsmerkmalen und den Geschlechtskategorien der Trainingsdaten. Daher werden im Trainingsprozess häufig Geschlechtsstereotype reproduziert. Zudem beschränken sich viele Modelle, darunter auch das hier verwendete, auf eine binäre Unterscheidung zwischen „männlich“ und „weiblich“. Geschlechtsidentitäten, insbesondere nicht-binäre Identitäten, lassen sich jedoch nicht aus dem äußeren Erscheinungsbild einer Person ableiten.
 
-Aus Perspektive der feministischen Filmtheorie ist eine solche automatisierte Geschlechtszuschreibung daher grundsätzlich kritisch zu betrachten. Im Rahmen dieser OER werden die entsprechenden Schätzwerte daher weder gespeichert noch für weitere Analysen verwendet.
+Aus Perspektive der Gender Studies und der feministischen Filmtheorie ist eine solche automatisierte Geschlechtszuschreibung daher grundsätzlich kritisch zu betrachten. Im Rahmen dieser OER werden die entsprechenden Schätzwerte daher weder gespeichert noch für weitere Analysen verwendet.
 
 ### Alignment
 
@@ -58,17 +58,15 @@ In Python-Bibliotheken wie InsightFace und DeepFace ist dieser Schritt in andere
 
 ### Representation
 
-Im dritten Schritt *Representation* werden aus dem erkannten Gesicht Vektorrepräsentationen, sogenannte Embeddings, erstellt. Hierfür ist ebenfalls ein spezialisiertes ML-Modell nötig.
+Im dritten Schritt *Representation* werden aus dem erkannten Gesicht Vektorrepräsentationen, sogenannte Embeddings, erstellt. Hierfür ist ebenfalls ein spezialisiertes Machine-Learning-Modell nötig.
 
-Das vorherige Kapitel erläutert im Abschnitt [Zentrale Begriffe](../vision/begriffe.md#embeddings) im Detail, worum es sich bei einem Embedding handelt. In aller Kürze wird eine mathematische Repräsentation eines Gesichts erstellt, anhand derer sich Gesichter im nächsten Schritt miteinander vergleichen lassen.
-
-**[Anmerkung]: Sollten wir hier noch ausführlicher auf Vektoren eingehen und vielleicht im nächsten Schritt den Vergleich visualisieren?**
+Das vorherige Kapitel erläutert im Abschnitt [Zentrale Begriffe](../vision/begriffe.md#embeddings) im Detail, worum es sich bei einem Embedding handelt. In aller Kürze erklärt bedeutet dies, dass eine mathematische Repräsentation eines Gesichts erstellt wird, anhand derer sich Gesichter im nächsten Schritt miteinander vergleichen lassen.
 
 ### Recognition
 
-Im vierten Schritt *Recognition* können mehrere Gesichter anhand ihrer Vektorrepräsentationen miteinander verglichen werden. Um die Ähnlichkeit zwischen zwei Vektoren festzustellen, lässt sich ein sogenanntes *Skalarprodukt* berechnen (englisch *dot product*).
+Im vierten Schritt *Recognition* können mehrere Gesichter anhand der Embeddings, also den erstellten Vektorrepräsentationen miteinander verglichen werden. Um die Ähnlichkeit zwischen zwei Vektoren festzustellen, lässt sich ein sogenanntes *Skalarprodukt* berechnen (englisch *dot product*).
 
-Stellt man sich die Vektoren als Richtungsangaben oder Pfeile in einem Raum vor, so sagt das Skalarprodukt aus, wie sehr sich die Richtungen zweier Pfeile ähneln. Das Ergebnis ist ein Ähnlichkeitswert zwischen 0 und 1, entsprechend einer prozentualen Wahrscheinlichkeit, dass es sich um die Gesichter derselben Person handelt. Anhand eines Schwellwerts kann entschieden werden, ob zwei Gesichter derselben Person zugeordnet werden.
+Stellt man sich die Vektoren als Richtungsangaben oder Pfeile in einem Raum vor, so sagt das Skalarprodukt aus, wie sehr sich die Richtungen zweier Pfeile ähneln. Das Ergebnis ist ein Ähnlichkeitswert zwischen 0 und 1, entsprechend einer prozentualen Wahrscheinlichkeit, dass es sich um die Gesichter derselben Person handelt. Anhand eines zuvor festgelegten Schwellwerts kann entschieden werden, ob zwei Gesichter derselben Person zugeordnet werden.
 
 Eine wichtige Frage bei der konkreten Implementierung der Gesichtserkennung ist, welche Gesichter miteinander verglichen werden.
 Eine Möglichkeit ist ein exploratives Vorgehen, bei dem alle Gesichter miteinander verglichen und anhand eines Schwellwerts in Gruppen eingeteilt werden, die dasselbe Gesicht bzw. dieselbe Figur repräsentieren.
@@ -80,7 +78,7 @@ Aus diesen Gründen verwendet unser Notebook die folgende nicht-explorative Meth
 
 Für den späteren Schritt der *Recognition* erstellt unser Notebook noch vor der Analyse *Vergleichs-Embeddings* für jene Figuren, die tatsächlich erkannt werden sollen.
 
-Hierzu wird nicht eine Videodatei ausgewertet, sondern mehrere ausgesuchte Frames, welche die Figuren idealerweise aus mehreren Perspektiven und in unterschiedlichen Szenen zeigen. Diese Frames (oder Screenshots) müssen händisch ausgewählt und vorbereitet werden. Der Name der Figur lässt sich automatisch aus dem Dateinamen der Bilddateien ermitteln. Dieser muss sich daher aus dem Namen und einer zweistelligen Zahl zusammensetzen, z. B. `Erika01.png`. Die Bilder dürfen nur ein einziges Gesicht enthalten, da ansonsten unklar bleibt, welches Gesicht zur Figur gehört. Bei einer begrenzten Auswahl an Material, etwa aufgrund eines kurzen Trailers, ist es daher sinnvoll, das Bild auf das Gesicht der Figur zuzuschneiden oder die Gesichter anderer Figuren abzudecken:
+Hierzu wird nicht eine Videodatei ausgewertet, sondern mehrere ausgesuchte Frames, welche die Figuren idealerweise aus mehreren Perspektiven und in unterschiedlichen Szenen zeigen. Diese Frames (oder Screenshots) müssen händisch ausgewählt und vorbereitet werden. Der Name der Figur lässt sich automatisch aus dem Dateinamen der Bilddateien ermitteln. Dieser muss sich daher aus dem Namen und einer zweistelligen Zahl zusammensetzen, z. B. `Erika01.png`. Die Bilder dürfen nur ein einziges Gesicht enthalten, da ansonsten unklar bleibt, welches Gesicht zu der zu erkennenden Figur gehört. Bei einer begrenzten Auswahl an Material, etwa aufgrund eines kurzen Trailers, ist es daher sinnvoll, das Bild auf das Gesicht der Figur zuzuschneiden oder die Gesichter anderer Figuren abzudecken:
 
 ```{figure} ../assets/annotation/Zuschnitt.png
 ---
@@ -143,7 +141,6 @@ Die Datei **`Filmname_characters_annotations.csv`** fasst aufeinanderfolgende Er
 
 Die Datei **`Filmname_characters_metadata.csv`** enthält die technischen Metadaten und die Analyseparameter. Hierzu zählen unter anderem die Bildrate, die Anzahl der analysierten Frames, die verwendeten Schwellenwerte und die benötigte Rechenzeit. Zusätzlich werden für jede erkannte Figur Metadaten gespeichert, beispielsweise die Anzahl erfolgreicher Erkennungen, die durchschnittlichen Erkennungswerte und die geschätzte Gesamtdauer ihres Auftretens.
 
-Schließlich wird eine **`Filmname_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN überprüfen und weiterbearbeiten.
-Für jede erkannte Figur enthält diese eine eigene Annotationsebene mit ihren Auftritten im Film. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung bereitgestellt, werden die Einstellungen auf der Ebene  `shots` gespeichert. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Ebene jene Einstellungen zugeordnet, in  denen sie für mindestens einen Frame erkannt wurden(`Figurenname_matched`).
+Schließlich wird eine Datei **`Filmname_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN importieren, überprüfen und weiterbearbeiten. Für jede erkannte Figur enthält diese `.eaf-Datei` die Informationen für eine eigene Annotationsspur, die deren Auftritte im Film festhält und anzeigt. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung für die analysierte Videodatei bereitgestellt, werden die Einstellungen in der Spur `shots` gespeichert und angezeigt. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Spur jene Einstellungen zugeordnet, in denen sie für mindestens einen Frame erkannt wurden (`Figurenname_matched`).
 
 Alle Ergebnisdateien eines Films werden in einem eigenem Unterordner gespeichert. In Google Colab kann der gesamte Exportordner als ZIP-Archiv heruntergeladen werden.
