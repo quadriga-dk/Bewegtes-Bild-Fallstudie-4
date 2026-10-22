@@ -33,16 +33,39 @@ Für eine GPU-Beschleunigung über **CUDA** wird eine kompatible NVIDIA-Grafikka
 
 Die Jupyter Notebooks in dieser OER prüfen, welche Hardware zur Verfügung steht und wählen automatisch die passende Ausführungsvariante aus. Kontrollieren Sie die Ausgabe an der entsprechenden Stelle des Notebooks. z.B. nach dem Codeblock zur Vorbereitung des verwendeten Modells, um zu sehen, ob eine CPU oder eine GPU für die Ausführung verwendet wird. 
 
-## Google Colab
+## Ausführungsmodi
 
 Als offenes Format können Jupyter Notebooks in vielen Umgebungen ausgeführt oder eingebunden werden. Als Alternative zur lokalen Ausführung bieten sich Cloud-Umgebungen an, in denen das Jupyter Notebook auf einem externen Server ausgeführt wird. Somit wird keine leistungsstarke Hardware auf dem eigenen Computer benötigt. Eine solche Umgebung ist *Google Colab*, in der die Jupyter Notebooks aus der OER heraus auf unterschiedlichen CPUs und GPUs ausgeführt werden können.
 
-Dieses Kapitel ... **[Verlinkung auf allgemeines OER Kapitel]**.
+Wir empfehlen, vor der Arbeit mit den Notebooks dieser OER [das Kapitel zu den Ausführungsmodi eines Jupyter Notebooks aus den QUADRIGA-Lernhinweisen](https://quadriga-dk.github.io/QUADRIGA-Learners-Manual/nutzung/ausführungsmodi.html) zu lesen. Es bietet einen Überblick über die verschiedenen Möglichkeiten, Jupyter Notebooks auszuführen.
 
 Eine wichtige Ergänzung im Rahmen dieser Fallstudie ist, dass in *Google Colab* neben CPUs auch GPUs verwendet werden können. Das kann die Ausführung der hier vorgestellten Verfahren erheblich beschleunigen.
 
-Um in Colab eine GPU auszuwählen, öffnen Sie im Menü **Laufzeit** den Punkt **Laufzeittyp ändern** (*Runtime → Change runtime type*). Wählen Sie im sich öffnenden Fenster **T4 GPU** aus und klicken Sie auf **Speichern** (*Save*). Je nach Verfügbarkeit und Colab-Konto wird möglicherweise eine andere GPU angeboten oder die Auswahl ist vorübergehend nicht möglich. Verbinden Sie sich anschließend mit der Laufzeit. Prüfen Sie in der Notebook-Ausgabe, welche Hardware tatsächlich verwendet wird. 
-**[Hier fehlen noch Bilder und ich muss die deutschen Begriffe überprüfen]**
+Um in Colab eine GPU auszuwählen, öffnen Sie im Menü **Laufzeit** den Punkt **Laufzeittyp ändern** (*Runtime → Change runtime type*):
+
+```{figure} ../assets/annotation/colab_laufzeit1.png
+---
+align: center
+width: 100%
+name: colab_laufzeit1
+alt: Die Menüpunkte zum Anpassen der Laufzeit in Google Colab.
+---
+Die Menüpunkte zum Anpassen der Laufzeit in Google Colab.
+```
+
+Wählen Sie im sich öffnenden Fenster **T4 GPU** aus und klicken Sie auf **Speichern** (*Save*):
+
+```{figure} ../assets/annotation/colab_laufzeit2.png
+---
+align: center
+width: 50%
+name: colab_laufzeit2
+alt: Die Auswahl einer GPU-Laufzeit in Google Colab.
+---
+Die Auswahl einer GPU-Laufzeit in Google Colab.
+```
+
+Je nach Verfügbarkeit und Colab-Konto wird möglicherweise eine andere GPU angeboten oder die Auswahl ist vorübergehend nicht möglich. Verbinden Sie sich anschließend mit der Laufzeit. Prüfen Sie in der Notebook-Ausgabe, welche Hardware tatsächlich verwendet wird. 
 
 ## Einstellungsmöglichkeiten in den Notebooks
 
