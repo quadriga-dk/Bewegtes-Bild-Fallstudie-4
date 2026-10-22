@@ -7,6 +7,35 @@ Für die Sichtung in VIAN (oder einem anderen Annotationsprogramm) wurde vom Jup
 
 Nach dem Verlinken des Trailer und dem Import der dazugehörigen `.eaf`-Datei kann das Ergebnis der Einstellungserkennung für *Der geteilte Himmel* gesichtet werden.
 
+````{admonition} Hinweis zum Import von .eaf-Dateien in VIAN
+:class: hinweis, dropdown
+Für den Import in VIAN Klicken Sie im Auswahlmenü auf der rechten Seite auf "ELAN-Annotationsergebnisse importieren" und wählen sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
+
+```{figure} ../assets/annotation/VIAN_ImportMenu.png
+---
+align: center
+width: 100%
+name: VIAN_ImportMenu_einstellungen
+alt: Das Importmenü von VIAN.
+---
+Das Importmenü von VIAN.
+```
+
+Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste Klicken, um zur entsprechenden Stelle im Video zu gelangen.
+
+```{figure} ../assets/annotation/VIAN_postImport.png
+---
+align: center
+width: 100%
+name: _VIAN_postImport_einstellungen
+alt: Das Hauptfenster von VIAN nach dem Import von Annotationen.
+---
+Das Hauptfenster von VIAN nach dem Import von Annotationen.
+```
+````
+
+Mit dem Abspielen des Trailers bzw. dem Scrubbing in der Timeline werden Sie feststellen, dass die Einstellungserkennung in diesem Fall tadellos funktioniert hat. Die einzelnen nummerierten 'Annotationsblöcke' sind perfekt mit den Einstellungswechseln synchronisiert. Insgesamt wurden 23 Einstellungen erkannt.
+
 ```{figure} ../assets/annotation/VIAN_postImport.png
 ---
 align: center
@@ -16,8 +45,6 @@ alt: Die Einstellungsannotationen nach dem Import in VIAN.
 ---
 Die Einstellungsannotationen nach dem Import in VIAN.
 ```
-
-Mit dem Abspielen des Trailers bzw. dem Scrubbing in der Timeline werden Sie feststellen, dass die Einstellungserkennung in diesem Fall tadellos funktioniert hat. Die einzelnen nummerierten 'Annotationsblöcke' sind perfekt mit den Einstellungswechseln synchronisiert. Insgesamt wurden 23 Einstellungen erkannt.
 
 Allerdings funktioniert die Erkennung mit dem Standard-Schwellenwert von `0.5` nicht für alle Trailer der Filme Konrad Wolfs fehlerlos.
 

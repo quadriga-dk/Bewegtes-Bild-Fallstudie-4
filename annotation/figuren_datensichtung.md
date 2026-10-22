@@ -4,7 +4,34 @@ Nach erfolgreicher Ausführung des [Notebooks zur Figurenerkennung](figuren_note
 
 VIAN wurde im Kapitel zu den [Technischen Grundlagen](technik.md#vian-installation-und-verwendung) vorgestellt.
 
-Mittels der im Notebook erstellten `.eaf`-Datei können in einem Schritt sowohl die Einstellungs- und Figurenannotationen ins VIAN-Projekt importiert werden. 
+Mittels der im Notebook erstellten `.eaf`-Datei können in einem Schritt sowohl die Einstellungs- als auch Figurenannotationen ins VIAN-Projekt importiert werden. 
+
+````{admonition} Hinweis zum Import von .eaf-Dateien in VIAN
+:class: hinweis, dropdown
+Für den Import in VIAN Klicken Sie im Auswahlmenü auf der rechten Seite auf "ELAN-Annotationsergebnisse importieren" und wählen sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
+
+```{figure} ../assets/annotation/VIAN_ImportMenu.png
+---
+align: center
+width: 100%
+name: VIAN_ImportMenu_figuren
+alt: Das Importmenü von VIAN.
+---
+Das Importmenü von VIAN.
+```
+
+Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste Klicken, um zur entsprechenden Stelle im Video zu gelangen.
+
+```{figure} ../assets/annotation/VIAN_postImport.png
+---
+align: center
+width: 100%
+name: _VIAN_postImport_figuren
+alt: Das Hauptfenster von VIAN nach dem Import von Annotationen.
+---
+Das Hauptfenster von VIAN nach dem Import von Annotationen.
+```
+````
 
 Für die folgenden Ergebnisse wurden als Schwellenwerte für den `FACE_DETECTION_THRESHOLD` und
 `CHARACTER_RECOGNITION_THRESHOLD`der voreingestellt Wert von `0.3` verwendet. In der Zusammenfassung funktioniert die Figurenerkennung für den Trailer zu *Der geteilte Himmel* mit diesen Werten gut, jedoch wurden die Figuren nicht in allen Einstellungen korrekt erkannt.
