@@ -33,9 +33,9 @@ Für die Auswertung eigener Filme können die entsprechenden Dateien im Import-O
 
 ## Ausgabe
 
-Für jede analysierte Videodatei werden drei Ergebnisdateien im festgelegten Exportordner (`EXPORT_PATH`) gespeichert. Die Dateinamen setzen sich aus dem Namen der Videodatei und der Art der Ergebnisse zusammen.
+Für jede analysierte Videodatei werden drei Ergebnisdateien im festgelegten Exportordner (`EXPORT_PATH`) gespeichert. Die Dateinamen setzen sich aus dem Namen der Videodatei, `shots` und dem Schwellenwert `THRESHOLD` zusammen, also z.B. als **`Sonnensucher_shots_0.5.csv`**. 
 
-Die Datei **`Filmname_shots.csv`** enthält die erkannten Einstellungen als Tabelle. Jede Zeile beschreibt eine Einstellung mit ihrem Start, Ende, Mittelpunkt und ihrer Dauer, jeweils in Frames und Sekunden.
+Die Datei **`Filmname_shots_THRESHOLD.csv`** enthält die erkannten Einstellungen als Tabelle. Jede Zeile beschreibt eine Einstellung mit ihrem Start, Ende, Mittelpunkt und ihrer Dauer, jeweils in Frames und Sekunden.
 
 Die Datei **`Filmname_shots_metadata.csv`** dokumentiert die technischen Metadaten und Analyseergebnisse. Dazu zählen unter anderem die Bildrate und die Anzahl erkannter Einstellungen.
 
