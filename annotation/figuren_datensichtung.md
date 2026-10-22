@@ -8,7 +8,19 @@ Mittels der im Notebook erstellten `.eaf`-Datei können in einem Schritt sowohl 
 
 ````{admonition} Hinweis zum Import von .eaf-Dateien in VIAN
 :class: hinweis, dropdown
-Für den Import in VIAN Klicken Sie im Auswahlmenü auf der rechten Seite auf "ELAN-Annotationsergebnisse importieren" und wählen sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
+Starten Sie VIAN und wählen Sie durch einen Klick auf "Video öffnen" die entsprechende Videodatei aus, für die die Annotationen in der `.eaf` Datei importiert werden sollen.
+
+```{figure} ../assets/annotation/VIAN_open_video.png
+---
+align: center
+width: 100%
+name: VIAN_open_video_einstellungen
+alt: Auswahl einer Videodatei in VIAN.
+---
+Auswahl einer Videodatei in VIAN.
+```
+
+Für den Import in VIAN Klicken Sie nun im Auswahlmenü auf der rechten Seite auf "Daten importieren" und dort auf "ELAN-Annotationen importieren". Wählen Sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
 
 ```{figure} ../assets/annotation/VIAN_ImportMenu.png
 ---
