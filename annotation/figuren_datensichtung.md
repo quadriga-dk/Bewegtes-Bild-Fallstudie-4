@@ -12,7 +12,7 @@ Starten Sie VIAN und wählen Sie durch einen Klick auf "Video öffnen" die entsp
 ---
 align: center
 width: 100%
-name: VIAN_open_video_einstellungen
+name: VIAN_open_video_figuren
 alt: Auswahl einer Videodatei in VIAN.
 ---
 Auswahl einer Videodatei in VIAN.
@@ -161,7 +161,7 @@ Am Ende des Notebooks werden die entstandenen Annotationsdateien im Ordner "expo
 
 ```{admonition} Achtung
 :class: caution
-Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neunen Schwellenwerten, werden die erzeugten Annotationsergebnisse im Ordner "export_characters" durch die neu erzeugten Dateien überschrieben. Sie sollten also darauf achten, dass sie vor jedem neuen Durchgang die bereits vorhandenen Exportdateien zu den Annotationsergebnissen auf Ihren Rechner lokal abspeichern, um auch weiterhin mit ihnen arbeiten zu können.
+Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Annotationsergebnisse im Ordner "export_characters" durch die neu erzeugten Dateien überschrieben. Sie sollten also darauf achten, dass sie vor jedem neuen Durchgang die bereits vorhandenen Exportdateien zu den Annotationsergebnissen auf Ihrem Rechner lokal abspeichern, um auch weiterhin mit ihnen arbeiten zu können.
 ```
 
 Entpacken Sie ggf. die Exportdateien in einen Ordner ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
