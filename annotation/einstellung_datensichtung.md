@@ -121,7 +121,19 @@ Mit `THRESHOLD = 0.5` wird der Schwellenwert eingestellt, hier ist er mit 0.5 fe
 
 Da Sie dieses Mal mit einer eigenen Videodatei arbeiten wollen, müssen Sie zusätzlich `DOWNLOAD_TESTFILES = False` setzen, damit die für Demonstrationszwecke vorbereitete Videodatei nicht heruntergeladen wird. (2) Standardmäßig ist dieser Parameter im Notebook auf `True` eingestellt.
 
-Führen Sie nun den Codeblock durch einen Klick auf das Dreieckssymbol oben links im Block aus. (3) Evtl. wird eine Warnung angezeigt, dass das Notebook nicht von Google erstellt wurde, klicken Sie auf "Trotzdem ausführen" rechts unten. Dadurch werden die Ordner "videos" und "export" in der Colab-Umgebung erstellt.
+Führen Sie nun den Codeblock durch einen Klick auf das Dreieckssymbol oben links im Block aus. (3)
+
+```{figure} ../assets/annotation/warnung_google.png
+---
+align: center
+width: 100%
+name: warnung google einstellungen
+alt: Warnmeldung vor der Ausführung des Notebooks.
+---
+Warnmeldung vor der Ausführung des Notebooks.
+```
+
+Evtl. wird eine Warnung angezeigt, dass das Notebook nicht von Google erstellt wurde, klicken Sie auf "Trotzdem ausführen" rechts unten. Dadurch werden die Ordner "videos_shots" und "export_shots" in der Colab-Umgebung erstellt.
 
 Nun wird die Videodatei, hier die Trailerdatei, in die Colab-Umgebung hochgeladen.
 
@@ -135,7 +147,7 @@ alt: Ordner für die Videodateien in Colab.
 Ordner für die Videodateien in Colab.
 ```
 
-Klicken Sie auf das Ordnersymbol in der linken Randspalte von Colab. (1) Es öffnet sich eine Liste mit den verfügbaren Ordnern. In den Ordner "videos" laden Sie die zu annotierende Trailerdatei hoch. (2) Wenn Sie mit der Maus auf den Ordnernamen deuten werden rechts drei Punkte sichtbar, ein Klick auf die Punkte öffnet ein Fenster zum Hochladen der Datei.
+Klicken Sie auf das Ordnersymbol in der linken Randspalte von Colab. (1) Es öffnet sich eine Liste mit den verfügbaren Ordnern. In den Ordner "videos_shots" laden Sie die zu annotierende Trailerdatei hoch. (2) Wenn Sie mit der Maus auf den Ordnernamen deuten werden rechts drei Punkte sichtbar, ein Klick auf die Punkte öffnet ein Fenster zum Hochladen der Datei.
 
 Führen Sie nun die weiteren Codeblöcke des Notebooks nacheinander aus.
 
@@ -153,7 +165,7 @@ Klicken Sie hierzu wiederum bei jedem Codeblock auf das Dreiecksymbol in der lin
 
 Durch einen Klick auf "Alle ausführen" in der Colab Kopfzeile können auch alle Codeblöcke automatisch nacheinander ausgeführt werden. (2) Dies vereinfacht den Ablauf, wenn Sie etwa lediglich den Schwellenwert ändern wollen und alle Codeblöcke in einen ersten Durchlauf bereits erfolgreich ausgeführt wurden.
 
-```{figure} ../assets/annotation/notebook_export.png
+```{figure} ../assets/annotation/einstellungen_nb_export.png
 ---
 align: center
 width: 100%
@@ -163,7 +175,12 @@ alt: Export der Annotationsdateien.
 Export der Annotationsdateien.
 ```
 
-Am Ende des Notebooks werden die entstandenen Annotationsdateien im Ordner "export" der Colab-Umgebung abgelegt. (1) Zusätzlich öffnet sich ein Dialogfenster, mit dem Sie die Annotationsdateien als Zip-Datei mit dem Namen `export.zip` auf Ihrem Computer speichern können. (2)
+Am Ende des Notebooks werden die entstandenen Annotationsdateien im Ordner "export_shots" der Colab-Umgebung abgelegt. (1) Zusätzlich öffnet sich ein Dialogfenster, mit dem Sie die Annotationsdateien als Zip-Datei mit dem Namen `export.zip` auf Ihrem Computer speichern können. (2)
+
+```{admonition} Achtung
+:class: caution
+Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Annotationsergebnisse im Ordner "export_characters" durch die neu erzeugten Dateien überschrieben. Sie sollten also darauf achten, dass sie vor jedem neuen Durchgang die bereits vorhandenen Exportdateien zu den Annotationsergebnissen auf Ihrem Rechner lokal abspeichern, um auch weiterhin mit ihnen arbeiten zu können.
+```
 
 Entpacken Sie ggf. die Exportdateien in einen Ordner ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
 
