@@ -15,9 +15,12 @@ Für die Einstellungserkennung haben wir alle Filme Konrad Wolfs ausgewertet. F�
 
 Bei der Figurenerkennung haben wir uns auf drei Filme Konrad Wolfs beschränkt, da sowohl die Vorbereitungen für die Annotation mit der Erstellung von Referenzabbildungen von zu annotierenden Figuren als auch die Durchführung der automatisierten Annotation deutlich aufwändiger sind als bei der Einstellungserkennung. Eine Annotation aller Filme Konrad Wolfs hätte im Rahmen der Fallstudie zu weit geführt. Wir haben uns daher für folgende Filme und Figuren entschieden:
 
-- *Sonnensucher* (1958): Figuren Beier, Emmi, Fedossjew, Günter, Jupp, Lutz, Sergej, Weirauch, Wera
-- *Der geteilte Himmel* (1964): Figuren Ermisch, Frau Herfurth, Herr Herfurth, Kuhl, Manfred, Martin, Meternagel, Rita, Schwarzenbach, Wendland
-- *Solo Sunny* (1980): Figuren Benno, Bernd, Christine, Harry, Hubert, Norbert, Ralph, Sunny
+
+| Film | Figuren |
+|---|---|
+| *Sonnensucher* (1958) | Beier, Emmi, Fedossjew, Günter, Jupp, Lutz, Sergej, Weirauch, Wera |
+| *Der geteilte Himmel* (1964) |  Ermisch, Frau Herfurth, Herr Herfurth, Kuhl, Manfred, Martin, Meternagel, Rita, Schwarzenbach, Wendland |
+| *Solo Sunny* (1980) |Figuren Benno, Bernd, Christine, Harry, Hubert, Norbert, Ralph, Sunny |
 
 Wir haben diese Filme ausgewählt, da wir aufgrund der Sichtung der Filme angenommen haben, dass in ihnen ganz unterschiedlich mit Figuren und deren Muster des Auftretens umgegangen wird: Bei *Sonnensucher* scheinen mehrere Figuren im Zentrum zu stehen, *Der geteilte Himmel* fokussiert wohl eher auf Rita und Ralph und *Solo Sunny* scheint stark auf Sunny zentriert zu sein. Diese Annahmen sollen in der Auswertung näher betrachtet werden. Auch die zu annotierenden Figuren wurden anhand der Sichtung der Filme ausgewählt. Neben den Protagonist:innen sind jeweils auch einige Nebenfiguren vertreten.
 
