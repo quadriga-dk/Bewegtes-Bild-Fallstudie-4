@@ -100,7 +100,7 @@ alt: Ein Screenshot mit abgedeckten Gesichtern, die so von der Figurenerkennung 
 Ein Screenshot mit abgedeckten Gesichtern, die so von der Figurenerkennung ausgeschlossen sind. 
 ```
 
-Liegen passende Bilddateien vor, wird pro Figur ein Vergleichs-Embedding vorbereitet, anhand dessen sich später in der Analyse ein erkanntes Gesicht einer Figur zuordnen lässt. Die Schritte bis dahin folgen dem oben beschriebenen Muster, abgesehen vom letzten Schritt: *Detection*, *Alignment* und *Representation*.
+Liegen passende Bilddateien vor, wird pro Figur ein Vergleichs-Embedding vorbereitet, anhand dessen sich später in der Analyse ein erkanntes Gesicht einer Figur zuordnen lässt. Die Schritte in diesem Prozess folgen dem zuvor beschriebenen Ablauf aus *Detection* und *Representation*. Die *Recognition* findet hingegen erst später während der eigentlichen Filmanalyse statt, in welcher die Figuren anhand der Vergleichsembeddings erkannt werden.
 
 ## InsightFace-Implementierung
 
@@ -139,7 +139,31 @@ Die Datei **`Filmname_characters_frames.csv`** dokumentiert die Erkennung einzel
 
 Die Datei **`Filmname_characters_annotations.csv`** fasst aufeinanderfolgende Erkennungen einer Figur zu längeren Zeitintervallen zusammen. Jede Zeile enthält den Namen der Videodatei, die erkannte Figur sowie den Beginn und das Ende ihres Auftretens in Frames, Sekunden und im Format Stunden:Minuten:Sekunden.
 
-Die Datei **`Filmname_characters_metadata.csv`** enthält die technischen Metadaten und die Analyseparameter. Hierzu zählen unter anderem die Bildrate, die Anzahl der analysierten Frames, die verwendeten Schwellenwerte und die benötigte Rechenzeit. Zusätzlich werden für jede erkannte Figur Metadaten gespeichert, beispielsweise die Anzahl erfolgreicher Erkennungen, die durchschnittlichen Erkennungswerte und die geschätzte Gesamtdauer ihres Auftretens.
+Die Datei **`Filmname_characters_metadata.csv`** enthält technische Metadaten, Analyseparameter und Metadaten zu den erkannten Figuren:
+
+| Metadatum | Beschreibung |
+|---|---|
+| **Technische Metadaten** | |
+| `video_name` | Dateiname der analysierten Videodatei. |
+| `frame_rate` | Bildrate des Videos in Frames pro Sekunde (FPS). |
+| `total_frames` | Gesamtanzahl der Frames des Videos. |
+| `selected_frames` | Anzahl der Frames, die unter Berücksichtigung von `skip_frames` für die Analyse ausgewählt wurden. |
+| `Cuda_use` | Gibt an, ob eine CUDA-fähige GPU für die Analyse verwendet wird (`True`) oder die Analyse auf der CPU erfolgt (`False`). |
+| `insightface_model` | Name des verwendeten [*InsightFace*-Modellpakets](#insightface-implementierung). |
+| `elapsed_time` | Benötigte Rechenzeit für die eigentliche Videoanalyse im Format Stunden:Minuten:Sekunden. |
+| **Analyseparameter** | |
+| `face_detection_threshold` | Mindestwert für den Konfidenzwert der [Gesichtsdetektion (*Detection*)](#detection). Nur Gesichter, die diesen Schwellenwert erreichen, werden weiterverarbeitet. |
+| `character_recognition_threshold` | Mindestwert für das [Skalarprodukt](#recognition) zwischen dem erkannten Gesichts-Embedding und dem [Vergleichs-Embedding](#vergleichs-embeddings-zur-figurenerkennung) einer Figur. Bestimmt, ab welcher Ähnlichkeit ein Gesicht einer Figur zugeordnet wird (*Recognition*). |
+| `skip_frames` | Anzahl der Frames, die zwischen zwei analysierten Frames übersprungen werden. Bei einem Wert von `4` wird jeder fünfte Frame analysiert. |
+| `tolerance_frames` | Anzahl zusätzlicher Frames, die bei der Zusammenfassung einzelner Erkennungstreffer zu längeren Annotationen überbrückt werden dürfen. |
+| **Figurenmetadaten** | |
+| `Figurenname_detected_frames` | Anzahl der analysierten Frames, in denen die jeweilige Figur erfolgreich erkannt wurde. |
+| `Figurenname_dot_mean` | Durchschnittliches [Skalarprodukt](#recognition) zwischen den erkannten Gesichts-Embeddings und dem Vergleichs-Embedding der Figur. Beschreibt die durchschnittliche Ähnlichkeit der erfolgreichen Zuordnungen. |
+| `Figurenname_score_mean` | Durchschnittlicher [Konfidenzwert der Gesichtsdetektion](#detection) für die der Figur zugeordneten Gesichter. |
+| `Figurenname_time_sum_s` | Geschätzte Gesamtdauer des Auftretens der Figur in Sekunden. Berechnet aus der Anzahl erfolgreicher Erkennungen, dem Abstand zwischen analysierten Frames und der Bildrate. |
+| `Figurenname_time_sum_hh_mm_ss` | Geschätzte Gesamtdauer des Auftretens der Figur im Format Stunden:Minuten:Sekunden. |
+
+Der Platzhalter Figurenname wird durch den Namen der jeweiligen Figur ersetzt. Die geschätzte Gesamtdauer ihres Auftretens basiert auf den erfolgreich analysierten Frames und kann von der tatsächlichen Auftrittsdauer abweichen.
 
 Schließlich wird eine Datei **`Filmname_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN importieren, überprüfen und weiterbearbeiten. Für jede erkannte Figur enthält diese `.eaf-Datei` die Informationen für eine eigene Annotationsspur, die deren Auftritte im Film festhält und anzeigt. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung für die analysierte Videodatei bereitgestellt, werden die Einstellungen in der Spur `shots` gespeichert und angezeigt. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Spur jene Einstellungen zugeordnet, in denen sie für mindestens einen Frame erkannt wurden (`Figurenname_matched`).
 
