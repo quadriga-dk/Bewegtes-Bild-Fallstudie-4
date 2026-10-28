@@ -1,9 +1,34 @@
 # Vorbemerkungen
 In den letzten Kapiteln haben wir einige [Grundlagen filmanalytischer Arbeit](../filmanalyse/einleitung.md) dargelegt und ausgeführt, wie für die automatisierte Annotation von Filmen bzw. Videodateien [Verfahren der Computer Vision](../vision/einleitung.md) eingesetzt werden können. Dabei sind wir unter anderem auf [quantitative Ansätze in der Filmwissenschaft](../filmanalyse/quantitativ.md) eingegangen und haben exemplarische [Einsatzbereiche](../vision/einsatz.md) von Computer Vision und automatisierter Annotation für die Filmanalyse vorgestellt. So können etwa Objekte in Filmen erkannt oder die Farbgestaltung filmischer Werke analysiert werden.
 
-In diesem Kapitel folgt nun die konkrete Erarbeitung und Umsetzung von Workflows zur automatisierten Annotation von Filmen. Im Kapitel zu [Fragestellungen zur Fallstudie](../filmanalyse/fragestellungen.md) haben wir zwei Bereiche der automatisierten Annotation von Filmen herausgearbeitet, die wir in dieser OER näher betrachten möchten: Die Erkennung von Einstellungsübergängen bzw. Einstellungslängen und die Bestimmung des Auftretens von bestimmten Figuren in Filmen. Als zu untersuchendes Filmkorpus sollen dabei die Filme Konrad Wolfs dienen.
+In diesem Kapitel folgt nun die konkrete Erarbeitung und Umsetzung von Workflows zur automatisierten Annotation von Filmen. Im Kapitel zu [Fragestellungen zur Fallstudie](../filmanalyse/fragestellungen.md) haben wir zwei Bereiche der automatisierten Annotation von Filmen herausgearbeitet, die wir in dieser OER näher betrachten möchten: Die **Erkennung von Einstellungsübergängen bzw. Einstellungslängen** und die **Bestimmung des Auftretens von bestimmten Figuren in Filmen**. Für diese beiden Bereiche haben wir Skripte in der <a href="https://www.python.org/" class="external-link" target="_blank"> Programmiersprache Python</a> entwickelt, in denen die Workflows praktisch umgesetzt werden. Diese Python-Skripte wurden in Form von *Jupyter Notebooks* realisiert, die in diese OER integriert wurden. Durch diese *Jupyter Notebooks* kann der Python-Code direkt aus der OER heraus ausgeführt werden. 
 
-Für die Vorstellung der von uns entwickelten Workflows werden wir jedoch nicht mit den kompletten Filmen Konrad Wolfs, sondern lediglich mit Trailern zu seinen Filmen arbeiten. Dies hat zunächst rechtliche Gründe. Damit die Prozesse bei der automatisierten Annotation von den Lernenden selbst praktisch nachvollzogen werden können, möchten wir im Rahmen der OER entsprechende Videodateien zu Übungszwecken zum freien Download zur Verfügung stellen. Dies ist aufgrund der urheber- und nutzungsrechtlichen Bestimmungen für die Filme Konrad Wolfs leider nicht möglich. Die DEFA-Stiftung hat uns aber für die Bereitstellung der Videodaten zu den Film-Trailern die Genehmigung erteilt, wofür wir uns herzlich bedanken möchten. Die Trailer sind dabei von der für die OER geltenden <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" class="external-link" target="_blank">CC BY-SA 4.0</a> Lizenz ausgenommen. Beachten Sie daher bitte folgenden Hinweis:
+```{admonition} Hinweise zu *Jupyter Notebooks*
+:class: hinweis 
+
+<a href="https://jupyter.org/" class="external-link" target="_blank">*Jupyter Notebooks*</a> bestehen aus Codeblöcken und Textblöcken. Die einzelnen Codeblöcke mit Python-Code können nacheinander ausgeführt werden, während die Textblöcke ausführliche Erklärungstexte liefen, in denen z.B. die Funktion der einzelnen Codeblöcke erläutert wird. So können auch Lernende, die über keine Programmierkenntnisse verfügen, den Aufbau des Codes und die einzelnen, für die Annotation notwendigen Schritte nachvollziehen. In *Jupyter Notebooks* können zudem in den jeweiligen Codeblöcken erstellte Visualisierungen von Daten oder Tabellen zu Annotationsergebnissen direkt dargestellt werden.
+
+```
+
+Durch die ausführlichen Kommentare zu den Python-Skripten in den Jupyter Notebooks sollte die Funktion der Codeblöcke auch ohne Python Programmierkenntnisse verständlich sein. Python-Kenntnisse sind daher von Vorteil, aber nicht unbedingt notwendig. 
+
+```{admonition} Einführungen in Python
+:class: seealso
+
+Im Rahmen dieser OER können wir keine Einführung in die Programmierung mit *Python* geben. Für einen Einstieg in Python und die Arbeit mit Datensätzen ist etwa der Kurs <a href="https://programming-24.mooc.fi/" class="external-link" target="_blank">Python Programming MOOC 2024</a> der Universität Helsinki zu empfehlen. Eine deutschsprachige Einführung die für Geschichtswissenschaftler:innen konzipiert wurde findet sich unter <a href="https://digital-history-berlin.github.io/Python-fuer-Historiker-innen/home.html" class="external-link" target="_blank">Python für Historiker:innen</a>.
+
+```
+
+Die Jupyter Notebooks sind im Inhaltsverzeichnis durch ein Raketensymbol 🚀 gekennzeichnet. In der OER werden sie zunächst als normale Textkapitel dargestellt. **Für den besten Lernerfolg empfehlen wir jedoch, die Jupyter Notebooks in einer entsprechenden Umgebung zu öffnen und die einzelnen Codeblöcke nacheinander auszuführen.**
+
+```{admonition} Ausführen von Jupyter Notebooks
+:class: hinweis 
+
+Ein Ausführen von *Jupyter Notebooks* ist in ganz unterschiedlichen Umgebungen möglich. In den <a href="https://quadriga-dk.github.io/QUADRIGA-Learners-Manual/nutzung/ausf%C3%BChrungsmodi.html" class="external-link" target="_blank">Quadriga Lernhinweisen</a> und im Abschnitt zu [technischen Grundlagen](../annotation/technik.md#ausfuhrungsmodi) dieser OER finden Sie genauere Informationen hierzu. Kurze Erläuterungen finden sich auch am Anfang der jeweiligen Notebooks.
+
+```
+
+Als zu untersuchendes Filmkorpus bei der praktischen Umsetzung der Workflows in den Notebooks sollen dabei die Filme Konrad Wolfs dienen. Bei dieser Umsetzung werden wir jedoch nicht mit den kompletten Filmen Konrad Wolfs, sondern lediglich mit Trailern zu seinen Filmen arbeiten. Dies hat zunächst rechtliche Gründe. Damit die Prozesse bei der automatisierten Annotation von den Lernenden selbst praktisch nachvollzogen werden können, möchten wir im Rahmen der OER entsprechende Videodateien zu Übungszwecken zum freien Download zur Verfügung stellen. Dies ist aufgrund der urheber- und nutzungsrechtlichen Bestimmungen für die Filme Konrad Wolfs leider nicht möglich. Die DEFA-Stiftung hat uns aber für die Bereitstellung der Videodaten zu den Film-Trailern die Genehmigung erteilt, wofür wir uns herzlich bedanken möchten. Die Trailer sind dabei von der für die OER geltenden <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" class="external-link" target="_blank">CC BY-SA 4.0</a> Lizenz ausgenommen. Beachten Sie daher bitte folgenden Hinweis:
 
 ```{admonition} Wichtiger Hinweis zur Verwendung der Trailer
 :class: caution
@@ -12,11 +37,16 @@ Die Verwendung und die Möglichkeit des Downloads der Trailer zu den Filmen Konr
 
 Die Arbeit mit den Trailern statt mit den kompletten Filme in Form von Videodateien hat zudem den Vorteil, dass die Verarbeitungszeiten für die automatisierte Annotation in einem angemessenen Rahmen bleiben sollten. Prozesse der Computer Vision und damit auch Annotationsprozesse zu Videodateien können sehr rechenintensiv sein und daher auch relativ viel Zeit in Anspruch nehmen. Auf dieses Problemfeld werden wir im Kapitel zu dem [technischen Grundlagen](../annotation/technik.md) noch genauer eingehen.
 
-Auch wenn wir in diesem Kapitel die Workflows bei der automatisierten Annotation und deren konkreten Umsetzung anhand der Trailer demonstrieren werden, stellen wir dennoch für das nächste Kapitel zur [Auswertung](../auswertung/einleitung.md) Annotationsdaten für komplette Filme Konrad Wolfs zur Verfügung. Diese wurden auf die in der OER vorgestellten Art und Weise automatisiert mit den *Jupyter Notebooks* (siehe unten) erstellt. So können mögliche Auswertungsprozesse besser nachvollzogen und geübt werden.
+```{admonition} Annotationsdaten für das Kapitel Auswertung
+:class: hinweis 
+
+Auch wenn wir in diesem Kapitel die konkrete Umsetzung der Annotationen in den *Jupyter Notebooks* anhand der Trailer demonstrieren werden, stellen wir dennoch für das nächste Kapitel zur [Auswertung](../auswertung/einleitung.md) Annotationsdaten für komplette Filme Konrad Wolfs zur Verfügung. Diese wurden auf die in der OER vorgestellten Art und Weise automatisiert mit den *Jupyter Notebooks* erstellt. So können mögliche Auswertungsprozesse besser nachvollzogen und geübt werden.
+
+```
 
 Als Annotatiosdaten ergeben sich Angaben zu Beginn, Ende und Länge von Einstellungen in den Videodateien, sowie Informationen zu den Zeitpunkten des Auftretens einzelner Figuren in den Videos. Die genaue Form der Ausgabe der Annotationsdaten wird in den einzelnen Abschnitten zu den konkreten Annotationen besprochen. Die Annotationsdaten werden im <a href="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-2/bereinigung/openRefine/2_import.html#datenformate" class="external-link" target="_blank">csv-Format</a> abgespeichert, das in vielen anderen Programmen für eine detaillierte Auswertung eingelesen und verwendet werden kann. Zusätzlich werden `.eaf-Dateien` erzeugt, die ebenfalls die Annotationsdaten enthalten und in Tools zur Filmanalyse wie VIAN importiert und weiter bearbeitet werden können. VIAN und dessen Rolle in unserem Workflow wird im Kapitel zu den [technischen Grundlagen](../annotation/technik.md#vian-installation-und-verwendung) noch genauer vorgestellt.
 
-In den nun folgenden Abschnitten legen wir zunächst die Entwicklung unserer Workflows zur Einstellungs- und Figurenerkennung dar, bevor genauer auf die Auswahl der verwendeten vortrainierten Analysemodelle eingegangen wird. Auf die Erläuterung der notwendigen technischen Grundlagen folgen die Abschnitte in denen zunächst die Einstellungserkennung durchgeführt wird, die sich in eine Einführung, ein Abschnitt mit dem entsprechenden Python Code in Form eines *Jupyter Notebooks* und die Sichtung der Annotationsergebnisse mit VIAN aufgliedern. Darauf folgen die Abschnitte zur Figurenerkennung, ebenfalls mit Einführung, Code und Sichtung.
+In den nun folgenden Abschnitten legen wir zunächst die allgemeinen Schritte unseres Workflows zur Einstellungs- und Figurenerkennung dar, bevor genauer auf die Auswahl der verwendeten vortrainierten Analysemodelle eingegangen wird. Auf die Erläuterung der notwendigen technischen Grundlagen folgen die Abschnitte in denen zunächst die Einstellungserkennung durchgeführt wird, die sich in eine Einführung, ein Abschnitt mit dem entsprechenden Python Code in Form eines *Jupyter Notebooks* und die Sichtung der Annotationsergebnisse mit VIAN aufgliedern. Darauf folgen die Abschnitte zur Figurenerkennung, ebenfalls mit Einführung, Code und Sichtung.
 
 Prinzipiell ist eine automatisierte Annotation von Filmen auch mit bereits existierenden Softwarelösungen und Tools möglich. In VIAN ist z.B. die automatisierte Erkennung von Einstellungen integriert und <a href="https://service.tib.eu/tibava" class="external-link" target="_blank">TIB-AV-Analytics (TIB-AV-A)</a> vereint in einer Weboberfläche diverse automatisierte Annotationsmöglichkeiten mithilfe unterschiedlicher Analysemodelle, so z.B. auch die Erkennung von Figuren in Videodateien. Auf TIB-AV-Analytics wurde im Kapitel zu möglichen [Einsatzbereichen](../vision/einsatz.md) von Computer Vision für die Filmanalyse eingegangen, ebenso auf das <a href="https://github.com/distant-viewing/dvt" class="external-link" target="_blank">Distant Viewing Toolkit</a> von Taylor Arnold und Lauren Tilton.
 
@@ -24,15 +54,10 @@ Der Vorteil solcher Tools und Softwarelösung ist die meist einfache Zugänglich
 
 Für unsere OER haben wir uns daher entschieden, den Fokus nicht auf die Bedienung einzelner Analysetools zu legen, sondern auf die Entwicklung von eigenen, für eine Fragestellung passenden Workflows - hier die Erkennung und Annotation von Einstellungen und Figuren in Filmen und Videos. Uns ist dabei wichtig, dass die hierfür notwendigen grundsätzlichen Abläufe und Funktionsweisen verstanden und erlernt werden. Daher arbeiten wird in der OER mit Python-Code und nicht mit fertigen Tools. Dies ermöglicht auch eine größere Kontrolle und Konfigurierbarkeit, indem verschiedene Parameter wie Schwellenwerte und Speicherorte selbst eingestellt werden können. Zudem ist transparent, welche Modelle aus welchen Gründen verwendet wurden und prinzipiell können diese Modelle auch durch andere, aktuellere oder für andere Fragestellungen passendere Modelle ausgetauscht werden. Nach dem Bearbeiten der entsprechenden Abschnitte der OER sollte es den Lernenden möglich sein, den vorliegenden Python-Code für eigene Annotationsprojekte zu nutzen und ggf. entsprechen zu adaptieren.
 
-Ein Nachtteil der Arbeit mit Python-Codes ist jedoch, dass hierfür zumindest ein rudimentäres Verständnis der Funktionen des Codes bzw. rudimentäre Programmierkenntnisse notwendig sind. Eine Lösung für dieses Problem ist die Einbindung von sogenannten  *Jupyter Notebooks* in unsere OER. 
-
-```{admonition} Hinweise zu Jupyter Notebooks
+```{admonition} Hinweis zum Aufbau der *Jupyter Notebooks*
 :class: hinweis 
 
-<a href="https://jupyter.org/" class="external-link" target="_blank">*Jupyter Notebooks*</a> bestehen aus Codeblöcken und Textblöcken. Die einzelnen Codeblöcke mit Python-Code können nacheinander ausgeführt werden, während die Textblöcke ausführliche Erklärungstexte liefen, in denen z.B. die Funktion der einzelnen Codeblöcke erläutert wird. So können auch Lernende, die über keine Programmierkenntnisse verfügen, den Aufbau des Codes und die einzelnen, für die Annotation notwendigen Schritte nachvollziehen. In *Jupyter Notebooks* können zudem in den jeweiligen Codeblöcken erstellte Visualisierungen von Daten oder Tabellen zu Annotationsergebnissen direkt dargestellt werden.
+*Jupyter Notebooks* können als eigenständige Dateien in verschiedenen Umgebungen ausgeführt werden. Daher sind die *Jupyter Notebooks* in dieser OER so konzipiert, dass sie für sich selbst stehen und unabhängig voneinander verwendet werden können. Daraus ergibt sich, dass sich in den Notebooks Wiederholungen von Codeblöcken und Kommentartexten finden, ohne dass explizit auf andere Notebooks verwiesen wird.
 
 ```
-
-Ein Ausführen dieser *Jupyter Notebooks* ist in ganz unterschiedlichen Umgebungen möglich. In den <a href="https://quadriga-dk.github.io/QUADRIGA-Learners-Manual/nutzung/ausf%C3%BChrungsmodi.html" class="external-link" target="_blank">Quadriga Lernhinweisen</a> und im Abschnitt zu [technischen Grundlagen](../annotation/technik.md#ausfuhrungsmodi) dieser OER finden Sie genauere Informationen hierzu.
-
-Im folgenden Abschnitt wird nun die Entwicklung des Workflows dargelegt.
+Im folgenden Abschnitt werden nun die Schritte des Workflows dargelegt.
