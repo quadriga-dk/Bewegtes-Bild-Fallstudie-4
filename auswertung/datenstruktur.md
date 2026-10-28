@@ -1,1 +1,1 @@
-# Struktur der Annotationsdaten
+# Struktur der Auswertungsdaten

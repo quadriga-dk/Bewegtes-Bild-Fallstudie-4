@@ -161,7 +161,7 @@ Die Datei **`Filmname_characters_metadata.csv`** enthält technische Metadaten, 
 | `character_recognition_threshold` | Mindestwert für das [Skalarprodukt](#recognition) zwischen dem erkannten Gesichts-Embedding und dem [Vergleichs-Embedding](#vergleichs-embeddings-zur-figurenerkennung) einer Figur. Bestimmt, ab welcher Ähnlichkeit ein Gesicht einer Figur zugeordnet wird (*Recognition*). |
 | `skip_frames` | Anzahl der Frames, die zwischen zwei analysierten Frames übersprungen werden. Bei einem Wert von `4` wird jeder fünfte Frame analysiert. |
 | `tolerance_frames` | Anzahl zusätzlicher Frames, die bei der Zusammenfassung einzelner Erkennungstreffer zu längeren Annotationen überbrückt werden dürfen. |
-| **Analyseergebnisse / Figurenmetadaten** | |
+| **Analyseergebnisse** | |
 | `selected_frames` | Anzahl der Frames, die unter Berücksichtigung von `skip_frames` für die Analyse ausgewählt wurden. |
 | `Figurenname_detected_frames` | Anzahl der analysierten Frames, in denen die jeweilige Figur erfolgreich erkannt wurde. |
 | `Figurenname_dot_mean` | Durchschnittliches [Skalarprodukt](#recognition) zwischen den erkannten Gesichts-Embeddings und dem Vergleichs-Embedding der Figur. Beschreibt die durchschnittliche Ähnlichkeit der erfolgreichen Zuordnungen. |
