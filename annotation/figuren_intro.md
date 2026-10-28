@@ -133,38 +133,44 @@ Wie in den [Vorbemerkungen zu diesem Kapitels](intro.md) angemerkt, können wir 
 
 ## Ausgabe
 
-Für jede analysierte Videodatei werden bis zu vier Ergebnisdateien erstellt. Im Exportordner (`EXPORT_PATH`) wird für jeden Film ein eigener Unterordner angelegt, dessen Name dem jeweiligen Eingabeordner entspricht.
+Für jede analysierte Videodatei werden bis zu vier Ergebnisdateien erstellt. Im Exportordner (`EXPORT_PATH`) wird für jeden Film ein eigener Unterordner angelegt, dessen Name dem jeweiligen Eingabeordner entspricht. Beim erneuten Export werden weitere Versionen der Ergebnisdateien angelegt. Bestehende Dateien bleiben erhalten.
 
 Die Datei **`Filmname_characters_frames.csv`** dokumentiert die Erkennung einzelner Figuren in den analysierten Videoframes. Sie enthält für jede erfolgreiche Erkennung den Figurennamen, den Zeitpunkt in Sekunden und im Format Stunden:Minuten:Sekunden sowie den Ähnlichkeitswert (*Dot Product*) und den Konfidenzwert der Gesichtserkennung (*Detection Score*).
 
 Die Datei **`Filmname_characters_annotations.csv`** fasst aufeinanderfolgende Erkennungen einer Figur zu längeren Zeitintervallen zusammen. Jede Zeile enthält den Namen der Videodatei, die erkannte Figur sowie den Beginn und das Ende ihres Auftretens in Frames, Sekunden und im Format Stunden:Minuten:Sekunden.
 
-Die Datei **`Filmname_characters_metadata.csv`** enthält technische Metadaten, Analyseparameter und Metadaten zu den erkannten Figuren:
+Die Datei **`Filmname_characters_metadata.csv`** enthält technische Metadaten, Analyseparameter und statistische Kennwerte der erkannten Figuren. Wie bei der Einstellungserkennung werden die Metadaten als Schlüssel-Wert-Paare gespeichert: Jede Zeile enthält den Namen eines Metadatums und seinen Wert.
 
 | Metadatum | Beschreibung |
 |---|---|
 | **Technische Metadaten** | |
-| `video_name` | Dateiname der analysierten Videodatei. |
+| `video_name` | Dateiname der analysierten Videodatei einschließlich Dateiendung. |
+| `title` | Aus dem Dateinamen ermittelter Filmtitel, ohne eine gegebenenfalls angehängte Jahreszahl. |
+| `release_year` | Gegebenenfalls aus dem Dateinamen ermitteltes Erscheinungsjahr des Films. Andernfalls bleibt der Wert leer. |
+| `frame_count` | Gesamtanzahl der Frames der Videodatei. |
+| `frame_height` | Höhe des Videobildes in Pixeln. |
+| `frame_width` | Breite des Videobildes in Pixeln. |
 | `frame_rate` | Bildrate des Videos in Frames pro Sekunde (FPS). |
-| `total_frames` | Gesamtanzahl der Frames des Videos. |
-| `selected_frames` | Anzahl der Frames, die unter Berücksichtigung von `skip_frames` für die Analyse ausgewählt wurden. |
-| `Cuda_use` | Gibt an, ob eine CUDA-fähige GPU für die Analyse verwendet wird (`True`) oder die Analyse auf der CPU erfolgt (`False`). |
-| `insightface_model` | Name des verwendeten [*InsightFace*-Modellpakets](#insightface-implementierung). |
-| `elapsed_time` | Benötigte Rechenzeit für die eigentliche Videoanalyse im Format Stunden:Minuten:Sekunden. |
+| `duration_hh_mm_ss` | Berechnete Gesamtlaufzeit des Videos im Format Stunden:Minuten:Sekunden, auf volle Sekunden gerundet. |
+| `model` | Name des verwendeten [*InsightFace*-Modellpakets](#insightface-implementierung) (`antelopev2` oder `buffalo_m`). |
+| `device` | Für die Analyse verwendetes Rechengerät (`cuda` für GPU oder `cpu`). |
+| `analysis_timestamp` | Zeitpunkt des Beginns der Videoanalyse in UTC (ISO-8601-Format). |
+| `processing_time_hh_mm_ss` | Benötigte Rechenzeit für die eigentliche Videoanalyse im Format Stunden:Minuten:Sekunden. |
 | **Analyseparameter** | |
 | `face_detection_threshold` | Mindestwert für den Konfidenzwert der [Gesichtsdetektion (*Detection*)](#detection). Nur Gesichter, die diesen Schwellenwert erreichen, werden weiterverarbeitet. |
 | `character_recognition_threshold` | Mindestwert für das [Skalarprodukt](#recognition) zwischen dem erkannten Gesichts-Embedding und dem [Vergleichs-Embedding](#vergleichs-embeddings-zur-figurenerkennung) einer Figur. Bestimmt, ab welcher Ähnlichkeit ein Gesicht einer Figur zugeordnet wird (*Recognition*). |
 | `skip_frames` | Anzahl der Frames, die zwischen zwei analysierten Frames übersprungen werden. Bei einem Wert von `4` wird jeder fünfte Frame analysiert. |
 | `tolerance_frames` | Anzahl zusätzlicher Frames, die bei der Zusammenfassung einzelner Erkennungstreffer zu längeren Annotationen überbrückt werden dürfen. |
-| **Figurenmetadaten** | |
+| **Analyseergebnisse / Figurenmetadaten** | |
+| `selected_frames` | Anzahl der Frames, die unter Berücksichtigung von `skip_frames` für die Analyse ausgewählt wurden. |
 | `Figurenname_detected_frames` | Anzahl der analysierten Frames, in denen die jeweilige Figur erfolgreich erkannt wurde. |
 | `Figurenname_dot_mean` | Durchschnittliches [Skalarprodukt](#recognition) zwischen den erkannten Gesichts-Embeddings und dem Vergleichs-Embedding der Figur. Beschreibt die durchschnittliche Ähnlichkeit der erfolgreichen Zuordnungen. |
 | `Figurenname_score_mean` | Durchschnittlicher [Konfidenzwert der Gesichtsdetektion](#detection) für die der Figur zugeordneten Gesichter. |
 | `Figurenname_time_sum_s` | Geschätzte Gesamtdauer des Auftretens der Figur in Sekunden. Berechnet aus der Anzahl erfolgreicher Erkennungen, dem Abstand zwischen analysierten Frames und der Bildrate. |
 | `Figurenname_time_sum_hh_mm_ss` | Geschätzte Gesamtdauer des Auftretens der Figur im Format Stunden:Minuten:Sekunden. |
 
-Der Platzhalter Figurenname wird durch den Namen der jeweiligen Figur ersetzt. Die geschätzte Gesamtdauer ihres Auftretens basiert auf den erfolgreich analysierten Frames und kann von der tatsächlichen Auftrittsdauer abweichen.
+Der Platzhalter `Figurenname` wird durch den Namen der jeweiligen Figur ersetzt. Ein Erscheinungsjahr wird nur dann erkannt, wenn der Videodateiname vor seiner Endung mit `_Jahr` endet, beispielsweise `Der_geteilte_Himmel_1964.mp4`. Die geschätzte Gesamtdauer ihres Auftretens basiert auf den erfolgreich analysierten Frames und kann von der tatsächlichen Auftrittsdauer abweichen.
 
-Schließlich wird eine Datei **`Filmname_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN importieren, überprüfen und weiterbearbeiten. Für jede erkannte Figur enthält diese `.eaf-Datei` die Informationen für eine eigene Annotationsspur, die deren Auftritte im Film festhält und anzeigt. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung für die analysierte Videodatei bereitgestellt, werden die Einstellungen in der Spur `shots` gespeichert und angezeigt. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Spur jene Einstellungen zugeordnet, in denen sie für mindestens einen Frame erkannt wurden (`Figurenname_matched`).
+Schließlich wird eine Datei **`Filmname_characters_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN importieren, überprüfen und weiterbearbeiten. Für jede erkannte Figur enthält diese `.eaf-Datei` die Informationen für eine eigene Annotationsspur, die deren Auftritte im Film festhält und anzeigt. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung für die analysierte Videodatei bereitgestellt, werden die Einstellungen in der Spur `shots` gespeichert und angezeigt. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Spur jene Einstellungen zugeordnet, in denen sie für mindestens einen Frame erkannt wurden (`Figurenname_matched`).
 
-Alle Ergebnisdateien eines Films werden in einem eigenem Unterordner gespeichert. In Google Colab kann der gesamte Exportordner als ZIP-Archiv heruntergeladen werden.
+Alle Ergebnisdateien eines Films werden in einem eigenen Unterordner gespeichert. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt. In Google Colab kann der gesamte Exportordner als ZIP-Archiv heruntergeladen werden.

@@ -23,27 +23,20 @@ __pycache__
 
 # export annotation data and video data
 annotation/export/
+annotation/export_shots/
 annotation/videos/
+annotation/videos_shots/
 annotation/export_face/
+annotation/export_characters/
 annotation/videos_face/
+annotation/videos_characters/
 annotation/*.zip
 annotation/.insightface
 
+auswertung/export_vis_shots/
+auswertung/*.zip
+auswertung/vis_files_shots/
+
+
 # test notebooks
 /notebooks_test_3/
-auswertung/export_vis_shots/shot_meta.html
-auswertung/visualisation_shot_testfiles.zip
-auswertung/vis_files_shots/Wolf_Der_geteilte_Himmel_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Der_kleine_Prinz_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Der_nackte_Mann_auf_dem_Sportplatz_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Einmal_ist_keinmal_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Genesung_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Goya_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Ich_war_neunzehn_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Leute_mit_Flügeln_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Lissy_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Mama_ich_lebe_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Professor_Mamlock_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Solo_Sunny_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Sonnensucher_metadata_0.5.csv
-auswertung/vis_files_shots/Wolf_Sterne_metadata_0.5.csv

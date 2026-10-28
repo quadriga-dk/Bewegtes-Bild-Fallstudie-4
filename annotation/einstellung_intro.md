@@ -33,12 +33,42 @@ Für die Auswertung eigener Filme können die entsprechenden Dateien im Import-O
 
 ## Ausgabe
 
-Für jede analysierte Videodatei werden drei Ergebnisdateien im festgelegten Exportordner (`EXPORT_PATH`) gespeichert. Die Dateinamen setzen sich aus dem Namen der Videodatei, `shots` und dem Schwellenwert `THRESHOLD` zusammen, also z.B. als **`Sonnensucher_shots_0.5.csv`**. 
+Für jede analysierte Videodatei werden drei Ergebnisdateien im festgelegten Exportordner (`EXPORT_PATH`) gespeichert. Die Dateinamen setzen sich aus dem Namen der Videodatei, `shots` und dem Schwellenwert `THRESHOLD` zusammen, beispielsweise **`Filmtitel_shots_0.5.csv`**. Beim erneuten Export werden weitere Versionen der Ergebnisdateien angelegt. Bestehende Dateien bleiben erhalten. 
 
 Die Datei **`Filmname_shots_THRESHOLD.csv`** enthält die erkannten Einstellungen als Tabelle. Jede Zeile beschreibt eine Einstellung mit ihrem Start, Ende, Mittelpunkt und ihrer Dauer, jeweils in Frames und Sekunden.
 
-Die Datei **`Filmname_shots_metadata.csv`** dokumentiert die technischen Metadaten und Analyseergebnisse. Dazu zählen unter anderem die Bildrate und die Anzahl erkannter Einstellungen.
+Die Datei **`Filmname_shots_THRESHOLD_metadata.csv`** dokumentiert die technischen Metadaten der Videodatei, den verwendeten Analyseparameter und statistische Kennwerte des Ergebnisses. Wie bei der Figurenerkennung werden die Metadaten als Schlüssel-Wert-Paare gespeichert: Jede Zeile enthält den Namen eines Metadatums und seinen Wert: 
 
-Zusätzlich wird eine **`Filmname_shots.eaf`** erstellt. Mit dieser Datei können die erkannten Einstellungen in Annotationsprogramme wie VIAN importiert werden, um die Ergebnisse zu überprüfen und weiterzubearbeiten.
+| Metadatum | Beschreibung |
+|---|---|
+| **Technische Metadaten** | |
+| `video_name` | Dateiname der analysierten Videodatei einschließlich Dateiendung. |
+| `title` | Aus dem Dateinamen ermittelter Filmtitel, ohne eine gegebenenfalls angehängte Jahreszahl. |
+| `release_year` | Gegebenenfalls aus dem Dateinamen ermitteltes Erscheinungsjahr des Films. Andernfalls bleibt der Wert leer. |
+| `frame_count` | Gesamtanzahl der Frames der Videodatei. |
+| `frame_height` | Höhe des Videobildes in Pixeln. |
+| `frame_width` | Breite des Videobildes in Pixeln. |
+| `frame_rate` | Bildrate des Videos in Frames pro Sekunde (FPS). |
+| `duration_hh_mm_ss` | Berechnete Gesamtlaufzeit des Videos im Format Stunden:Minuten:Sekunden, auf volle Sekunden gerundet. |
+| `model` | Bezeichnung des verwendeten Modells: `transnetv2`. |
+| `device` | Rechengerät des PyTorch-Modells bei der Analyse (`cpu` oder `cuda`). |
+| `analysis_timestamp` | Zeitpunkt des Beginns der Videoanalyse in UTC (ISO-8601-Format). |
+| `processing_time_hh_mm_ss` | Benötigte Rechenzeit für die eigentliche Videoanalyse im Format Stunden:Minuten:Sekunden. |
+| **Analyseparameter** | |
+| `threshold` | Verwendeter Schwellenwert für die Erkennung von Einstellungsgrenzen. Er bestimmt, ab welchem Vorhersagewert ein Übergang berücksichtigt wird. |
+| **Analyseergebnisse** | |
+| `shot_count` | Anzahl der erkannten Einstellungen. |
+| `mean_duration_s` | Arithmetischer Mittelwert der Dauer aller erkannten Einstellungen in Sekunden. |
+| `median_duration_s` | Median der Einstellungsdauern in Sekunden: die mittlere Dauer der nach Länge sortierten Einstellungen. |
+| `max_duration_s` | Dauer der längsten erkannten Einstellung in Sekunden. |
+| `min_duration_s` | Dauer der kürzesten erkannten Einstellung in Sekunden. |
+| `min_prediction_score` | Niedrigster vom Modell berechneter Vorhersagewert für eine Einstellungsgrenze im gesamten Video. |
+| `max_prediction_score` | Höchster vom Modell berechneter Vorhersagewert für eine Einstellungsgrenze im gesamten Video. |
 
-Alle drei Dateien werden direkt im Exportordner abgelegt, unabhängig von der ursprünglichen Ordnerstruktur der Videodateien. Bei einer Ausführung in Google Colab kann der gesamte Exportordner zusätzlich als ZIP-Archiv heruntergeladen werden.
+Ein Erscheinungsjahr wird nur dann erkannt, wenn der Videodateiname vor seiner Endung mit `_Jahr` endet, beispielsweise `Der_geteilte_Himmel_1964.mp4`. Der Analysezeitpunkt wird in beiden Notebooks einheitlich in UTC angegeben.
+
+Die Vorhersagewerte beschreiben die Einschätzung des Modells, nicht die überprüfte Genauigkeit seiner Ergebnisse. Die Werte zur Einstellungsdauer basieren auf den erkannten Einstellungsgrenzen und der Bildrate des Videos.
+
+Zusätzlich wird eine **`Filmname_shots_THRESHOLD.eaf`** erstellt. Mit dieser Datei können die erkannten Einstellungen in Annotationsprogramme wie VIAN importiert werden, um die Ergebnisse zu überprüfen und weiterzubearbeiten.
+
+Alle drei Dateien werden direkt im Exportordner abgelegt, unabhängig von der ursprünglichen Ordnerstruktur der Videodateien. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt. Bei einer Ausführung in Google Colab kann der gesamte Exportordner zusätzlich als ZIP-Archiv heruntergeladen werden.
