@@ -2,7 +2,7 @@
 
 ## Visualisierung der Einstellungsmetadaten
 <iframe
-  src="../_static/html/shot_meta_v2.html"
+  src="../_static/html/shot_meta.html"
   width="100%"
   height="800"
   style="border:0;">
