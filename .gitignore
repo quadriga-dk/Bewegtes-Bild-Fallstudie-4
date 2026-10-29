@@ -34,8 +34,10 @@ annotation/*.zip
 annotation/.insightface
 
 auswertung/export_vis_shots/
+auswertung/vis_files_characters/
 auswertung/*.zip
 auswertung/vis_files_shots/
+auswertung/export_vis_characters/
 
 
 # test notebooks
