@@ -41,7 +41,7 @@ Nach der Einstellungserkennung folgt nun die Visualisierung und Auswertung der A
 Wir beginnen mit der Grafik zur Visualisierung der Figurenpräsenz in den Filmen.
 
 <iframe
-  src="../_static/html/character_timeline_altair_v2.html"
+  src="../_static/html/character_timeline_altair.html"
   width="100%"
   height="500"
   style="border:0;">
@@ -70,7 +70,7 @@ Auch hier würde es sich wieder anbieten, an dieser Stelle zur genauen Analyse d
 Nun soll die Visualisierung zu den Figurenbeziehungen betrachtet werden. Zu sehen sind in der Grafik die Beziehungen der Figuren untereinander gemäß ihrer gemeinsamen Präsenz auf der Leinwand. Zusätzlich wird die Gesamtdauer der erkannten Präsenz einer Figur im Film durch die Größe des ihr zugeordneten Kreises angezeigt. Gemeinsam im Bild auftretende Figuren sind durch Striche miteinander verbunden, die Dicke der Striche zeigt die Höhe des Wertes des gemeinsamen Auftretens an. In der interaktiven Grafik kann auf die Figurenkreise geklickt und diese an andere Orte gezogen werden, dadurch können Verbindungen zwischen Figuren und Figurengruppen noch deutlicher werden.
 
 <iframe
-  src="../_static/html/character_network_gravis_v2.html"
+  src="../_static/html/character_network_gravis.html"
   width="100%"
   height="800"
   style="border:0;">
