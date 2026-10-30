@@ -47,12 +47,7 @@ chapters:
       - file: auswertung/visualisierung_figuren.ipynb
       - file: auswertung/explorative_auswertung.md
       - file: auswertung/resumee_auswertung.md
-  - file: reflexion-und-resümee/einleitung.md
-    sections:
-      - file: reflexion-und-resümee/reflexion.md
-      - file: reflexion-und-resümee/abschlussassessment.md
-      - file: reflexion-und-resümee/zusammenfassung.md
-      - file: reflexion-und-resümee/resümee.md
+  - file: reflexion-und-resümee/zusammenfassung.md
   - file: abschluss/toc
     sections:
       - file: abschluss/fragen-und-feedback
