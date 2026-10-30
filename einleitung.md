@@ -60,7 +60,7 @@ In einem [einleitenden Kapitel](einstieg/einleitung) werden die Lernziele und di
 
 - im **4.Schritt** findet eine Auswertung des automatisiert erstellten Film-Annotationen statt. Die Annotationsdaten werden mithilfe von Python-Skripten visualisiert und explorativ ausgewertet (siehe Kapitel [Auswertung der Annotationsdaten](auswertung/einleitung)).
 
-Im **1.** und **2. Schritt** werden somit vor allem die **theoretischen Grundlagen** gelegt, im **3.** und **4. Schritt** erfolgt die **praktische Durchführung** der automatisierten Annotation und die Auswertung der erhaltenen Annotationsergebnisse. In einem [abschließenden Kapitel](reflexion-und-resümee/einleitung) werden die Ergebnisse der Fallstudie zusammengefasst und reflektiert, gefolgt von einem Ausblick auf weitere mögliche Einsatzbereiche der automatisierten Annotation von Filmen.
+Im **1.** und **2. Schritt** werden somit vor allem die **theoretischen Grundlagen** gelegt, im **3.** und **4. Schritt** erfolgt die **praktische Durchführung** der automatisierten Annotation und die Auswertung der erhaltenen Annotationsergebnisse. In einem [abschließenden Kapitel](reflexion-und-resümee/zusammenfassung.md) werden die Ergebnisse der Fallstudie zusammengefasst und reflektiert, gefolgt von einem Ausblick auf weitere mögliche Einsatzbereiche der automatisierten Annotation von Filmen.
 
 
 ## Literatur
