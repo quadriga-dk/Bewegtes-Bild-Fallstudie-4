@@ -8,7 +8,7 @@ Die Auswertung der Annotationsdaten in diesen Kapitel kann aufgrund des begrenzt
 Im Folgenden werden wir uns nun zunächst mit den Ergebnissen der Einstellungsannotationen beschäftigen, daran anschließenden mit den Figurenannotationen.
 
 ## Visualisierung der Einstellungsdaten
-Die hier präsentierte Visualisierung der Einstellungsannotationen zu den Filmen Konrad Wolfs ist nur eine Variante von vielen Möglichkeiten. Im [Kapitel zu möglichen Fragestellungen](../filmanalyse/fragestellungen.md) wurden mögliche quantitative Annotationsdaten vorgestellt. In die vorliegende grafische Darstellung wurden folgende auf filmischen Einstellungen beruhende Werte einbezogen: Die durchschnittliche (Average Shot Length / ASL) und mittlere Einstellungslänge (Median Shot Length / MSL) in Sekunden (errechnet aus allen Daten zur Einstellungslänge eines Films), die längste und sie kürzeste Einstellung eines Films in Sekunden, die Filmlaufzeit in Minuten und die Anzahl der Einstellungen in einem Film.
+Die hier präsentierte Visualisierung der Einstellungsannotationen zu den Filmen Konrad Wolfs ist nur eine Variante von vielen Möglichkeiten. Im [Kapitel zu möglichen Fragestellungen](../filmanalyse/fragestellungen.md) wurden mögliche quantitative Annotationsdaten vorgestellt. In die vorliegende grafische Darstellung wurden folgende auf filmischen Einstellungen beruhende Werte einbezogen: Die durchschnittliche (Average Shot Length / ASL) und mittlere Einstellungslänge (Median Shot Length / MSL) in Sekunden (errechnet aus den Daten zu den Einstellungslängen eines Films), die längste und sie kürzeste Einstellung eines Films in Sekunden, die Filmlaufzeit in Minuten und die Anzahl der Einstellungen in einem Film.
 
 Diese Werte werden als Balkendiagramme in einzelnen Grafiken untereinander ausgegeben, die einzelnen annotierten Filme folgen nacheinander.
 
@@ -19,9 +19,7 @@ Diese Werte werden als Balkendiagramme in einzelnen Grafiken untereinander ausge
   style="border:0;">
 </iframe>
 
-Mit dem Scrollbalken am rechten Rand kann durch die Grafiken navigiert werden. Durch Bewegung des Mauszeigers über den Balken für den jeweiligen Film wird das dessen Erscheinungsjahr und der dargestellte Wert mit der jeweiligen Maßeinheit angezeigt. Unter jedem Balkendiagramm kann die Art der Sortierung der Ergebnisse ausgewählt werden: nach Werten, alphabetisch oder chronologisch.
-
-**Evtl. Screenshots einfügen**
+Mit dem Scrollbalken am rechten Rand kann durch die Grafiken navigiert werden. Durch Bewegung des Mauszeigers über den Balken für den jeweiligen Film wird dessen Erscheinungsjahr und der dargestellte Wert mit der jeweiligen Maßeinheit angezeigt. Unter jedem Balkendiagramm kann die Art der Sortierung der Ergebnisse ausgewählt werden: nach Werten, alphabetisch oder chronologisch.
 
 Starten wir mit der Sortierung nach Werten. Was lässt sich beobachten? *Sterne* weist sowohl bezüglich der ASL als auch der MSL die höchsten Werte auf. Auch bei der längsten Einstellung führt der Film die Grafik an. Bei der kürzesten Einstellung und der Filmlaufzeit befindet sich *Sterne* verglichen mit den restlichen Filmen im unteren Drittel.
 
@@ -33,12 +31,12 @@ Geht man zur chronologischen Sortierung über wird erkennbar, dass die ASL und M
 
 **Screenshots einfügen**
 
-An dieser Stelle wäre es sinnvoll und möglich, von der Betrachtung aller Filme wieder zurück zu einzelnen Filmen zu gehen, die sich in der Grafik mit markanten Werten abheben - wie z.B. *Sterne* oder *Goya*. Den Ursachen für diese auffälligen Werte sollte anhand einer genaueren Analyse der Filme und der Untersuchung des Produktionskontextes auf den Grund gegangen werden. Wo im Film ist etwa die längste Einstellung angesiedelt? Welche konkreten Muster der Abfolge von Einstellungslängen hat der Film vorzuweisen?
+An dieser Stelle wäre es sinnvoll, von der Betrachtung aller Filme wieder zurück zu einzelnen Filmen zu gehen, die sich in der Grafik mit markanten Werten abheben - wie z.B. *Sterne* oder *Goya*. Den Ursachen für diese auffälligen Werte sollte anhand einer genaueren Analyse der Filme und der Untersuchung des Produktionskontextes auf den Grund gegangen werden. Wo im Film ist etwa die längste Einstellung angesiedelt? Welche konkreten Muster der Abfolge von Einstellungslängen hat der Film vorzuweisen?
 
-Hierfür können wiederum andere Visualisierungen mit den Annotationsdaten für einzelne Filme erstellt werden, etwa zur Einstellungsdichte in einem Film. Zudem würde es sich anbieten, hier wie schon bei der [Überprüfung der Einstellungserkennung](../annotation/einstellung_datensichtung.md) mit dem Annotationstool VIAN zu arbeiten. In dieses können die Annotationsdaten zur Einstellungserkennung eingelesen und mit dem konkreten Film abgeglichen werden. Mit der Sichtung im VIAN könnten auch Ungenauigkeiten und Fehler in den Annotationsdaten erkannt werden.
+Hierfür können wiederum andere Visualisierungen mit den Annotationsdaten für einzelne Filme erstellt werden, etwa zur Einstellungsdichte in einem Film. Zudem würde es sich anbieten, hier wie schon bei der [Überprüfung der Einstellungserkennung](../annotation/einstellung_datensichtung.md) mit dem Annotationstool VIAN zu arbeiten. In dieses können die Annotationsdaten zur Einstellungserkennung eingelesen und mit dem konkret annotierten Film abgeglichen werden. Mit der Sichtung im VIAN könnten auch Ungenauigkeiten und Fehler in den Annotationsdaten erkannt werden.
 
 ## Visualisierung der Figurenpräsenz
-Nach der Einstellungserkennung folgt nun die Visualisierung und Auswertung der Annotationsdaten aus Figurenerkennung zu den Filmen *Sonnensucher*, *Der geteilte Himmel* und *Solo Sunny*. Unsere Auswahlkriterien und die Namen der zu erkennenden Figuren haben wir bereits im Kapitel zu den [Grundlagen zur Auswertung](../auswertung/grundlagen.md) dargelegt.
+Nach der Einstellungserkennung folgt nun die Visualisierung und Auswertung der Annotationsdaten aus der Figurenerkennung zu den Filmen *Sonnensucher*, *Der geteilte Himmel* und *Solo Sunny*. Unsere Auswahlkriterien und die Namen der zu erkennenden Figuren haben wir bereits im Kapitel zu den [Grundlagen zur Auswertung](../auswertung/grundlagen.md) dargelegt.
 
 Wir beginnen mit der Grafik zur Visualisierung der Figurenpräsenz in den Filmen.
 
@@ -55,13 +53,17 @@ Jeder Figur ist hier eine eigene Spur und eine eigene Farbe zugeordnet. Wurde ei
 
 Bei *Der geteilte Himmel* fällt auf, dass Rita die präsenteste Figur mit der meisten Leinwandzeit ist, gefolgt von Manfred. Beide Figuren sind die Protagonist:innen des Films. Meternagel als wichtige Bezugsfigur für Rita ist häufig im Bild zu sehen, ebenso Wendland als politisch einflussreiche und wichtige Figur. Herr und Frau Herrfurth treten meist gemeinsam auf, ebenso wie Kuhl und Ermisch, die zusammen mit Meternagel arbeiten.
 
-Wechsels man zur Visualisierung von *Solo Sunny* wird sofort deutlich, dass hier Sunny die dominierende Figur ist. Sie ist fast den gesamtem Film über präsent. Nach Sunny folgen mit deutlich weniger Auftritten im Bild Ralph und Harry, die nie zusammen im Bild zu sehen sind, aber wichtige Bezugspunkte zu Sunny bilden. Neben Harry tritt auch Christine allein zusammen mit Sunny im Bild auf, sie ist eine alte Freundin von ihr. Norbert, Hubert, Bernd und Benno sind als Musiker in Sunnys Band oft gemeinsam präsent.
+**evtl. Screenshot Sunny**
+
+Wechselt man zur Visualisierung von *Solo Sunny* wird sofort deutlich, dass hier Sunny die dominierende Figur ist. Sie ist fast den gesamtem Film über präsent. Nach Sunny folgen mit deutlich weniger Auftritten im Bild Ralph und Harry, die nie zusammen im Bild zu sehen sind, aber wichtige Bezugspunkte zu Sunny bilden. Neben Harry tritt auch Christine allein zusammen mit Sunny im Bild auf, sie ist eine alte Freundin von ihr. Norbert, Hubert, Bernd und Benno sind als Musiker in Sunnys Band oft gemeinsam präsent.
+
+**evtl. Screenshot Sonnensucher**
 
 Bei *Sonnensucher* bietet sich wiederum ein anderes Bild. Hier scheint die Dauer des Auftretens der Figuren Beier, Lutz, Jupp und Sergej im Bild verteilt über den Film sehr ähnlich zu sein, auch wenn sie oft zu unterschiedlichen Zeitpunkten zu sehen sind. Hier kann also von einem Film mit mehreren, gemäß der des zeitlichen Auftretens im Film gleichberechtigten Protagonist:innen ausgegangen werden. Günter und Emmi sind als wichtige Nebenfiguren recht häufig präsent, Weirauch und Wera eher seltener.
 
 Hier sind also deutliche Unterschiede in den Mustern des zeitlichen Auftretens von Figuren im Film zu erkennen, die vermutlich auch mit den behandelten Themen in den Filmen zusammenhängen. *Sonnensucher* ist eher ein Ensemblefilm, in dem DDR-Arbeiter:innen für den politisch wichtigen Uranabbau mit den sowjetischen Soldat:innen zusammenarbeiten müssen. In *Solo Sunny* sucht Sunny allein als kompromisslose Künstlerin ihren Weg im Leben und in der Gesellschaft.
 
-Auch hier würde es sich wieder anbieten, an dieser Stelle zur genauen Analyse der einzelnen Filme zurückzukehren, indem etwa die Annotationsdaten zu den Figuren in VIAN eingelesen werden. Hier kann genauer betrachtet werden, welche Figuren wann aus welchen Gründen gemeinsam im Bild zu sehen sind. Auch Annotationsfehler werden dadurch sichtbar wie z.B. in Solo Sunny, bei dem der Bandleader Hubert am Ende fälschlicherweise im Bild der Szene erkannt wird, in der Sunny auf ihre möglicherweise neue Band trifft.
+Auch hier würde es sich wieder anbieten, an dieser Stelle zur genauen Analyse der einzelnen Filme zurückzukehren, indem etwa die Annotationsdaten zu den Figuren in VIAN eingelesen werden. Hier kann genauer betrachtet werden, welche Figuren wann aus welchen Gründen gemeinsam im Bild zu sehen sind. Auch Annotationsfehler werden dadurch sichtbar wie z.B. in *Solo Sunny*, bei dem der Bandleader Hubert am Ende fälschlicherweise im Bild der Szene erkannt wird, in der Sunny auf ihre möglicherweise neue Band trifft.
 
 
 ## Visualisierung der Figurenbeziehungen
@@ -91,7 +93,7 @@ Ein Klick auf Martin zeigt, dass er bei den erfassten Stellen des Auftretens nur
 **Screenshot**
 
 
-Ein Blick auf die Grafik für die Figurenbeziehungen in *Solo Sunny* zeigt wiederum die Dominanz Sunnys in Bezug auf ihre Leinwandzeit. Ihr Figuren-Kreis ist mit Abstand der größte als einzige ist sie mit allen anderen erfassten Figuren verbunden.
+Ein Blick auf die Grafik für die Figurenbeziehungen in *Solo Sunny* zeigt wiederum die Dominanz Sunnys in Bezug auf ihre Leinwandzeit. Ihr Figuren-Kreis ist mit Abstand der größte, als einzige Figur ist sie mit allen anderen erfassten Figuren verbunden.
 
 **Screenshot**
 
@@ -109,7 +111,7 @@ Bei *Sonnensucher* zeigt sich bei den Figuren Lutz, Jupp, Beier und Sergej eine 
 
 **Screenshot**
 
-Die Dicke der Verbindungsstriche als Indikator für die Dauer der gemeinsamen Leinwandpräsenz variiert dabei je nach Figur. Insgesamt ist das durch ein gemeinsames Auftreten im Bild entstehende Netz der Figuren untereinander hier wesentlich dichter gestrickt. Lediglich Günter wurde z.B. nicht zusammen mit Fedossjev und Wera erfasst, und Wera nicht zusammen mit Günter. Dies könnte für eine deutlich intensivere Interaktion aller Figuren miteinander sprechen.
+Die Dicke der Verbindungsstriche als Indikator für die Dauer der gemeinsamen Leinwandpräsenz variiert dabei je nach Figur. Insgesamt ist das durch ein gemeinsames Auftreten im Bild entstehende Netz der Figuren untereinander hier wesentlich dichter gestrickt. Lediglich Günter wurde z.B. nicht zusammen mit Fedossjev und Wera erfasst, und Wera nicht zusammen mit Günter. Dies könnte für eine deutlich intensivere Interaktion aller Figuren miteinander sprechen als bei den bisher betrachteten Filmen.
 
 **Screenshot Günter**
 
