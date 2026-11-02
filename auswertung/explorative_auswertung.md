@@ -43,7 +43,7 @@ Wir beginnen mit der Grafik zur Visualisierung der Figurenpräsenz in den Filmen
 <iframe
   src="../_static/html/character_timeline_altair_v5.html"
   width="100%"
-  height="500"
+  height="650"
   style="border:0;">
 </iframe>
 
@@ -72,7 +72,7 @@ Nun soll die Visualisierung zu den Figurenbeziehungen betrachtet werden. Zu sehe
 <iframe
   src="../_static/html/character_network_gravis.html"
   width="100%"
-  height="800"
+  height="600"
   style="border:0;">
 </iframe>
 
