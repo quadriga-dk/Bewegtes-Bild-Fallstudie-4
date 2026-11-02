@@ -1,6 +1,8 @@
 (lernziele)=
 # Lernziele
 
+Das hier vorliegende interaktive Lehrbuch verfolgt folgende Lernziele:
+
 <!-- START: Filmanalyse -->
 ```{admonition} [Filmanalyse und automatisierte Annotation](filmanalyse:einleitung)
 :class: lernziele
