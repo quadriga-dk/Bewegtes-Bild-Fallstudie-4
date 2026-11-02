@@ -1,20 +1,20 @@
 # Fragestellungen zur Fallstudie
-Im diesem Kapitel sollen mögliche Fragestellung für unsere Fallstudie entwickelt werden. Im Zentrum der OER soll das Themenfeld der Workflows für die automatisierte Annotation von Filmen stehen. Die Voraussetzungen für die automatisierte Filmannotation, deren Möglichkeiten und Grenzen sollen dargestellt und reflektiert werden. Als Ausgangspunkt liegen hier zunächst zwei grundlegende Fragen vor:
+Nach der Darstellung verschiedener filmanalytischer Herangehensweisen und quantitativer Ansätze in der Filmwissenschaft sollen in diesem Kapitel mögliche Fragestellung für unsere Fallstudie entwickelt werden. Im Zentrum der OER soll das Themenfeld der Workflows für die automatisierte Annotation von Filmen stehen. Die Voraussetzungen für die automatisierte Filmannotation, deren Möglichkeiten und Grenzen sollen dargestellt und reflektiert werden. Als Ausgangspunkt liegen hier zunächst zwei grundlegende Fragen vor:
 
 - welche Annotationsdaten sollen automatisiert erhoben werden?
 - wie können diese Annotationen automatisiert werden? Also welche Modelle und Algorithmen können für die automatisierte Annotation auf welche Weise verwendet werden?
 
-Der zweiten Frage und der Frage, was Modelle, Algorithmen, Computer Vision und technische Voraussetzungen sind werden wir uns in einem [eigenen großen Kapitel](../vision/einleitung.md) zuwenden. Dort werden wir auch darauf eingehen, welche Modelle überhaupt für filmwissenschaftliche Fragestellungen bzw. automatisierte Filmannotation in Frage kommen und warum wir uns letztlich in unserer Fallstudie für die Erkennung von Einstellungsübergängen bzw. Einstellungslängen und die Bestimmung des Auftretens von bestimmten Figuren in Filmen entschieden haben.
+Der zweiten Frage und der Frage, was Modelle, Algorithmen, Computer Vision und technische Voraussetzungen sind werden wir uns in einem [eigenen Kapitel](../vision/einleitung.md) zuwenden. Dort werden wir auch darauf eingehen, welche Modelle überhaupt für filmwissenschaftliche Fragestellungen bzw. automatisierte Filmannotation in Frage kommen und warum wir uns letztlich in unserer Fallstudie für die ***Erkennung von Einstellungsübergängen bzw. Einstellungslängen*** und die ***Bestimmung des Auftretens von bestimmten Figuren in Filmen*** entschieden haben.
 
 Als Untersuchungskorpus haben wir die Filme <a href="https://de.wikipedia.org/wiki/Konrad_Wolf" class="external-link" target="_blank">Konrad Wolfs</a> ausgewählt. Wir können dadurch die Filme eines Regisseurs und seinen filmischen Stil in den Mittelpunkt unserer Fallstudie stellen, wobei das Korpus mit 14 Spielfilmen dennoch überschaubar und auch (technisch) handhabbar bleibt. Dennoch weist sein Werk verschiedene Schaffensphasen und eine interessante Heterogenität auf: verschiedene Genres, Erzählweisen und Themen sind erkennbar. Nicht zuletzt liegen die Spielfilme Wolfs als DVD-Edition und damit in digitaler Form vor, was die Auswertung und Annotation mit computergestützten Verfahren ermöglicht, unseren Workflows also entgegen kommt.
 
-Ansätze zur quantitativen Stilanalyse haben wir im vorigen Kapitel vorgestellt. Auch in unserer Fallstudie wollen wir in diese Richtung gehen und film-stilistische Fragen mithilfe von quantitativen (Annotations)daten und errechneten Größen angehen. Welche kommen nun hier bei der Erkennung von Einstellungswechseln in Frage?
+Ansätze zur quantitativen Stilanalyse haben wir im vorigen Kapitel vorgestellt. Auch in unserer Fallstudie wollen wir in diese Richtung gehen und filmstilistische Fragen mithilfe von *quantitativen (Annotations)daten* und mit aus diesen *errechneten Größen* angehen. Welche kommen nun hier bei der Erkennung von Einstellungswechseln in Frage?
 - die Länge des gesamten Films
 - die Anzahl der Einstellungen in einem Film
 - die Länge der einzelnen Einstellungen in einem Film
 - die Dauer der kürzesten und der längsten Einstellung in einem Film
 - die durchschnittliche Einstellungslänge (Average Shot Length - ASL): Filmlänge geteilt durch die Anzahl der Einstellungen
-- die mittlere Einstellungslänge (Median Shot Lenght - MSL): Der Wert, der genau in der Mitte aller Einstellungslängen liegt; dadurch werden Ausreißer nach unten und oben vermieden
+- die mittlere oder auch mediane Einstellungslänge (Median Shot Lenght - MSL): Der Wert, der genau in der Mitte aller Einstellungslängen liegt; dadurch werden Ausreißer nach unten und oben vermieden
 - die Einstellungsdichte: Zahl der Einstellungswechsel in einem bestimmten Zeitraum
 
 Anhand dieser Werte ist die Bearbeitung verschiedener Fragestellungen zu den Einstellungslängen bei den Filmen Konrad Wolfs möglich:
@@ -59,4 +59,4 @@ Abschließend zum Kapitel zu den möglichen Fragestellungen sei noch exemplarisc
 
 Nicht alle der hier aufgeführten Fragen können in der Fallstudie behandelt werden. Es sollte deutlich geworden sein, dass schon mit den hier für die automatisierten Annotation angedachten Parameter Einstellungsübergänge und Auftreten von Figuren Annotationsdaten erhoben werden, die für die Bearbeitung unterschiedlichster Fragestellungen dienen können. Wir haben uns für diese beiden Parameter entschieden, da die Bestimmung der Einstellungslänge eine Grundlage für viele weitere Annotationen sein kann und die Figurenannotation in vielen verschiedenen Kontexten einsetzbar ist. Zudem sind beide Annotationsparamter auch technisch umsetzbar. Bei der Auswertung der erhobenen Annotationen werden wir in der Fallstudie explorativ vorgehen, also die Daten hinsichtlich möglicher auftretender Muster untersuchen. Dabei muss nicht immer gleich eine ganz konkrete Fragestellung im Mittelpunkt stehen.
 
-Theoretische und technische Fragen zu Computer Vision, die eng mit der automatisierten Annotation zusammenhängen, werden wir im folgenden Kapitel angehen.
+Theoretische und technische Fragen zu Computer Vision, die eng mit der automatisierten Annotation zusammenhängen, werden wir im [folgenden großen Kapitel](../vision/einleitung.md) angehen.
