@@ -52,11 +52,11 @@ Schritte der Fallstudie
 
 In einem [einleitenden Kapitel](einstieg/einleitung) werden die Lernziele und die technischen Voraussetzungen vorgestellt. Die daran anschließende Fallstudie ist folgendermaßen gegliedert:
 
-- im **1. Schritt** wird die Rolle von Annotationen für die Analyse von Filmen beschrieben. Quantitative Ansätze in der Filmwissenschaft werden dargestellt und kritisch reflektiert, bevor mögliche Einsatzbereiche der automatisierten Filmannotation vorgestellt werden. Schließlich wird eine filmwissenschaftliche Fragestellung formuliert und operationalisiert, die mithilfe automatisierter Filmannotation bearbeitet werden kann (siehe Kapitel [Filmanalyse und automatisierte Annotation](filmanalyse/einleitung)).
+- im **1. Schritt** wird die Rolle von Annotationen für die Analyse von Filmen beschrieben. Quantitative Ansätze in der Filmwissenschaft werden dargestellt und kritisch reflektiert, bevor mögliche Einsatzbereiche der automatisierten Filmannotation vorgestellt werden. Schließlich werden filmwissenschaftliche Fragestellung formuliert, die mithilfe automatisierter Filmannotation bearbeitet werden können. (siehe Kapitel [Filmanalyse und automatisierte Annotation](filmanalyse/einleitung)).
 
 - im **2. Schritt** werden die Möglichkeiten von Computer Vision im Rahmen filmanalytischer Prozesse genauer beleuchtet und grundlegende Begriffe wie Machine Learning, Algorithmus und Modell erläutert. Die Möglichkeiten und Grenzen von Computer Vision Modellen bei der automatisierten Annotation von Filmen werden diskutiert (siehe Kapitel [Computer Vision für die Filmanalyse](vision/einleitung)).
 
-- im **3. Schritt** werden geeignete Modelle für die Einstellungs- und Figurenerkennung in einem Film ausgewählt und diese mithilfe von Python-Skripten durchgeführt. Daran anschließend wird die Qualität der erhaltenen Annotationsdaten überprüft und beurteilt. (siehe Kapitel [Automatisierte Annotation von Filmen](annotation/einleitung)).
+- im **3. Schritt** werden geeignete Modelle für die Einstellungs- und Figurenerkennung in einem Film ausgewählt und diese mithilfe von Python-Skripten durchgeführt. Daran anschließend wird die Qualität der erhaltenen Annotationsdaten überprüft und beurteilt (siehe Kapitel [Automatisierte Annotation von Filmen](annotation/einleitung)).
 
 - im **4.Schritt** findet eine Auswertung des automatisiert erstellten Film-Annotationen statt. Die Annotationsdaten werden mithilfe von Python-Skripten visualisiert und explorativ ausgewertet (siehe Kapitel [Auswertung der Annotationsdaten](auswertung/einleitung)).
 
