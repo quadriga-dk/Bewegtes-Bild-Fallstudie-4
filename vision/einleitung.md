@@ -40,7 +40,7 @@ Schritt 2: Computer Vision für die Filmanalyse
 
 ```{admonition} Bearbeitungszeit
 :class: zeitinfo
-Die geschätzte Bearbeitungszeit dieser Lerneinheit beträgt ca. **xx** Minuten. Dies schließt die gekennzeichneten Übungsaufgaben, deren Bearbeitungsdauer individuell variiert, aus.
+Die geschätzte Bearbeitungszeit dieser Lerneinheit beträgt ca. 50 Minuten. Dies schließt die gekennzeichneten Übungsaufgaben, deren Bearbeitungsdauer individuell variiert, aus.
 
 Die geschätzte Bearbeitungsdauer **inklusive** der einzelnen Übungsaufgaben beträgt ca. **xx** Minuten.
 
