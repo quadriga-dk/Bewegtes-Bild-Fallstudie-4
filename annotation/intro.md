@@ -19,12 +19,30 @@ Im Rahmen dieser OER können wir keine Einführung in die Programmierung mit *Py
 
 ```
 
-Die Jupyter Notebooks sind im Inhaltsverzeichnis durch ein Raketensymbol 🚀 gekennzeichnet. In der OER werden sie zunächst als normale Textkapitel dargestellt. **Für den besten Lernerfolg empfehlen wir jedoch, die Jupyter Notebooks in einer entsprechenden Umgebung zu öffnen und die einzelnen Codeblöcke nacheinander auszuführen.**
+Die Jupyter Notebooks sind im Inhaltsverzeichnis durch ein Raketensymbol 🚀 gekennzeichnet. In der OER werden sie zunächst als normale Textkapitel dargestellt.
 
-```{admonition} Ausführen von Jupyter Notebooks
+```{admonition} Achtung
+:class: caution
+ Für den besten Lernerfolg empfehlen wir, die Jupyter Notebooks nicht nur als Textkapitel zu lesen, sondern in einer entsprechenden Umgebung zu öffnen und die einzelnen Codeblöcke nacheinander auszuführen. Dadurch können die Kommentare zu den Codeblöcken in den Textblöcken besser verstanden und die Funktion des Codes direkt getestet werden.
+```
+
+
+```{admonition} Ausführungsmodi von Jupyter Notebooks
 :class: hinweis 
 
-Ein Ausführen von *Jupyter Notebooks* ist in ganz unterschiedlichen Umgebungen möglich. In den <a href="https://quadriga-dk.github.io/QUADRIGA-Learners-Manual/nutzung/ausf%C3%BChrungsmodi.html" class="external-link" target="_blank">Quadriga Lernhinweisen</a> und im Abschnitt zu [technischen Grundlagen](../annotation/technik.md#ausfuhrungsmodi) dieser OER finden Sie genauere Informationen hierzu. Kurze Erläuterungen finden sich auch am Anfang der jeweiligen Notebooks.
+Ein Ausführen von *Jupyter Notebooks* ist in ganz unterschiedlichen Umgebungen möglich. In den <a href="https://quadriga-dk.github.io/QUADRIGA-Learners-Manual/nutzung/ausf%C3%BChrungsmodi.html" class="external-link" target="_blank">Quadriga Lernhinweisen</a> und im Kapitel zu [technischen Voraussetzungen](../einstieg/technische-voraussetzungen.md#nutzungs-modi) dieser OER finden Sie genauere Informationen hierzu. Kurze Erläuterungen finden sich auch am Anfang der jeweiligen Notebooks.
+
+```
+
+```{admonition} Wie führe ich den Code in einem *Jupyter Notebook* aus?
+:class: tip
+Der Code eines *Jupyter Notebooks* ist in einzelne **Code-Zellen** unterteilt, die Sie nacheinander von oben nach unten ausführen. Eine einzelne Zelle starten Sie, indem Sie links neben der Zelle auf das dreieckige **"Play"-Symbol** (▶) klicken. In *Colab* wird dieses Symbol erst sichtbar, wenn Sie die Maus über die Zelle bewegen (oder die Zelle anklicken). Alternativ führen Sie die gerade ausgewählte Zelle mit der Tastenkombination **Umschalt + Eingabe** (`Shift` + `Enter`) aus.
+```
+
+```{admonition} Hinweis zum Aufbau der *Jupyter Notebooks*
+:class: hinweis 
+
+*Jupyter Notebooks* können als eigenständige Dateien in verschiedenen Umgebungen ausgeführt werden. Daher sind die *Jupyter Notebooks* in dieser OER so konzipiert, dass sie für sich selbst stehen und unabhängig voneinander verwendet werden können. Daraus ergibt sich, dass sich in den Notebooks Wiederholungen von Codeblöcken und Kommentartexten finden, ohne dass explizit auf andere Notebooks verwiesen wird.
 
 ```
 
@@ -48,16 +66,10 @@ Als Annotatiosdaten ergeben sich Angaben zu Beginn, Ende und Länge von Einstell
 
 In den nun folgenden Abschnitten legen wir zunächst die allgemeinen Schritte unseres Workflows zur Einstellungs- und Figurenerkennung dar, bevor genauer auf die Auswahl der verwendeten vortrainierten Analysemodelle eingegangen wird. Auf die Erläuterung der notwendigen technischen Grundlagen folgen die Abschnitte in denen zunächst die Einstellungserkennung durchgeführt wird, die sich in eine Einführung, ein Abschnitt mit dem entsprechenden Python Code in Form eines *Jupyter Notebooks* und die Sichtung der Annotationsergebnisse mit VIAN aufgliedern. Darauf folgen die Abschnitte zur Figurenerkennung, ebenfalls mit Einführung, Code und Sichtung.
 
-Prinzipiell ist eine automatisierte Annotation von Filmen auch mit bereits existierenden Softwarelösungen und Tools möglich. In VIAN ist z.B. die automatisierte Erkennung von Einstellungen integriert und <a href="https://service.tib.eu/tibava" class="external-link" target="_blank">TIB-AV-Analytics (TIB-AV-A)</a> vereint in einer Weboberfläche diverse automatisierte Annotationsmöglichkeiten mithilfe unterschiedlicher Analysemodelle, so z.B. auch die Erkennung von Figuren in Videodateien. Auf TIB-AV-Analytics wurde im Kapitel zu möglichen [Einsatzbereichen](../vision/einsatz.md) von Computer Vision für die Filmanalyse eingegangen, ebenso auf das <a href="https://github.com/distant-viewing/dvt" class="external-link" target="_blank">Distant Viewing Toolkit</a> von Taylor Arnold und Lauren Tilton.
+Prinzipiell ist eine automatisierte Annotation von Filmen auch mit bereits existierenden Softwarelösungen und Tools möglich. In VIAN ist z.B. die automatisierte Erkennung von Einstellungen integriert und <a href="https://service.tib.eu/tibava" class="external-link" target="_blank">TIB AV-Analytics (TIB-AV-A)</a> vereint in einer Weboberfläche diverse automatisierte Annotationsmöglichkeiten mithilfe unterschiedlicher Analysemodelle, so z.B. auch die Erkennung von Figuren in Videodateien. Auf TIB AV-Analytics wurde im Kapitel zu möglichen [Einsatzbereichen](../vision/einsatz.md) von Computer Vision für die Filmanalyse eingegangen, ebenso auf das <a href="https://github.com/distant-viewing/dvt" class="external-link" target="_blank">Distant Viewing Toolkit</a> von Taylor Arnold und Lauren Tilton.
 
 Der Vorteil solcher Tools und Softwarelösung ist die meist einfache Zugänglichkeit und Bedienbarkeit. Insbesondere Tools mit grafischen Benutzeroberflächen sind oft sehr intuitiv bedienbar und liefern schnell erste Ergebnisse. Der Nachteil ist jedoch, dass die konkreten Verfahren zur Analyse oft intransparent bleiben, also nicht immer klar ist, welche Modelle für die Erkennung bestimmter Eigenschaften auf welche Art und Weise verwendet wurden. Auch können einzelne wichtige Parameter wie Schwellenwerte in fertigen Softwarelösungen in der Regel nicht einfach selbst konfiguriert werden.
 
 Für unsere OER haben wir uns daher entschieden, den Fokus nicht auf die Bedienung einzelner Analysetools zu legen, sondern auf die Entwicklung von eigenen, für eine Fragestellung passenden Workflows - hier die Erkennung und Annotation von Einstellungen und Figuren in Filmen und Videos. Uns ist dabei wichtig, dass die hierfür notwendigen grundsätzlichen Abläufe und Funktionsweisen verstanden und erlernt werden. Daher arbeiten wird in der OER mit Python-Code und nicht mit fertigen Tools. Dies ermöglicht auch eine größere Kontrolle und Konfigurierbarkeit, indem verschiedene Parameter wie Schwellenwerte und Speicherorte selbst eingestellt werden können. Zudem ist transparent, welche Modelle aus welchen Gründen verwendet wurden und prinzipiell können diese Modelle auch durch andere, aktuellere oder für andere Fragestellungen passendere Modelle ausgetauscht werden. Nach dem Bearbeiten der entsprechenden Abschnitte der OER sollte es den Lernenden möglich sein, den vorliegenden Python-Code für eigene Annotationsprojekte zu nutzen und ggf. entsprechen zu adaptieren.
 
-```{admonition} Hinweis zum Aufbau der *Jupyter Notebooks*
-:class: hinweis 
-
-*Jupyter Notebooks* können als eigenständige Dateien in verschiedenen Umgebungen ausgeführt werden. Daher sind die *Jupyter Notebooks* in dieser OER so konzipiert, dass sie für sich selbst stehen und unabhängig voneinander verwendet werden können. Daraus ergibt sich, dass sich in den Notebooks Wiederholungen von Codeblöcken und Kommentartexten finden, ohne dass explizit auf andere Notebooks verwiesen wird.
-
-```
 Im folgenden Abschnitt werden nun die Schritte des Workflows dargelegt.
