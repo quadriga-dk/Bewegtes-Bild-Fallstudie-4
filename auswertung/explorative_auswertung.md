@@ -60,7 +60,7 @@ Nach der Einstellungserkennung folgt nun die Visualisierung und Auswertung der A
 Wir beginnen mit der Grafik zur Visualisierung der Figurenpräsenz in den Filmen.
 
 <iframe
-  src="../_static/html/character_timeline_altair_v5.html"
+  src="../_static/html/character_timeline.html"
   width="100%"
   height="650"
   style="border:0;">
