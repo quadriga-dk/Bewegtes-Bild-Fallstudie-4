@@ -1,0 +1,251 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "lrmi": "http://purl.org/dcx/lrmi-terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "@vocab": "http://schema.org/"
+  },
+  "@type": [
+    "Book",
+    "LearningResource"
+  ],
+  "name": "Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs",
+  "description": "Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können.",
+  "version": "0.1.0",
+  "schemaVersion": "2.0.0",
+  "url": "https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/",
+  "workExample": {
+    "@type": "SoftwareSourceCode",
+    "name": "Source Code Repository",
+    "codeRepository": "https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4"
+  },
+  "datePublished": "2024-05-06",
+  "dateModified": "2026-03-11",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Thomas",
+      "familyName": "Schick",
+      "name": "Thomas Schick",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0007-3292-8611",
+        "url": "https://orcid.org/0009-0007-3292-8611"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Filmuniversität Babelsberg KONRAD WOLF"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Marco",
+      "familyName": "Winter",
+      "name": "Marco Winter",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0000-0239-9682",
+        "url": "https://orcid.org/0009-0000-0239-9682"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Filmuniversität Babelsberg KONRAD WOLF"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Skadi",
+      "familyName": "Loist",
+      "name": "Skadi Loist",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0002-8299-4103",
+        "url": "https://orcid.org/0000-0002-8299-4103"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Filmuniversität Babelsberg KONRAD WOLF / Norwegian University for Science and Technology (NTNU)"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Lena",
+      "familyName": "Gieseke",
+      "name": "Lena Gieseke",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0001-8421-103X",
+        "url": "https://orcid.org/0000-0001-8421-103X"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Filmuniversität Babelsberg KONRAD WOLF"
+      }
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Hannes",
+      "familyName": "Schnaitter",
+      "name": "Hannes Schnaitter",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0002-1602-6032",
+        "url": "https://orcid.org/0000-0002-1602-6032"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Humboldt-Universität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Evgenia",
+      "familyName": "Samoilova",
+      "name": "Evgenia Samoilova",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0003-3858-901X",
+        "url": "https://orcid.org/0000-0003-3858-901X"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universität Potsdam"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Lamia",
+      "familyName": "Islam",
+      "name": "Lamia Islam",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0001-1879-9880",
+        "url": "https://orcid.org/0009-0001-1879-9880"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universität Potsdam"
+      }
+    }
+  ],
+  "inLanguage": "de",
+  "keywords": [
+    "Open Educational Resources",
+    "Digital Humanities",
+    "Filmwissenschaft",
+    "Datenkompetenz",
+    "Filmannotation",
+    "Filmanalyse",
+    "open-educational-resources"
+  ],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Open Educational Resources"
+    },
+    {
+      "@type": "Thing",
+      "name": "Digital Humanities"
+    },
+    {
+      "@type": "Thing",
+      "name": "Filmwissenschaft"
+    },
+    {
+      "@type": "Thing",
+      "name": "Datenkompetenz"
+    },
+    {
+      "@type": "Thing",
+      "name": "Filmannotation"
+    },
+    {
+      "@type": "Thing",
+      "name": "Filmanalyse"
+    },
+    {
+      "@type": "Thing",
+      "name": "open-educational-resources"
+    },
+    {
+      "@type": "Thing",
+      "name": "Digital Humanities"
+    },
+    {
+      "@type": "Thing",
+      "name": "Bewegtes Bild"
+    }
+  ],
+  "audience": [
+    {
+      "@type": "Audience",
+      "audienceType": "Forschende (PostDoc)"
+    },
+    {
+      "@type": "Audience",
+      "audienceType": "Forschende (Projektleitung)"
+    },
+    {
+      "@type": "Audience",
+      "audienceType": "Promovierende"
+    },
+    {
+      "@type": "Audience",
+      "audienceType": "Hochschullehrende"
+    }
+  ],
+  "timeRequired": "PT10H15M",
+  "license": [
+    {
+      "@type": "CreativeWork",
+      "name": "Content",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Source Code",
+      "license": "https://opensource.org/licenses/AGPL-3.0"
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "LearningResource",
+      "name": "Inhaltskapitel",
+      "description": "Ein Kapitel mit Inhalt(sbeispielen).",
+      "url": "https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html",
+      "timeRequired": "PT1H",
+      "teaches": "Sie kennen die Bestandteile des Templates und können es für Ihre Bedürfnisse nutzen.",
+      "educationalAlignment": [
+        {
+          "@type": "AlignmentObject",
+          "targetName": "Kennen und verstehen der Bestandteile des Templates.",
+          "educationalFramework": "QUADRIGA Competency Framework",
+          "targetDescription": "Competency: Orientierungswissen | Bloom's: 2 Verstehen | Data Flow: übergreifend"
+        },
+        {
+          "@type": "AlignmentObject",
+          "targetName": "Template kann angewandt werden.",
+          "educationalFramework": "QUADRIGA Competency Framework",
+          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+        }
+      ]
+    }
+  ],
+  "dcterms:tableOfContents": "- Einstieg\n- Filmanalyse und automatisierte Annotation\n- Computer Vision für die Filmanalyse\n- Automatisierte Annotation von Filmen\n- Auswertung der Annotationsdaten\n- Zusammenfassung und Reflexion\n- Abschluss",
+  "funding": "Die vorliegenden Open Educational Resources wurden durch das Datenkompetenzzentrum QUADRIGA erstellt.\n\nFörderkennzeichen: 16DKZ2034",
+  "learningResourceType": "Jupyter Book",
+  "lrmi:learningResourceType": "Jupyter Book",
+  "dcterms:type": "Jupyter Book",
+  "dc:type": "Jupyter Book"
+}
