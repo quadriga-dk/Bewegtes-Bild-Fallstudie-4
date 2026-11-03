@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=https://quadriga-dk.github.io/quadriga-schema/v2.0.0/schema.json
+title: Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der
+  Filme Konrad Wolfs
+authorLIST:
+- familyName: Schick
+  givenName: Thomas
+  orcid: https://orcid.org/0009-0007-3292-8611
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
+- familyName: Winter
+  givenName: Marco
+  orcid: https://orcid.org/0009-0000-0239-9682
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
+- familyName: Loist
+  givenName: Skadi
+  orcid: https://orcid.org/0000-0002-8299-4103
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF / Norwegian University for Science and Technology
+    (NTNU)
+- familyName: Gieseke
+  givenName: Lena
+  orcid: https://orcid.org/0000-0001-8421-103X
+  affiliation: Filmuniversität Babelsberg KONRAD WOLF
+keywordLIST:
+- Open Educational Resources
+- de: Digital Humanities
+- de: Filmwissenschaft
+- de: Datenkompetenz
+- de: Filmannotation
+- de: Filmanalyse
+- open-educational-resources
+description: Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung
+  einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können.
+tableOfContents: |-
+  - Einstieg
+  - Filmanalyse und automatisierte Annotation
+  - Computer Vision für die Filmanalyse
+  - Automatisierte Annotation von Filmen
+  - Auswertung der Annotationsdaten
+  - Zusammenfassung und Reflexion
+  - Abschluss
+disciplineLIST:
+- Digital Humanities
+researchObjectTypeLIST:
+- Bewegtes Bild
+targetGroupLIST:
+- Forschende (PostDoc)
+- Forschende (Projektleitung)
+- Promovierende
+- Hochschullehrende
+timeRequired: PT10H15M
+language: de
+contributorLIST:
+- familyName: Schnaitter
+  givenName: Hannes
+  orcid: https://orcid.org/0000-0002-1602-6032
+  affiliation: Humboldt-Universität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft
+- familyName: Samoilova
+  givenName: Evgenia
+  orcid: https://orcid.org/0000-0003-3858-901X
+  affiliation: Universität Potsdam
+- familyName: Islam
+  givenName: Lamia
+  orcid: https://orcid.org/0009-0001-1879-9880
+  affiliation: Universität Potsdam
+identifier: https://doi.org/10.5281/zenodo.TODO
+identifierGit: https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4
+identifierOER: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/
+usedToolLIST:
+- name: Jupyter Book
+  url: https://jupyterbook.org
+chapterLIST:
+- title: Inhaltskapitel
+  description: Ein Kapitel mit Inhalt(sbeispielen).
+  url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
+  timeRequired: PT1H
+  learningGoal: Sie kennen die Bestandteile des Templates und können es für Ihre Bedürfnisse nutzen.
+  learningObjectiveLIST:
+  - description: Kennen und verstehen der Bestandteile des Templates.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 2 Verstehen
+  - description: Template kann angewandt werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+dateIssued: '2024-05-06'
+dateModified: '2026-03-11'
+version: 0.1.0
+contextOfCreation: |-
+  Die vorliegenden Open Educational Resources wurden durch das Datenkompetenzzentrum QUADRIGA erstellt.
+
+  Förderkennzeichen: 16DKZ2034
+qualityAssurance:
+  date: '2026-11-14'
+  description: https://doi.org/10.5281/zenodo.18953896
+learningResourceType: Jupyter Book
+schemaVersion: 2.0.0
+license: https://creativecommons.org/licenses/by-sa/4.0/
+licenseCode: https://opensource.org/licenses/AGPL-3.0
