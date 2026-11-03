@@ -29,7 +29,26 @@ Bei *Goya* fällt auf, dass die Anzahl der Einstellung am größten von allen Fi
 
 Geht man zur chronologischen Sortierung über wird erkennbar, dass die ASL und MSL mit steigenden Erscheinungsjahr immer kürzer werden. Hier heben sich *Sterne* und *Goya* ebenfalls ab:  *Sterne* mit vergleichsweise hohen Werten, *Goya* mit vergleichsweise niedrigen Werten.
 
-**Screenshots einfügen**
+```{figure} ../assets/auswertung/einstellungen_asl_chrono.png
+---
+align: center
+width: 100%
+name: grafik_einstellungen_asl
+alt: Grafik mit der ASL aller Filme Konrad Wolfs chronologisch, Sterne und Goya hervorgehoben.
+---
+ASL der Filme Konrad Wolfs, chronologisch sortiert.
+```
+
+
+```{figure} ../assets/auswertung/einstellungen_msl_chrono.png
+---
+align: center
+width: 100%
+name: grafik_einstellungen_msl
+alt: Grafik mit der MSL aller Filme Konrad Wolfs chronologisch, Sterne und Goya hervorgehoben.
+---
+MSL der Filme Konrad Wolfs, chronologisch sortiert.
+```
 
 An dieser Stelle wäre es sinnvoll, von der Betrachtung aller Filme wieder zurück zu einzelnen Filmen zu gehen, die sich in der Grafik mit markanten Werten abheben - wie z.B. *Sterne* oder *Goya*. Den Ursachen für diese auffälligen Werte sollte anhand einer genaueren Analyse der Filme und der Untersuchung des Produktionskontextes auf den Grund gegangen werden. Wo im Film ist etwa die längste Einstellung angesiedelt? Welche konkreten Muster der Abfolge von Einstellungslängen hat der Film vorzuweisen?
 
@@ -49,21 +68,35 @@ Wir beginnen mit der Grafik zur Visualisierung der Figurenpräsenz in den Filmen
 
 Jeder Figur ist hier eine eigene Spur und eine eigene Farbe zugeordnet. Wurde eine Figur erkannt, wird dies durch einen Balken im Zeitverlauf angezeigt. Die Spuren der Figuren sind nach Gesamtdauer der Leinwandpräsenz einer Figur von oben nach unten angeordnet, die Figur mit der längsten Präsenz wird ganz oben angezeigt. Wird der Mauszeiger über einen Balken einer Figur platziert, werden die zum Balken gehörenden Werte angezeigt. Durch ein Dropdown-Menü am linken unteren Ende der Grafik kann zur Darstellung des jeweiligen Films im Diagramm gewechselt werden.
 
-**evtl. Screenshot**
-
 Bei *Der geteilte Himmel* fällt auf, dass Rita die präsenteste Figur mit der meisten Leinwandzeit ist, gefolgt von Manfred. Beide Figuren sind die Protagonist:innen des Films. Meternagel als wichtige Bezugsfigur für Rita ist häufig im Bild zu sehen, ebenso Wendland als politisch einflussreiche und wichtige Figur. Herr und Frau Herrfurth treten meist gemeinsam auf, ebenso wie Kuhl und Ermisch, die zusammen mit Meternagel arbeiten.
 
-**evtl. Screenshot Sunny**
+```{figure} ../assets/auswertung/figurenpraesenz_solo_sunny.png
+---
+align: center
+width: 100%
+name: grafik_figurenpraesenz_solo_sunny
+alt: Grafik zur Figurenpräsenz in Solo Sunny
+---
+Grafik zur Figurenpräsenz in *Solo Sunny*.
+```
 
 Wechselt man zur Visualisierung von *Solo Sunny* wird sofort deutlich, dass hier Sunny die dominierende Figur ist. Sie ist fast den gesamtem Film über präsent. Nach Sunny folgen mit deutlich weniger Auftritten im Bild Ralph und Harry, die nie zusammen im Bild zu sehen sind, aber wichtige Bezugspunkte zu Sunny bilden. Neben Harry tritt auch Christine allein zusammen mit Sunny im Bild auf, sie ist eine alte Freundin von ihr. Norbert, Hubert, Bernd und Benno sind als Musiker in Sunnys Band oft gemeinsam präsent.
 
-**evtl. Screenshot Sonnensucher**
+```{figure} ../assets/auswertung/figurenpraesenz_sonnensucher.png
+---
+align: center
+width: 100%
+name: grafik_figurenpraesenz_sonnensucher
+alt: Grafik zur Figurenpräsenz in Sonnensucher
+---
+Grafik zur Figurenpräsenz in *Sonnensucher*.
+```
 
 Bei *Sonnensucher* bietet sich wiederum ein anderes Bild. Hier scheint die Dauer des Auftretens der Figuren Beier, Lutz, Jupp und Sergej im Bild verteilt über den Film sehr ähnlich zu sein, auch wenn sie oft zu unterschiedlichen Zeitpunkten zu sehen sind. Hier kann also von einem Film mit mehreren, gemäß der des zeitlichen Auftretens im Film gleichberechtigten Protagonist:innen ausgegangen werden. Günter und Emmi sind als wichtige Nebenfiguren recht häufig präsent, Weirauch und Wera eher seltener.
 
 Hier sind also deutliche Unterschiede in den Mustern des zeitlichen Auftretens von Figuren im Film zu erkennen, die vermutlich auch mit den behandelten Themen in den Filmen zusammenhängen. *Sonnensucher* ist eher ein Ensemblefilm, in dem DDR-Arbeiter:innen für den politisch wichtigen Uranabbau mit den sowjetischen Soldat:innen zusammenarbeiten müssen. In *Solo Sunny* sucht Sunny allein als kompromisslose Künstlerin ihren Weg im Leben und in der Gesellschaft.
 
-Auch hier würde es sich wieder anbieten, an dieser Stelle zur genauen Analyse der einzelnen Filme zurückzukehren, indem etwa die Annotationsdaten zu den Figuren in VIAN eingelesen werden. Hier kann genauer betrachtet werden, welche Figuren wann aus welchen Gründen gemeinsam im Bild zu sehen sind. Auch Annotationsfehler werden dadurch sichtbar wie z.B. in *Solo Sunny*, bei dem der Bandleader Hubert am Ende fälschlicherweise im Bild der Szene erkannt wird, in der Sunny auf ihre möglicherweise neue Band trifft.
+Auch hier würde es sich wieder anbieten, an dieser Stelle zur genauen Analyse der einzelnen Filme zurückzukehren, indem etwa die Annotationsdaten zu den Figuren in VIAN eingelesen werden. Hier kann genauer betrachtet werden, welche Figuren wann und aus welchen Gründen gemeinsam im Bild zu sehen sind. Auch Annotationsfehler werden dadurch sichtbar wie z.B. in *Solo Sunny*, bei dem der Bandleader Hubert am Ende fälschlicherweise im Bild der Szene erkannt wird, in der Sunny auf ihre möglicherweise neue Band trifft.
 
 
 ## Visualisierung der Figurenbeziehungen
@@ -78,42 +111,104 @@ Nun soll die Visualisierung zu den Figurenbeziehungen betrachtet werden. Zu sehe
 
 Die Anzeige der einzelnen Filme kann hier im Auswahlmenü am rechten Rand durch die Auswahlmenüs "Data Selection" -> "Graph" ausgewählt werden. Die Bedeutung der einzelnen Einstellungsmöglichkeiten im rechten Menü können hier nicht weiter besprochen werden, experimentieren Sie aber gerne mit verschiedenen Einstellungen. Mit einem Klick auf "Reset" können Sie jeweils zum Ausgangszustand der Visualisierung zurückkehren.
 
-**Screenshot einfügen**
+```{figure} ../assets/auswertung/figurenbeziehung_auswahl.png
+---
+align: center
+width: 100%
+name: grafik_figurenbeziehung_auswahl
+alt: Grafik zur Auswahl der Filme in der Visualisierung der Figurenbeziehungen
+---
+Auswahlmenü zur Darstellung der Filme.
+```
 
 In *Der geteilte Himmel* hat Rita gefolgt von Manfred über den Film verteilt die längste Präsenz im Bild - der große Kreis ihrer Figur ist deutlich im Zentrum platziert. Nach dem Aufbau der Grafik werden die verschiedenen Sphären der Figurenkonstellation deutlich:
 
-**Screenshot**
+```{figure} ../assets/auswertung/figurenbeziehungen_himmel_1.png
+---
+align: center
+width: 100%
+name: grafik_figurenbeziehungen_himmel_1
+alt: Grafik zur Beziehung der Figuren in der Geteilte Himmel, die einzelnen Bereiche sind hervorgehoben
+---
+Figurenbeziehungen in *Der geteilte Himmel*.
+```
 
-Im rechten Teil der Grafik sind mit Kuhl, Meternagel Schwarzenbach, Ermisch und Wendland die Figuren der Arbeitswelt im Form der Wagonfabrik und der Universität versammelt. Im linken Teil unten mit Herr und Frau Herrfurth und oben mit Martin der private Bereich Ritas und Manfreds.
+Im unteren Teil der Grafik sind mit Kuhl, Meternagel, Ermisch und Wendland die Figuren der Arbeitswelt im Form der Wagonfabrik versammelt, rechts Schwarzenbach für die Universität. Im oberen Teil mit Herr und Frau Herrfurth und Martin der private Bereich Ritas und Manfreds.
 
-**Screenshots**
+```{figure} ../assets/auswertung/figurenbeziehungen_himmel_2.png
+---
+align: center
+width: 100%
+name: grafik_figurenbeziehungen_himmel_2
+alt: Grafik zur Beziehung der Figuren in der Geteilte Himmel, Beziehungen Martin
+---
+Martins Figurenbeziehungen in *Der geteilte Himmel*.
+```
+
 
 Ein Klick auf Martin zeigt, dass er bei den erfassten Stellen des Auftretens nur mit Rita und Manfred zusammen zu sehen ist, Schwarzenbach hingegen nur mit Rita
 
-**Screenshot**
-
+```{figure} ../assets/auswertung/figurenbeziehungen_solo_sunny_1.png
+---
+align: center
+width: 100%
+name: grafik_figurenbeziehungen_solo_sunny_1
+alt: Grafik zur Beziehung der Figuren in Solo Sunny
+---
+Figurenbeziehungen in *Solo Sunny*.
+```
 
 Ein Blick auf die Grafik für die Figurenbeziehungen in *Solo Sunny* zeigt wiederum die Dominanz Sunnys in Bezug auf ihre Leinwandzeit. Ihr Figuren-Kreis ist mit Abstand der größte, als einzige Figur ist sie mit allen anderen erfassten Figuren verbunden.
 
-**Screenshot**
+```{figure} ../assets/auswertung/figurenbeziehungen_solo_sunny_2.png
+---
+align: center
+width: 100%
+name: grafik_figurenbeziehungen_solo_sunny_2
+alt: Grafik zur Beziehung der Figuren Ralph, Harry, Christine in Solo Sunny
+---
+Figurenbeziehungen Ralph, Harry, Christine in *Solo Sunny*.
+```
 
 Bei genauerer Betrachtung wird erkennbar, dass Ralph, Harry und Christine mit deutlich dickeren Verbindungsstrichen mit Sunny verbunden sind als die übrigen erfassten Figuren.
 Christine und Harry sind dabei nur mit Sunny gleichzeitig im Bild und haben dadurch keine Verbindungslinien zu anderen Figuren.
 
-**Screenshot Christine**
+```{figure} ../assets/auswertung/figurenbeziehungen_solo_sunny_3.png
+---
+align: center
+width: 100%
+name: grafik_figurenbeziehungen_solo_sunny_3
+alt: Grafik zur Beziehung der Figur Ralph in Solo Sunny
+---
+Figurenbeziehung Ralph in *Solo Sunny*.
+```
 
 Als Aushilfsmusiker ist Ralph hingegen noch mit den Bandkollegen Bernd und Hubert gemeinsam im Bild zu sehen und daher durch eine Linie in der Grafik verbunden.
-
-**Screenshot Ralph**
 
 
 Bei *Sonnensucher* zeigt sich bei den Figuren Lutz, Jupp, Beier und Sergej eine besonders lange Präsenz im Bild, sie sind auch im Laufe des Films mit allen weiteren erfassten Figuren im Bild zu sehen bzw. sind in der Grafik mit allen anderen Figuren durch einen Verbindungsstrich in Beziehung gesetzt. 
 
-**Screenshot**
+```{figure} ../assets/auswertung/figurenbeziehungen_sonnensucher_1.png
+---
+align: center
+width: 100%
+name: grafik_figurenbeziehungen_sonnensucher_1
+alt: Grafik zur Beziehung der Figur in Sonnensucher
+---
+Figurenbeziehung in *Sonnensucher*.
+```
 
 Die Dicke der Verbindungsstriche als Indikator für die Dauer der gemeinsamen Leinwandpräsenz variiert dabei je nach Figur. Insgesamt ist das durch ein gemeinsames Auftreten im Bild entstehende Netz der Figuren untereinander hier wesentlich dichter gestrickt. Lediglich Günter wurde z.B. nicht zusammen mit Fedossjev und Wera erfasst, und Wera nicht zusammen mit Günter. Dies könnte für eine deutlich intensivere Interaktion aller Figuren miteinander sprechen als bei den bisher betrachteten Filmen.
 
-**Screenshot Günter**
+```{figure} ../assets/auswertung/figurenbeziehungen_sonnensucher_2.png
+---
+align: center
+width: 100%
+name: grafik_figurenbeziehungen_sonnensucher_2
+alt: Grafik zur Beziehung der Figur GFünter in Sonnensucher
+---
+Figurenbeziehung der Figur Günter in *Sonnensucher*.
+```
 
 Auch hier sind die Visualisierungen mit Vorsicht zu behandeln und mit Bedacht zu interpretieren. Die Figurenerkennungen sind nicht unbedingt vollständig und nicht immer fehlerfrei. Dennoch werden wichtige Muster des gemeinsamen Auftretens von Figuren deutlich und können als Grundlage für Überlegungen bezüglich der Beziehung von Figuren untereinander dienen. Diese müssten wiederum an den konkreten Filmen untersucht und überprüft werden. Denn dass Figuren gemeinsam im Bild auftreten sagt noch nichts über die Art ihrer Beziehung untereinander aus. Letztlich muss auch hier der breitere Kontext in Form der Produktionsbedingungen und der politischen Lage zu Entstehungszeit des Films mit einbezogen werden.
 
