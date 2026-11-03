@@ -14,7 +14,7 @@
   "name": "Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs",
   "description": "Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können.",
   "version": "0.1.0",
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "2.0.0",
   "url": "https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/",
   "workExample": {
     "@type": "SoftwareSourceCode",
@@ -209,13 +209,13 @@
   "license": [
     {
       "@type": "CreativeWork",
-      "name": "Source Code",
-      "license": "https://opensource.org/licenses/AGPL-3.0"
+      "name": "Content",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "@type": "CreativeWork",
-      "name": "Content",
-      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "name": "Source Code",
+      "license": "https://opensource.org/licenses/AGPL-3.0"
     }
   ],
   "hasPart": [

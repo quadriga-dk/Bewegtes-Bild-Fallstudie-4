@@ -176,19 +176,19 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
     <schema:keywords>open-educational-resources</schema:keywords>
     <schema:learningResourceType>Jupyter Book</schema:learningResourceType>
     <schema:license>
-      <schema:CreativeWork rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#license_code">
-        <schema:license rdf:resource="https://opensource.org/licenses/AGPL-3.0" />
-        <schema:name>Source Code</schema:name>
-      </schema:CreativeWork>
-    </schema:license>
-    <schema:license>
-      <schema:CreativeWork rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#license_content">
+      <schema:CreativeWork rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#license_0">
         <schema:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/" />
         <schema:name>Content</schema:name>
       </schema:CreativeWork>
     </schema:license>
+    <schema:license>
+      <schema:CreativeWork rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#license_1">
+        <schema:license rdf:resource="https://opensource.org/licenses/AGPL-3.0" />
+        <schema:name>Source Code</schema:name>
+      </schema:CreativeWork>
+    </schema:license>
     <schema:name>Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs</schema:name>
-    <schema:schemaVersion>1.0.0</schema:schemaVersion>
+    <schema:schemaVersion>2.0.0</schema:schemaVersion>
     <schema:timeRequired>PT10H15M</schema:timeRequired>
     <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/" />
     <schema:version>0.1.0</schema:version>

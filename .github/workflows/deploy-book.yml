@@ -19,7 +19,7 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     # Set up Python with pip caching
     - name: Set up Python
@@ -41,7 +41,7 @@ jobs:
     # fails.
     - name: Restore cached Python dependencies
       id: deps-cache
-      uses: actions/cache/restore@v5
+      uses: actions/cache/restore@v6
       with:
         path: .venv
         key: python-deps-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
@@ -53,7 +53,7 @@ jobs:
     # execute:
     #   execute_notebooks: cache
     - name: Cache executed notebooks
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
         path: _build/.jupyter_cache
         key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
@@ -85,7 +85,7 @@ jobs:
     # that reason.
     - name: Save cached Python dependencies
       if: steps.deps-cache.outputs.cache-hit != 'true'
-      uses: actions/cache/save@v5
+      uses: actions/cache/save@v6
       with:
         path: .venv
         key: python-deps-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}
@@ -111,8 +111,8 @@ jobs:
 
     - name: Copy metadata files to build directory
       run: |
-        cp metadata.jsonld _build/html/metadata.jsonld
-        cp metadata.rdf _build/html/metadata.rdf
+        cp quadriga-metadata.jsonld _build/html/quadriga-metadata.jsonld
+        cp quadriga-metadata.rdf _build/html/quadriga-metadata.rdf
         echo "Copied metadata files to _build/html for discovery"
 
     - name: Upload book artifact
