@@ -17,7 +17,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
@@ -39,63 +39,15 @@ jobs:
           fi
 
       - name: Set up Python
-        id: setup-python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@v5
         with:
           python-version-file: '.python-version'
           cache: pip
 
-      # dev-requirements.txt is unpinned, so the cache key rotates monthly.
-      # Without this, an exact hit would freeze ruff/mypy/rdflib/jsonschema at
-      # whatever versions were first cached and never pick up upstream releases.
-      # Rolling the key forces one clean install per month, which is what a
-      # plain `pip install -r dev-requirements.txt` would have resolved anyway.
-      - name: Get cache rotation stamp
-        id: cache-stamp
-        run: echo "stamp=$(date -u +'%Y-%m')" >> "$GITHUB_OUTPUT"
-
-      # Restore the installed dev dependencies (virtual environment). Unlike
-      # setup-python's `cache: pip` (downloads only), this lets the install step
-      # be skipped entirely on an exact hit. Split into restore + save so the
-      # venv is persisted before the metadata steps run, and therefore survives
-      # a `cancel-in-progress` cancellation from a concurrent push.
-      # No restore-keys on purpose: bridging months would restore an older venv,
-      # and plain `pip install` does not upgrade already-satisfied unpinned
-      # packages, so the monthly refresh would silently do nothing.
-      - name: Restore cached Python dependencies
-        id: deps-cache
-        uses: actions/cache/restore@v5
-        with:
-          path: .venv
-          key: python-deps-dev-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('dev-requirements.txt') }}-${{ steps.cache-stamp.outputs.stamp }}
-
-      # Install with `.venv/bin/python -m pip`, NOT a bare `pip`: the venv is
-      # only added to PATH by the "Activate" step below (which affects subsequent
-      # steps), so a bare `python`/`pip` here targets setup-python's global
-      # site-packages and leaves the venv empty -- and an empty venv then gets
-      # cached, poisoning every later run.
-      - name: Create virtual environment and install dependencies
-        if: steps.deps-cache.outputs.cache-hit != 'true'
+      - name: Install dependencies
         run: |
-          python -m venv .venv
-          .venv/bin/python -m pip install --upgrade pip
-          .venv/bin/python -m pip install -r dev-requirements.txt
-
-      # Fail loudly if the venv is empty/missing packages, so a broken
-      # environment is never written to the cache (and a bad restored cache is
-      # caught instead of silently failing later).
-      - name: Verify virtual environment
-        run: .venv/bin/python -c "import yaml, rdflib"
-
-      - name: Save cached Python dependencies
-        if: steps.deps-cache.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v5
-        with:
-          path: .venv
-          key: python-deps-dev-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('dev-requirements.txt') }}-${{ steps.cache-stamp.outputs.stamp }}
-
-      - name: Activate virtual environment
-        run: echo "$GITHUB_WORKSPACE/.venv/bin" >> "$GITHUB_PATH"
+          python -m pip install --upgrade pip
+          pip install -r dev-requirements.txt
 
       - name: Update version metadata (if triggered by tag)
         if: steps.extract_version.outputs.is_tag == 'true'
@@ -112,7 +64,7 @@ jobs:
       - name: Stage metadata files
         run: |
           # Add all metadata files that exist (handles both new and modified files)
-          for file in metadata.yml CITATION.bib CITATION.cff .zenodo.json metadata.jsonld metadata.rdf; do
+          for file in quadriga-metadata.yml CITATION.bib CITATION.cff .zenodo.json quadriga-metadata.jsonld quadriga-metadata.rdf; do
             [ -f "$file" ] && git add "$file"
           done
 
