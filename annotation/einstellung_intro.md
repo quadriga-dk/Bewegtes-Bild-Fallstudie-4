@@ -37,8 +37,31 @@ Für jede analysierte Videodatei werden drei Ergebnisdateien im festgelegten Exp
 
 Die Datei **`Filmname_shots_THRESHOLD.csv`** enthält die erkannten Einstellungen als Tabelle. Jede Zeile beschreibt eine Einstellung mit ihrem Start, Ende, Mittelpunkt und ihrer Dauer, jeweils in Frames und Sekunden.
 
-Die Datei **`Filmname_shots_THRESHOLD_metadata.csv`** dokumentiert die technischen Metadaten der Videodatei, den verwendeten Analyseparameter und statistische Kennwerte des Ergebnisses. Wie bei der Figurenerkennung werden die Metadaten als Schlüssel-Wert-Paare gespeichert: Jede Zeile enthält den Namen eines Metadatums und seinen Wert: 
+Die Datei **`Filmname_shots_THRESHOLD_metadata.csv`** dokumentiert die technischen Metadaten der Videodatei, den verwendeten Analyseparameter und statistische Kennwerte des Ergebnisses.Jede Zeile enthält den Namen eines Metadatums und seinen Wert.
 
+Zusätzlich wird eine **`Filmname_shots_THRESHOLD.eaf`** erstellt. Mit dieser Datei können die erkannten Einstellungen in Annotationsprogramme wie VIAN importiert werden, um die Ergebnisse zu überprüfen und weiterzubearbeiten.
+
+Alle drei Dateien werden direkt im Exportordner abgelegt, unabhängig von der ursprünglichen Ordnerstruktur der Videodateien. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt. Bei einer Ausführung in Google Colab kann der gesamte Exportordner zusätzlich als ZIP-Archiv heruntergeladen werden.
+
+Eine genaue Aufschlüsselung der einzelnen Werte der beiden `.csv`-Dateien finden Sie im folgenden Appendix.
+
+### Appendix: Ausgabedateien
+#### `Filmname_shots_THRESHOLD.csv`
+| Spalte | Beschreibung |
+|---|---|
+| `start` | Nummer des ersten Frames der erkannten Einstellung. Die Zählung beginnt bei `0`. |
+| `end` | Nummer des letzten Frames der erkannten Einstellung. Dieser Frame gehört noch zur Einstellung. |
+| `middle` | Nummer des ungefähr in der Mitte der Einstellung liegenden Frames. |
+| `duration` | Dauer der Einstellung als Anzahl der Frames, einschließlich des Start- und Endframes. |
+| `start_s` | Beginn der Einstellung in Sekunden. |
+| `end_s` | Zeitpunkt des letzten Frames der Einstellung in Sekunden. |
+| `middle_s` | Ungefährer Mittelpunkt der Einstellung in Sekunden. |
+| `duration_s` | Dauer der Einstellung in Sekunden, berechnet aus der Frameanzahl und der Bildrate des Videos. |
+
+Die Sekundenwerte werden auf zwei Nachkommastellen gerundet. Die Einzelwerte können deshalb geringfügig von einer Berechnung anhand der exportierten Sekundenangaben abweichen.
+
+
+#### `Filmname_shots_THRESHOLD_metadata.csv`
 | Metadatum | Beschreibung |
 |---|---|
 | **Technische Metadaten** | |
@@ -69,6 +92,3 @@ Ein Erscheinungsjahr wird nur dann erkannt, wenn der Videodateiname vor seiner E
 
 Die Vorhersagewerte beschreiben die Einschätzung des Modells, nicht die überprüfte Genauigkeit seiner Ergebnisse. Die Werte zur Einstellungsdauer basieren auf den erkannten Einstellungsgrenzen und der Bildrate des Videos.
 
-Zusätzlich wird eine **`Filmname_shots_THRESHOLD.eaf`** erstellt. Mit dieser Datei können die erkannten Einstellungen in Annotationsprogramme wie VIAN importiert werden, um die Ergebnisse zu überprüfen und weiterzubearbeiten.
-
-Alle drei Dateien werden direkt im Exportordner abgelegt, unabhängig von der ursprünglichen Ordnerstruktur der Videodateien. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt. Bei einer Ausführung in Google Colab kann der gesamte Exportordner zusätzlich als ZIP-Archiv heruntergeladen werden.

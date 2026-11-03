@@ -139,7 +139,45 @@ Die Datei **`Filmname_characters_frames.csv`** dokumentiert die Erkennung einzel
 
 Die Datei **`Filmname_characters_annotations.csv`** fasst aufeinanderfolgende Erkennungen einer Figur zu längeren Zeitintervallen zusammen. Jede Zeile enthält den Namen der Videodatei, die erkannte Figur sowie den Beginn und das Ende ihres Auftretens in Frames, Sekunden und im Format Stunden:Minuten:Sekunden.
 
-Die Datei **`Filmname_characters_metadata.csv`** enthält technische Metadaten, Analyseparameter und statistische Kennwerte der erkannten Figuren. Wie bei der Einstellungserkennung werden die Metadaten als Schlüssel-Wert-Paare gespeichert: Jede Zeile enthält den Namen eines Metadatums und seinen Wert.
+Die Datei **`Filmname_characters_metadata.csv`** enthält technische Metadaten, Analyseparameter und statistische Kennwerte der erkannten Figuren. Jede Zeile enthält den Namen eines Metadatums und seinen Wert.
+
+Schließlich wird eine Datei **`Filmname_characters_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN importieren, überprüfen und weiterbearbeiten. Für jede erkannte Figur enthält diese `.eaf-Datei` die Informationen für eine eigene Annotationsspur, die deren Auftritte im Film festhält und anzeigt. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung für die analysierte Videodatei bereitgestellt, werden die Einstellungen in der Spur `shots` gespeichert und angezeigt. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Spur jene Einstellungen zugeordnet, in denen sie für mindestens einen Frame erkannt wurden (`Figurenname_matched`).
+
+Alle Ergebnisdateien eines Films werden in einem eigenen Unterordner gespeichert. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt. In Google Colab kann der gesamte Exportordner als ZIP-Archiv heruntergeladen werden.
+
+Eine genaue Aufschlüsselung der einzelnen Werte der drei `.csv`-Dateien finden Sie im folgenden Appendix.
+
+### Appendix: Ausgabedateien
+
+#### `Filmname_characters_frames.csv`
+
+| Spalte | Beschreibung |
+|---|---|
+| `framecount` | Nummer des untersuchten Videoframes, in dem die Figur erkannt wurde. Die Zählung beginnt bei `0`. |
+| `time_s` | Zeitpunkt dieses Frames in Sekunden, berechnet aus der Framenummer und der Bildrate des Videos. |
+| `time_hh_mm_ss` | Derselbe Zeitpunkt im Format Stunden:Minuten:Sekunden, auf volle Sekunden gerundet. |
+| `dot` | [Skalarprodukt](#recognition) zwischen dem erkannten Gesichts-Embedding und dem Vergleichs-Embedding der zugeordneten Figur. Je höher der Wert, desto größer die vom Modell berechnete Ähnlichkeit. |
+| `score` | [Konfidenzwert der Gesichtsdetektion](#detection), der angibt, wie sicher das Modell das Gesicht im Bild erkannt hat. |
+| `char_name` | Name der Figur, der das erkannte Gesicht anhand der Vergleichs-Embeddings zugeordnet wurde. |
+
+Die Datei dokumentiert nur erfolgreiche Figurenzuordnungen in den tatsächlich untersuchten Frames. Ausgelassene Frames und Gesichter, die keinen ausreichenden Erkennungs- oder Ähnlichkeitswert erreichen, erscheinen nicht als eigene Zeilen.
+
+#### `Filmname_characters_annotations.csv`
+
+| Spalte | Beschreibung |
+|---|---|
+| `video` | Dateiname der analysierten Videodatei einschließlich Dateiendung. |
+| `character` | Name der Figur, für die der Zeitabschnitt erstellt wurde. |
+| `start` | Nummer des ersten Frames, in dem die Figur innerhalb des Abschnitts erkannt wurde. |
+| `end` | Nummer des letzten Frames, in dem die Figur innerhalb des Abschnitts erkannt wurde. |
+| `start_s` | Beginn des Abschnitts in Sekunden. |
+| `end_s` | Zeitpunkt des letzten erkannten Frames des Abschnitts in Sekunden. |
+| `start_hh_mm_ss` | Beginn des Abschnitts im Format Stunden:Minuten:Sekunden, auf volle Sekunden gerundet. |
+| `end_hh_mm_ss` | Zeitpunkt des letzten erkannten Frames im Format Stunden:Minuten:Sekunden, auf volle Sekunden gerundet. |
+
+Die zusammengefassten Abschnitte können auch Frames enthalten, in denen die Figur nicht einzeln nachgewiesen wurde. Ein durchgehendes Intervall bedeutet daher nicht zwangsläufig, dass die Figur in jedem dazwischenliegenden Frame erkannt wurde.
+
+#### `Filmname_characters_metadata.csv`
 
 | Metadatum | Beschreibung |
 |---|---|
@@ -170,7 +208,3 @@ Die Datei **`Filmname_characters_metadata.csv`** enthält technische Metadaten, 
 | `Figurenname_time_sum_hh_mm_ss` | Geschätzte Gesamtdauer des Auftretens der Figur im Format Stunden:Minuten:Sekunden. |
 
 Der Platzhalter `Figurenname` wird durch den Namen der jeweiligen Figur ersetzt. Ein Erscheinungsjahr wird nur dann erkannt, wenn der Videodateiname vor seiner Endung mit `_Jahr` endet, beispielsweise `Der_geteilte_Himmel_1964.mp4`. Die geschätzte Gesamtdauer ihres Auftretens basiert auf den erfolgreich analysierten Frames und kann von der tatsächlichen Auftrittsdauer abweichen.
-
-Schließlich wird eine Datei **`Filmname_characters_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN importieren, überprüfen und weiterbearbeiten. Für jede erkannte Figur enthält diese `.eaf-Datei` die Informationen für eine eigene Annotationsspur, die deren Auftritte im Film festhält und anzeigt. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung für die analysierte Videodatei bereitgestellt, werden die Einstellungen in der Spur `shots` gespeichert und angezeigt. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Spur jene Einstellungen zugeordnet, in denen sie für mindestens einen Frame erkannt wurden (`Figurenname_matched`).
-
-Alle Ergebnisdateien eines Films werden in einem eigenen Unterordner gespeichert. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt. In Google Colab kann der gesamte Exportordner als ZIP-Archiv heruntergeladen werden.
