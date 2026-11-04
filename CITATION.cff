@@ -26,6 +26,10 @@ authors: &id001
   family-names: Gieseke
   orcid: https://orcid.org/0000-0001-8421-103X
   affiliation: Filmuniversität Babelsberg KONRAD WOLF
+identifiers:
+- type: doi
+  value: 10.5281/zenodo.23948794
+  description: Zenodo
 repository-code: https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4
 url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/
 keywords: &id002
@@ -49,6 +53,7 @@ preferred-citation:
   title: Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung
     am Beispiel der Filme Konrad Wolfs
   type: book
+  doi: 10.5281/zenodo.23948794
   url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/
   repository-code: https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4
   license: CC-BY-SA-4.0

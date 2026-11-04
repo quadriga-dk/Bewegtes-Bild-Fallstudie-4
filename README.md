@@ -1,6 +1,6 @@
 # Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs
 
-[![DOI](https://zenodo.org/badge/1009578724.svg)](https://doi.org/10.5281/zenodo.ToDo)
+[![DOI](https://zenodo.org/badge/1210331356.svg)](https://doi.org/10.5281/zenodo.23948794)
 
 ## QUADRIGA OER
 
