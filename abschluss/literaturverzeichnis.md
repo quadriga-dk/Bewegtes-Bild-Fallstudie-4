@@ -3,10 +3,10 @@
 `````{margin}
 ````{admonition} Zitierhinweis
 :class: citation-information
-```{literalinclude} ../CITATION.bib
+```{literalinclude} /CITATION.bib
 :language: bibtex
 ```
-Schnaitter, H., Samoilova, E. & Islam, L. (2024). _QUADRIGA OERs: erstellen und gestalten mit interaktives Lehrbuch. QUADRIGA Open Educational Resources: Template._ https://doi.org/10.5281/zenodo.14970672
+Schick, T., Winter, M., Loist, S. & Gieseke, L. (2026). _Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs. QUADRIGA Open Educational Resources: Bewegtes Bild 4_ https://doi.org/10.5281/zenodo.ToDo
 
 ````
 `````
