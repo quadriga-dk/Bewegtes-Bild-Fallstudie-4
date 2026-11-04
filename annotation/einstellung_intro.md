@@ -37,7 +37,7 @@ Für jede analysierte Videodatei werden drei Ergebnisdateien im festgelegten Exp
 
 Die Datei **`Filmname_shots_THRESHOLD.csv`** enthält die erkannten Einstellungen als Tabelle. Jede Zeile beschreibt eine Einstellung mit ihrem Start, Ende, Mittelpunkt und ihrer Dauer, jeweils in Frames und Sekunden.
 
-Die Datei **`Filmname_shots_THRESHOLD_metadata.csv`** dokumentiert die technischen Metadaten der Videodatei, den verwendeten Analyseparameter und statistische Kennwerte des Ergebnisses.Jede Zeile enthält den Namen eines Metadatums und seinen Wert.
+Die Datei **`Filmname_shots_THRESHOLD_metadata.csv`** dokumentiert die technischen Metadaten der Videodatei, den verwendeten Analyseparameter und statistische Kennwerte des Ergebnisses. Jede Zeile enthält den Namen eines Metadatums und seinen Wert.
 
 Zusätzlich wird eine **`Filmname_shots_THRESHOLD.eaf`** erstellt. Mit dieser Datei können die erkannten Einstellungen in Annotationsprogramme wie VIAN importiert werden, um die Ergebnisse zu überprüfen und weiterzubearbeiten.
 

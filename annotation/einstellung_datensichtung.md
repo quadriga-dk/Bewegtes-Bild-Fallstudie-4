@@ -2,7 +2,20 @@
 
 Nachdem die Einstellungs-Annotationen für den Trailer zu *Der geteilte Himmel* automatisch durch das [Jupyter Notebook](einstellung_notebook.ipynb) erstellt wurden, ist es an der Zeit, diese mithilfe des Annotations-Tools VIAN zu sichten. Die Installation und die für unsere Sichtung notwendigen grundlegenden Funktionen von VIAN wurden bereits im Kapitel zu den [technischen Grundlagen](technik.md#vian-installation-und-verwendung) vorgestellt.
 
-Für die Sichtung in VIAN (oder einem anderen Annotationsprogramm) wurde vom Jupyter Notebook eine `.eaf`-Datei erstellt, mittels derer sich die Einstellungs-Annotationen in die entsprechenden Tools importieren lassen. Die Trailer-Datei zu *Der geteilte Himmel* können Sie [**hier (link noch einfügen)**] herunterladen.
+````{admonition} Download der Übungsdateien
+:class: seealso
+Die begleitenden Dateien zu diesem Abschnitt können Sie [**hier (link noch einfügen)**] gebündelt herunterladen. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
+
+<a href="https://support.microsoft.com/de-de/windows/experience/storage-filemanagement/zip-and-unzip-files" class="external-link" target="_blank">Windows</a>
+
+<a href="https://support.apple.com/de-de/guide/mac-help/mchlp2528/mac" class="external-link" target="_blank">macOS</a>
+
+Im Ordner `Trailer` des Übungsdaten-Archivs befinden sich die Videodateien und die Ergebnisse der automatischen Einstellungserkennung für die Trailer zu <a href="https://www.youtube.com/watch?v=1LKLZNsU3_o" class="external-link" target="_blank"><em>Der geteilte Himmel</em></a>, <a href="https://www.youtube.com/watch?v=wdY5MxWyGrU&t=13s" class="external-link" target="_blank"><em>Mama, ich lebe</em></a> und <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank"><em>Solo Sunny</em></a>. Für alle drei Trailer wurde der voreingestellte Schwellenwert von `0.5` verwendet.
+
+Der Trailer zu *Der geteilte Himmel* wird bereits im [Jupyter-Notebook zur Einstellungserkennung](../annotation/einstellungen_notebook.ipynb) als Teil der Testdateien heruntergeladen und analysiert. Um mögliche Problemstellen und Fehler bei der automatischen Erkennung von Einstellungsübergängen zu verdeutlichen, haben wir mit demselben Notebook zusätzlich die Trailer zu *Mama, ich lebe* und *Solo Sunny* ausgewertet.
+````
+
+Für die Sichtung in VIAN (oder einem anderen Annotationsprogramm) wurde vom Jupyter Notebook jeweils eine `.eaf`-Datei erstellt, mittels derer sich die Einstellungs-Annotationen in die entsprechenden Tools importieren lassen.
 
 ````{admonition} Hinweis zum Import von .eaf-Dateien in VIAN
 :class: hinweis, dropdown
@@ -55,7 +68,7 @@ alt: Die Einstellungsannotationen nach dem Import in VIAN.
 Die Einstellungsannotationen nach dem Import in VIAN.
 ```
 
-Allerdings funktioniert die Erkennung mit dem Standard-Schwellenwert von `0.5` nicht für alle Trailer der Filme Konrad Wolfs fehlerlos. Um mögliche Problemstellen und fehlerhafte Erkennungen von Einstellungsübergängen zu verdeutlichen, haben wir mithilfe des selben [Jupyter Notebooks nur Einstellungserkennung](../annotation/einstellungen_notebook.ipynb) automatisiert Annotationen zu Trailern zu Konrad Wolfs  <a href="https://www.youtube.com/watch?v=wdY5MxWyGrU&t=13s" class="external-link" target="_blank">*Mama, ich lebe*</a> und <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> erstellt. Hier können sie die Trailer und die zugehörigen `.eaf`-Annotationsdateien für *Mama, ich lebe* (**Link noch einfügen!**) und *Solo Sunny* (**Link noch einfügen!**) herunterladen und die Ergebnisse selbst überprüfen.
+Allerdings funktioniert die Erkennung mit dem Standard-Schwellenwert von `0.5` nicht für alle Trailer der Filme Konrad Wolfs fehlerlos.
 
 Im Trailer zu *Mama, ich lebe* werden zu Beginn Standbilder aus anderen Produktionen Konrad Wolfs gezeigt. Hier wurde bei einem Schwellenwert von `0.5` der Übergang zwischen zwei ähnlichen Bildern innerhalb der Einstellung 12 nicht erkannt:
 
@@ -98,7 +111,8 @@ Durch das Experimentieren mit unterschiedlichen Schwellenwerten lassen sich ggf.
 
 ``````{admonition} Übung
 :class: exercise
-Versuchen Sie, die oben aufgelisteten Fehler durch eine erneute Auswertung der Trailer mit einem anderen Schwellenwert zu beseitigen. Sie können die zusätzlichen Trailer hier herunterladen **[Link folgt]**.
+Versuchen Sie, die aufgeführten Fehler in einem der Trailer durch dessen erneute Auswertung mit einem anderen Schwellenwert zu beseitigen. Die Trailer zu *Mama, ich lebe* und *Solo Sunny* liegen dem eingangs erwähnten`.zip`-Archiv zu diesem Abschnitt bei.
+
 
 `````{admonition}  Lösung
 :class: solution, dropdown
@@ -177,10 +191,7 @@ Export der Annotationsdateien.
 
 Am Ende des Notebooks werden die entstandenen Annotationsdateien im Ordner "export_shots" der Colab-Umgebung abgelegt. (1) Zusätzlich öffnet sich ein Dialogfenster, mit dem Sie die Annotationsdateien als Zip-Datei mit dem Namen `export.zip` auf Ihrem Computer speichern können. (2)
 
-```{admonition} Achtung
-:class: caution
-Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Annotationsergebnisse im Ordner "export_characters" durch die neu erzeugten Dateien überschrieben. Sie sollten also darauf achten, dass sie vor jedem neuen Durchgang die bereits vorhandenen Exportdateien zu den Annotationsergebnissen auf Ihrem Rechner lokal abspeichern, um auch weiterhin mit ihnen arbeiten zu können.
-```
+Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Ausgabedateien im Ordner "export_characters" durch Versionsnummern ergänzt, wie etwa `v2`, `v3` usw.
 
 Entpacken Sie ggf. die Exportdateien in einen Ordner ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
 

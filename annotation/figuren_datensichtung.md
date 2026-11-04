@@ -80,7 +80,9 @@ Auch wenn die automatisiert erstellten Annotationen zum Auftreten von Figuren in
 
 ``````{admonition} Übung
 :class: exercise
-Führen Sie die Analyse für einen weiteren Trailer Ihrer Wahl durch. Sie können die Trailer hier herunterladen. **[Link folgt]** Bereiten Sie die notwendigen Screenshots der Figuren [zur Erstellung der Vergleichsembeddings](figuren_intro.md#vergleichs-embeddings-zur-figurenerkennung) vor. Benennen Sie die Bilddateien dabei nach dem Schema `Erika01.png`. Ein einzelnes Bild pro Figur genügt, eine höhere Anzahl von Abbildungen aus verschiedenen Perspektiven verbessert jedoch die Genauigkeit der Erkennung. Die Namen der Figuren können Sie im [Filmportal](https://www.filmportal.de) recherchieren oder zu Übungszwecken eigene Namen vergeben. Wählen Sie selbst die Schwellenwerte, beispielsweise von sehr geringer Höhe wie `0.1`, und beurteilen Sie die Auswirkungen auf die Annotationsergebnisse.
+Führen Sie die Analyse für einen weiteren Trailer zu einem Konrad Wolf Film Ihrer Wahl durch. Sie können die Trailer hier einzeln herunterladen. **[Link folgt]** Bereiten Sie die notwendigen Screenshots der Figuren [zur Erstellung der Vergleichsembeddings](figuren_intro.md#vergleichs-embeddings-zur-figurenerkennung) vor. Benennen Sie die Bilddateien dabei nach dem Schema `Erika01.png`. Ein einzelnes Bild pro Figur genügt, eine höhere Anzahl von Abbildungen aus verschiedenen Perspektiven verbessert jedoch die Genauigkeit der Erkennung. Die Namen der Figuren können Sie im [Filmportal](https://www.filmportal.de) recherchieren oder zu Übungszwecken eigene Namen vergeben. Wählen Sie selbst die Schwellenwerte, beispielsweise von sehr geringer Höhe wie `0.1`, und beurteilen Sie die Auswirkungen auf die Annotationsergebnisse.
+
+Alternativ können Sie den *Solo Sunny* Trailer auswerten, der bereits in der allgemeinen `.zip`-Datei für dieses Kapitel im Ordner `Übung` beiliegt. Derselbe Ordner enthält zudem die Referenzabbildungen für die Figuren Ralph und Sunny. 
 
 `````{admonition}  Lösung
 :class: solution, dropdown
