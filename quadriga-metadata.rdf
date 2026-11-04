@@ -229,7 +229,7 @@
         <schema:name>Lamia Islam</schema:name>
       </schema:Person>
     </schema:contributor>
-    <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-11</schema:dateModified>
+    <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-04</schema:dateModified>
     <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-06</schema:datePublished>
     <schema:description>Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können.</schema:description>
     <schema:funding>Die vorliegenden Open Educational Resources wurden durch das Datenkompetenzzentrum QUADRIGA erstellt.
@@ -314,7 +314,7 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
     <schema:schemaVersion>2.0.0</schema:schemaVersion>
     <schema:timeRequired>PT10H15M</schema:timeRequired>
     <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/" />
-    <schema:version>0.1.0</schema:version>
+    <schema:version>1.0.0-beta</schema:version>
     <schema:workExample>
       <schema:SoftwareSourceCode rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#repository">
         <schema:codeRepository rdf:resource="https://github.com/quadriga-dk/Bewegtes-Bild-Fallstudie-4" />
