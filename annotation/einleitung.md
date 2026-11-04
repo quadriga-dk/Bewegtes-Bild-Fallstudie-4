@@ -20,8 +20,8 @@ Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse
 Die vorliegende Fallstudie befasst sich mit Workflows zur automatisierten Filmannotation. Am Beispiel der Filme Konrad Wolfs werden exemplarisch die Möglichkeiten der automatisierten Einstellungs- und Figurenerkennung dargestellt. In den folgenden Abschnitten stehen folgende Lernziele im Mittelpunkt:
 
 ```{include} ../einstieg/lernziele.md
-:start-after: "<!-- START: Annotation -->"
-:end-before: "<!-- END: Annotation -->"
+:start-after: "<!-- START: Automatisierte Annotation von Filmen -->"
+:end-before: "<!-- END: Automatisierte Annotation von Filmen -->"
 ```
 
 Wir befinden uns damit beim 3. Schritt unserer Fallstudie, bei dem die automatisierte Annotation von Filmen praktisch umgesetzt wird. Zu Beginn des Kapitels stellen wir die Entwicklung des angewendeten Workflows dar, gehen auf die verwendeten Modelle ein und erklären die notwendigen technischen Voraussetzungen und Grundlagen. Mithilfe von Jupyter Notebooks wird schließlich die Erkennung von Einstellungen und die Erkennung von Figuren anhand von Trailern zu Filmen Konrad Wolfs durchgeführt. Die erzeugten Annotationsdaten werden mit dem Filmanalysetool VIAN gesichtet und überprüft.

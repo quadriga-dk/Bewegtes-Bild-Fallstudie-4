@@ -3,7 +3,7 @@
 
 Das hier vorliegende interaktive Lehrbuch verfolgt folgende Lernziele:
 
-<!-- START: Filmanalyse -->
+<!-- START: Filmanalyse und automatisierte Annotation -->
 ```{admonition} [Filmanalyse und automatisierte Annotation](filmanalyse:einleitung)
 :class: lernziele
 
@@ -13,9 +13,9 @@ Das hier vorliegende interaktive Lehrbuch verfolgt folgende Lernziele:
 3. Mögliche Einsatzbereiche automatisierter Filmannotation können skizziert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 4. Eine Fragestellung zur quantitativen Filmanalyse kann formuliert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 ```
-<!-- END: Filmanalyse -->
+<!-- END: Filmanalyse und automatisierte Annotation -->
 
-<!-- START: Computer-Vision -->
+<!-- START: Computer Vision für die Filmanalyse -->
 ```{admonition} [Computer Vision für die Filmanalyse](vision:einleitung)
 :class: lernziele
 
@@ -26,9 +26,9 @@ Das hier vorliegende interaktive Lehrbuch verfolgt folgende Lernziele:
 4. Die Einsatzmöglichkeiten von Computer Vision für filmanalytische Aufgaben können benannt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 5. Die Möglichkeiten und Grenzen von Computer Vision Modellen können beurteilt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 ```
-<!-- END: Computer-Vision -->
+<!-- END: Computer Vision für die Filmanalyse -->
 
-<!-- START: Annotation -->
+<!-- START: Automatisierte Annotation von Filmen -->
 ```{admonition} [Automatisierte Annotation von Filmen](annotation:einleitung)
 :class: lernziele
 
@@ -39,9 +39,9 @@ Das hier vorliegende interaktive Lehrbuch verfolgt folgende Lernziele:
 4. Die Python-Skripte können für eigene Annotations-Projekte modifiziert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 5. Die Qualität der Annotationsergebnisse kann beurteilt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 ```
-<!-- END: Annotation -->
+<!-- END: Automatisierte Annotation von Filmen -->
 
-<!-- START: Auswertung -->
+<!-- START: Auswertung der Annotationsdaten -->
 ```{admonition} [Auswertung der automatisiert erstellten Annotationen](auswertung:einleitung)
 :class: lernziele
 
@@ -51,4 +51,4 @@ Das hier vorliegende interaktive Lehrbuch verfolgt folgende Lernziele:
 3. Die Annotationen können mit Python-Skripten sinnvoll visualisiert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 4. Die Ergebnisse aus den Annotationen können analysiert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 ```
-<!-- END: Auswertung -->
+<!-- END: Auswertung der Annotationsdaten -->

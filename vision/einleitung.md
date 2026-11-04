@@ -20,8 +20,8 @@ Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse
 Die vorliegende Fallstudie befasst sich mit Workflows zur automatisierten Filmannotation. Am Beispiel der Filme Konrad Wolfs werden exemplarisch die Möglichkeiten der automatisierten Einstellungs- und Figurenerkennung dargestellt. In den folgenden Abschnitten stehen folgende Lernziele im Mittelpunkt:
 
 ```{include} ../einstieg/lernziele.md
-:start-after: "<!-- START: Computer-Vision -->"
-:end-before: "<!-- END: Computer-Vision -->"
+:start-after: "<!-- START: Computer Vision für die Filmanalyse -->"
+:end-before: "<!-- END: Computer Vision für die Filmanalyse -->"
 ```
 
 Wir befinden uns damit beim 2. Schritt unserer Fallstudie, bei dem die Funktionsweisen von Computer Vision dargestellt und deren Einsatzmöglichkeiten für die filmanalytische Praxis ausgelotet werden. Der grundlegende Begriffe wie Machine Learning, Algorithmus oder Modell werden geklärt und welche Rolle Schwellenwerte in diesem Themenbereich spielen. Im Kapitel werden zudem die Möglichkeiten und Grenzen von Computer Vision für die Filmanalyse kritisch reflektiert.

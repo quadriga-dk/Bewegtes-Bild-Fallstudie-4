@@ -74,18 +74,110 @@ usedToolLIST:
 - name: Jupyter Book
   url: https://jupyterbook.org
 chapterLIST:
-- title: Inhaltskapitel
-  description: Ein Kapitel mit Inhalt(sbeispielen).
-  url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
-  timeRequired: PT1H
-  learningGoal: Sie kennen die Bestandteile des Templates und können es für Ihre Bedürfnisse
-    nutzen.
+- title: Filmanalyse und automatisierte Annotation
+  description: TODO
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/filmanalyse/einleitung.html
+  timeRequired: TODO
+  learningGoal: Filmanalyse und automatisierte Annotation
   learningObjectiveLIST:
-  - description: Kennen und verstehen der Bestandteile des Templates.
+  - description: Die Rolle von Annotationen für filmanalytische Prozesse kann dargestellt
+      werden.
     competency: Orientierungswissen
     dataFlow: übergreifend
     bloomsCategory: 2 Verstehen
-  - description: Template kann angewandt werden.
+  - description: Quantitative Ansätze in der Filmwissenschaft können beurteilt werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Mögliche Einsatzbereiche automatisierter Filmannotation können skizziert
+      werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Eine Fragestellung zur quantitativen Filmanalyse kann formuliert
+      werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+- title: Computer Vision für die Filmanalyse
+  description: TODO
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/vision/einleitung.html
+  timeRequired: TODO
+  learningGoal: Computer Vision für die Filmanalyse
+  learningObjectiveLIST:
+  - description: Die grundlegende Funktionsweise von Computer Vision kann beschrieben
+      werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 2 Verstehen
+  - description: Grundlegende Begriffe wie Machine Learning, Algorithmus und Modell
+      können definiert werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Die Funktion von Schwellenwerten kann erklärt werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Die Einsatzmöglichkeiten von Computer Vision für filmanalytische
+      Aufgaben können benannt werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Die Möglichkeiten und Grenzen von Computer Vision Modellen können
+      beurteilt werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+- title: Automatisierte Annotation von Filmen
+  description: TODO
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/annotation/einleitung.html
+  timeRequired: TODO
+  learningGoal: Automatisierte Annotation von Filmen
+  learningObjectiveLIST:
+  - description: Geeignete Modelle für die Erkennung von Einstellungslängen und Figuren
+      können ausgewählt werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 2 Verstehen
+  - description: Es können geeignete Schwellenwerte für die Erkennung angewendet werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Die grundlegenden Schritte eines Python-Skripts zur Einstellungserkennung
+      und zur Figurenerkennung werden verstanden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Die Python-Skripte können für eigene Annotations-Projekte modifiziert
+      werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Die Qualität der Annotationsergebnisse kann beurteilt werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+- title: Auswertung der Annotationsdaten
+  description: TODO
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/auswertung/einleitung.html
+  timeRequired: TODO
+  learningGoal: Auswertung der automatisiert erstellten Annotationen
+  learningObjectiveLIST:
+  - description: Die Struktur der ausgegebenen Annotationen wird verstanden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 2 Verstehen
+  - description: Die Annotationen können quantitativ ausgewertet werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Die Annotationen können mit Python-Skripten sinnvoll visualisiert
+      werden.
+    competency: Orientierungswissen
+    dataFlow: übergreifend
+    bloomsCategory: 3 Anwenden
+  - description: Die Ergebnisse aus den Annotationen können analysiert werden.
     competency: Orientierungswissen
     dataFlow: übergreifend
     bloomsCategory: 3 Anwenden
