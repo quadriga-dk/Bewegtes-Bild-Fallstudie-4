@@ -366,22 +366,6 @@
           "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
         }
       ]
-    },
-    {
-      "@type": "LearningResource",
-      "name": "Zusammenfassung und Reflexion",
-      "description": "TODO",
-      "url": "https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/reflexion-und-resümee/zusammenfassung.html",
-      "timeRequired": "TODO",
-      "teaches": "TODO",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "targetName": "TODO",
-          "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 2 Verstehen | Data Flow: übergreifend"
-        }
-      ]
     }
   ],
   "dcterms:tableOfContents": "- Einstieg\n- Filmanalyse und automatisierte Annotation\n- Computer Vision für die Filmanalyse\n- Automatisierte Annotation von Filmen\n- Auswertung der Annotationsdaten\n- Zusammenfassung und Reflexion\n- Abschluss",

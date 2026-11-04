@@ -90,11 +90,6 @@
     <schema:targetDescription>Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend</schema:targetDescription>
     <schema:targetName>Die Ergebnisse aus den Annotationen können analysiert werden.</schema:targetName>
   </schema:AlignmentObject>
-  <schema:AlignmentObject rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_4_objective_0">
-    <schema:educationalFramework>QUADRIGA Competency Framework</schema:educationalFramework>
-    <schema:targetDescription>Competency: Orientierungswissen | Bloom's: 2 Verstehen | Data Flow: übergreifend</schema:targetDescription>
-    <schema:targetName>TODO</schema:targetName>
-  </schema:AlignmentObject>
   <schema:Book rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/">
     <dc:type>Jupyter Book</dc:type>
     <dcterms:tableOfContents>- Einstieg
@@ -292,16 +287,6 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
         <schema:teaches>Auswertung der automatisiert erstellten Annotationen</schema:teaches>
         <schema:timeRequired>TODO</schema:timeRequired>
         <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/auswertung/einleitung.html" />
-      </schema:LearningResource>
-    </schema:hasPart>
-    <schema:hasPart>
-      <schema:LearningResource rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_4">
-        <schema:description>TODO</schema:description>
-        <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_4_objective_0" />
-        <schema:name>Zusammenfassung und Reflexion</schema:name>
-        <schema:teaches>TODO</schema:teaches>
-        <schema:timeRequired>TODO</schema:timeRequired>
-        <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/reflexion-und-resümee/zusammenfassung.html" />
       </schema:LearningResource>
     </schema:hasPart>
     <schema:inLanguage>de</schema:inLanguage>
