@@ -20,8 +20,8 @@ Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse
 Die vorliegende Fallstudie befasst sich mit Workflows zur automatisierten Filmannotation. Am Beispiel der Filme Konrad Wolfs werden exemplarisch die Möglichkeiten der automatisierten Einstellungs- und Figurenerkennung dargestellt. In den folgenden Abschnitten stehen folgende Lernziele im Mittelpunkt:
 
 ```{include} ../einstieg/lernziele.md
-:start-after: "<!-- START: Auswertung -->"
-:end-before: "<!-- END: Auswertung -->"
+:start-after: "<!-- START: Auswertung der Annotationsergebnisse -->"
+:end-before: "<!-- END: Auswertung der Annotationsergebnisse -->"
 ```
 
 Wir befinden uns damit beim 4. Schritt unserer Fallstudie, in dem die erzeugten automatisierten Annotationen ausgewertet werden. Zu Beginn des Kapitels wird die Struktur der erhaltenen Annotationsdaten genauer betrachtet. Mithilfe von Jupyter Notebooks und Python Skripten werden anschließend verschiedene Visualisierungen zu den Annotationsdaten erstellt, die die Grundlage einer explorativen Auswertung der Annotationsergebnisse bilden.
