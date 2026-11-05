@@ -10,7 +10,7 @@ Die begleitenden Dateien zu diesem Abschnitt können Sie [**hier (link noch einf
 
 <a href="https://support.apple.com/de-de/guide/mac-help/mchlp2528/mac" class="external-link" target="_blank">macOS</a>
 
-Im Ordner `Trailer` des Übungsdaten-Archivs befinden sich die Videodateien und die Ergebnisse der automatischen Einstellungserkennung für die Trailer zu <a href="https://www.youtube.com/watch?v=1LKLZNsU3_o" class="external-link" target="_blank"><em>Der geteilte Himmel</em></a>, <a href="https://www.youtube.com/watch?v=wdY5MxWyGrU&t=13s" class="external-link" target="_blank"><em>Mama, ich lebe</em></a> und <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank"><em>Solo Sunny</em></a>. Für alle drei Trailer wurde der voreingestellte Schwellenwert von `0.5` verwendet.
+Im Ordner `Trailer` des Archivs befinden sich die Videodateien und die Ergebnisse der automatischen Einstellungserkennung für die Trailer zu <a href="https://www.youtube.com/watch?v=1LKLZNsU3_o" class="external-link" target="_blank"><em>Der geteilte Himmel</em></a>, <a href="https://www.youtube.com/watch?v=wdY5MxWyGrU&t=13s" class="external-link" target="_blank"><em>Mama, ich lebe</em></a> und <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank"><em>Solo Sunny</em></a>. Für alle drei Trailer wurde der voreingestellte Schwellenwert von `0.5` verwendet.
 
 Der Trailer zu *Der geteilte Himmel* wird bereits im [Jupyter-Notebook zur Einstellungserkennung](../annotation/einstellungen_notebook.ipynb) als Teil der Testdateien heruntergeladen und analysiert. Um mögliche Problemstellen und Fehler bei der automatischen Erkennung von Einstellungsübergängen zu verdeutlichen, haben wir mit demselben Notebook zusätzlich die Trailer zu *Mama, ich lebe* und *Solo Sunny* ausgewertet.
 ````
@@ -111,7 +111,7 @@ Durch das Experimentieren mit unterschiedlichen Schwellenwerten lassen sich ggf.
 
 ``````{admonition} Übung
 :class: exercise
-Versuchen Sie, die aufgeführten Fehler in einem der Trailer durch dessen erneute Auswertung mit einem anderen Schwellenwert zu beseitigen. Die Trailer zu *Mama, ich lebe* und *Solo Sunny* liegen dem eingangs erwähnten`.zip`-Archiv zu diesem Abschnitt bei.
+Versuchen Sie, die aufgeführten Fehler in einem der Trailer durch dessen erneute Auswertung mit einem anderen Schwellenwert zu beseitigen. Die Trailer zu *Mama, ich lebe* und *Solo Sunny* liegen dem eingangs erwähnten`.zip`-Archiv zu diesem Abschnitt im Ordner `Trailer` bei.
 
 
 `````{admonition}  Lösung

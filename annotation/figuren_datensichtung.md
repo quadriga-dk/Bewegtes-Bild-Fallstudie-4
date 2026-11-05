@@ -2,7 +2,22 @@
 
 Nach erfolgreicher Ausführung des [Notebooks zur Figurenerkennung](figuren_notebook.ipynb) steht nun die Sichtung der Ergebnisse im Annotations-Tool VIAN an. Die Installation und die grundlegenden Funktionen von VIAN wurden im Kapitel zu den [Technischen Grundlagen](technik.md#vian-installation-und-verwendung) vorgestellt.
 
-Für die Sichtung in VIAN (oder einem anderen Annotationsprogramm) wurde vom Jupyter Notebook eine `.eaf`-Datei erstellt, mit der sich sowohl die Einstellungs- als auch Figurenannotationen ins Tool importieren lassen. Die Trailer-Datei zu *Der geteilte Himmel* können Sie [hier **(link noch einfügen)**] herunterladen.
+````{admonition} Download der Übungsdateien
+:class: seealso
+Die begleitenden Dateien zu diesem Abschnitt können Sie [**hier (link noch einfügen)**] gebündelt herunterladen. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
+
+<a href="https://support.microsoft.com/de-de/windows/experience/storage-filemanagement/zip-and-unzip-files" class="external-link" target="_blank">Windows</a>
+
+<a href="https://support.apple.com/de-de/guide/mac-help/mchlp2528/mac" class="external-link" target="_blank">macOS</a>
+
+Im Ordner Trailer des Archivs befinden sich jeweils eigene Unterordner für die Trailer zu <a href="https://www.youtube.com/watch?v=1LKLZNsU3_o" class="external-link" target="_blank"><em>Der geteilte Himmel</em></a> und <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank"><em>Solo Sunny</em></a>. Neben den Videodateien enthalten diese jeweils einen Unterordner Figurenreferenzen mit den Bildern, anhand derer die Figuren in den Trailern identifiziert werden können.
+
+Der Trailer zu Der geteilte Himmel wird bereits im Jupyter-Notebook zur Figurenerkennung als Teil der Testdateien heruntergeladen und analysiert. Im zugehörigen Ordner finden Sie die Ergebnisse der Figurenerkennung in zwei Varianten: einmal mit dem voreingestellten Schwellenwert 0.3 und einmal mit dem niedrigeren Wert 0.1. Die Werte wurden jeweils für beide Parameter, `FACE_DETECTION_THRESHOLD` und `CHARACTER_RECOGNITION_THRESHOLD`, verwendet.
+
+Die Dateien zu Solo Sunny dienen hingegen als Grundlage für die anschließende Übung in diesem Abschnitt.
+````
+
+Für die Sichtung in VIAN (oder einem anderen Annotationsprogramm) wurde vom Jupyter Notebook eine `.eaf`-Datei erstellt, mit der sich sowohl die Einstellungs- als auch Figurenannotationen ins Tool importieren lassen.
 
 ````{admonition} Hinweis zum Import von .eaf-Dateien in VIAN
 :class: hinweis, dropdown
@@ -74,15 +89,17 @@ Die Wahl geringerer Schwellenwerte wie `0.1` verbessert zwar die Erkennung von M
 
 Die Setzung geeigneter Schwellenwerte spielt also auch hier eine wichtige Rolle für die Qualität der Annotationsergebnisse. Für eine Verbesserung der Ergebnisse der Figurenerkennung kann es wie schon bei der Einstellungserkennung sinnvoll sein, mit verschiedenen Schwellenwerten zu experimentieren.
 
-Auch wenn die automatisiert erstellten Annotationen zum Auftreten von Figuren in Filmen nie vollkommen fehlerfrei sein werden, sind sie doch exakt genug, um mit ihnen weiter zu arbeiten. Wie sich hier gezeigt hat, müssen die Ergebnisse jedoch immer überprüft und reflektiert werden, in welchen Kontexten Erkennungsfehler auftreten können.
+Auch wenn die automatisiert erstellten Annotationen zum Auftreten von Figuren in Filmen nie vollkommen fehlerfrei sein werden, sind sie doch exakt genug, um mit ihnen weiter zu arbeiten. Wie sich hier gezeigt hat, müssen die Ergebnisse jedoch immer überprüft und zudem reflektiert werden, in welchen Kontexten Erkennungsfehler auftreten können.
 
 
 
 ``````{admonition} Übung
 :class: exercise
-Führen Sie die Analyse für einen weiteren Trailer zu einem Konrad Wolf Film Ihrer Wahl durch. Sie können die Trailer hier einzeln herunterladen. **[Link folgt]** Bereiten Sie die notwendigen Screenshots der Figuren [zur Erstellung der Vergleichsembeddings](figuren_intro.md#vergleichs-embeddings-zur-figurenerkennung) vor. Benennen Sie die Bilddateien dabei nach dem Schema `Erika01.png`. Ein einzelnes Bild pro Figur genügt, eine höhere Anzahl von Abbildungen aus verschiedenen Perspektiven verbessert jedoch die Genauigkeit der Erkennung. Die Namen der Figuren können Sie im [Filmportal](https://www.filmportal.de) recherchieren oder zu Übungszwecken eigene Namen vergeben. Wählen Sie selbst die Schwellenwerte, beispielsweise von sehr geringer Höhe wie `0.1`, und beurteilen Sie die Auswirkungen auf die Annotationsergebnisse.
+Führen Sie selbstständig die Analyse für den *Solo Sunny* Trailer aus, der bereits in der allgemeinen `.zip`-Datei für dieses Kapitel im Ordner `Trailer` beiliegt. Der Ordner für *Solo Sunny* enthält zudem die Referenzabbildungen für die Figuren Ralph und Sunny. 
 
-Alternativ können Sie den *Solo Sunny* Trailer auswerten, der bereits in der allgemeinen `.zip`-Datei für dieses Kapitel im Ordner `Übung` beiliegt. Derselbe Ordner enthält zudem die Referenzabbildungen für die Figuren Ralph und Sunny. 
+Alternativ können Sie auch einen anderen Trailer zu einem Konrad Wolf Film Ihrer Wahl verwenden. Sie können die Trailer hier einzeln herunterladen. **[Link folgt]** Bereiten Sie die notwendigen Screenshots der Figuren [zur Erstellung der Vergleichsembeddings](figuren_intro.md#vergleichs-embeddings-zur-figurenerkennung) in diesem Fall selbst vor. Benennen Sie die Bilddateien dabei nach dem Schema `Erika01.png`. Ein einzelnes Bild pro Figur genügt, eine höhere Anzahl von Abbildungen aus verschiedenen Perspektiven verbessert jedoch die Genauigkeit der Erkennung. Die Namen der Figuren können Sie im [Filmportal](https://www.filmportal.de) recherchieren oder zu Übungszwecken eigene Namen vergeben. 
+
+Wählen Sie selbst die Schwellenwerte, beispielsweise von sehr geringer Höhe wie `0.1`, und beurteilen Sie die Auswirkungen auf die Annotationsergebnisse.
 
 `````{admonition}  Lösung
 :class: solution, dropdown
@@ -103,7 +120,7 @@ Einstellung der Parameter im Notebook in Colab.
 
 Mit `FACE_DETECTION_THRESHOLD = 0.3` wird der Schwellenwert für die Gesichtserkennung eingestellt, mit `CHARACTER_RECOGNITION_THRESHOLD = 0.3` der Schwellenwert für die Figurenerkennung, hier jeweils mit 0.3. Verändern Sie diese Einstellung, zulässig sind Werte zwischen 0.0 und 1.0. (1) Hier können Sie also mit verschiedenen Schwellenwert-Einstellungen experimentieren.
 
-Da Sie dieses Mal mit einer eigenen Videodatei arbeiten wollen, müssen Sie zusätzlich `DOWNLOAD_TESTFILES = False` setzen, damit die für Demonstrationszwecke vorbereitete Videodatei nicht heruntergeladen wird. (2) Standardmäßig ist dieser Parameter im Notebook auf `True` eingestellt.
+Da Sie dieses Mal mit einer eigenen Videodatei arbeiten wollen, müssen Sie zusätzlich `DOWNLOAD_TESTFILES = False` setzen, damit die für Demonstrationszwecke vorbereitete Videodatei zu *Der geteilte Himmel* nicht heruntergeladen wird. (2) Standardmäßig ist dieser Parameter im Notebook auf `True` eingestellt.
 
 Führen Sie nun den Codeblock durch einen Klick auf das Dreieckssymbol oben links im Block aus. (3) 
 
@@ -161,19 +178,13 @@ Export der Annotationsdateien.
 
 Am Ende des Notebooks werden die entstandenen Annotationsdateien im Ordner "export_characters" der Colab-Umgebung abgelegt. (1) Zusätzlich öffnet sich ein Dialogfenster, mit dem Sie die Annotationsdateien als ZIP-Datei mit dem Namen `export.zip` auf Ihrem Computer speichern können. (2)
 
-```{admonition} Achtung
-:class: caution
-Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Annotationsergebnisse im Ordner "export_characters" durch die neu erzeugten Dateien überschrieben. Sie sollten also darauf achten, dass sie vor jedem neuen Durchgang die bereits vorhandenen Exportdateien zu den Annotationsergebnissen auf Ihrem Rechner lokal abspeichern, um auch weiterhin mit ihnen arbeiten zu können.
-```
+Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Annotationsergebnisse im Ordner "export_characters" durch Versionsnummern wie `_v2`, `_v3` usw. ergänzt. Sie sollten also darauf achten, dass sie vor jedem neuen Durchgang die bereits vorhandenen Exportdateien zu den Annotationsergebnissen auf Ihrem Rechner lokal abspeichern, um auch weiterhin mit ihnen arbeiten zu können.
 
 Entpacken Sie ggf. die Exportdateien in einen Ordner ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
 
-Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wiederholen Sie die Annotation mit verschiedenen Schwellenwerten und Trailern und überprüfen Sie jeweils die Ergebnisse in VIAN. Welche Schwellenwerte führen zu den besten Ergebnissen?
+Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wiederholen Sie die Annotation mit verschiedenen Schwellenwerten und überprüfen Sie jeweils die Ergebnisse in VIAN. Welche Schwellenwerte führen zu den besten Ergebnissen?
 
-
-Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> [**Downloadlink hier einfügen**] nach den beiden Hauptfiguren Sunny und Ralph suchen lassen. Für die Figurenerkennung haben wir folgende Referenzabbildungen erstellt und in den Ordner "video_characters" in Colab hochgeladen.
-
-[**Abbildungen noch einfügen!!**]
+Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> nach den beiden Hauptfiguren Sunny und Ralph suchen lassen. Für die Figurenerkennung haben wir die Referenzabbildungen verwendet, die im `.zip`-Archiv zu diesem Abschnitt unter `Trailer` → `Solo Sunny_Trailer_1980` → `Figurenreferenzen zu finden sind.
 
 Mit den voreingestellten Schwellenwerten von `0.3` habe wir ein erneut gutes Ergebnis erzielen können. Die Probleme ähneln denen aus dem *Der geteilte Himmel* Trailer. So wurde etwa auch Sunny in diesen Einstellungen nicht erkannt, da ihr Gesicht nicht vollständig zu sehen ist:
 
