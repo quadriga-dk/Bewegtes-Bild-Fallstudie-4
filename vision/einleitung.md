@@ -24,7 +24,7 @@ Die vorliegende Fallstudie befasst sich mit Workflows zur automatisierten Filman
 :end-before: "<!-- END: Computer Vision für die Filmanalyse -->"
 ```
 
-Wir befinden uns damit beim 2. Schritt unserer Fallstudie, bei dem die Funktionsweisen von Computer Vision dargestellt und deren Einsatzmöglichkeiten für die filmanalytische Praxis ausgelotet werden. Der grundlegende Begriffe wie Machine Learning, Algorithmus oder Modell werden geklärt und welche Rolle Schwellenwerte in diesem Themenbereich spielen. Im Kapitel werden zudem die Möglichkeiten und Grenzen von Computer Vision für die Filmanalyse kritisch reflektiert.
+Wir befinden uns damit beim 2. Schritt unserer Fallstudie, bei dem die Funktionsweisen von Computer Vision dargestellt und deren Einsatzmöglichkeiten für die filmanalytische Praxis ausgelotet werden. Grundlegende Begriffe wie Machine Learning, Algorithmus oder Modell werden geklärt und welche Rolle Schwellenwerte in diesem Themenbereich spielen. Im Kapitel werden zudem die Möglichkeiten und Grenzen von Computer Vision für die Filmanalyse kritisch reflektiert.
 
 
 ```{figure} ../assets/vision/Grafik_Schritte_2.png
