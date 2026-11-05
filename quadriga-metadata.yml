@@ -102,7 +102,7 @@ chapterLIST:
 - title: Computer Vision für die Filmanalyse
   description: Ein Kapitel mit Inhalt(sbeispielen).
   url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
-  timeRequired: PT1H
+  timeRequired: PT1H10M
   learningGoal: Computer Vision für die Filmanalyse
   learningObjectiveLIST:
   - description: Die grundlegende Funktionsweise von Computer Vision kann beschrieben
@@ -132,7 +132,7 @@ chapterLIST:
 - title: Automatisierte Annotation von Filmen
   description: Ein Kapitel mit Inhalt(sbeispielen).
   url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
-  timeRequired: PT1H
+  timeRequired: PT3H
   learningGoal: Automatisierte Annotation von Filmen
   learningObjectiveLIST:
   - description: Geeignete Modelle für die Erkennung von Einstellungslängen und Figuren
@@ -161,7 +161,7 @@ chapterLIST:
 - title: Auswertung der Annotationsergebnisse
   description: Ein Kapitel mit Inhalt(sbeispielen).
   url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
-  timeRequired: PT1H
+  timeRequired: PT1H50M
   learningGoal: Auswertung der automatisiert erstellten Annotationen
   learningObjectiveLIST:
   - description: Die Struktur der ausgegebenen Annotationen wird verstanden.

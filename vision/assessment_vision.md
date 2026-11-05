@@ -34,7 +34,7 @@ Sie können die Fragen in beliebiger Reihenfolge bearbeiten und die Beantwortung
 
 Es erfolgt keine Bewertung oder Speicherung Ihrer Ergebnisse. Nutzen Sie dieses Assessment, um Wissenslücken zu identifizieren und gegebenenfalls die entsprechenden Abschnitte des Kapitels nochmals zu bearbeiten.
 
-**Geschätzte Zeit**: 15 Minuten
+**Geschätzte Zeit**: 10 Minuten
 
 Viel Erfolg!
 ````
