@@ -86,19 +86,19 @@ chapterLIST:
     dataFlow: 3 Management
     bloomsCategory: 3 Anwenden
   - description: Quantitative Ansätze in der Filmwissenschaft können beurteilt werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 4.1 Datenanalyse
+    dataFlow: 4 Analyse
+    bloomsCategory: 5 Bewerten
   - description: Mögliche Einsatzbereiche automatisierter Filmannotation können skizziert
       werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 3.2 Erschließung
+    dataFlow: 3 Management
+    bloomsCategory: 2 Verstehen
   - description: Eine Fragestellung zur quantitativen Filmanalyse kann formuliert
       werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: nicht anwendbar
+    dataFlow: nicht anwendbar
+    bloomsCategory: 2 Verstehen
 - title: Computer Vision für die Filmanalyse
   description: Ein Kapitel mit Inhalt(sbeispielen).
   url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
@@ -107,28 +107,28 @@ chapterLIST:
   learningObjectiveLIST:
   - description: Die grundlegende Funktionsweise von Computer Vision kann beschrieben
       werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
+    competency: 4.1 Datenanalyse
+    dataFlow: 4 Analyse
     bloomsCategory: 2 Verstehen
   - description: Grundlegende Begriffe wie Machine Learning, Algorithmus und Modell
       können definiert werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 4.1 Datenanalyse
+    dataFlow: 4 Analyse
+    bloomsCategory: 1 Erinnern
   - description: Die Funktion von Schwellenwerten kann erklärt werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 4.1 Datenanalyse
+    dataFlow: 4 Analyse
+    bloomsCategory: 2 Verstehen
   - description: Die Einsatzmöglichkeiten von Computer Vision für filmanalytische
       Aufgaben können benannt werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 4.1 Datenanalyse
+    dataFlow: 4 Analyse
+    bloomsCategory: 1 Erinnern
   - description: Die Möglichkeiten und Grenzen von Computer Vision Modellen können
       beurteilt werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 4.3 Interpretation
+    dataFlow: 4 Analyse
+    bloomsCategory: 5 Bewerten
 - title: Automatisierte Annotation von Filmen
   description: Ein Kapitel mit Inhalt(sbeispielen).
   url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
@@ -137,27 +137,27 @@ chapterLIST:
   learningObjectiveLIST:
   - description: Geeignete Modelle für die Erkennung von Einstellungslängen und Figuren
       können ausgewählt werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 2 Verstehen
+    competency: 3.2 Erschließung
+    dataFlow: 3 Management
+    bloomsCategory: 3 Anwenden
   - description: Es können geeignete Schwellenwerte für die Erkennung angewendet werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
+    competency: 3.2 Erschließung
+    dataFlow: 3 Management
     bloomsCategory: 3 Anwenden
   - description: Die grundlegenden Schritte eines Python-Skripts zur Einstellungserkennung
       und zur Figurenerkennung werden verstanden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 3.2 Erschließung
+    dataFlow: 3 Management
+    bloomsCategory: 2 Verstehen
   - description: Die Python-Skripte können für eigene Annotations-Projekte modifiziert
       werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 3.2 Erschließung
+    dataFlow: 3 Management
+    bloomsCategory: 6 Erschaffen
   - description: Die Qualität der Annotationsergebnisse kann beurteilt werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 3.2 Erschließung
+    dataFlow: 3 Management
+    bloomsCategory: 5 Bewerten
 - title: Auswertung der Annotationsergebnisse
   description: Ein Kapitel mit Inhalt(sbeispielen).
   url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
@@ -165,22 +165,22 @@ chapterLIST:
   learningGoal: Auswertung der automatisiert erstellten Annotationen
   learningObjectiveLIST:
   - description: Die Struktur der ausgegebenen Annotationen wird verstanden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 2 Verstehen
+    competency: 3.2 Erschließung
+    dataFlow: 3 Management
+    bloomsCategory: 1 Erinnern
   - description: Die Annotationen können quantitativ ausgewertet werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 4.1 Datenanalyse
+    dataFlow: 4 Analyse
+    bloomsCategory: 5 Bewerten
   - description: Die Annotationen können mit Python-Skripten sinnvoll visualisiert
       werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
+    competency: 4.2 Visualisierung
+    dataFlow: 4 Analyse
     bloomsCategory: 3 Anwenden
   - description: Die Ergebnisse aus den Annotationen können analysiert werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 3 Anwenden
+    competency: 4.1 Datenanalyse
+    dataFlow: 4 Analyse
+    bloomsCategory: 4 Analysieren
 dateIssued: '2024-05-06'
 dateModified: '2026-11-04'
 version: 1.0.0-beta

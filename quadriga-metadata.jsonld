@@ -243,19 +243,19 @@
           "@type": "AlignmentObject",
           "targetName": "Quantitative Ansätze in der Filmwissenschaft können beurteilt werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.1 Datenanalyse | Bloom's: 5 Bewerten | Data Flow: 4 Analyse"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Mögliche Einsatzbereiche automatisierter Filmannotation können skizziert werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 3.2 Erschließung | Bloom's: 2 Verstehen | Data Flow: 3 Management"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Eine Fragestellung zur quantitativen Filmanalyse kann formuliert werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: nicht anwendbar | Bloom's: 2 Verstehen | Data Flow: nicht anwendbar"
         }
       ]
     },
@@ -271,31 +271,31 @@
           "@type": "AlignmentObject",
           "targetName": "Die grundlegende Funktionsweise von Computer Vision kann beschrieben werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 2 Verstehen | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.1 Datenanalyse | Bloom's: 2 Verstehen | Data Flow: 4 Analyse"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Grundlegende Begriffe wie Machine Learning, Algorithmus und Modell können definiert werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.1 Datenanalyse | Bloom's: 1 Erinnern | Data Flow: 4 Analyse"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die Funktion von Schwellenwerten kann erklärt werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.1 Datenanalyse | Bloom's: 2 Verstehen | Data Flow: 4 Analyse"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die Einsatzmöglichkeiten von Computer Vision für filmanalytische Aufgaben können benannt werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.1 Datenanalyse | Bloom's: 1 Erinnern | Data Flow: 4 Analyse"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die Möglichkeiten und Grenzen von Computer Vision Modellen können beurteilt werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.3 Interpretation | Bloom's: 5 Bewerten | Data Flow: 4 Analyse"
         }
       ]
     },
@@ -311,31 +311,31 @@
           "@type": "AlignmentObject",
           "targetName": "Geeignete Modelle für die Erkennung von Einstellungslängen und Figuren können ausgewählt werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 2 Verstehen | Data Flow: übergreifend"
+          "targetDescription": "Competency: 3.2 Erschließung | Bloom's: 3 Anwenden | Data Flow: 3 Management"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Es können geeignete Schwellenwerte für die Erkennung angewendet werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 3.2 Erschließung | Bloom's: 3 Anwenden | Data Flow: 3 Management"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die grundlegenden Schritte eines Python-Skripts zur Einstellungserkennung und zur Figurenerkennung werden verstanden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 3.2 Erschließung | Bloom's: 2 Verstehen | Data Flow: 3 Management"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die Python-Skripte können für eigene Annotations-Projekte modifiziert werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 3.2 Erschließung | Bloom's: 6 Erschaffen | Data Flow: 3 Management"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die Qualität der Annotationsergebnisse kann beurteilt werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 3.2 Erschließung | Bloom's: 5 Bewerten | Data Flow: 3 Management"
         }
       ]
     },
@@ -351,25 +351,25 @@
           "@type": "AlignmentObject",
           "targetName": "Die Struktur der ausgegebenen Annotationen wird verstanden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 2 Verstehen | Data Flow: übergreifend"
+          "targetDescription": "Competency: 3.2 Erschließung | Bloom's: 1 Erinnern | Data Flow: 3 Management"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die Annotationen können quantitativ ausgewertet werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.1 Datenanalyse | Bloom's: 5 Bewerten | Data Flow: 4 Analyse"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die Annotationen können mit Python-Skripten sinnvoll visualisiert werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.2 Visualisierung | Bloom's: 3 Anwenden | Data Flow: 4 Analyse"
         },
         {
           "@type": "AlignmentObject",
           "targetName": "Die Ergebnisse aus den Annotationen können analysiert werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 3 Anwenden | Data Flow: übergreifend"
+          "targetDescription": "Competency: 4.1 Datenanalyse | Bloom's: 4 Analysieren | Data Flow: 4 Analyse"
         }
       ]
     }
