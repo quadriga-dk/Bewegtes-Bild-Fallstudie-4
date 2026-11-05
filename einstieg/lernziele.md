@@ -24,7 +24,7 @@ Das hier vorliegende interaktive Lehrbuch verfolgt folgende Lernziele:
 2. Grundlegende Begriffe wie Machine Learning, Algorithmus und Modell können definiert werden. <!-- competency: 4.1 Datenanalyse| bloom: 1 Erinnern -->
 3. Die Funktion von Schwellenwerten kann erklärt werden. <!-- competency: 4.1 Datenanalyse | bloom: 2 Verstehen -->
 4. Die Einsatzmöglichkeiten von Computer Vision für filmanalytische Aufgaben können benannt werden. <!-- competency: 4.1 Datenanalyse | bloom: 1 Erinnern -->
-5. Die Möglichkeiten und Grenzen von Computer Vision Modellen können beurteilt werden. <!-- competency: 4.3 Interpretation | bloom: 5 Bewerten -->
+5. Die Möglichkeiten und Grenzen von Computer Vision Modellen können beurteilt werden. <!-- competency: 4.1 Datenanalyse | bloom: 5 Bewerten -->
 ```
 <!-- END: Computer Vision für die Filmanalyse -->
 
