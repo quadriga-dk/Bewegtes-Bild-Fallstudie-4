@@ -237,7 +237,7 @@
 Förderkennzeichen: 16DKZ2034</schema:funding>
     <schema:hasPart>
       <schema:LearningResource rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_0">
-        <schema:description>Ein Kapitel mit Inhalt(sbeispielen).</schema:description>
+        <schema:description>Verschiedene Herangehensweisen an Filmanalyse werden dargestellt und der Begriff Annotation definiert. Es wird geklärt, was unter automatisierter Annotation verstanden werden kann. Quantitative Ansätze in der Filmwissenschaft werden vorgestellt und mögliche Fragestellungen für die Fallstudie entwickelt.</schema:description>
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_0_objective_0" />
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_0_objective_1" />
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_0_objective_2" />
@@ -245,12 +245,12 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
         <schema:name>Filmanalyse und automatisierte Annotation</schema:name>
         <schema:teaches>Filmanalyse und automatisierte Annotation</schema:teaches>
         <schema:timeRequired>PT1H</schema:timeRequired>
-        <schema:url rdf:resource="https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html" />
+        <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/filmanalyse/einleitung.html" />
       </schema:LearningResource>
     </schema:hasPart>
     <schema:hasPart>
       <schema:LearningResource rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_1">
-        <schema:description>Ein Kapitel mit Inhalt(sbeispielen).</schema:description>
+        <schema:description>Die Funktionsweisen von Computer Vision werden dargestellt und deren Einsatzmöglichkeiten für die filmanalytische Praxis ausgelotet. Grundlegende Begriffe wie Machine Learning, Algorithmus oder Modell werden geklärt und welche Rolle Schwellenwerte in diesem Themenbereich spielen. Im Kapitel werden zudem die Möglichkeiten und Grenzen von Computer Vision für die Filmanalyse kritisch reflektiert.</schema:description>
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_1_objective_0" />
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_1_objective_1" />
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_1_objective_2" />
@@ -264,7 +264,7 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
     </schema:hasPart>
     <schema:hasPart>
       <schema:LearningResource rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_2">
-        <schema:description>Ein Kapitel mit Inhalt(sbeispielen).</schema:description>
+        <schema:description>Im Kapitel wird die automatisierte Annotation von Filmen wird anhand des Beispiels der Erkennung von Einstellungen und Figuren praktisch umgesetzt. Die Entwicklung des angewendeten Workflows wird dargestellt, auf die verwendeten Modelle eingegangen und die notwendigen technischen Voraussetzungen geklärt. Abschließend werden die erzeugten Annotationsdaten mit dem Filmanalysetool VIAN gesichtet und überprüft.</schema:description>
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_2_objective_0" />
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_2_objective_1" />
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_2_objective_2" />
@@ -273,12 +273,12 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
         <schema:name>Automatisierte Annotation von Filmen</schema:name>
         <schema:teaches>Automatisierte Annotation von Filmen</schema:teaches>
         <schema:timeRequired>PT3H</schema:timeRequired>
-        <schema:url rdf:resource="https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html" />
+        <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/annotation/einleitung.html" />
       </schema:LearningResource>
     </schema:hasPart>
     <schema:hasPart>
       <schema:LearningResource rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_3">
-        <schema:description>Ein Kapitel mit Inhalt(sbeispielen).</schema:description>
+        <schema:description>Im Kapitel werden die erzeugten automatisierten Annotationen ausgewertet. Nach der Vorstellung der Struktur der erhaltenen Annotationsdaten werden mithilfe von Jupyter Notebooks und Python Skripten verschiedene Visualisierungen zu den Annotationsdaten erstellt. Diese bilden die Grundlage einer explorativen Auswertung der Annotationsergebnisse.</schema:description>
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_3_objective_0" />
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_3_objective_1" />
         <schema:educationalAlignment rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_3_objective_2" />
@@ -286,7 +286,7 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
         <schema:name>Auswertung der Annotationsergebnisse</schema:name>
         <schema:teaches>Auswertung der automatisiert erstellten Annotationen</schema:teaches>
         <schema:timeRequired>PT1H50M</schema:timeRequired>
-        <schema:url rdf:resource="https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html" />
+        <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/auswertung/einleitung.html" />
       </schema:LearningResource>
     </schema:hasPart>
     <schema:identifier>
