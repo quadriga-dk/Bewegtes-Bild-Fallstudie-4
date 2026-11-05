@@ -75,8 +75,10 @@ usedToolLIST:
   url: https://jupyterbook.org
 chapterLIST:
 - title: Filmanalyse und automatisierte Annotation
-  description: Ein Kapitel mit Inhalt(sbeispielen).
-  url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
+  description: Verschiedene Herangehensweisen an Filmanalyse werden dargestellt und der Begriff Annotation
+    definiert. Es wird geklärt, was unter automatisierter Annotation verstanden werden kann. Quantitative Ansätze
+    in der Filmwissenschaft werden vorgestellt und mögliche Fragestellungen für die Fallstudie entwickelt.
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/filmanalyse/einleitung.html
   timeRequired: PT1H
   learningGoal: Filmanalyse und automatisierte Annotation
   learningObjectiveLIST:
@@ -100,7 +102,10 @@ chapterLIST:
     dataFlow: nicht anwendbar
     bloomsCategory: 2 Verstehen
 - title: Computer Vision für die Filmanalyse
-  description: Ein Kapitel mit Inhalt(sbeispielen).
+  description: Die Funktionsweisen von Computer Vision werden dargestellt und deren Einsatzmöglichkeiten
+    für die filmanalytische Praxis ausgelotet. Grundlegende Begriffe wie Machine Learning, Algorithmus
+    oder Modell werden geklärt und welche Rolle Schwellenwerte in diesem Themenbereich spielen. Im Kapitel
+    werden zudem die Möglichkeiten und Grenzen von Computer Vision für die Filmanalyse kritisch reflektiert.
   url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
   timeRequired: PT1H10M
   learningGoal: Computer Vision für die Filmanalyse
@@ -130,8 +135,11 @@ chapterLIST:
     dataFlow: 4 Analyse
     bloomsCategory: 5 Bewerten
 - title: Automatisierte Annotation von Filmen
-  description: Ein Kapitel mit Inhalt(sbeispielen).
-  url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
+  description: Im Kapitel wird die automatisierte Annotation von Filmen wird anhand des Beispiels der Erkennung von Einstellungen
+    und Figuren praktisch umgesetzt. Die Entwicklung des angewendeten Workflows wird dargestellt, auf die verwendeten Modelle
+    eingegangen und die notwendigen technischen Voraussetzungen geklärt. Abschließend werden die erzeugten Annotationsdaten mit dem
+    Filmanalysetool VIAN gesichtet und überprüft.
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/annotation/einleitung.html
   timeRequired: PT3H
   learningGoal: Automatisierte Annotation von Filmen
   learningObjectiveLIST:
@@ -159,8 +167,10 @@ chapterLIST:
     dataFlow: 3 Management
     bloomsCategory: 5 Bewerten
 - title: Auswertung der Annotationsergebnisse
-  description: Ein Kapitel mit Inhalt(sbeispielen).
-  url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
+  description: Im Kapitel werden die erzeugten automatisierten Annotationen ausgewertet. Nach der Vorstellung der Struktur
+    der erhaltenen Annotationsdaten werden mithilfe von Jupyter Notebooks und Python Skripten verschiedene Visualisierungen
+    zu den Annotationsdaten erstellt. Diese bilden die Grundlage einer explorativen Auswertung der Annotationsergebnisse.
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/auswertung/einleitung.html
   timeRequired: PT1H50M
   learningGoal: Auswertung der automatisiert erstellten Annotationen
   learningObjectiveLIST:
