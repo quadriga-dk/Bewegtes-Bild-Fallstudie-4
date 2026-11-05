@@ -295,7 +295,7 @@
           "@type": "AlignmentObject",
           "targetName": "Die Möglichkeiten und Grenzen von Computer Vision Modellen können beurteilt werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: 4.3 Interpretation | Bloom's: 5 Bewerten | Data Flow: 4 Analyse"
+          "targetDescription": "Competency: 4.1 Datenanalyse | Bloom's: 5 Bewerten | Data Flow: 4 Analyse"
         }
       ]
     },

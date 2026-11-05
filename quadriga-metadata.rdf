@@ -42,7 +42,7 @@
   </schema:AlignmentObject>
   <schema:AlignmentObject rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_1_objective_4">
     <schema:educationalFramework>QUADRIGA Competency Framework</schema:educationalFramework>
-    <schema:targetDescription>Competency: 4.3 Interpretation | Bloom's: 5 Bewerten | Data Flow: 4 Analyse</schema:targetDescription>
+    <schema:targetDescription>Competency: 4.1 Datenanalyse | Bloom's: 5 Bewerten | Data Flow: 4 Analyse</schema:targetDescription>
     <schema:targetName>Die Möglichkeiten und Grenzen von Computer Vision Modellen können beurteilt werden.</schema:targetName>
   </schema:AlignmentObject>
   <schema:AlignmentObject rdf:about="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/#chapter_2_objective_0">

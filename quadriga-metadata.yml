@@ -126,7 +126,7 @@ chapterLIST:
     bloomsCategory: 1 Erinnern
   - description: Die Möglichkeiten und Grenzen von Computer Vision Modellen können
       beurteilt werden.
-    competency: 4.3 Interpretation
+    competency: 4.1 Datenanalyse
     dataFlow: 4 Analyse
     bloomsCategory: 5 Bewerten
 - title: Automatisierte Annotation von Filmen
