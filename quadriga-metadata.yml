@@ -82,9 +82,9 @@ chapterLIST:
   learningObjectiveLIST:
   - description: Die Rolle von Annotationen für filmanalytische Prozesse kann dargestellt
       werden.
-    competency: Orientierungswissen
-    dataFlow: übergreifend
-    bloomsCategory: 2 Verstehen
+    competency: 3.2 Erschließung
+    dataFlow: 3 Management
+    bloomsCategory: 3 Anwenden
   - description: Quantitative Ansätze in der Filmwissenschaft können beurteilt werden.
     competency: Orientierungswissen
     dataFlow: übergreifend

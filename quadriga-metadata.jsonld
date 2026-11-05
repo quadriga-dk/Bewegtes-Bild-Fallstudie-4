@@ -237,7 +237,7 @@
           "@type": "AlignmentObject",
           "targetName": "Die Rolle von Annotationen für filmanalytische Prozesse kann dargestellt werden.",
           "educationalFramework": "QUADRIGA Competency Framework",
-          "targetDescription": "Competency: Orientierungswissen | Bloom's: 2 Verstehen | Data Flow: übergreifend"
+          "targetDescription": "Competency: 3.2 Erschließung | Bloom's: 3 Anwenden | Data Flow: 3 Management"
         },
         {
           "@type": "AlignmentObject",
@@ -264,7 +264,7 @@
       "name": "Computer Vision für die Filmanalyse",
       "description": "Ein Kapitel mit Inhalt(sbeispielen).",
       "url": "https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html",
-      "timeRequired": "PT1H",
+      "timeRequired": "PT1H10M",
       "teaches": "Computer Vision für die Filmanalyse",
       "educationalAlignment": [
         {
@@ -304,7 +304,7 @@
       "name": "Automatisierte Annotation von Filmen",
       "description": "Ein Kapitel mit Inhalt(sbeispielen).",
       "url": "https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html",
-      "timeRequired": "PT1H",
+      "timeRequired": "PT3H",
       "teaches": "Automatisierte Annotation von Filmen",
       "educationalAlignment": [
         {
@@ -344,7 +344,7 @@
       "name": "Auswertung der Annotationsergebnisse",
       "description": "Ein Kapitel mit Inhalt(sbeispielen).",
       "url": "https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html",
-      "timeRequired": "PT1H",
+      "timeRequired": "PT1H50M",
       "teaches": "Auswertung der automatisiert erstellten Annotationen",
       "educationalAlignment": [
         {
