@@ -8,7 +8,7 @@ Das hier vorliegende interaktive Lehrbuch verfolgt folgende Lernziele:
 :class: lernziele
 
 <!-- learning-goal: Filmanalyse und automatisierte Annotation -->
-1. Die Rolle von Annotationen für filmanalytische Prozesse kann dargestellt werden. <!-- competency: Orientierungswissen | bloom: 2 Verstehen-->
+1. Die Rolle von Annotationen für filmanalytische Prozesse kann dargestellt werden. <!-- competency: 3.2 Erschließung | bloom: 3 Anwenden -->
 2. Quantitative Ansätze in der Filmwissenschaft können beurteilt werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 3. Mögliche Einsatzbereiche automatisierter Filmannotation können skizziert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
 4. Eine Fragestellung zur quantitativen Filmanalyse kann formuliert werden. <!-- competency: Orientierungswissen | bloom: 3 Anwenden -->
