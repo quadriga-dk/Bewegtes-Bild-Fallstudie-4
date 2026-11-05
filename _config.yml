@@ -93,5 +93,7 @@ sphinx:
     html_css_files:
       - quadriga.css
       - carousel.css
+      - drag_drop.css
     html_js_files:
       - carousel.js
+      - assessment.js
