@@ -47,7 +47,7 @@ Das Importmenü von VIAN.
 
 Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste Klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
-```{figure} ../assets/annotation/VIAN_postImport.png
+```{figure} ../assets/annotation/VIAN_postImport.gif
 ---
 align: center
 width: 100%

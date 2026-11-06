@@ -1,5 +1,15 @@
 # Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs
 
+```{figure} assets/banner.gif
+---
+align: left
+width: 100%
+name: Figurennetzwerk
+alt: Netzwerk der Figuren aus *Der geteilte Himmel* (Konrad Wolf, 1964)
+---
+
+```
+
 ````{margin}
 ```{admonition} Fragen oder Feedback
 :class: frage-feedback
