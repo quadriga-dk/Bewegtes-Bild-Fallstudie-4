@@ -12,7 +12,7 @@
     "LearningResource"
   ],
   "name": "Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs",
-  "description": "Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können.",
+  "description": "Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können. Die OER stellt Workflows zur automatisierten Filmannotation am Beispiel der Einstellungs- und Figurenerkennung vor.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",

@@ -231,7 +231,7 @@
     </schema:contributor>
     <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-04</schema:dateModified>
     <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-06</schema:datePublished>
-    <schema:description>Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können.</schema:description>
+    <schema:description>Diese Open Educational Resource (OER) stellt anhand einer Fallstudie dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale Verfahren eingesetzt werden können. Die OER stellt Workflows zur automatisierten Filmannotation am Beispiel der Einstellungs- und Figurenerkennung vor.</schema:description>
     <schema:funding>Die vorliegenden Open Educational Resources wurden durch das Datenkompetenzzentrum QUADRIGA erstellt.
 
 Förderkennzeichen: 16DKZ2034</schema:funding>
