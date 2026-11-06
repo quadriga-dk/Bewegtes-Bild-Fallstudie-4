@@ -4,7 +4,8 @@ Nachdem die Einstellungs-Annotationen für den Trailer zu *Der geteilte Himmel* 
 
 ````{admonition} Download der Übungsdateien
 :class: seealso
-Die begleitenden Dateien zu diesem Abschnitt können Sie [**hier (link noch einfügen)**] gebündelt herunterladen. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
+
+Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://owncloud.gwdg.de/remote.php/webdav/quadriga/Fallstudie_2/Zip_Files/Zip%20files_final/characters_results.zip" class="external-link" target="_blank">hier gebündelt herunterladen</a>. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
 
 <a href="https://support.microsoft.com/de-de/windows/experience/storage-filemanagement/zip-and-unzip-files" class="external-link" target="_blank">Windows</a>
 

@@ -100,7 +100,11 @@ Die Notebooks enthalten Einstellungsmöglichkeiten, mit denen sich der jeweilige
 
 Im vorigen Abschnitt wurde Annotationsprogramm *VIAN* kurz angesprochen. Nun wird seine Verwendung im Detail erläutert, angefangen mit der Installation.
 
+
+<a href="https://www.film.uzh.ch/de/research/projects/cooperations/VIAN.html" class="external-link" target="_blank">VIAN</a> ist ein Programm zur Videoannotation und wird am <a href="https://www.film.uzh.ch/de.html" class="external-link" target="_blank">Seminar für Filmwissenschaft der Universität Zürich</a> in Zusammenarbeit mit der <a href="https://projects.tib.eu/viva/partner/" class="external-link" target="_blank">Forschungsgruppe Visual Analytics der TIB Hannover</a> unter der Leitung von Prof. Dr. Josephine Diecke, Prof. Dr. Simon Spiegel und Dr. Eric Müller-Budack entwickelt.
+
 Zum Zeitpunkt des Verfassens dieser OER kann die aktuelle VIAN-Version über das <a href="https://github.com/Movie-Analytics/VIAN/releases" class="external-link" target="_blank">GitHub-Repositorium des Projekts</a> heruntergeladen werden. Es stehen Versionen zur Installation für macOS und Windows zur Verfügung.
+Weitere Informationen zur Installation finden Sie in der Anleitung zu <a href="https://www.film.uzh.ch/de/research/projects/cooperations/VIAN.html" class="external-link" target="_blank">VIAN</a>. Beim Verfassen dieser OER haben wir die **Version 1.2.5** verwendet. 
 
 Auf der Startseite von VIAN können bestehende Projekte geöffnet, importiert oder neu erstellt werden. Wenn Sie VIAN zum ersten Mal öffnen, werden noch keine bestehenden Projekte angezeigt. Um ein neues Projekt zu beginnen, öffnen Sie zunächst über die Schaltfläche `Video öffnen` ein Video.
 
@@ -117,6 +121,12 @@ Das Startmenü von VIAN.
 Anschließend gelangen Sie zum Hauptfenster von VIAN, in dem die in unserem Workflow automatisiert erstellten Annotationen gesichtet werden können. Diese Annotationsdaten müssen zunächst importiert werden. Wählen Sie dazu in der linken Seitenleiste den Menüpunkt `Daten importieren`. Anschließend können Sie zwischen den Dateiformaten `.eaf` und `.tsv` wählen. Die folgenden Schritte sind eine Demonstration, die passenden `.eaf`-Dateien folgen später.
 
 Wie wir im folgenden Kapitel genauer darstellen werden, wird nach den Ausführen des Jupyter Notebooks eine `ELAN-Datei` mit der Dateiendung `.eaf` im Export-Ordner generiert, die für den Import der Annotationsergebnisse in VIAN gedacht ist. Klicken Sie auf "ELAN-Annotationsergebnisse importieren" und wählen sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
+
+```{margin} 
+```{admonition} Hinweis
+:class: hinweis
+Die einzelnen Elemente von VIANs Bedienoberfläche lassen sich in ihrer Größe anpassen, indem man deren Rahmen verschiebt.
+```
 
 ```{figure} ../assets/annotation/VIAN_ImportMenu.png
 ---
@@ -152,7 +162,7 @@ alt: Das Segmentierungsmenü von VIAN.
 Das Segmentierungsmenü von VIAN.
 ```
 
-Diese VIAN-Funktionen sind ausreichend, um die Ergebnisse der automatisierten Annotation im Rahmen dieser OER zu sichten und zu überprüfen. VIAN bietet darüber hinaus weitere Funktionen, über die Sie sich in der offiziellen Dokumentation informieren können.
-**[Hier später Link hinzufügen]**
+
+Diese VIAN-Funktionen sind ausreichend, um die Ergebnisse der automatisierten Annotation im Rahmen dieser OER zu sichten und zu überprüfen. VIAN bietet darüber hinaus weitere Funktionen, über die Sie sich auf der <a href="https://vian.app/" class="external-link" target="_blank">offiziellen VIAN-Website</a> und in der dort verlinkten Dokumentation informieren können.
 
 Nach der Klärung dieser technischen Grundlagen folgt im nächsten Abschnitt die Vorstellung des Verfahrens zur Einstellungserkennung.
