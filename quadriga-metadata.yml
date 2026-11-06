@@ -29,7 +29,7 @@ keywordLIST:
 - open-educational-resources
 description: Diese Open Educational Resource (OER) stellt anhand einer Fallstudie
   dar, wie für die Bearbeitung einer filmwissenschaftlichen Fragestellung digitale
-  Verfahren eingesetzt werden können.
+  Verfahren eingesetzt werden können. Die OER stellt Workflows zur automatisierten Filmannotation am Beispiel der Einstellungs- und Figurenerkennung vor. 
 tableOfContents: '- Einstieg
 
   - Filmanalyse und automatisierte Annotation
