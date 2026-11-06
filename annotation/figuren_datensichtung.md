@@ -85,13 +85,21 @@ alt: Rita und Manfred konnten im Trailer zu Der geteilte Himmel in dieser Einste
 Rita und Manfred konnten im Trailer zu *Der geteilte Himmel* in dieser Einstellung nicht vollständig erkannt werden.
 ```
 
-Die Wahl geringerer Schwellenwerte wie `0.1` verbessert zwar die Erkennung von Manfred in dieser Einstellung, führt allerdings gleichzeitig auch zu falschen Ergebnissen. So werden bei einem derart niedrigen Schwellenwert auch andere Figuren inkorrekterweise als Rita oder Manfred identifiziert.
+Die Wahl geringerer Schwellenwerte wie `0.1` verbessert zwar die Erkennung von Manfred in dieser Einstellung, führt allerdings gleichzeitig auch zu falschen Ergebnissen. So werden bei einem derart niedrigen Schwellenwert auch andere Figuren inkorrekterweise als Rita oder Manfred erkannt:
+
+```{figure} ../assets/annotation/Himmel_Fehler3.png
+---
+align: center
+width: 100%
+name: Himmel_Fehler3
+alt: Rolf Meternagel wurde fäschlicherweise als Rita identifiziert.
+---
+Rolf Meternagel wurde fäschlicherweise als Rita identifiziert.
+```
 
 Die Setzung geeigneter Schwellenwerte spielt also auch hier eine wichtige Rolle für die Qualität der Annotationsergebnisse. Für eine Verbesserung der Ergebnisse der Figurenerkennung kann es wie schon bei der Einstellungserkennung sinnvoll sein, mit verschiedenen Schwellenwerten zu experimentieren.
 
 Auch wenn die automatisiert erstellten Annotationen zum Auftreten von Figuren in Filmen nie vollkommen fehlerfrei sein werden, sind sie doch exakt genug, um mit ihnen weiter zu arbeiten. Wie sich hier gezeigt hat, müssen die Ergebnisse jedoch immer überprüft und zudem reflektiert werden, in welchen Kontexten Erkennungsfehler auftreten können.
-
-
 
 ``````{admonition} Übung
 :class: exercise
@@ -186,7 +194,7 @@ Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wied
 
 Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> nach den beiden Hauptfiguren Sunny und Ralph suchen lassen. Für die Figurenerkennung haben wir die Referenzabbildungen verwendet, die im `.zip`-Archiv zu diesem Abschnitt unter `Trailer` → `Solo Sunny_Trailer_1980` → `Figurenreferenzen zu finden sind.
 
-Mit den voreingestellten Schwellenwerten von `0.3` habe wir ein erneut gutes Ergebnis erzielen können. Die Probleme ähneln denen aus dem *Der geteilte Himmel* Trailer. So wurde etwa auch Sunny in diesen Einstellungen nicht erkannt, da ihr Gesicht nicht vollständig zu sehen ist:
+Mit den voreingestellten Schwellenwerten von `0.3` habe wir ein erneut gutes Ergebnis erzielen können. Die Probleme ähneln denen aus dem *Der geteilte Himmel* Trailer. So wurde etwa auch Sunny in dieser Sequenz nicht erkannt, da ihr Gesicht nicht vollständig zu sehen ist:
 
 ```{figure} ../assets/annotation/SoloSunny_Figuren_Fehler1.gif
 ---

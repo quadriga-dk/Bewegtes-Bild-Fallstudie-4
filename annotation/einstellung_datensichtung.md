@@ -5,7 +5,7 @@ Nachdem die Einstellungs-Annotationen für den Trailer zu *Der geteilte Himmel* 
 ````{admonition} Download der Übungsdateien
 :class: seealso
 
-Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://owncloud.gwdg.de/remote.php/webdav/quadriga/Fallstudie_2/Zip_Files/Zip%20files_final/characters_results.zip" class="external-link" target="_blank">hier gebündelt herunterladen</a>. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
+Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://owncloud.gwdg.de/remote.php/webdav/quadriga/Fallstudie_2/Zip_Files/Zip%20files_final/shots_results.zip" class="external-link" target="_blank">hier gebündelt herunterladen</a>. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
 
 <a href="https://support.microsoft.com/de-de/windows/experience/storage-filemanagement/zip-and-unzip-files" class="external-link" target="_blank">Windows</a>
 
@@ -46,7 +46,7 @@ Das Importmenü von VIAN.
 
 Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste Klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
-```{figure} ../assets/annotation/VIAN_postImport.png
+```{figure} ../assets/annotation/VIAN_postImport.gif
 ---
 align: center
 width: 100%
@@ -59,7 +59,7 @@ Das Hauptfenster von VIAN nach dem Import von Annotationen.
 
 Nach dem Import können Sie nun das Ergebnis der Einstellungserkennung für *Der geteilte Himmel* in VIAN sichten. Mit dem Abspielen des Trailers bzw. anhand der Navigation in der Timeline werden Sie feststellen, dass die Einstellungserkennung in diesem Fall tadellos funktioniert hat. Die einzelnen nummerierten 'Annotationsblöcke' sind perfekt mit den Einstellungswechseln synchronisiert. Insgesamt wurden 23 Einstellungen erkannt.
 
-```{figure} ../assets/annotation/VIAN_postImport.png
+```{figure} ../assets/annotation/Himmel_results.png
 ---
 align: center
 width: 100%
