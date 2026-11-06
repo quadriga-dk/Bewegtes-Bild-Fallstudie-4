@@ -9,7 +9,7 @@ width: 100%
 name: DistantViewing_Pipeline
 alt: Visualisierung der von Arnold und Tilton entwickelten Distant Viewing Pipeline.
 ---
-Visualisierung der von Arnold und Tilton entwickelten Distant Viewing Pipeline {cite}`ca-Arnold_Tilton_2023`, (p. 35).
+Visualisierung der von Arnold und Tilton entwickelten Distant Viewing Pipeline {cite}`ca-Arnold_Tilton_2023`, (S. 35).
 ```
 
 Für die hier vorgestellten Verfahren orientieren wir uns außerdem am <a href="https://github.com/distant-viewing/dvt" class="external-link" target="_blank">*Distant Viewing Toolkit*</a> (vgl. auch Kapitel zu [Einsatzbereichen für die Filmanalyse](../vision/einsatz.md)) und an den dazugehörigen <a href="https://github.com/distant-viewing/dvt/blob/main/tutorials/Distant_Viewing_Tutorial_2_Network_Era_Sitcoms_and_Visual_Style.ipynb" class="external-link" target="_blank">Jupyter Notebooks</a>. Wie auch das *Distant Viewing Toolkit* verwenden wir zur automatisierten Erstellung der Annotationen Skripte in der Programmiersprache Python. Python ist für diese Aufgaben sehr gut geeignet, weit verbreitet und gut dokumentiert.

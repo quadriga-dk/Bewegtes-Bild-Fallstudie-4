@@ -56,7 +56,7 @@ Notebook Ausgabe zur Verwendung einer CPU.
 
 Als offenes Format können Jupyter Notebooks in vielen Umgebungen ausgeführt oder eingebunden werden. Als Alternative zur lokalen Ausführung bieten sich Cloud-Umgebungen an, in denen das Jupyter Notebook auf einem externen Server ausgeführt wird. Somit wird keine leistungsstarke Hardware auf dem eigenen Computer benötigt. Eine solche Umgebung ist *Google Colab*, in der die Jupyter Notebooks aus der OER heraus auf unterschiedlichen CPUs und GPUs ausgeführt werden können. Für die Verwendung von *Google Colab* ist die Anmeldung mit einem Google-Konto notwendig.
 
-Wir empfehlen, vor der Arbeit mit den Notebooks dieser OER [das Kapitel zu den Ausführungsmodi eines Jupyter Notebooks aus den QUADRIGA-Lernhinweisen](https://quadriga-dk.github.io/QUADRIGA-Learners-Manual/nutzung/ausführungsmodi.html) zu lesen. Es bietet einen Überblick über die verschiedenen Möglichkeiten, Jupyter Notebooks auszuführen.
+Wir empfehlen, vor der Arbeit mit den Notebooks dieser OER [das Kapitel zu den technischen Voraussetzungen](../einstieg/technische-voraussetzungen.md) zu lesen. Es bietet einen Überblick über die verschiedenen Möglichkeiten, Jupyter Notebooks auszuführen.
 
 Eine wichtige Ergänzung im Rahmen dieser Fallstudie ist, dass in *Google Colab* neben CPUs auch GPUs verwendet werden können. Das kann die Ausführung der hier vorgestellten Verfahren erheblich beschleunigen.
 
@@ -101,10 +101,10 @@ Die Notebooks enthalten Einstellungsmöglichkeiten, mit denen sich der jeweilige
 Im vorigen Abschnitt wurde Annotationsprogramm *VIAN* kurz angesprochen. Nun wird seine Verwendung im Detail erläutert, angefangen mit der Installation.
 
 
-<a href="https://www.film.uzh.ch/de/research/projects/cooperations/VIAN.html" class="external-link" target="_blank">VIAN</a> ist ein Programm zur Videoannotation und wird am <a href="https://www.film.uzh.ch/de.html" class="external-link" target="_blank">Seminar für Filmwissenschaft der Universität Zürich</a> in Zusammenarbeit mit der <a href="https://projects.tib.eu/viva/partner/" class="external-link" target="_blank">Forschungsgruppe Visual Analytics der TIB Hannover</a> unter der Leitung von Prof. Dr. Josephine Diecke, Prof. Dr. Simon Spiegel und Dr. Eric Müller-Budack entwickelt.
+<a href="https://www.vian.app" class="external-link" target="_blank">VIAN</a> ist ein Programm zur Videoannotation und wird am <a href="https://www.film.uzh.ch/de.html" class="external-link" target="_blank">Seminar für Filmwissenschaft der Universität Zürich</a> in Zusammenarbeit mit der <a href="https://www.tib.eu/de/forschung-entwicklung/forschungsgruppen-und-labs/visual-analytics" class="external-link" target="_blank">Forschungsgruppe Visual Analytics der TIB Hannover</a> unter der Leitung von Prof. Dr. Josephine Diecke, Prof. Dr. Simon Spiegel und Dr. Eric Müller-Budack entwickelt.
 
 Zum Zeitpunkt des Verfassens dieser OER kann die aktuelle VIAN-Version über das <a href="https://github.com/Movie-Analytics/VIAN/releases" class="external-link" target="_blank">GitHub-Repositorium des Projekts</a> heruntergeladen werden. Es stehen Versionen zur Installation für macOS und Windows zur Verfügung.
-Weitere Informationen zur Installation finden Sie in der Anleitung zu <a href="https://www.film.uzh.ch/de/research/projects/cooperations/VIAN.html" class="external-link" target="_blank">VIAN</a>. Beim Verfassen dieser OER haben wir die **Version 1.2.5** verwendet. 
+Weitere Informationen zur Installation finden Sie in der Anleitung zu VIAN auf der <a href="https://www.vian.app" class="external-link" target="_blank">VIAN-Projektseite</a>. Beim Verfassen dieser OER haben wir die **Version 1.2.5** verwendet. 
 
 Auf der Startseite von VIAN können bestehende Projekte geöffnet, importiert oder neu erstellt werden. Wenn Sie VIAN zum ersten Mal öffnen, werden noch keine bestehenden Projekte angezeigt. Um ein neues Projekt zu beginnen, öffnen Sie zunächst über die Schaltfläche `Video öffnen` ein Video.
 
