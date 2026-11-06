@@ -19,8 +19,6 @@ from quadriga import colors
 
 # 🏆Selbsttest: Wissen und Praxis
 
-Dieser Selbsttest bezieht sich auf das Kapitel **Zusammenfassung und Reflexion**. Er ist ein optionales Zusatzassessment und kein Pflichtteil.
-
 ````{admonition} Wie nutze ich den Selbsttest?
 :class: hinweis, dropdown
 Diese Übungsaufgaben dienen Ihrer Selbsteinschätzung und helfen Ihnen, das in den Kapiteln Gelernte zu reflektieren.
@@ -40,8 +38,6 @@ Viel Erfolg!
 ````
 
 ## Aufgabe 1
-
-Welche Zuordnung von Modell und Aufgabe ist korrekt?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -82,8 +78,6 @@ display_quiz(multiple_choice1, colors=colors.jupyterquiz)
 
 ## Aufgabe 2
 
-Was beweist eine niedrige ASL allein nicht?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -122,8 +116,6 @@ display_quiz(multiple_choice2, colors=colors.jupyterquiz)
 ```
 
 ## Aufgabe 3
-
-Was bewirkt ein höherer Schwellenwert in der Regel?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -164,8 +156,6 @@ display_quiz(multiple_choice3, colors=colors.jupyterquiz)
 
 ## Aufgabe 4
 
-Was bedeutet eine dicke Verbindung zwischen zwei Figuren im Netzwerk?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -205,8 +195,6 @@ display_quiz(multiple_choice4, colors=colors.jupyterquiz)
 
 ## Aufgabe 5
 
-Warum sind Computer-Vision-Modelle nie vollständig „neutral“?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -244,7 +232,7 @@ multiple_choice5 = [{
 display_quiz(multiple_choice5, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 6 – Selbstreflexion: Ein integratives Untersuchungsdesign skizzieren
+## Aufgabe 6
 
 Wählen Sie ein Filmkorpus von 3–5 Filmen. Skizzieren Sie ein Untersuchungsdesign mit folgenden Bausteinen:
 
@@ -268,39 +256,32 @@ create_answer_box('Assessment_Reflexion')
 ````{admonition} Musterlösung
 :class: solution, dropdown
 
-> **Fragestellung:** Unterscheiden sich die Filme des Korpus in ihrer durchschnittlichen Einstellungslänge, und lassen sich die Unterschiede mit Genre oder Schaffensphase erklären?
->
-> **Parameter:** Einstellungsübergänge und Einstellungslängen; optional Figurenpräsenz für eine ergänzende Frage.
->
-> **Modell:** TransNetV2 für die Einstellungserkennung, weil es etabliert und für das Material geeignet erscheint; Prüfung an einem Testfilm.
->
-> **Schwellenwerte:** Erster Durchlauf mit 0,5; anschließend Vergleich mit 0,25 und 0,75; Sichtung in VIAN; Dokumentation der gewählten Werte.
->
-> **Qualitätskontrolle:** Stichprobenprüfung, Zählung auffälliger Fehler, transparente Dokumentation von Modell, Parametern und Grenzen.
->
-> **Auswertung:** ASL, MSL, Anzahl der Einstellungen, längste/kürzeste Einstellung; Balkendiagramme im Vergleich, chronologische Sortierung; Rückgriff auf einzelne Filme.
->
-> **Reflexion:** ASL allein beweist keinen Stil; Genre, Produktionskontext und Rezeptionserwartungen einbeziehen; Bias der Modelle und Fehler der Annotationen offenlegen.
-````
+**Fragestellung:**
 
-### Bewertungsraster
+Unterscheiden sich die Filme des Korpus in ihrer durchschnittlichen Einstellungslänge, und lassen sich die Unterschiede mit Genre oder Schaffensphase erklären?
 
-| Kriterium | 0 Punkte | 1 Punkt | 2 Punkte |
-|---|---|---|---|
-| Forschungsfrage | fehlt oder nicht bearbeitbar | allgemein | präzise und operationalisierbar |
-| Parameterwahl | unbegründet | teilweise begründet | passend zur Frage begründet |
-| Modellwahl | fehlt | genannt | begründet und am Material geprüft |
-| Schwellenwertstrategie | fehlt | ein Wert | Vergleich und Begründung |
-| Qualitätskontrolle | fehlt | allgemein | konkret und dokumentiert |
-| Auswertung | fehlt | eine Visualisierung | passende Kombination und Interpretation |
-| Reflexion | fehlt | ansatzweise | Grenzen, Bias und Kontext differenziert |
+**Parameter:**
 
-**Auswertung:** 14 Punkte maximal; ab 10 Punkten gilt das Design als vollständig skizziert. Die Punkte sind eine Orientierung für die Selbstkontrolle, keine Benotung.
+Einstellungsübergänge und Einstellungslängen; optional Figurenpräsenz für eine ergänzende Frage.
 
-````{admonition} Hinweise zur Selbstkorrektur
-:class: hinweis, dropdown
+**Modell:**
 
-- Wenn die Forschungsfrage nur ein Datenziel nennt („Ich möchte die ASL berechnen“), fehlt die analytische Frage.
-- Wenn die Modellwahl nur mit Bekanntheit begründet wird, lesen Sie `annotation/modelle.md` erneut.
-- Wenn die Reflexion fehlt, lesen Sie `reflexion-und-resümee/zusammenfassung.md` und `vision/grenzen.md`.
+TransNetV2 für die Einstellungserkennung, weil es etabliert und für das Material geeignet erscheint; Prüfung an einem Testfilm.
+
+**Schwellenwerte:**
+
+Erster Durchlauf mit 0,5; anschließend Vergleich mit 0,25 und 0,75; Sichtung in VIAN; Dokumentation der gewählten Werte.
+
+**Qualitätskontrolle:**
+
+Stichprobenprüfung, Zählung auffälliger Fehler, transparente Dokumentation von Modell, Parametern und Grenzen.
+
+**Auswertung:**
+
+ASL, MSL, Anzahl der Einstellungen, längste/kürzeste Einstellung; Balkendiagramme im Vergleich, chronologische Sortierung; Rückgriff auf einzelne Filme.
+
+
+**Reflexion:**
+
+ASL allein beweist keinen Stil; Genre, Produktionskontext und Rezeptionserwartungen einbeziehen; Bias der Modelle und Fehler der Annotationen offenlegen.
 ````
