@@ -19,8 +19,6 @@ from quadriga import colors
 
 # 🏆Selbsttest: Wissen und Praxis
 
-Dieser Selbsttest bezieht sich auf das Kapitel **Filmanalyse und automatisierte Annotation**.
-
 ````{admonition} Wie nutze ich den Selbsttest?
 :class: hinweis, dropdown
 Diese Übungsaufgaben dienen Ihrer Selbsteinschätzung und helfen Ihnen, das im Kapitel Gelernte zu reflektieren.
@@ -40,8 +38,6 @@ Viel Erfolg!
 ````
 
 ## Aufgabe 1
-
-Ordnen Sie die drei Orientierungen den passenden filmanalytischen Beispielinteressen zu.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -77,12 +73,9 @@ quiz.create_matching_quiz(
 - **Inhaltsstruktur:** Richtig, wenn Sie Themen, Figurenkonstellationen oder Konflikte zuordnen. Das Kapitel unterscheidet die Ausrichtung auf den Inhalt von der formalen Textstruktur und der Rezeption.
 - **Textstruktur:** Richtig, wenn Sie formale Gestaltungsmittel wie Einstellungslängen, Montage oder Farbgestaltung zuordnen. Diese OER konzentriert sich auf diese Orientierung.
 - **Rezeption:** Richtig, wenn Sie die Wahrnehmung und Reaktion von Zuschauer:innen zuordnen.
-- **Typischer Fehler:** „Themen und Konflikte“ der Textstruktur zuzuordnen. Themen sind Inhalt, nicht Form.
 ````
 
 ## Aufgabe 2
-
-Welche Aussagen zur Annotation sind korrekt? Wählen Sie alle zutreffenden Optionen.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -123,8 +116,6 @@ display_quiz(many_choice2, colors=colors.jupyterquiz)
 
 ## Aufgabe 3
 
-Ein Film läuft 96 Minuten und hat 720 Einstellungen. Ein zweiter läuft 96 Minuten und hat 480 Einstellungen. Wie unterscheiden sich die ASL-Werte?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -164,7 +155,6 @@ display_quiz(multiple_choice3, colors=colors.jupyterquiz)
 
 ## Aufgabe 4
 
-Welche Aufgabe lässt sich mit den im Kapitel genannten Verfahren derzeit am zuverlässigsten automatisieren?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -205,8 +195,6 @@ display_quiz(multiple_choice4, colors=colors.jupyterquiz)
 
 ## Aufgabe 5
 
-Was ist mit „Scalable Viewing“ gemeint?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -244,9 +232,9 @@ multiple_choice5 = [{
 display_quiz(multiple_choice5, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 6 – Selbstreflexion: Eine quantitative Fragestellung entwickeln
+## Aufgabe 6
 
-Formulieren Sie eine Fragestellung zur quantitativen Filmanalyse, die Sie mit automatisiert erkannten Einstellungslängen und/oder Figurenpräsenz für das Korpus Konrad Wolf bearbeiten könnten. Benennen Sie:
+Formulieren Sie eine Fragestellung zur quantitativen Filmanalyse, die Sie mit automatisiert erkannten Einstellungslängen und/oder Figurenpräsenz für das Korpus der Filme Konrad Wolfs bearbeiten könnten. Benennen Sie:
 
 1. die Forschungsfrage,
 2. die benötigten Annotationsdaten,
@@ -265,29 +253,19 @@ create_answer_box('Assessment_Filmanalyse')
 ````{admonition} Musterlösung
 :class: solution, dropdown
 
-> **Fragestellung:** Verändert sich die Average Shot Length (ASL) in den Filmen Konrad Wolfs zwischen 1958 und 1980 systematisch, und lassen sich die Veränderungen mit Schaffensphasen oder Genres in Verbindung bringen?
->
-> **Benötigte Daten:** Einstellungsgrenzen, Filmlänge, Anzahl der Einstellungen, Erscheinungsjahr und Genre der Filme.
->
-> **Warum quantitativ bearbeitbar:** Die ASL ist aus Filmlänge und Einstellungsanzahl berechenbar; die Werte können über das Korpus verglichen und chronologisch sortiert werden.
->
-> **Grenzen:** Die ASL allein beweist keinen Stil oder eine Ursache. Die Wahrnehmung von Schnittfrequenz ist historisch und genreabhängig; für die Interpretation braucht es filmhistorischen Kontext, qualitative Filmanalyse und die Prüfung der Annotationsqualität.
-````
+**Fragestellung:**
 
-### Bewertungsraster
+Verändert sich die Average Shot Length (ASL) in den Filmen Konrad Wolfs zwischen 1958 und 1980 systematisch, und lassen sich die Veränderungen mit Schaffensphasen oder Genres in Verbindung bringen?
 
-| Kriterium | 0 Punkte | 1 Punkt | 2 Punkte |
-|---|---|---|---|
-| Antwortbarkeit | Frage nicht mit Shot-/Figurendaten bearbeitbar | teilweise operationalisierbar | klar operationalisierbar |
-| Korpus und Variablen | fehlen | teilweise genannt | präzise genannt |
-| Filmwissenschaftlicher Bezug | fehlt | allgemein | begründet |
-| Reflexion der Grenzen | fehlt | ansatzweise | quantitative und qualitative Ergänzung, Kontext |
-| Formulierung | unklar | verständlich | präzise und wissenschaftlich |
+**Benötigte Daten:**
 
-````{admonition} Hinweise zur Selbstkorrektur
-:class: hinweis, dropdown
+Einstellungsgrenzen, Filmlänge, Anzahl der Einstellungen, Erscheinungsjahr und Genre der Filme.
 
-- Wenn Ihre Frage nur ein Einzelphänomen beschreibt („Wie lang ist die längste Einstellung?“), fehlt der Vergleich oder die analytische Stoßrichtung.
-- Wenn Sie nur ein Modell nennen, aber keine Daten und keine Begründung, bleibt die Frage unter der Anforderung der Aufgabenstellung.
-- Wenn Sie die Grenzen der ASL nicht nennen, lesen Sie `filmanalyse/quantitativ.md` erneut, insbesondere die Abschnitte zur Kritik und zu Scalable Viewing.
+**Warum quantitativ bearbeitbar:**
+
+Die ASL ist aus Filmlänge und Einstellungsanzahl berechenbar; die Werte können über das Korpus verglichen und chronologisch sortiert werden.
+
+**Grenzen:**
+
+Die ASL allein beweist keinen Stil oder eine Ursache. Die Wahrnehmung von Schnittfrequenz ist historisch und genreabhängig; für die Interpretation braucht es filmhistorischen Kontext, qualitative Herangehensweisen und die Prüfung der Annotationsqualität.
 ````
