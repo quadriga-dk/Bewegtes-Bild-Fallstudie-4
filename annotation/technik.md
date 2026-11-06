@@ -50,8 +50,6 @@ alt: Notebook Ausgabe zur Verwendung einer CPU.
 Notebook Ausgabe zur Verwendung einer CPU.
 ```
 
-
-
 ## Ausführungsmodi
 
 Als offenes Format können Jupyter Notebooks in vielen Umgebungen ausgeführt oder eingebunden werden. Als Alternative zur lokalen Ausführung bieten sich Cloud-Umgebungen an, in denen das Jupyter Notebook auf einem externen Server ausgeführt wird. Somit wird keine leistungsstarke Hardware auf dem eigenen Computer benötigt. Eine solche Umgebung ist *Google Colab*, in der die Jupyter Notebooks aus der OER heraus auf unterschiedlichen CPUs und GPUs ausgeführt werden können. Für die Verwendung von *Google Colab* ist die Anmeldung mit einem Google-Konto notwendig.
