@@ -19,8 +19,6 @@ from quadriga import colors
 
 # 🏆Selbsttest: Wissen und Praxis
 
-Dieser Selbsttest bezieht sich auf das Kapitel **Auswertung der Annotationsdaten**.
-
 ````{admonition} Wie nutze ich den Selbsttest?
 :class: hinweis, dropdown
 Diese Übungsaufgaben dienen Ihrer Selbsteinschätzung und helfen Ihnen, das im Kapitel Gelernte zu reflektieren.
@@ -34,14 +32,12 @@ Sie können die Fragen in beliebiger Reihenfolge bearbeiten und die Beantwortung
 
 Es erfolgt keine Bewertung oder Speicherung Ihrer Ergebnisse. Nutzen Sie dieses Assessment, um Wissenslücken zu identifizieren und gegebenenfalls die entsprechenden Abschnitte des Kapitels nochmals zu bearbeiten.
 
-**Geschätzte Zeit**: 30 Minuten
+**Geschätzte Zeit**: 20 Minuten
 
 Viel Erfolg!
 ````
 
 ## Aufgabe 1
-
-Ordnen Sie die Dateien ihrem Inhalt zu.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -81,12 +77,9 @@ quiz.create_matching_quiz(
 - **Metadata-CSV:** Enthält Schlüssel-Wert-Paare zu Video, Modell, Schwellenwert und statistischen Kennwerten.
 - **Frames-CSV:** Enthält die einzelnen Frames, in denen eine Figur erkannt wurde, inklusive Ähnlichkeits- und Konfidenzwert.
 - **Annotations-CSV:** Fasst aufeinanderfolgende Erkennungen zu längeren Zeitintervallen zusammen.
-- **Typischer Fehler:** Frames- und Annotations-CSV verwechseln. Frames sind Einzeltreffer, Annotationen sind zusammengefasste Intervalle.
 ````
 
 ## Aufgabe 2
-
-Gegeben sind die Einstellungslängen in Sekunden: 2; 3; 3; 4; 18. Wie hoch ist der Median (MSL)?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -126,8 +119,6 @@ display_quiz(numeric2, colors=colors.jupyterquiz)
 
 ## Aufgabe 3
 
-Sie möchten zeigen, wann eine Figur im Verlauf eines Films erkannt wird. Welche Visualisierung passt am besten?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -166,8 +157,6 @@ display_quiz(multiple_choice3, colors=colors.jupyterquiz)
 ```
 
 ## Aufgabe 4
-
-Welche Aussagen lassen sich aus der im Kapitel beschriebenen Visualisierung der Einstellungsdaten direkt stützen? Wählen Sie alle zutreffenden Optionen.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -213,8 +202,6 @@ display_quiz(many_choice4, colors=colors.jupyterquiz)
 
 ## Aufgabe 5
 
-Sunny ist im Figurennetzwerk mit allen anderen Figuren verbunden. Was folgt daraus?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -252,7 +239,7 @@ multiple_choice5 = [{
 display_quiz(multiple_choice5, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 6 – Selbstreflexion: Ein Figurennetzwerk interpretieren
+## Aufgabe 6
 
 Betrachten Sie die Netzwerkgrafik zu „Der geteilte Himmel“.
 
@@ -273,28 +260,19 @@ create_answer_box('Assessment_Auswertung')
 ````{admonition} Musterlösung
 :class: solution, dropdown
 
-> **Gruppen:** Im unteren Bereich sind Figuren der Arbeitswelt versammelt (Kuhl, Meternagel, Ermisch, Wendland), rechts ist Schwarzenbach für die Universität positioniert. Im oberen Bereich stehen Herr und Frau Herrfurth sowie Martin für den privaten Bereich Ritas und Manfreds.
->
-> **Hypothesen:** Die räumliche Anordnung könnte auf unterschiedliche soziale Sphären verweisen: Arbeitswelt, Universität und Privatleben. Die Nähe von Rita zu Meternagel und Wendland könnte auf ihre beruflichen und politischen Bezüge hindeuten; die Verbindung zu Martin auf eine private Beziehung.
->
-> **Warum nicht bewiesen:** Das Netzwerk zeigt gemeinsame Erkennung in untersuchten Frames, nicht die Qualität oder Bedeutung einer Beziehung. Fehlende Verbindungen können durch übersehene Gesichter, Kamerawinkel oder Schwellenwerte entstehen. Die Position der Knoten ist kein eigenständiges Maß für Nähe.
->
-> **Prüfung:** Die entsprechenden Szenen im Film sichten, in VIAN mit den Annotationen abgleichen und den Handlungskontext sowie den Produktionskontext einbeziehen.
-````
+**Gruppen:**
 
-### Bewertungsraster
+Im unteren Bereich sind Figuren der Arbeitswelt versammelt (Kuhl, Meternagel, Ermisch, Wendland), rechts ist Schwarzenbach für die Universität positioniert. Im oberen Bereich stehen Herr und Frau Herrfurth sowie Martin für den privaten Bereich Ritas und Manfreds.
 
-| Kriterium | 0 Punkte | 1 Punkt | 2 Punkte |
-|---|---|---|---|
-| Figurengruppen | keine oder falsch | eine Gruppe | zwei Gruppen präzise beschrieben |
-| Hypothesen | fehlen | allgemein | filmanalytisch begründet |
-| Quellenkritik | fehlt | ansatzweise | gemeinsame Erkennung ≠ Beziehung, Fehlerquellen benannt |
-| Prüfungsvorschlag | fehlt | allgemein | konkreter Bezug zu Film/VIAN/Kontext |
+**Hypothesen:**
 
-````{admonition} Hinweise zur Selbstkorrektur
-:class: hinweis, dropdown
+Die räumliche Anordnung könnte auf unterschiedliche soziale Sphären verweisen: Arbeitswelt, Universität und Privatleben. Die Nähe von Rita zu Meternagel und Wendland könnte auf ihre beruflichen und politischen Bezüge hindeuten; die Verbindung zu Martin auf eine private Beziehung.
 
-- Wenn Sie aus einer Verbindung direkt eine Beziehung ableiten, lesen Sie den Caveat in `auswertung/visualisierung_figuren.ipynb` erneut.
-- Wenn Sie die Knotenposition als inhaltliches Maß behandeln, beachten Sie, dass sie sich durch Ziehen und Darstellungseinstellungen verändert.
-- Wenn Sie keine Fehlerquellen nennen, prüfen Sie die Abschnitte zur Figurenerkennung in `annotation/figuren_datensichtung.md`.
+**Warum nicht bewiesen:**
+
+Das Netzwerk zeigt gemeinsame Erkennung in untersuchten Frames, nicht die Qualität oder Bedeutung einer Beziehung. Fehlende Verbindungen können durch übersehene Gesichter, Kamerawinkel oder Schwellenwerte entstehen. Die Position der Knoten ist kein eigenständiges Maß für Nähe.
+
+**Prüfung:**
+
+Die entsprechenden Szenen im Film sichten, in VIAN mit den Annotationen abgleichen und den Handlungskontext sowie den Produktionskontext einbeziehen.
 ````
