@@ -19,8 +19,6 @@ from quadriga import colors
 
 # 🏆Selbsttest: Wissen und Praxis
 
-Dieser Selbsttest bezieht sich auf das Kapitel **Automatisierte Annotation von Filmen**.
-
 ````{admonition} Wie nutze ich den Selbsttest?
 :class: hinweis, dropdown
 Diese Übungsaufgaben dienen Ihrer Selbsteinschätzung und helfen Ihnen, das im Kapitel Gelernte zu reflektieren.
@@ -40,8 +38,6 @@ Viel Erfolg!
 ````
 
 ## Aufgabe 1
-
-Ein Modell ist sehr bekannt, wurde aber mit Farbfotos trainiert. Ihr Material ist ein Schwarz-Weiß-Film. Was prüfen Sie zuerst?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -81,8 +77,6 @@ display_quiz(multiple_choice1, colors=colors.jupyterquiz)
 ```
 
 ## Aufgabe 2
-
-Bringen Sie die Schritte des Workflows in die richtige Reihenfolge.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -130,12 +124,9 @@ quiz.create_matching_quiz(
 - **Tabellarische Aufbereitung:** Die Rohausgabe wird in ein weiterverarbeitbares Tabellenformat gebracht.
 - **Export:** CSV für Tabellen und EAF für die Sichtung in VIAN.
 - **Sichtung:** Die Qualität wird nach dem Export geprüft; bei Bedarf werden Schwellenwerte angepasst und der Prozess wiederholt.
-- **Typischer Fehler:** Die Sichtung vor den Export zu setzen. Ohne EAF-Datei kann VIAN die Annotationen nicht importieren.
 ````
 
 ## Aufgabe 3
-
-Sie möchten die automatisch erstellten Annotationen in VIAN sichten. Welche Datei importieren Sie?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -176,8 +167,6 @@ display_quiz(multiple_choice3, colors=colors.jupyterquiz)
 
 ## Aufgabe 4
 
-Sie erhöhen bei der Einstellungserkennung den `THRESHOLD` von 0,5 auf 0,8. Was erwarten Sie?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -186,7 +175,7 @@ sys.path.append("..")
 from quadriga import colors
 
 multiple_choice4 = [{
-    "question": """Sie erhöhen bei der Einstellungserkennung den <code>THRESHOLD</code> von 0,5 auf 0,8. Was erwarten Sie?""",
+    "question": """Sie erhöhen bei der Einstellungserkennung den Wert bei "THRESHOLD" von 0,5 auf 0,8. Was erwarten Sie?""",
     "type": "multiple_choice",
     "answers": [
         {
@@ -217,8 +206,6 @@ display_quiz(multiple_choice4, colors=colors.jupyterquiz)
 
 ## Aufgabe 5
 
-Ein Modell liefert für mögliche Einstellungsübergänge die Werte 0,18; 0,42; 0,51; 0,79. Wie viele Übergänge werden bei `THRESHOLD = 0.5` erfasst?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -227,7 +214,7 @@ sys.path.append("..")
 from quadriga import colors
 
 numeric5 = [{
-    "question": """Ein Modell liefert für mögliche Einstellungsübergänge die Werte 0,18; 0,42; 0,51; 0,79. Wie viele Übergänge werden bei <code>THRESHOLD = 0.5</code> erfasst?""",
+    "question": """Ein Modell liefert für mögliche Einstellungsübergänge die Werte 0,18; 0,42; 0,51; 0,79. Wie viele Übergänge werden bei `THRESHOLD = 0.5` erfasst?""",
     "type": "numeric",
     "answers": [
         {
@@ -257,8 +244,6 @@ display_quiz(numeric5, colors=colors.jupyterquiz)
 
 ## Aufgabe 6
 
-Rita ist im Trailer „Der geteilte Himmel“ von hinten zu sehen und wird nicht erkannt. Wie ordnen Sie das ein?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -267,7 +252,7 @@ sys.path.append("..")
 from quadriga import colors
 
 multiple_choice6 = [{
-    "question": """Rita ist im Trailer „Der geteilte Himmel“ von hinten zu sehen und wird nicht erkannt. Wie ordnen Sie das ein?""",
+    "question": """Rita ist im Trailer zu „Der geteilte Himmel“ von hinten zu sehen und wird nicht erkannt. Wie ordnen Sie das ein?""",
     "type": "multiple_choice",
     "answers": [
         {
@@ -297,8 +282,6 @@ display_quiz(multiple_choice6, colors=colors.jupyterquiz)
 ```
 
 ## Aufgabe 7
-
-Bringen Sie die vier Schritte der Gesichtserkennung in die richtige Reihenfolge.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -338,12 +321,9 @@ quiz.create_matching_quiz(
 - **Alignment:** Das erkannte Gesicht wird begradigt und zugeschnitten, um die Vergleichbarkeit zu erhöhen.
 - **Representation:** Aus dem Gesicht wird ein Embedding, also eine Vektorrepräsentation, erstellt.
 - **Recognition:** Die Embeddings werden verglichen; ein Schwellenwert entscheidet, ob zwei Gesichter derselben Person zugeordnet werden.
-- **Typischer Fehler:** Representation vor Alignment zu setzen. Ohne Normalisierung ist der Vergleich weniger stabil.
 ````
 
 ## Aufgabe 8
-
-Welche Anforderung an Referenzbilder ist korrekt?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -384,8 +364,6 @@ display_quiz(multiple_choice8, colors=colors.jupyterquiz)
 
 ## Aufgabe 9
 
-Sie senken den Schwellenwert. Es gibt mehr Treffer, darunter aber auch falsche Figurenzuordnungen. Wie beurteilen Sie das?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -425,8 +403,6 @@ display_quiz(multiple_choice9, colors=colors.jupyterquiz)
 
 ## Aufgabe 10
 
-Sie möchten eigene Trailer für die Einstellungserkennung nutzen. Was müssen Sie im Jupyter Notebook mindestens anpassen?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -439,17 +415,17 @@ multiple_choice10 = [{
     "type": "multiple_choice",
     "answers": [
         {
-            "answer": "<code>DOWNLOAD_TESTFILES = False</code> setzen und die Dateien in <code>VIDEO_PATH</code> ablegen.",
+            "answer": "`DOWNLOAD_TESTFILES = False` setzen und die Dateien in`VIDEO_PATH` ablegen.",
             "correct": True,
             "feedback": """✓ Richtig: Damit das Notebook keine Testdateien herunterlädt und Ihre eigenen Videos verarbeitet, müssen Sie den Download deaktivieren und die Dateien im vorgesehenen Videoordner ablegen."""
         },
         {
-            "answer": "Nur <code>THRESHOLD</code> ändern.",
+            "answer": "Nur `THRESHOLD` ändern.",
             "correct": False,
             "feedback": """× Nicht korrekt: Der Schwellenwert allein ändert nichts an der Datenquelle."""
         },
         {
-            "answer": "Nur <code>EXPORT_PATH</code> ändern.",
+            "answer": "Nur `EXPORT_PATH` ändern.",
             "correct": False,
             "feedback": """× Nicht korrekt: Der Exportpfad bestimmt nur, wohin Ergebnisse gespeichert werden."""
         },
@@ -464,7 +440,7 @@ multiple_choice10 = [{
 display_quiz(multiple_choice10, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 11 – Selbstreflexion: Schwellenwerte wählen und Qualität beurteilen
+## Aufgabe 11
 
 Sie möchten für eine Videodatei eine Einstellungs- und Figurenerkennung mit den Jupyter Notebooks durchführen.
 
@@ -484,25 +460,11 @@ create_answer_box('Assessment_Annotation')
 ````{admonition} Musterlösung
 :class: solution, dropdown
 
-> **Vorgehen:** Für eine erste explorative Sichtung kann ein niedrigerer Schwellenwert sinnvoll sein, um mögliche Übergänge nicht zu übersehen. Für eine quantitative Auswertung, bei der falsch-positive Treffer die Kennwerte verzerren, ist ein höherer Schwellenwert sinnvoll. Der Wert muss zum Material, zur Fragestellung und zur geplanten Auswertung passen. Die Annotationsergebnisse sollten immer am Material auf ihre Korrektheit überprüft werden. Hierfür können die Ergebnisse z. B. mithilfe einer `EAF-Datei` in das Annotationstool VIAN importiert werden.
->
-> **Age-/Gender-Reflexion:** Diese Schätzwerte beruhen auf äußeren Merkmalen und den Kategorien der Trainingsdaten. Sie sind oft fehlerhaft, reproduzieren Stereotype und bilden Geschlechtsidentität nicht angemessen ab. Sie werden in der OER daher nicht gespeichert und nicht für die Analyse verwendet.
-````
+**Vorgehen:**
 
-### Bewertungsraster
+Für eine erste explorative Sichtung kann ein niedrigerer Schwellenwert sinnvoll sein, um mögliche Übergänge nicht zu übersehen. Für eine quantitative Auswertung, bei der falsch-positive Treffer die Kennwerte verzerren, ist ein höherer Schwellenwert sinnvoll. Der Wert muss zum Material, zur Fragestellung und zur geplanten Auswertung passen. Die Annotationsergebnisse sollten immer am Material auf ihre Korrektheit überprüft werden. Hierfür können die Ergebnisse z. B. mithilfe einer `EAF-Datei` in das Annotationstool VIAN importiert werden.
 
-| Kriterium | 0 Punkte | 1 Punkt | 2 Punkte |
-|---|---|---|---|
-| Durchführung | nicht durchgeführt | teilweise | zwei Werte systematisch verglichen |
-| Dokumentation | fehlt | knapp | Tabelle mit nachvollziehbaren Beobachtungen |
-| Begründung | fehlt | allgemein | forschungszielbezogen und materialbezogen |
-| Qualitätsurteil | fehlt | ansatzweise | Fehlertypen und Grenzen benannt |
-| Ethik-Reflexion | fehlt | ansatzweise | Age-/Gender-Problematik konkret erklärt |
+**Age-/Gender-Reflexion:**
 
-````{admonition} Hinweise zur Selbstkorrektur
-:class: hinweis, dropdown
-
-- Wenn Sie nur „mehr Treffer = besser“ schreiben, fehlt die Unterscheidung zwischen Sensitivität und Präzision.
-- Wenn Sie keine Fehler in VIAN finden, prüfen Sie gezielt Übergänge mit starken Bewegungen, ähnlichen Bildern und Lichtwechseln.
-- Wenn die Downloadlinks in den Kapiteln noch fehlen, nutzen Sie die beschriebenen Beispiele aus `annotation/einstellung_datensichtung.md` und `annotation/figuren_datensichtung.md` als Fallvignetten.
+Diese Schätzwerte beruhen auf äußeren Merkmalen und den Kategorien der Trainingsdaten. Sie sind oft fehlerhaft, reproduzieren Stereotype und bilden Geschlechtsidentität nicht angemessen ab. Sie werden in der OER daher nicht gespeichert und nicht für die Analyse verwendet.
 ````
