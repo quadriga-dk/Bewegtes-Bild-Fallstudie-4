@@ -19,8 +19,6 @@ from quadriga import colors
 
 # 🏆Selbsttest: Wissen und Praxis
 
-Dieser Selbsttest bezieht sich auf das Kapitel **Computer Vision für die Filmanalyse**.
-
 ````{admonition} Wie nutze ich den Selbsttest?
 :class: hinweis, dropdown
 Diese Übungsaufgaben dienen Ihrer Selbsteinschätzung und helfen Ihnen, das im Kapitel Gelernte zu reflektieren.
@@ -40,8 +38,6 @@ Viel Erfolg!
 ````
 
 ## Aufgabe 1
-
-Was beschreibt Computer Vision am treffendsten?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -82,8 +78,6 @@ display_quiz(multiple_choice1, colors=colors.jupyterquiz)
 
 ## Aufgabe 2
 
-Bringen Sie die folgenden Schritte in die im Kapitel beschriebene Reihenfolge.
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 import sys
@@ -93,7 +87,7 @@ from assessment import DragDropQuiz
 quiz = DragDropQuiz()
 
 quiz.create_matching_quiz(
-    title="Bringen Sie die folgenden Schritte in die im Kapitel beschriebene Reihenfolge.",
+    title="Bringen Sie die folgenden Schritte bei der Computer Vision in die im Kapitel beschriebene Reihenfolge.",
     descriptions=[
         "1",
         "2",
@@ -126,14 +120,11 @@ quiz.create_matching_quiz(
 - **Verarbeitung:** Hier werden technische Metadaten, Embeddings oder andere Zwischenprodukte erzeugt.
 - **Anwendung des Modells:** Das Modell wird auf das vorbereitete Material angewendet und erzeugt z. B. Wahrscheinlichkeitswerte.
 - **Schwellenwert und Ausgabe:** Schwellenwerte verwandeln die Werte in Annotationen; anschließend werden die Daten strukturiert ausgegeben und sollten ggf. geprüft werden.
-- **Typischer Fehler:** Den Schwellenwert vor die Modellanwendung zu setzen. Der Schwellenwert wird auf die Ausgabe des Modells angewendet.
 
 *Hinweis:* Das Kapitel betont, dass der Ablauf schematisch ist und sich Schritte in der Praxis überschneiden können. Im Assessment wird die im Kapitel dargestellte Grundreihenfolge geprüft.
 ````
 
 ## Aufgabe 3
-
-Worin unterscheiden sich Algorithmus und Modell?
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -174,8 +165,6 @@ display_quiz(multiple_choice3, colors=colors.jupyterquiz)
 
 ## Aufgabe 4
 
-Ein Gesichtsdetektor liefert für vier Bildausschnitte die Werte 0,42; 0,55; 0,73; 0,81. Wie viele Gesichter gelten bei einem Schwellenwert von 0,60 als erkannt?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -214,8 +203,6 @@ display_quiz(numeric4, colors=colors.jupyterquiz)
 
 ## Aufgabe 5
 
-Welche Frage ist typisch für Distant Viewing?
-
 ```{code-cell} ipython3
 :tags: [remove-input]
 from jupyterquiz import display_quiz
@@ -253,7 +240,7 @@ multiple_choice5 = [{
 display_quiz(multiple_choice5, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 6 – Selbstreflexion: Bias und Grenzen beurteilen
+## Aufgabe 6
 
 In einem historischen Film erkennt ein Objekterkennungsmodell eine Handtasche, wo im Film eine Schusswaffe zu sehen ist. Bei einer weiblichen Figur schätzt dasselbe Modell „männlich“.
 
@@ -273,28 +260,19 @@ create_answer_box('Assessment_Vision')
 ````{admonition} Musterlösung
 :class: solution, dropdown
 
-> **Ursachen:** (1) Das Modell wurde überwiegend mit aktuellem Farbmaterial trainiert und hat gelernt, Formen und Kontexte aus diesem Material zu erkennen; historische Schwarz-Weiß-Aufnahmen oder ungewöhnliche Bildkompositionen führen zu Fehlklassifikationen.
-> (2) Die Geschlechtsklassifikation basiert auf äußeren Merkmalen und den Kategorien der Trainingsdaten; sie reproduziert Stereotype und ist auf eine binäre Unterscheidung beschränkt.
->
-> **Konsequenzen:** (1) Falsche Annotationen können die quantitative Auswertung verzerren, z. B. wenn Objekte oder Figuren falsch gezählt werden.
-> (2) Die Ergebnisse müssen gesichtet und mit dem Filmmaterial abgeglichen werden; die Herkunft des Modells, die Trainingsdaten und die angewendeten Schwellenwerte müssen dokumentiert werden.
->
-> **Maßnahme:** Ergebnisse stichprobenartig mit Annotationstools wie VIAN am Videomaterial prüfen, alternative Modelle oder Schwellenwerte testen und die Unsicherheit im Forschungsbericht offenlegen. Age-/Gender-Schätzungen sollten kritisch hinterfragt und nicht ungeprüft übernommen oder gespeichert werden.
-````
+**Ursachen:**
 
-### Bewertungsraster
+(1) Das Modell wurde überwiegend mit aktuellem Farbmaterial trainiert und hat gelernt, Formen und Kontexte aus diesem Material zu erkennen; historische Schwarz-Weiß-Aufnahmen oder ungewöhnliche Bildkompositionen führen zu Fehlklassifikationen.
 
-| Kriterium | 0 Punkte | 1 Punkt | 2 Punkte |
-|---|---|---|---|
-| Ursachen | keine oder falsch | eine plausible Ursache | zwei plausible, fachlich begründete Ursachen |
-| Konsequenzen | keine | eine allgemeine Konsequenz | zwei konkrete Folgen für die Analyse |
-| Maßnahme | keine | allgemein („prüfen“) | konkret, umsetzbar, dokumentiert |
-| Bias-Reflexion | fehlt | ansatzweise | Trainingsdaten, Kontext und Grenzen der Modelle benannt |
+(2) Die Geschlechtsklassifikation basiert auf äußeren Merkmalen und den Kategorien der Trainingsdaten; sie reproduziert Stereotype und ist auf eine binäre Unterscheidung beschränkt.
 
-````{admonition} Hinweise zur Selbstkorrektur
-:class: hinweis, dropdown
+**Konsequenzen:**
 
-- Wenn Sie nur „das Modell ist schlecht“ schreiben, fehlt die Unterscheidung zwischen Modellfehler, Materialunterschied und Bias.
-- Wenn Sie keine Konsequenz für die Annotation nennen, lesen Sie `vision/grenzen.md` erneut.
-- Wenn Sie Age-/Gender-Schätzungen als objektiv behandeln, lesen Sie `annotation/figuren_intro.md`, Abschnitt „Detection“.
+(1) Falsche Annotationen können die quantitative Auswertung verzerren, z. B. wenn Objekte oder Figuren falsch gezählt werden.
+
+(2) Die Ergebnisse müssen gesichtet und mit dem Filmmaterial abgeglichen werden; die Herkunft des Modells, die Trainingsdaten und die angewendeten Schwellenwerte müssen dokumentiert werden.
+
+**Maßnahme:**
+
+Ergebnisse stichprobenartig mit Annotationstools wie VIAN am Videomaterial prüfen, alternative Modelle oder Schwellenwerte testen und die Unsicherheit im Forschungsbericht offenlegen. Age-/Gender-Schätzungen sollten kritisch hinterfragt und nicht ungeprüft übernommen oder gespeichert werden.
 ````
