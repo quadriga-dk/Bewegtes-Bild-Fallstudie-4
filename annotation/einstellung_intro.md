@@ -9,7 +9,7 @@ Zunächst werden das TransNetV2-Modells zur Einstellungserkennung und das zur De
 Das Modell wurde mit harten Schnitten und graduellen Übergängen sowie Überblendungen trainiert. Das Modell kann Übergänge übersehen oder Veränderungen innerhalb einer Einstellung fälschlich als Übergang werten. Weitere Informationen bieten der <a href="https://arxiv.org/abs/2008.04838" class="external-link" target="_blank">Artikel von Souček und Lokoč (2020)</a> und das <a href="https://github.com/soCzech/TransNetV2" class="external-link" target="_blank">offizielle TransNetV2-Repositorium</a>.
 
 ## Analysematerial
-Wie bereits in den [Vorbemerkungen dieses Kapitels](intro.md) diskutiert, können wir im Rahmen dieser OER aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs selbst zur Verfügung stellen. Freundlicherweise haben wir jedoch seitens der DEFA-Stiftung die Genehmigung erhalten, die Trailer der Filme nutzen zu können.
+Wie bereits in den [Vorbemerkungen dieses Kapitels](intro.md) diskutiert, können wir im Rahmen dieser OER aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs selbst zur Verfügung stellen. Freundlicherweise haben wir jedoch seitens der DEFA-Stiftung die Genehmigung erhalten, die Trailer zu den Filmen zu nutzen.
 Für die Demonstration der Einstellungserkennung haben wir den Trailer zum Film *Der geteilte Himmel* von 1964 ausgewählt. 
 
 <figure style="max-width: 640px; margin: 1.5em auto; text-align: center;">
@@ -33,15 +33,15 @@ Für die Auswertung eigener Filme können die entsprechenden Dateien im Import-O
 
 ## Ausgabe
 
-Für jede analysierte Videodatei werden drei Ergebnisdateien im festgelegten Exportordner (`EXPORT_PATH`) gespeichert. Die Dateinamen setzen sich aus dem Namen der Videodatei, `shots` und dem Schwellenwert `THRESHOLD` zusammen, beispielsweise **`Filmtitel_shots_0.5.csv`**. Beim erneuten Export werden weitere Versionen der Ergebnisdateien angelegt. Bestehende Dateien bleiben erhalten. 
+Für jede analysierte Videodatei werden drei Ergebnisdateien im festgelegten Exportordner (`EXPORT_PATH`) gespeichert. Die Dateinamen setzen sich aus dem Namen der Videodatei, der Bezeichnung `shots` und dem Schwellenwert `THRESHOLD` zusammen, beispielsweise **`Filmtitel_shots_0.5.csv`**.
 
 Die Datei **`Filmname_shots_THRESHOLD.csv`** enthält die erkannten Einstellungen als Tabelle. Jede Zeile beschreibt eine Einstellung mit ihrem Start, Ende, Mittelpunkt und ihrer Dauer, jeweils in Frames und Sekunden.
 
 Die Datei **`Filmname_shots_THRESHOLD_metadata.csv`** dokumentiert die technischen Metadaten der Videodatei, den verwendeten Analyseparameter und statistische Kennwerte des Ergebnisses. Jede Zeile enthält den Namen eines Metadatums und seinen Wert.
 
-Zusätzlich wird eine **`Filmname_shots_THRESHOLD.eaf`** erstellt. Mit dieser Datei können die erkannten Einstellungen in Annotationsprogramme wie VIAN importiert werden, um die Ergebnisse zu überprüfen und weiterzubearbeiten.
+Zusätzlich wird eine Datei **`Filmname_shots_THRESHOLD.eaf`** erstellt. Mit dieser Datei können die erkannten Einstellungen in Annotationsprogramme wie VIAN importiert werden, um die Ergebnisse zu überprüfen und weiterzubearbeiten.
 
-Alle drei Dateien werden direkt im Exportordner abgelegt, unabhängig von der ursprünglichen Ordnerstruktur der Videodateien. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt. Bei einer Ausführung in Google Colab kann der gesamte Exportordner zusätzlich als ZIP-Archiv heruntergeladen werden.
+Alle drei Dateien werden direkt im Exportordner abgelegt, unabhängig von der ursprünglichen Ordnerstruktur der Videodateien. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt, bestehende Dateien bleiben erhalten. Bei einer Ausführung in Google Colab kann der gesamte Exportordner zusätzlich als ZIP-Archiv heruntergeladen werden.
 
 Eine genaue Aufschlüsselung der einzelnen Werte der beiden `.csv`-Dateien finden Sie im folgenden Appendix.
 
