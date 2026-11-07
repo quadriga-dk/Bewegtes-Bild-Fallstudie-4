@@ -52,7 +52,7 @@ Notebook Ausgabe zur Verwendung einer CPU.
 
 ## Ausführungsmodi
 
-Als offenes Format können Jupyter Notebooks in vielen Umgebungen ausgeführt oder eingebunden werden. Als Alternative zur lokalen Ausführung bieten sich Cloud-Umgebungen an, in denen das Jupyter Notebook auf einem externen Server ausgeführt wird. Somit wird keine leistungsstarke Hardware auf dem eigenen Computer benötigt. Eine solche Umgebung ist *Google Colab*, in der die Jupyter Notebooks aus der OER heraus auf unterschiedlichen CPUs und GPUs ausgeführt werden können. Für die Verwendung von *Google Colab* ist die Anmeldung mit einem Google-Konto notwendig.
+Als offenes Format können Jupyter Notebooks in vielen Umgebungen ausgeführt oder eingebunden werden. Als Alternative zur lokalen Ausführung bieten sich Cloud-Umgebungen an, in denen das Jupyter Notebook auf einem externen Server ausgeführt wird. Somit wird keine leistungsstarke Hardware auf dem eigenen Computer benötigt. Eine solche Umgebung ist <a href="https://colab.research.google.com/" class="external-link" target="_blank">*Google Colab*</a>, in der die Jupyter Notebooks aus der OER heraus auf unterschiedlichen CPUs und GPUs ausgeführt werden können. Für die Verwendung von *Google Colab* ist die Anmeldung mit einem Google-Konto notwendig.
 
 Wir empfehlen, vor der Arbeit mit den Notebooks dieser OER [das Kapitel zu den technischen Voraussetzungen](../einstieg/technische-voraussetzungen.md) zu lesen. Es bietet einen Überblick über die verschiedenen Möglichkeiten, Jupyter Notebooks auszuführen.
 
@@ -123,7 +123,7 @@ Wie wir im folgenden Kapitel genauer darstellen werden, wird nach den Ausführen
 ```{margin} 
 ```{admonition} Hinweis
 :class: hinweis
-Die einzelnen Elemente von VIANs Bedienoberfläche lassen sich in ihrer Größe anpassen, indem man deren Rahmen verschiebt.
+Die einzelnen Elemente der VIAN-Bedienoberfläche lassen sich in ihrer Größe anpassen, indem man deren Rahmen verschiebt.
 ```
 
 ```{figure} ../assets/annotation/VIAN_ImportMenu.png
