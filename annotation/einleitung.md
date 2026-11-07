@@ -21,7 +21,7 @@ Die vorliegende Fallstudie befasst sich mit Workflows zur automatisierten Filman
 
 ```{include} ../einstieg/lernziele.md
 :start-after: "<!-- START: Automatisierte Annotation von Filmen -->"
-:end-before: "<!-- END: Automatisierte Annotation von Filmen-->"
+:end-before: "<!-- END: Automatisierte Annotation von Filmen -->"
 ```
 
 Wir befinden uns damit beim 3. Schritt unserer Fallstudie, bei dem die automatisierte Annotation von Filmen praktisch umgesetzt wird. Zu Beginn des Kapitels stellen wir die Entwicklung des angewendeten Workflows dar, gehen auf die verwendeten Modelle ein und erklären die notwendigen technischen Voraussetzungen und Grundlagen. Mithilfe von Jupyter Notebooks wird schließlich die Erkennung von Einstellungen und die Erkennung von Figuren anhand von Trailern zu Filmen Konrad Wolfs durchgeführt. Die erzeugten Annotationsdaten werden mit dem Filmanalysetool VIAN gesichtet und überprüft.
