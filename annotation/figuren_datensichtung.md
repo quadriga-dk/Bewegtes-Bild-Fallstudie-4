@@ -73,7 +73,7 @@ alt: Rita konnte im Trailer zu Der geteilte Himmel nicht von hinten erkannt werd
 Rita konnte im Trailer zu *Der geteilte Himmel* nicht von hinten erkannt werden.
 ```
 
-Anders verhält es sich bei Einstellungen, in denen die Figuren zwar gut zu sehen sind, aber dennoch nicht erkannt wurden. Dies ist in einer Einstellungen des Trailers der Fall, in der Rita und Manfred gemeinsam im Bett liegen. Aufgrund der Einstellungsgröße und der Beleuchtung sind die Gesichter nicht vollständig zu sehen. Es ist nur eine Gesichtshälfte Manfreds sichtbar und Ritas Augen werden teilweise von ihren Haaren verdeckt. Wesentliche Merkmale für die Gesichtserkennung stehen also nur teilweise zur Verfügung (vgl. Kapitel zu [Grundlagen der Gesichtserkennung](../annotation/figuren_intro.md#grundlagen-der-gesichtserkennung)). Während Manfred in dieser Einstellung bei den Standard-Schwellenwerten von jeweils `0.3` gar nicht erkannt wird, wurde Rita für eine paar Frames erfasst. Daher wurde ihr trotz der schlechten Erkennung in der Spur *Rita_matched* die gesamte Einstellung zugeordnet (vgl. Kapitel [Ausgabe](../annotation/figuren_intro.md#ausgabe)): 
+Anders verhält es sich bei Einstellungen, in denen die Figuren zwar gut zu sehen sind, aber dennoch nicht erkannt wurden. Dies ist in einer Einstellungen des Trailers der Fall, in der Rita und Manfred gemeinsam im Bett liegen. Aufgrund der Einstellungsgröße und der Beleuchtung sind die Gesichter nicht vollständig zu sehen. Es ist nur eine Gesichtshälfte Manfreds sichtbar und Ritas Augen werden teilweise von ihren Haaren verdeckt. Wesentliche Merkmale für die Gesichtserkennung stehen also nur teilweise zur Verfügung (vgl. Kapitel zu [Grundlagen der Gesichtserkennung](../annotation/figuren_intro.md#grundlagen-der-gesichtserkennung)). Während Manfred in dieser Einstellung bei den Standard-Schwellenwerten von jeweils `0.3` gar nicht erkannt wird, wurde Rita für eine paar Frames erfasst. Daher wurde ihr trotz der schlechten Erkennung in der Spur *Rita_matched* die gesamte Einstellung zugeordnet (vgl. Kapitel [Ausgabe](../annotation/figuren_intro.md#ausgabe) die Erklärung zu`Figurenname_matched`): 
 
 ```{figure} ../assets/annotation/Himmel_Fehler2.gif
 ---
@@ -85,16 +85,16 @@ alt: Rita und Manfred konnten im Trailer zu Der geteilte Himmel in dieser Einste
 Rita und Manfred konnten im Trailer zu *Der geteilte Himmel* in dieser Einstellung nicht vollständig erkannt werden.
 ```
 
-Die Wahl geringerer Schwellenwerte wie `0.1` verbessert zwar die Erkennung von Manfred in dieser Einstellung, führt allerdings gleichzeitig auch zu falschen Ergebnissen. So werden bei einem derart niedrigen Schwellenwert auch andere Figuren inkorrekterweise als Rita oder Manfred erkannt:
+Die Wahl geringerer Schwellenwerte wie `0.1` verbessert zwar die Erkennung von Manfred in dieser Einstellung, führt allerdings gleichzeitig auch zu falschen Ergebnissen. So werden bei einem derart niedrigen Schwellenwert auch andere Figuren fälschlicherweise als Rita oder Manfred erkannt:
 
 ```{figure} ../assets/annotation/Himmel_Fehler3.png
 ---
 align: center
 width: 100%
 name: Himmel_Fehler3
-alt: Rolf Meternagel wurde fäschlicherweise als Rita identifiziert.
+alt: Rolf Meternagel wurde fälschlicherweise als Rita identifiziert.
 ---
-Rolf Meternagel wurde fäschlicherweise als Rita identifiziert.
+Rolf Meternagel wurde fälschlicherweise als Rita identifiziert.
 ```
 
 Die Setzung geeigneter Schwellenwerte spielt also auch hier eine wichtige Rolle für die Qualität der Annotationsergebnisse. Für eine Verbesserung der Ergebnisse der Figurenerkennung kann es wie schon bei der Einstellungserkennung sinnvoll sein, mit verschiedenen Schwellenwerten zu experimentieren.
@@ -105,14 +105,14 @@ Auch wenn die automatisiert erstellten Annotationen zum Auftreten von Figuren in
 :class: exercise
 Führen Sie selbstständig die Analyse für den *Solo Sunny* Trailer aus, der bereits in der allgemeinen `.zip`-Datei für dieses Kapitel im Ordner `Trailer` beiliegt. Der Ordner für *Solo Sunny* enthält zudem die Referenzabbildungen für die Figuren Ralph und Sunny. 
 
-Alternativ können Sie auch einen anderen Trailer zu einem Konrad Wolf Film Ihrer Wahl verwenden. Sie können die Trailer hier einzeln herunterladen. **[Link folgt]** Bereiten Sie die notwendigen Screenshots der Figuren [zur Erstellung der Vergleichsembeddings](figuren_intro.md#vergleichs-embeddings-zur-figurenerkennung) in diesem Fall selbst vor. Benennen Sie die Bilddateien dabei nach dem Schema `Erika01.png`. Ein einzelnes Bild pro Figur genügt, eine höhere Anzahl von Abbildungen aus verschiedenen Perspektiven verbessert jedoch die Genauigkeit der Erkennung. Die Namen der Figuren können Sie im [Filmportal](https://www.filmportal.de) recherchieren oder zu Übungszwecken eigene Namen vergeben. 
+Alternativ können Sie auch eine andere Videodatei Ihrer Wahl verwenden. Bereiten Sie die notwendigen Screenshots der Figuren [zur Erstellung der Vergleichsembeddings](figuren_intro.md#vergleichs-embeddings-zur-figurenerkennung) in diesem Fall selbst vor. Benennen Sie die Bilddateien dabei nach dem Schema `Erika01.png`. Ein einzelnes Bild pro Figur genügt, eine höhere Anzahl von Abbildungen aus verschiedenen Perspektiven verbessert jedoch die Genauigkeit der Erkennung.
 
 Wählen Sie selbst die Schwellenwerte, beispielsweise von sehr geringer Höhe wie `0.1`, und beurteilen Sie die Auswirkungen auf die Annotationsergebnisse.
 
 `````{admonition}  Lösung
 :class: solution, dropdown
 
-Öffnen Sie das [Jupyter Notebook zur Einstellungserkennung](../annotation/einstellungen_notebook.ipynb) in Colab (vgl. Unterkapitel [Ausführung des Notebooks](../annotation/einstellungen_notebook.ipynb#ausfuhrung-des-notebooks)).
+Öffnen Sie das [Jupyter Notebook zur Figurenerkennung](../annotation/figuren_notebook.ipynb) in Colab (vgl. Unterkapitel [Ausführung des Notebooks](../annotation/figuren_notebook.ipynb#ausfuhrung-des-notebooks)).
 
 Verändern Sie nun im ersten Codeblock des Notebooks die voreingestellten Parameter.
 
@@ -192,7 +192,7 @@ Entpacken Sie ggf. die Exportdateien in einen Ordner ihrer Wahl. Importieren Sie
 
 Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wiederholen Sie die Annotation mit verschiedenen Schwellenwerten und überprüfen Sie jeweils die Ergebnisse in VIAN. Welche Schwellenwerte führen zu den besten Ergebnissen?
 
-Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> nach den beiden Hauptfiguren Sunny und Ralph suchen lassen. Für die Figurenerkennung haben wir die Referenzabbildungen verwendet, die im `.zip`-Archiv zu diesem Abschnitt unter `Trailer` → `Solo Sunny_Trailer_1980` → `Figurenreferenzen zu finden sind.
+Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> nach den beiden Hauptfiguren Sunny und Ralph suchen lassen. Für die Figurenerkennung haben wir die Referenzabbildungen verwendet, die im `.zip`-Archiv zu diesem Abschnitt unter `Trailer` → `Solo Sunny_Trailer_1980` → `Figurenreferenzen` zu finden sind.
 
 Mit den voreingestellten Schwellenwerten von `0.3` habe wir ein erneut gutes Ergebnis erzielen können. Die Probleme ähneln denen aus dem *Der geteilte Himmel* Trailer. So wurde etwa auch Sunny in dieser Sequenz nicht erkannt, da ihr Gesicht nicht vollständig zu sehen ist:
 
