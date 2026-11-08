@@ -1,6 +1,6 @@
 # Einstellungserkennung: Datensichtung mit VIAN
 
-Nachdem die Einstellungs-Annotationen für den Trailer zu *Der geteilte Himmel* automatisch durch das [Jupyter Notebook](einstellung_notebook.ipynb) erstellt wurden, ist es an der Zeit, diese mithilfe des Annotations-Tools VIAN zu sichten. Die Installation und die für unsere Sichtung notwendigen grundlegenden Funktionen von VIAN wurden bereits im Kapitel zu den [technischen Grundlagen](technik.md#vian-installation-und-verwendung) vorgestellt.
+Nachdem die Einstellungs-Annotationen für den Trailer zu *Der geteilte Himmel* automatisch durch das [Jupyter Notebook](../annotation/einstellungen_notebook.ipynb) erstellt wurden, ist es an der Zeit, diese mithilfe des Annotations-Tools VIAN zu sichten. Die Installation und die für unsere Sichtung notwendigen grundlegenden Funktionen von VIAN wurden bereits im Kapitel zu den [technischen Grundlagen](../annotation/technik.md#vian-installation-und-verwendung) vorgestellt.
 
 ````{admonition} Download der Übungsdateien
 :class: seealso
