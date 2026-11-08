@@ -125,7 +125,7 @@ Auch für dieses Jupyter Notebook stellen wir als Testmaterial den Trailer zum F
   </figcaption>
 </figure>
 
-Im Jupyter Notebook wird der Trailer erneut automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt. Die ZIP-Datei enthält neben der `readme.md` und der `DEFA_Nutzungshinweis.md`-Datei diesmal auch die Datei `xx_shots.csv` mit den Ergebnissen der Einstellungserkennung zum *Der geteilte Himmel-Trailer*. 
+Im Jupyter Notebook wird der Trailer erneut automatisch als Teil eines ZIP-Archivs heruntergeladen und im Eingabeordner abgelegt. Die ZIP-Datei enthält neben der `readme.md` und der `DEFA_Nutzungshinweis.md`-Datei diesmal auch die Datei `Der geteilte Himmel_Trailer_1964_shots_0.5.csv` mit den Ergebnissen der Einstellungserkennung zum *Der geteilte Himmel-Trailer*. 
 
 Zur Erstellung der Vergleichs-Embeddings liefern wir die erwähnten Screenshots der Hauptfiguren mit. Für den *Der geteilte Himmel*-Trailer haben wir Bilder der Figuren Rita und Manfred ausgewählt.
 
