@@ -13,7 +13,7 @@ Digitale Tools unterstützen die filmanalytische Arbeit und erleichtern aufwänd
 **Annotation**
 
 Durch Annotationen werden Objekte mit zusätzlichen Informationen versehen. In der Film- und Medienwissenschaft sind Annotationen zu Merkmalen wie Mise-en-scene, Einstellungslängen oder Montagearten gängige Formen, auch Annotationen zu Parametern wie Einstellungsgröße, Kameraperspektive, Kamerabewegung, Ton, Farbe oder Licht. Der Austausch und die Wiederverwendung von Annotationen zu Filmen und der daraus resultierenden Metadaten gestaltet sich jedoch oft schwierig, da bisher keine einheitliche Annotationstandards für audiovisuelle Medien existieren. Der Annotationsprozess kann in manueller, semi-automatischer oder automatisierter Form stattfinden. Mit der manuellen Annotationen können auch sehr komplexe Bedeutungen und Strukturen notiert werden, die sich einer automatisierten Annotation entziehen, sie ist jedoch meist sehr zeitaufwändig. Durch neue Deep-Learning Modelle und Computer-Vision-Technologien werden immer komplexere automatisierte Annotationen möglich. Dabei werden Wahrscheinlichkeiten berechnet, ob bestimmte filmische Eigenschaften oder Merkmale zu einem bestimmten Zeitpunkt eines Films vorliegen. Der automatisierten Annotation sind dabei aber auch durch die Art der verfügbaren Modelle zur automatisierten Erkennung Grenzen gesetzt.
- 
+
 
 **Quantitative Ansätze in der Filmwissenschaft**
 
