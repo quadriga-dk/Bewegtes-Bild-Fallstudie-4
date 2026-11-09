@@ -1,7 +1,7 @@
 # Einstellungserkennung: Einführung
 Dieser Abschnitt beschreibt im Detail die Funktionsweise des folgenden Jupyter Notebooks zur Einstellungserkennung. Die Grundlagen des Ablaufs wurden bereits im Abschnitt zur [Entwicklung des Workflows](workflow.md) vorgestellt. Die technischen Grundlagen wurden hingegen im [vorherigen Abschnitt](technik.md) erläutert. 
 
-Zunächst werden das TransNetV2-Modells zur Einstellungserkennung und das zur Demonstration verwendete Analysematerial vorgestellt.
+Zunächst werden das TransNetV2-Modell zur Einstellungserkennung und das zur Demonstration verwendete Analysematerial vorgestellt.
 
 ## Funktionsweise des TransNetV2-Modells
 **TransNetV2** ist ein neuronales Netz zur automatischen Erkennung von Einstellungsübergängen. Es verarbeitet Bildfolgen und berücksichtigt dabei sowohl Bildinhalte als auch Veränderungen im zeitlichen Verlauf. Dafür verwendet es unter anderem sogenannte *3D-Faltungen*, die Bildmerkmale über mehrere Frames hinweg erfassen, und Ähnlichkeitsvergleiche zwischen Frames, zum Beispiel hinsichtlich Farbe. 

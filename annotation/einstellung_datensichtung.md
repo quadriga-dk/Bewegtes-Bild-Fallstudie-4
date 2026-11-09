@@ -32,7 +32,7 @@ alt: Auswahl einer Videodatei in VIAN.
 Auswahl einer Videodatei in VIAN.
 ```
 
-Für den Import in VIAN Klicken Sie nun im Auswahlmenü auf der rechten Seite auf "Daten importieren" und dort auf "ELAN-Annotationen importieren". Wählen Sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
+Für den Import in VIAN klicken Sie nun im Auswahlmenü auf der rechten Seite auf "Daten importieren" und dort auf "ELAN-Annotationen importieren". Wählen Sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
 
 ```{figure} ../assets/annotation/VIAN_ImportMenu.png
 ---
@@ -44,7 +44,7 @@ alt: Das Importmenü von VIAN.
 Das Importmenü von VIAN.
 ```
 
-Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste Klicken, um zur entsprechenden Stelle im Video zu gelangen.
+Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
 ```{figure} ../assets/annotation/VIAN_postImport.gif
 ---
@@ -106,9 +106,9 @@ alt: Der Fehler in Solo Sunny.
 Der Fehler in *Solo Sunny*.
 ```
 
-Es zeigt sich also, dass die Ergebnisse automatisiert erstellte Annotationen immer überprüft und ggf. ergänzt und korrigiert werden müssen. In den oben dargestellten Trailer-Beispielen ergeben sich z.B. insbesondere Probleme bei der Einstellungserkennung, wenn die aufeinander folgenden Frames unterschiedlicher Einstellungen für die Prozesse der Computer Vision eine zu große Ähnlichkeit aufweisen oder wenn Übergänge durch starke Bewegungen im Bild nicht erfasst werden.
+Es zeigt sich also, dass die Ergebnisse automatisiert erstellter Annotationen immer überprüft und ggf. ergänzt und korrigiert werden müssen. In den oben dargestellten Trailer-Beispielen ergeben sich z.B. insbesondere Probleme bei der Einstellungserkennung, wenn die aufeinander folgenden Frames unterschiedlicher Einstellungen für die Prozesse der Computer Vision eine zu große Ähnlichkeit aufweisen oder wenn Übergänge durch starke Bewegungen im Bild nicht erfasst werden.
 
-Durch das Experimentieren mit unterschiedlichen Schwellenwerten lassen sich ggf. bessere Erkennungsergebnisse erzielen. Die mit dem Notebook bzw. Computer Vision erstellten Annotationsergebnisse werden dabei nie vollkommen fehlerfrei sein. Dennoch lassen sich Ergebnisse erzielen, die exakt genug sind, um mit ihnen weiter zu arbeiten. 
+Durch das Experimentieren mit unterschiedlichen Schwellenwerten lassen sich ggf. bessere Erkennungsergebnisse erzielen. Die mit dem Notebook bzw. Computer Vision erstellten Annotationsergebnisse werden dabei nie vollkommen fehlerfrei sein. Dennoch lassen sich Ergebnisse erzielen, die exakt genug sind, um mit ihnen weiterzuarbeiten. 
 
 ``````{admonition} Übung
 :class: exercise
@@ -162,7 +162,7 @@ alt: Ordner für die Videodateien in Colab.
 Ordner für die Videodateien in Colab.
 ```
 
-Klicken Sie auf das Ordnersymbol in der linken Randspalte von Colab. (1) Es öffnet sich eine Liste mit den verfügbaren Ordnern. In den Ordner "videos_shots" laden Sie die zu annotierende Trailerdatei hoch. (2) Wenn Sie mit der Maus auf den Ordnernamen deuten werden rechts drei Punkte sichtbar, ein Klick auf die Punkte öffnet ein Fenster zum Hochladen der Datei.
+Klicken Sie auf das Ordnersymbol in der linken Randspalte von Colab. (1) Es öffnet sich eine Liste mit den verfügbaren Ordnern. In den Ordner "videos_shots" laden Sie die zu annotierende Trailerdatei hoch. (2) Wenn Sie mit der Maus auf den Ordnernamen deuten, werden rechts drei Punkte sichtbar, ein Klick auf die Punkte öffnet ein Fenster zum Hochladen der Datei.
 
 Führen Sie nun die weiteren Codeblöcke des Notebooks nacheinander aus.
 
@@ -176,9 +176,9 @@ alt: Ausführen der Codeblöcke in Colab.
 Ausführen der Codeblöcke in Colab.
 ```
 
-Klicken Sie hierzu wiederum bei jedem Codeblock auf das Dreiecksymbol in der linken oberen Ecke des Blocks. (1) Bedenken Sie, dass je nach Rechenkapazität die Google Colab zur Verfügung stellt das Ausführen eines Codeblocks einige Zeit in Anspruch nehmen kann, insbesondere im Codeblock zur "Anwendung des Modells". Indem Sie alle Codeblöcke einzeln nacheinander ausführen, können Sie deren spezifischen Funktionen nochmals nachvollziehen und werden sofort auf eventuell auftretende Probleme aufmerksam.
+Klicken Sie hierzu wiederum bei jedem Codeblock auf das Dreiecksymbol in der linken oberen Ecke des Blocks. (1) Bedenken Sie, dass je nach Rechenkapazität, die Google Colab zur Verfügung stellt, das Ausführen eines Codeblocks einige Zeit in Anspruch nehmen kann, insbesondere im Codeblock zur "Anwendung des Modells". Indem Sie alle Codeblöcke einzeln nacheinander ausführen, können Sie deren spezifische Funktionen nochmals nachvollziehen und werden sofort auf eventuell auftretende Probleme aufmerksam.
 
-Durch einen Klick auf "Alle ausführen" in der Colab Kopfzeile können auch alle Codeblöcke automatisch nacheinander ausgeführt werden. (2) Dies vereinfacht den Ablauf, wenn Sie etwa lediglich den Schwellenwert ändern wollen und alle Codeblöcke in einen ersten Durchlauf bereits erfolgreich ausgeführt wurden.
+Durch einen Klick auf "Alle ausführen" in der Colab-Kopfzeile können auch alle Codeblöcke automatisch nacheinander ausgeführt werden. (2) Dies vereinfacht den Ablauf, wenn Sie etwa lediglich den Schwellenwert ändern wollen und alle Codeblöcke in einem ersten Durchlauf bereits erfolgreich ausgeführt wurden.
 
 ```{figure} ../assets/annotation/einstellungen_nb_export.png
 ---
@@ -192,11 +192,11 @@ Export der Annotationsdateien.
 
 Am Ende des Notebooks werden die entstandenen Annotationsdateien im Ordner "export_shots" der Colab-Umgebung abgelegt. (1) Zusätzlich öffnet sich ein Dialogfenster, mit dem Sie die Annotationsdateien als Zip-Datei mit dem Namen `export.zip` auf Ihrem Computer speichern können. (2)
 
-Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Ausgabedateien im Ordner "export_characters" durch Versionsnummern ergänzt, wie etwa `v2`, `v3` usw.
+Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Ausgabedateien im Ordner "export_shots" durch Versionsnummern ergänzt, wie etwa `v2`, `v3` usw.
 
-Entpacken Sie ggf. die Exportdateien in einen Ordner ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
+Entpacken Sie ggf. die Exportdateien in einen Ordner Ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
 
-Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wiederholen Sie die Annotation mit verschiedenen Schwellenwerten und Trailern und überprüfen Sie jeweils die Ergebnisse in VIAN. Welche Schwellenwerte führen zu den besten Ergebnissen?
+Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wiederholen Sie die Annotation mit anderen Schwellenwerten und Trailern und vergleichen Sie die Erkennungsqualität. Welche Schwellenwerte führen zu den besten Ergebnissen?
 
 
 Ein Schwellenwert von 0.25 bereinigt z.B. die Fehler im *Mama, ich lebe* Trailer. Im Fall des Trailers zu *Solo Sunny* führt derselbe Schwellenwert allerdings zu einer falsch erkannten Einstellung. So wurde etwa Einstellung 53 fälschlicherweise aufgeteilt, da plötzlich ein grelles Licht im Bild sichtbar wird:

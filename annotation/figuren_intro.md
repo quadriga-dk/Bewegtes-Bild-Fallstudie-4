@@ -34,7 +34,7 @@ Ein Beispiel für das Ergebnis der Gesichtserkennung mit der Python-Bibliothek *
 
 Die Punkte im Gesicht zeigen die erkannten Gesichtsmerkmale an: Augen, Nase, Mund. Die Merkmale auf der linken Gesichtshälfte sind grün, die der rechten Seite rot. Dem auf diese Weise identifizierten Gesicht wird zusätzlich ein Konfidenzwert zugeordnet. Dieser Wert gibt an, mit welcher Wahrscheinlichkeit es sich bei dem markierten Bildausschnitt tatsächlich um ein Gesicht handelt.
 
-In diesem Beispiel wurde dem erkannten Gesicht außerdem ein geschätztes Alter von `36` Jahren sowie die Geschlechtskategorie „männlich“ (`M`) zugewiesen - erkennbar an dem grünen Wert "M.36" an der linken oberen Ecke des Rahmens um das Gesicht. Solche Schätzungen werden von Modellen zur automatisierten Gesichtsanalyse häufig zusätzlich bereitgestellt, sind jedoch mit erheblicher Vorsicht zu behandeln, da sie häufig keine korrekten oder verwertbaren Ergebnisse liefern. Insbesondere zwischen unterschiedlichen Filmeinstellungen können die Ergebnisse stark variieren und deutlich vom tatsächlichen Alter der Schauspieler:innen bzw. den dargestellten Figuren abweichen. So wurde beispielsweise dem Gesicht der Figur Rita aus dem Film *Der geteilte Himmel* in einer Einstellung ein Alter von `57` Jahren und die Geschlechtskategorie „männlich“ (`M`) zugewiesen:
+In diesem Beispiel wurde dem erkannten Gesicht außerdem ein geschätztes Alter von `36` Jahren sowie die Geschlechtskategorie „männlich“ (`M`) zugewiesen - erkennbar an dem grünen Wert "M.36" an der linken oberen Ecke des Rahmens um das Gesicht. Solche Schätzungen werden von Modellen zur automatisierten Gesichtsanalyse häufig zusätzlich bereitgestellt, sind jedoch mit erheblicher Vorsicht zu behandeln, da sie häufig keine korrekten oder verwertbaren Ergebnisse liefern. Insbesondere zwischen unterschiedlichen Filmeinstellungen können die Ergebnisse stark variieren und deutlich vom tatsächlichen Alter der Schauspieler:innen bzw. der dargestellten Figuren abweichen. So wurde beispielsweise dem Gesicht der Figur Rita aus dem Film *Der geteilte Himmel* in einer Einstellung ein Alter von `57` Jahren und die Geschlechtskategorie „männlich“ (`M`) zugewiesen:
 
 ```{figure} ../assets/annotation/detection2.png
 ---
@@ -64,7 +64,7 @@ Das vorherige Kapitel erläutert im Abschnitt [Zentrale Begriffe](../vision/begr
 
 ### Recognition
 
-Im vierten Schritt *Recognition* können mehrere Gesichter anhand der Embeddings, also den erstellten Vektorrepräsentationen miteinander verglichen werden. Um die Ähnlichkeit zwischen zwei Vektoren festzustellen, lässt sich ein sogenanntes *Skalarprodukt* berechnen (englisch *dot product*).
+Im vierten Schritt *Recognition* können mehrere Gesichter anhand der Embeddings, also der erstellten Vektorrepräsentationen miteinander verglichen werden. Um die Ähnlichkeit zwischen zwei Vektoren festzustellen, lässt sich ein sogenanntes *Skalarprodukt* berechnen (englisch *dot product*).
 
 Stellt man sich die Vektoren als Richtungsangaben oder Pfeile in einem Raum vor, so sagt das Skalarprodukt aus, wie sehr sich die Richtungen zweier Pfeile ähneln. Das Ergebnis ist ein Ähnlichkeitswert zwischen 0 und 1, entsprechend einer prozentualen Wahrscheinlichkeit, dass es sich um die Gesichter derselben Person handelt. Anhand eines zuvor festgelegten Schwellwerts kann entschieden werden, ob zwei Gesichter derselben Person zugeordnet werden.
 
@@ -78,7 +78,7 @@ Aus diesen Gründen verwendet unser Notebook die folgende nicht-explorative Meth
 
 Für den späteren Schritt der *Recognition* erstellt unser Notebook noch vor der Analyse *Vergleichs-Embeddings* für jene Figuren, die tatsächlich erkannt werden sollen.
 
-Hierzu wird nicht eine Videodatei ausgewertet, sondern mehrere ausgesuchte Frames, welche die Figuren idealerweise aus mehreren Perspektiven und in unterschiedlichen Szenen zeigen. Diese Frames (oder Screenshots) müssen händisch ausgewählt und vorbereitet werden. Der Name der Figur lässt sich automatisch aus dem Dateinamen der Bilddateien ermitteln. Dieser muss sich daher aus dem Namen und einer zweistelligen Zahl zusammensetzen, z. B. `Erika01.png`. Die Bilder dürfen nur ein einziges Gesicht enthalten, da ansonsten unklar bleibt, welches Gesicht zu der zu erkennenden Figur gehört. Bei einer begrenzten Auswahl an Material, etwa aufgrund eines kurzen Trailers, ist es daher sinnvoll, das Bild auf das Gesicht der Figur zuzuschneiden oder die Gesichter anderer Figuren abzudecken:
+Hierzu wird keine Videodatei ausgewertet. Stattdessen werden  mehrere ausgesuchte Frames analysiert, welche die Figuren idealerweise aus mehreren Perspektiven und in unterschiedlichen Szenen zeigen. Diese Frames (oder Screenshots) müssen händisch ausgewählt und vorbereitet werden. Der Name der Figur lässt sich automatisch aus dem Dateinamen der Bilddateien ermitteln. Dieser muss sich daher aus dem Namen und einer zweistelligen Zahl zusammensetzen, z. B. `Erika01.png`. Die Bilder dürfen nur ein einziges Gesicht enthalten, da ansonsten unklar bleibt, welches Gesicht zu der zu erkennenden Figur gehört. Bei einer begrenzten Auswahl an Material, etwa aufgrund eines kurzen Trailers, ist es daher sinnvoll, das Bild auf das Gesicht der Figur zuzuschneiden oder die Gesichter anderer Figuren abzudecken:
 
 ```{figure} ../assets/annotation/Zuschnitt.png
 ---
@@ -129,7 +129,7 @@ Im Jupyter Notebook wird der Trailer erneut automatisch als Teil eines ZIP-Archi
 
 Zur Erstellung der Vergleichs-Embeddings liefern wir die erwähnten Screenshots der Hauptfiguren mit. Für den *Der geteilte Himmel*-Trailer haben wir Bilder der Figuren Rita und Manfred ausgewählt.
 
-Wie in den [Vorbemerkungen zu diesem Kapitels](intro.md) angemerkt, können wir aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs zum Download zur Verfügung stellen. Mit dem Notebook können jedoch auch Langfilme ausgewertet werden.  
+Wie in den [Vorbemerkungen zu diesem Kapitel](intro.md) angemerkt, können wir aus urheberrechtlichen Gründen nicht die Langfilme Konrad Wolfs zum Download zur Verfügung stellen. Mit dem Notebook können jedoch auch Langfilme ausgewertet werden.  
 
 ## Ausgabe
 
@@ -141,9 +141,9 @@ Die Datei **`Filmname_characters_annotations.csv`** fasst aufeinanderfolgende Er
 
 Die Datei **`Filmname_characters_metadata.csv`** enthält technische Metadaten, Analyseparameter und statistische Kennwerte der erkannten Figuren. Jede Zeile enthält den Namen eines Metadatums und seinen Wert.
 
-Schließlich wird eine Datei **`Filmname_characters_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN importieren, überprüfen und weiterbearbeiten. Für jede erkannte Figur enthält diese `.eaf-Datei` die Informationen für eine eigene Annotationsspur, die deren Auftritte im Film festhält und anzeigt. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung für die analysierte Videodatei bereitgestellt, werden die Einstellungen in der Spur `shots` gespeichert und angezeigt. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Spur jene Einstellungen zugeordnet, in denen sie für mindestens einen Frame erkannt wurden (`Figurenname_matched`).
+Schließlich wird eine Datei **`Filmname_characters_annotations.eaf`** erzeugt. Anhand dieser lassen sich die Figurenerkennung und die Einstellungserkennung gemeinsam in VIAN importieren, überprüfen und weiterbearbeiten. Für jede erkannte Figur enthält diese `.eaf-Datei` die Informationen für eine eigene Annotationsspur, die deren Auftritte im Film festhält und anzeigt. Wurde zusätzlich eine CSV-Datei mit den Ergebnissen der Einstellungserkennung für die analysierte Videodatei bereitgestellt, werden die Einstellungen in der Spur `shots` gespeichert und angezeigt. Außerdem werden in diesem Fall jeder Figur auf einer zusätzlichen Spur jene Einstellungen zugeordnet, in denen sie für mindestens einen Frame erkannt wurde (`Figurenname_matched`).
 
-Alle Ergebnisdateien eines Films werden in einem eigenen Unterordner gespeichert. Beim wiederholten Export werden zusätzliche Dateiversionen angelegt. In Google Colab kann der gesamte Exportordner als ZIP-Archiv heruntergeladen werden.
+Alle Ergebnisdateien eines Films werden in einem eigenen Unterordner gespeichert. In Google Colab kann der gesamte Exportordner als ZIP-Archiv heruntergeladen werden.
 
 Eine genaue Aufschlüsselung der einzelnen Werte der drei `.csv`-Dateien finden Sie im folgenden Appendix.
 

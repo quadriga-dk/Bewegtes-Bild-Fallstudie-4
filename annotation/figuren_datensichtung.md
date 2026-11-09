@@ -33,7 +33,7 @@ alt: Auswahl einer Videodatei in VIAN.
 Auswahl einer Videodatei in VIAN.
 ```
 
-Für den Import in VIAN Klicken Sie nun im Auswahlmenü auf der rechten Seite auf "Daten importieren" und dort auf "ELAN-Annotationen importieren". Wählen Sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
+Für den Import in VIAN klicken Sie nun im Auswahlmenü auf der rechten Seite auf "Daten importieren" und dort auf "ELAN-Annotationen importieren". Wählen Sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
 
 ```{figure} ../assets/annotation/VIAN_ImportMenu.png
 ---
@@ -45,7 +45,7 @@ alt: Das Importmenü von VIAN.
 Das Importmenü von VIAN.
 ```
 
-Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste Klicken, um zur entsprechenden Stelle im Video zu gelangen.
+Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
 ```{figure} ../assets/annotation/VIAN_postImport.gif
 ---
@@ -58,10 +58,10 @@ Das Hauptfenster von VIAN nach dem Import von Annotationen.
 ```
 ````
 
-Für die folgenden Ergebnisse wurden als Schwellenwerte für den `FACE_DETECTION_THRESHOLD` und
-`CHARACTER_RECOGNITION_THRESHOLD`der voreingestellt Wert von `0.3` verwendet. Insgesamt funktioniert die Figurenerkennung für den Trailer zu *Der geteilte Himmel* mit diesen Werten gut, jedoch wurden die Figuren nicht in allen Einstellungen korrekt erkannt.
+Für die folgenden Ergebnisse wurde als Schwellenwerte für den `FACE_DETECTION_THRESHOLD` und
+`CHARACTER_RECOGNITION_THRESHOLD` der voreingestellt Wert von `0.3` verwendet. Insgesamt funktioniert die Figurenerkennung für den Trailer zu *Der geteilte Himmel* mit diesen Werten gut, jedoch wurden die Figuren nicht in allen Einstellungen korrekt erkannt.
 
-So ist etwa die Figur Rita an einigen Stellen des Trailers nur von hinten so sehen. Ihr Gesicht ist nicht im Bild, sodass auch das beste Verfahren zur Gesichtserkennung hier unmöglich Rita erkennen kann:
+So ist etwa die Figur Rita an einigen Stellen des Trailers nur von hinten zu sehen. Ihr Gesicht ist nicht im Bild, sodass auch das beste Verfahren zur Gesichtserkennung hier unmöglich Rita erkennen kann:
 
 ```{figure} ../assets/annotation/Himmel_Fehler1.gif
 ---
@@ -73,7 +73,7 @@ alt: Rita konnte im Trailer zu Der geteilte Himmel nicht von hinten erkannt werd
 Rita konnte im Trailer zu *Der geteilte Himmel* nicht von hinten erkannt werden.
 ```
 
-Anders verhält es sich bei Einstellungen, in denen die Figuren zwar gut zu sehen sind, aber dennoch nicht erkannt wurden. Dies ist in einer Einstellungen des Trailers der Fall, in der Rita und Manfred gemeinsam im Bett liegen. Aufgrund der Einstellungsgröße und der Beleuchtung sind die Gesichter nicht vollständig zu sehen. Es ist nur eine Gesichtshälfte Manfreds sichtbar und Ritas Augen werden teilweise von ihren Haaren verdeckt. Wesentliche Merkmale für die Gesichtserkennung stehen also nur teilweise zur Verfügung (vgl. Kapitel zu [Grundlagen der Gesichtserkennung](../annotation/figuren_intro.md#grundlagen-der-gesichtserkennung)). Während Manfred in dieser Einstellung bei den Standard-Schwellenwerten von jeweils `0.3` gar nicht erkannt wird, wurde Rita für eine paar Frames erfasst. Daher wurde ihr trotz der schlechten Erkennung in der Spur *Rita_matched* die gesamte Einstellung zugeordnet (vgl. Kapitel [Ausgabe](../annotation/figuren_intro.md#ausgabe) die Erklärung zu`Figurenname_matched`): 
+Anders verhält es sich bei Einstellungen, in denen die Figuren zwar gut zu sehen sind, aber dennoch nicht erkannt wurden. Dies ist in einer Einstellung des Trailers der Fall, in der Rita und Manfred gemeinsam im Bett liegen. Aufgrund der Einstellungsgröße und der Beleuchtung sind die Gesichter nicht vollständig zu sehen. Es ist nur eine Gesichtshälfte Manfreds sichtbar und Ritas Augen werden teilweise von ihren Haaren verdeckt. Wesentliche Merkmale für die Gesichtserkennung stehen also nur teilweise zur Verfügung (vgl. Kapitel zu [Grundlagen der Gesichtserkennung](../annotation/figuren_intro.md#grundlagen-der-gesichtserkennung)). Während Manfred in dieser Einstellung bei den Standard-Schwellenwerten von jeweils `0.3` gar nicht erkannt wird, wurde Rita für ein paar Frames erfasst. Daher wurde ihr trotz der schlechten Erkennung in der Spur *Rita_matched* die gesamte Einstellung zugeordnet (vgl. Kapitel [Ausgabe](../annotation/figuren_intro.md#ausgabe) die Erklärung zu `Figurenname_matched`): 
 
 ```{figure} ../assets/annotation/Himmel_Fehler2.gif
 ---
@@ -99,7 +99,7 @@ Rolf Meternagel wurde fälschlicherweise als Rita identifiziert.
 
 Die Setzung geeigneter Schwellenwerte spielt also auch hier eine wichtige Rolle für die Qualität der Annotationsergebnisse. Für eine Verbesserung der Ergebnisse der Figurenerkennung kann es wie schon bei der Einstellungserkennung sinnvoll sein, mit verschiedenen Schwellenwerten zu experimentieren.
 
-Auch wenn die automatisiert erstellten Annotationen zum Auftreten von Figuren in Filmen nie vollkommen fehlerfrei sein werden, sind sie doch exakt genug, um mit ihnen weiter zu arbeiten. Wie sich hier gezeigt hat, müssen die Ergebnisse jedoch immer überprüft und zudem reflektiert werden, in welchen Kontexten Erkennungsfehler auftreten können.
+Auch wenn die automatisiert erstellten Annotationen zum Auftreten von Figuren in Filmen nie vollkommen fehlerfrei sein werden, sind sie doch exakt genug, um mit ihnen weiterzuarbeiten. Wie sich hier gezeigt hat, müssen die Ergebnisse jedoch immer überprüft werden. Zudem ist zu reflektieren, in welchen Kontexten Erkennungsfehler auftreten können.
 
 ``````{admonition} Übung
 :class: exercise
@@ -144,7 +144,7 @@ Warnmeldung vor der Ausführung des Notebooks.
 
 Evtl. wird eine Warnung angezeigt, dass das Notebook nicht von Google erstellt wurde, klicken Sie auf "Trotzdem ausführen" rechts unten. Dadurch werden die Ordner "videos_characters" und "export_characters" in der Colab-Umgebung erstellt.
 
-Laden Sie nun sie die Videodatei, hier die Trailerdatei, und die Referenzabbildungen der zu erkennenden Figuren in die Colab-Umgebung hoch.
+Laden Sie nun Sie die Videodatei, hier die Trailerdatei, und die Referenzabbildungen der zu erkennenden Figuren in die Colab-Umgebung hoch.
 
 ```{figure} ../assets/annotation/figuren_nb_paramter_2.png
 ---
@@ -156,7 +156,7 @@ alt: Ordner für die Videodateien in Colab.
 Ordner für die Videodateien in Colab.
 ```
 
-Klicken Sie auf das Ordnersymbol in der linken Randspalte von Colab. (1) Es öffnet sich eine Liste mit den verfügbaren Ordnern. In den Ordner "videos_characters" laden Sie die zu annotierende Trailerdatei und die Abbildungen der zu erkennenden Figuren aus dem Trailer hoch. (2) Wenn Sie mit der Maus auf den Ordnernamen deuten werden rechts drei Punkte sichtbar, ein Klick auf die Punkte öffnet ein Fenster zum Hochladen der Datei.
+Klicken Sie auf das Ordnersymbol in der linken Randspalte von Colab. (1) Es öffnet sich eine Liste mit den verfügbaren Ordnern. In den Ordner "videos_characters" laden Sie die zu annotierende Trailerdatei und die Abbildungen der zu erkennenden Figuren aus dem Trailer hoch. (2) Wenn Sie mit der Maus auf den Ordnernamen deuten, werden rechts drei Punkte sichtbar, ein Klick auf die Punkte öffnet ein Fenster zum Hochladen der Datei.
 
 Führen Sie nun die weiteren Codeblöcke des Notebooks nacheinander aus.
 
@@ -170,9 +170,9 @@ alt: Ausführen der Codeblöcke in Colab.
 Ausführen der Codeblöcke in Colab.
 ```
 
-Klicken Sie hierzu wiederum bei jedem Codeblock auf das Dreiecksymbol in der linken oberen Ecke des Blocks. (1) Bedenken Sie, dass je nach Rechenkapazität die Google Colab zur Verfügung stellt das Ausführen eines Codeblocks einige Zeit in Anspruch nehmen kann, insbesondere im Codeblock zur "Anwendung des Modells". Indem Sie alle Codeblöcke einzeln nacheinander ausführen, können Sie deren spezifischen Funktionen nochmals nachvollziehen und werden sofort auf eventuell auftretende Probleme aufmerksam.
+Klicken Sie hierzu wiederum bei jedem Codeblock auf das Dreiecksymbol in der linken oberen Ecke des Blocks. (1) Bedenken Sie, dass je nach Rechenkapazität, die Google Colab zur Verfügung stellt, das Ausführen eines Codeblocks einige Zeit in Anspruch nehmen kann, insbesondere im Codeblock zur "Anwendung des Modells". Indem Sie alle Codeblöcke einzeln nacheinander ausführen, können Sie deren spezifische Funktionen nochmals nachvollziehen und werden sofort auf eventuell auftretende Probleme aufmerksam.
 
-Durch einen Klick auf "Alle ausführen" in der Colab Kopfzeile können auch alle Codeblöcke automatisch nacheinander ausgeführt werden. (2) Dies vereinfacht den Ablauf, wenn Sie etwa lediglich den Schwellenwert ändern wollen und alle Codeblöcke in einen ersten Durchlauf bereits erfolgreich ausgeführt wurden.
+Durch einen Klick auf "Alle ausführen" in der Colab-Kopfzeile können auch alle Codeblöcke automatisch nacheinander ausgeführt werden. (2) Dies vereinfacht den Ablauf, wenn Sie etwa lediglich den Schwellenwert ändern wollen und alle Codeblöcke in einem ersten Durchlauf bereits erfolgreich ausgeführt wurden.
 
 ```{figure} ../assets/annotation/figuren_nb_export.png
 ---
@@ -186,11 +186,11 @@ Export der Annotationsdateien.
 
 Am Ende des Notebooks werden die entstandenen Annotationsdateien im Ordner "export_characters" der Colab-Umgebung abgelegt. (1) Zusätzlich öffnet sich ein Dialogfenster, mit dem Sie die Annotationsdateien als ZIP-Datei mit dem Namen `export.zip` auf Ihrem Computer speichern können. (2)
 
-Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Annotationsergebnisse im Ordner "export_characters" durch Versionsnummern wie `_v2`, `_v3` usw. ergänzt. Sie sollten also darauf achten, dass sie vor jedem neuen Durchgang die bereits vorhandenen Exportdateien zu den Annotationsergebnissen auf Ihrem Rechner lokal abspeichern, um auch weiterhin mit ihnen arbeiten zu können.
+Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerten, werden die erzeugten Annotationsergebnisse im Ordner "export_characters" durch Versionsnummern wie `_v2`, `_v3` usw. ergänzt.
 
-Entpacken Sie ggf. die Exportdateien in einen Ordner ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
+Entpacken Sie ggf. die Exportdateien in einen Ordner Ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
 
-Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wiederholen Sie die Annotation mit verschiedenen Schwellenwerten und überprüfen Sie jeweils die Ergebnisse in VIAN. Welche Schwellenwerte führen zu den besten Ergebnissen?
+Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Sichten Sie die Ergebnisse in VIAN. Wiederholen Sie die Annotation mit anderen Schwellenwerten und vergleichen Sie die Erkennungsqualität. Welche Schwellenwerte führen zu den besten Ergebnissen?
 
 Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> nach den beiden Hauptfiguren Sunny und Ralph suchen lassen. Für die Figurenerkennung haben wir die Referenzabbildungen verwendet, die im `.zip`-Archiv zu diesem Abschnitt unter `Trailer` → `Solo Sunny_Trailer_1980` → `Figurenreferenzen` zu finden sind.
 
@@ -205,7 +205,7 @@ alt: Sunny wurde in den gezeigten Einstellungen nicht erkannt.
 ---
 Sunny wurde in den gezeigten Einstellungen nicht erkannt. 
 ```
-Durch die Wahl geringerer Schwellenwerte von `FACE_DETECTION_THRESHOLD = 0.1` und `CHARACTER_RECOGNITION_THRESHOLD = 0.15` konnte die Erkennung in diesen Einstellung leicht verbessert werden. Zwar wird Sunny weiterhin nicht durchgehend erkannt, jedoch reichen Treffer in einzelnen Frames aus, damit ihr in der `Sunny_matched` Spur die gesamte Einstellung zugeordnet wird. Allerdings führten dieselben Schwellenwerte auch zu Falscherkennungen, bei denen etwa die "Frau im Bett" als Sunny erkannt wurde.
+Durch die Wahl geringerer Schwellenwerte von `FACE_DETECTION_THRESHOLD = 0.1` und `CHARACTER_RECOGNITION_THRESHOLD = 0.15` konnte die Erkennung in diesen Einstellungen leicht verbessert werden. Zwar wird Sunny weiterhin nicht durchgehend erkannt, jedoch reichen Treffer in einzelnen Frames aus, damit ihr in der `Sunny_matched` Spur die gesamte Einstellung zugeordnet wird. Allerdings führten dieselben Schwellenwerte auch zu Falscherkennungen, bei denen etwa die "Frau im Bett" als Sunny erkannt wurde.
 
 ```{figure} ../assets/annotation/SoloSunny_Figuren_Änderung1.gif
 ---
@@ -217,7 +217,7 @@ alt: Sunny wurde in den gezeigten Einstellungen mit den Schwellenwerten FACE_DET
 Sunny wurde in den gezeigten Einstellungen mit den Schwellenwerten `FACE_DETECTION_THRESHOLD = 0.1` und `CHARACTER_RECOGNITION_THRESHOLD = 0.15` teilweise erkannt. 
 ```
 
-Was passiert, wenn wir stattdessen sehr hohe Schwellenwert einsetzten, etwa `0.8`?
+Was passiert, wenn wir stattdessen sehr hohe Schwellenwerte einsetzten, etwa `0.8`?
 In diesem Fall verringert sich die Anzahl an Treffern deutlich:
 
 ```{figure} ../assets/annotation/SoloSunny_Figuren_Änderung2.png

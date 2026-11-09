@@ -28,7 +28,7 @@ Weitere relevante Faktoren sind Bildrauschen, Bewegungsunschärfe und Beleuchtun
 
 Wie im vorherigen Abschnitt erwähnt, kann die verfügbare Computerhardware die Ausführung von Machine-Learning-Modellen wesentlich beeinflussen. Für die Anwendung von Machine-Learning-Modellen sind diese Hardware-Komponenten besonders relevant:
 
-- **CPU (Central Processing Unit):** Die CPU ist der allgemeine Prozessor des Computers. Sie führt Programmcode aus, steuert die Arbeit der anderen Komponenten und übernimmt viele unterschiedliche Aufgaben. Moderne CPUs besitzen mehrere Prozessorkerne und können manche Aufgaben gleichzeitig bearbeiten. Die meisten [Machine-Learning-Modelle](../vision/begriffe.md#machine-learning) lassen sich auf einer CPU ausführen. Bei rechenintensiven [neuronalen Netzen](../vision/begriffe.md#deep-learning) kann die Verarbeitung jedoch länger dauern, da die CPU nicht auf die gleichzeitige Ausführung mehrerer dabei anfallenden gleichartigen Rechenoperationen spezialisiert ist.
+- **CPU (Central Processing Unit):** Die CPU ist der allgemeine Prozessor des Computers. Sie führt Programmcode aus, steuert die Arbeit der anderen Komponenten und übernimmt viele unterschiedliche Aufgaben. Moderne CPUs besitzen mehrere Prozessorkerne und können manche Aufgaben gleichzeitig bearbeiten. Die meisten [Machine-Learning-Modelle](../vision/begriffe.md#machine-learning) lassen sich auf einer CPU ausführen. Bei rechenintensiven [neuronalen Netzen](../vision/begriffe.md#deep-learning) kann die Verarbeitung jedoch länger dauern, da die CPU nicht auf die gleichzeitige Ausführung mehrerer dabei anfallender gleichartigen Rechenoperationen spezialisiert ist.
 
 - **GPU (Graphics Processing Unit):** Die GPU ist der Grafikprozessor, der häufig auf einer Grafikkarte sitzt. Sie wurde ursprünglich vor allem für die schnelle Darstellung von Bildern entwickelt und kann viele ähnliche Rechenoperationen gleichzeitig ausführen. Das passt zu bestimmten Aufgaben von [Machine-Learning-Modellen](../vision/begriffe.md#machine-learning), bei denen große Mengen an Zahlen miteinander verrechnet werden. Daher kann eine GPU solche Analysen deutlich beschleunigen. Sie hilft aber nur, wenn das Modell und die verwendete Programmbibliothek eine Ausführung durch die GPU unterstützen und dafür eingerichtet sind. Eine GPU hat außerdem einen eigenen Arbeitsspeicher, den Videos und Modelle während der Berechnung mitbenutzen.
 
@@ -38,7 +38,7 @@ Die Jupyter Notebooks können auch ohne GPU auf einer CPU ausgeführt werden. Al
 
 Für eine GPU-Beschleunigung über **CUDA** wird eine kompatible NVIDIA-Grafikkarte benötigt. CUDA ist eine vom GPU-Hersteller NVIDIA entwickelte Plattform, über die Programme Berechnungen auf NVIDIA-GPUs ausführen können. Die Grafikkarte allein reicht nicht aus: Auch Treiber, Programmbibliothek und CUDA-Version müssen zueinander passen. Eine GPU eines anderen Herstellers kann gegebenenfalls über eine andere technische Schnittstelle unterstützt werden, jedoch nicht über CUDA. Eine Übersicht unterstützter NVIDIA-GPUs bietet die <a href="https://developer.nvidia.com/cuda-gpus" class="external-link" target="_blank">NVIDIA CUDA-GPU-Liste</a>; ergänzend gibt es eine <a href="https://de.wikipedia.org/wiki/CUDA" class="external-link" target="_blank">Übersicht zu CUDA auf Wikipedia</a>.
 
-Die Jupyter Notebooks in dieser OER prüfen, welche Hardware zur Verfügung steht (also z.B. eine CUDA-fähige GPU oder eine CPU) und wählen automatisch die passende Ausführungsvariante aus. Kontrollieren Sie das entsprechende Ausgabefeld im Notebook, z.B. das nach dem Codeblock zur Installation der Programmbibliotheken, um zu sehen, ob eine CPU oder eine GPU für die Ausführung verwendet wird.
+Die Jupyter Notebooks in dieser OER prüfen, welche Hardware zur Verfügung steht (also z.B. eine CUDA-fähige GPU oder eine CPU), und wählen automatisch die passende Ausführungsvariante aus. Kontrollieren Sie das entsprechende Ausgabefeld im Notebook, z.B. das nach dem Codeblock zur Installation der Programmbibliotheken, um zu sehen, ob eine CPU oder eine GPU für die Ausführung verwendet wird.
 
 ```{figure} ../assets/annotation/using_cpu.png
 ---
@@ -86,17 +86,17 @@ Je nach Verfügbarkeit und Colab-Konto wird möglicherweise eine andere GPU ange
 
 ## Einstellungsmöglichkeiten in den Notebooks
 
-Die Notebooks enthalten Einstellungsmöglichkeiten, mit denen sich der jeweilige Workflow anpassen lässt. Diese werden im Code als **Variablen** gespeichert. Eine Variable ist ein benannter Platzhalter für einen Wert, den das Programm später verwendet.
+Die Notebooks enthalten Einstellungsmöglichkeiten, mit denen sich der jeweilige Workflow anpassen lässt.
 
 - **Variablen:** Eine Variable speichert einen Wert unter einem Namen, damit der Code ihn später verwenden kann. So kann eine Variable beispielsweise den Pfad zu einem Ordner enthalten.
 - **Parameter:** Parameter sind Variablen, mit denen grundlegende Einstellungen des Workflows festgelegt werden. Dazu gehören zum Beispiel die Ordner für Eingabedateien und Exporte.
 - **Schwellenwerte:** Ein Schwellenwert legt fest, ab welchem berechneten Wert ein Ergebnis als Treffer gilt. Bei einer Einstellungsübergangserkennung werden zum Beispiel nur Übergänge berücksichtigt, deren Wahrscheinlichkeit mindestens den festgelegten Schwellwert erreicht. Ein höherer Wert führt tendenziell zu weniger, aber sichereren Treffern. Ein niedrigerer Wert kann mehr Treffer, aber auch mehr Fehlalarme erzeugen.
 - **Ordnerstruktur:** In den Notebooks wird festgelegt, aus welchem Eingabeordner die zu analysierenden Dateien gelesen und in welchem Exportordner die Ergebnisse gespeichert werden. Die genaue Ordnerstruktur und die dazugehörigen Einstellungen werden im jeweiligen Notebook erläutert.
-- **Testdateien:** Für die erste Ausführung der Jupyter Notebooks können bereitgestellte Testdateien verwendet werden. Alternativ lassen sich eigene Dateien nutzen. Welche Testdateien zur Verfügung stehen wird im jeweiligen Notebook erklärt.
+- **Testdateien:** Für die erste Ausführung der Jupyter Notebooks können bereitgestellte Testdateien verwendet werden. Alternativ lassen sich eigene Dateien nutzen. Welche Testdateien zur Verfügung stehen, wird im jeweiligen Notebook erklärt.
 
 ## VIAN: Installation und Verwendung
 
-Im vorigen Abschnitt wurde Annotationsprogramm *VIAN* kurz angesprochen. Nun wird seine Verwendung im Detail erläutert, angefangen mit der Installation.
+Im vorigen Abschnitt wurde das Annotationsprogramm *VIAN* kurz angesprochen. Nun wird seine Verwendung im Detail erläutert, angefangen mit der Installation.
 
 
 <a href="https://www.vian.app" class="external-link" target="_blank">VIAN</a> ist ein Programm zur Videoannotation und wird am <a href="https://www.film.uzh.ch/de.html" class="external-link" target="_blank">Seminar für Filmwissenschaft der Universität Zürich</a> in Zusammenarbeit mit der <a href="https://www.tib.eu/de/forschung-entwicklung/forschungsgruppen-und-labs/visual-analytics" class="external-link" target="_blank">Forschungsgruppe Visual Analytics der TIB Hannover</a> unter der Leitung von Prof. Dr. Josephine Diecke, Prof. Dr. Simon Spiegel und Dr. Eric Müller-Budack entwickelt.
@@ -118,7 +118,7 @@ Das Startmenü von VIAN.
 
 Anschließend gelangen Sie zum Hauptfenster von VIAN, in dem die in unserem Workflow automatisiert erstellten Annotationen gesichtet werden können. Diese Annotationsdaten müssen zunächst importiert werden. Wählen Sie dazu in der linken Seitenleiste den Menüpunkt `Daten importieren`. Anschließend können Sie zwischen den Dateiformaten `.eaf` und `.tsv` wählen. Die folgenden Schritte sind eine Demonstration, die passenden `.eaf`-Dateien folgen später.
 
-Wie wir im folgenden Kapitel genauer darstellen werden, wird nach den Ausführen des Jupyter Notebooks eine `ELAN-Datei` mit der Dateiendung `.eaf` im Export-Ordner generiert, die für den Import der Annotationsergebnisse in VIAN gedacht ist. Klicken Sie auf "ELAN-Annotationsergebnisse importieren" und wählen sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
+Wie wir im folgenden Kapitel genauer darstellen werden, wird nach dem Ausführen des Jupyter Notebooks eine `ELAN-Datei` mit der Dateiendung `.eaf` im Export-Ordner generiert, die für den Import der Annotationsergebnisse in VIAN gedacht ist. Klicken Sie auf "ELAN-Annotationsergebnisse importieren" und wählen Sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
 
 ```{margin} 
 ```{admonition} Hinweis
@@ -136,7 +136,7 @@ alt: Das Importmenü von VIAN.
 Das Importmenü von VIAN.
 ```
 
-Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste Klicken, um zur entsprechenden Stelle im Video zu gelangen.
+Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
 ```{figure} ../assets/annotation/VIAN_postImport.gif
 ---

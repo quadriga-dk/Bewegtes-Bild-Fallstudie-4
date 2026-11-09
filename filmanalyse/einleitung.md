@@ -17,14 +17,14 @@ Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse
 ```
 ````
 
-Die vorliegende Fallstudie befasst sich mit Workflows zur automatisierten Filmannotation. Am Beispiel der Filme Konrad Wolfs werden exemplarisch die Möglichkeiten der automatisierten Einstellungs- und Figurenerkennung dargestellt. In den folgenden Abschnitten stehen folgende Lernziele im Mittelpunkt:
+Die vorliegende Fallstudie befasst sich mit Workflows zur automatisierten Filmannotation. Am Beispiel der Filme Konrad Wolfs werden exemplarisch die Möglichkeiten der automatisierten Einstellungs- und Figurenerkennung dargestellt. In den folgenden Abschnitten stehen diese Lernziele im Mittelpunkt:
 
 ```{include} ../einstieg/lernziele.md
 :start-after: "<!-- START: Filmanalyse und automatisierte Annotation -->"
 :end-before: "<!-- END: Filmanalyse und automatisierte Annotation -->"
 ```
 
-Wir befinden uns damit beim 1. Schritt unserer Fallstudie, bei dem die Grundlagen von und verschiedene Herangehensweisen an Filmanalyse dargestellt werden. Der Begriff  *Annotation* wird definiert und geklärt, was unter *automatisierter Annotation* verstanden werden kann. Wir stellen verschiedene quantitative Ansätze in der Filmwissenschaft vor bevor wir abschließend in diesem Kapitel mögliche Fragestellungen für die Fallstudie entwickeln.
+Wir befinden uns damit beim 1. Schritt unserer Fallstudie, bei dem die Grundlagen von und verschiedene Herangehensweisen an Filmanalyse dargestellt werden. Der Begriff  *Annotation* wird definiert. Außerdem wird geklärt, was unter *automatisierter Annotation* verstanden werden kann. Wir stellen verschiedene quantitative Ansätze in der Filmwissenschaft vor, bevor wir abschließend in diesem Kapitel mögliche Fragestellungen für die Fallstudie entwickeln.
 
 
 ```{figure} ../assets/filmanalyse/Grafik_Schritte_1.png

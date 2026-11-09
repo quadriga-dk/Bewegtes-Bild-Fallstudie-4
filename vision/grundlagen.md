@@ -17,7 +17,7 @@ Arnold Taylor und Lauren Tilton unterscheiden zwischen "seeing" als physikalisch
 
 >Designed with the intention to mimic the human eye and neural processes, computer vision algorithms look for certain features by following processes for calculating pixels to recognize patterns. Computer vision "sees" through numeracy and "looks" based on the assigned numerical patterns. Therefore, computer vision enables identification of practices of looking in visual materials and algorithmically creates practices of looking. Computer vision encodes social, cultural, historical, and political values algorithmically. {cite}`ba-Arnold_Tilton_2023`
 
-Diese Einschreibung von Werten in Techniken der Computer Vision sollte bei deren Anwendung fur filmanalytische Zwecke wie der automatisierten Annotation von Filmen immer beachtet und reflektiert werden. Dazu gehört auch wenn immer möglich Informationen darüber einzubeziehen, in welchen Kontexten die verwendeten Algorithmen oder Modelle ursprünglich entstanden sind (z.B. Militär, Überwachung etc.). Auf dieses Thema werden wir [folgeden Abschnitt](../vision/begriffe.md) nochmals zu sprechen kommen.
+Diese Einschreibung von Werten in Techniken der Computer Vision sollte bei deren Anwendung für filmanalytische Zwecke wie der automatisierten Annotation von Filmen immer beachtet und reflektiert werden. Dazu gehört auch wenn immer möglich Informationen darüber einzubeziehen, in welchen Kontexten die verwendeten Algorithmen oder Modelle ursprünglich entstanden sind (z.B. Militär, Überwachung etc.). Auf dieses Thema werden wir [folgeden Abschnitt](../vision/begriffe.md) nochmals zu sprechen kommen.
 
 
 
