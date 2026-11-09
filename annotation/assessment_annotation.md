@@ -213,44 +213,6 @@ import sys
 sys.path.append("..")
 from quadriga import colors
 
-numeric5 = [{
-    "question": """Ein Modell liefert für mögliche Einstellungsübergänge die Werte 0,18; 0,42; 0,51; 0,79. Wie viele Übergänge werden bei `THRESHOLD = 0.5` erfasst?""",
-    "type": "numeric",
-    "answers": [
-        {
-            "value": 2,
-            "correct": True,
-            "feedback": """✓ Richtig: 0,51 und 0,79 liegen über 0,5; 0,42 und 0,18 darunter."""
-        },
-        {
-            "value": 3,
-            "correct": False,
-            "feedback": """× Nicht korrekt: 0,42 wird mitgezählt, weil es „fast“ 0,5 erreicht. Der Schwellenwert ist eine harte Grenze."""
-        },
-        {
-            "value": 4,
-            "correct": False,
-            "feedback": """× Nicht korrekt: Alle vier werden gezählt. Das ignoriert die Funktion des Schwellenwerts."""
-        },
-        {
-            "type": "default",
-            "feedback": """× Nicht korrekt: Ein niedrigerer Wert würde hier mehr Übergänge erfassen, aber auch die Wahrscheinlichkeit falsch-positiver Treffer erhöhen."""
-        }
-    ]
-}]
-
-display_quiz(numeric5, colors=colors.jupyterquiz)
-```
-
-## Aufgabe 6
-
-```{code-cell} ipython3
-:tags: [remove-input]
-from jupyterquiz import display_quiz
-import sys
-sys.path.append("..")
-from quadriga import colors
-
 multiple_choice6 = [{
     "question": """Rita ist im Trailer zu „Der geteilte Himmel“ von hinten zu sehen und wird nicht erkannt. Wie ordnen Sie das ein?""",
     "type": "multiple_choice",
@@ -281,7 +243,7 @@ multiple_choice6 = [{
 display_quiz(multiple_choice6, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 7
+## Aufgabe 6
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -323,7 +285,7 @@ quiz.create_matching_quiz(
 - **Recognition:** Die Embeddings werden verglichen; ein Schwellenwert entscheidet, ob zwei Gesichter derselben Person zugeordnet werden.
 ````
 
-## Aufgabe 8
+## Aufgabe 7
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -362,7 +324,7 @@ multiple_choice8 = [{
 display_quiz(multiple_choice8, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 9
+## Aufgabe 8
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -401,7 +363,7 @@ multiple_choice9 = [{
 display_quiz(multiple_choice9, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 10
+## Aufgabe 9
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -440,13 +402,13 @@ multiple_choice10 = [{
 display_quiz(multiple_choice10, colors=colors.jupyterquiz)
 ```
 
-## Aufgabe 11
+## Aufgabe 10
 
 Sie möchten für eine Videodatei eine Einstellungs- und Figurenerkennung mit den Jupyter Notebooks durchführen.
 
 1. Was müssen Sie bei der Festlegung der Schwellenwerte für die Einstellungserkennung beachten?
 2. Wie gehen Sie mit den Ergebnissen der Einstellungserkennung um?
-3. Reflektieren Sie kurz, warum Age-/Gender-Schätzungen der Figurenerkennung nicht ungeprüft verwendet werden sollten.
+3. Reflektieren Sie kurz, warum Alters-/Gender-Schätzungen der Figurenerkennung nicht ungeprüft verwendet werden sollten.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -464,7 +426,7 @@ create_answer_box('Assessment_Annotation')
 
 Für eine erste explorative Sichtung kann ein niedrigerer Schwellenwert sinnvoll sein, um mögliche Übergänge nicht zu übersehen. Für eine quantitative Auswertung, bei der falsch-positive Treffer die Kennwerte verzerren, ist ein höherer Schwellenwert sinnvoll. Der Wert muss zum Material, zur Fragestellung und zur geplanten Auswertung passen. Die Annotationsergebnisse sollten immer am Material auf ihre Korrektheit überprüft werden. Hierfür können die Ergebnisse z. B. mithilfe einer `EAF-Datei` in das Annotationstool VIAN importiert werden.
 
-**Age-/Gender-Reflexion:**
+**Alters-/Gender-Reflexion:**
 
 Diese Schätzwerte beruhen auf äußeren Merkmalen und den Kategorien der Trainingsdaten. Sie sind oft fehlerhaft, reproduzieren Stereotype und bilden Geschlechtsidentität nicht angemessen ab. Sie werden in der OER daher nicht gespeichert und nicht für die Analyse verwendet.
 ````

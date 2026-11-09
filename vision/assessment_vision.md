@@ -97,17 +97,17 @@ quiz.create_matching_quiz(
     ],
     options=[
         "Vorverarbeitung",
-        "Dateneingabe bzw. Frame-Extraktion",
+        "Dateneingabe",
         "Verarbeitung",
         "Anwendung des Modells",
-        "Schwellenwert und Ausgabe"
+        "Ausgabe"
     ],
     correct_mapping={
         "1": "Vorverarbeitung",
-        "2": "Dateneingabe bzw. Frame-Extraktion",
+        "2": "Dateneingabe",
         "3": "Verarbeitung",
         "4": "Anwendung des Modells",
-        "5": "Schwellenwert und Ausgabe"
+        "5": "Ausgabe"
     }
 )
 ```
@@ -119,7 +119,7 @@ quiz.create_matching_quiz(
 - **Dateneingabe:** Danach werden aus der Videodatei einzelne Frames extrahiert und importiert; Modelle arbeiten in der Regel auf der Basis von Einzelbildern.
 - **Verarbeitung:** Hier werden technische Metadaten, Embeddings oder andere Zwischenprodukte erzeugt.
 - **Anwendung des Modells:** Das Modell wird auf das vorbereitete Material angewendet und erzeugt z. B. Wahrscheinlichkeitswerte.
-- **Schwellenwert und Ausgabe:** Schwellenwerte verwandeln die Werte in Annotationen; anschließend werden die Daten strukturiert ausgegeben und sollten ggf. geprüft werden.
+- **Ausgabe:** Schwellenwerte verwandeln die Werte in Annotationen; anschließend werden die Daten strukturiert ausgegeben und sollten ggf. geprüft werden.
 
 *Hinweis:* Das Kapitel betont, dass der Ablauf schematisch ist und sich Schritte in der Praxis überschneiden können. Im Assessment wird die im Kapitel dargestellte Grundreihenfolge geprüft.
 ````
@@ -242,7 +242,7 @@ display_quiz(multiple_choice5, colors=colors.jupyterquiz)
 
 ## Aufgabe 6
 
-In einem historischen Film erkennt ein Objekterkennungsmodell eine Handtasche, wo im Film eine Schusswaffe zu sehen ist. Bei einer weiblichen Figur schätzt dasselbe Modell „männlich“.
+In einem historischen Film erkennt ein Objekterkennungsmodell eine Handy, wo im Film eine Schusswaffe zu sehen ist. Bei einer weiblichen Figur schätzt dasselbe Modell „männlich“.
 
 1. Nennen Sie zwei plausible Ursachen.
 2. Nennen Sie zwei Konsequenzen für die filmanalytische Arbeit.

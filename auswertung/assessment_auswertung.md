@@ -50,22 +50,22 @@ quiz = DragDropQuiz()
 quiz.create_matching_quiz(
     title="Ordnen Sie die Dateien ihrem Inhalt zu.",
     descriptions=[
-        "*_shots_*.csv",
-        "*_shots_*_metadata.csv",
-        "*_characters_frames.csv",
-        "*_characters_annotations.csv"
+        "Filmname_shots_THRESHOLD.csv",
+        "Filmname_shots_THRESHOLD_metadata.csv",
+        "Filmname_characters_frames.csv",
+        "Filmname_characters_annotations.csv"
     ],
     options=[
         "einzelne Einstellungen mit Start, Ende, Mitte und Dauer",
         "technische Metadaten, Parameter und Kennwerte",
         "einzelne Erkennungstreffer pro Frame",
-        "zusammengefasste Auftrittsintervalle"
+        "zusammengefasste Zeitintervalle"
     ],
     correct_mapping={
-        "*_shots_*.csv": "einzelne Einstellungen mit Start, Ende, Mitte und Dauer",
-        "*_shots_*_metadata.csv": "technische Metadaten, Parameter und Kennwerte",
-        "*_characters_frames.csv": "einzelne Erkennungstreffer pro Frame",
-        "*_characters_annotations.csv": "zusammengefasste Auftrittsintervalle"
+        "Filmname_shots_THRESHOLD.csv": "einzelne Einstellungen mit Start, Ende, Mitte und Dauer",
+        "Filmname_shots_THRESHOLD_metadata.csv": "technische Metadaten, Parameter und Kennwerte",
+        "Filmname_characters_frames.csv": "einzelne Erkennungstreffer pro Frame",
+        "Filmname_characters_annotations.csv": "zusammengefasste Zeitintervalle"
     }
 )
 ```
