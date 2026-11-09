@@ -10,7 +10,7 @@ In diesem Kapitel werden die im letzten Kapitel automatisiert erstellten Annotat
 
 **Visualisierung der Annotationsdaten mit Python-Skripten**
 
-Für drei exemplarische Visualisierungen der Annotationsdaten haben wir Python-Skripte entwickelt, die in der OER in Form von Jupyter Notebooks umgesetzt wurden. Diese Notebooks ermöglichen neben der Ausführung des Python-Codes dessen ausführliche Kommentierung. Die Skripte in den Notebooks erstellen verschiedene Visualisierungen: Eine Grafik mit Balkendiagrammen zu den Werten der Einstellungsannotationen, eine Grafik zur Figurenpräsenz und eine Grafik zum Figurennetzwerk in verschiedenen Filmen Konrad Wolfs. Mit der Veränderung einzelner Parameter können die Ausgaben der Visualisierungs-Skripte an eigene Bedürfnisse angepasst werden.
+Für drei exemplarische Visualisierungen der Annotationsdaten haben wir Python-Skripte entwickelt, die in der OER in Form von Jupyter Notebooks umgesetzt wurden. Diese Notebooks ermöglichen neben der Ausführung des Python-Codes dessen ausführliche Kommentierung. Die Skripte in den Notebooks erstellen verschiedene Visualisierungen: Eine Grafik mit Balkendiagrammen zu den Werten der Einstellungsannotationen, eine Grafik zur Screentime der Figuren und eine Grafik zum Figurennetzwerk in verschiedenen Filmen Konrad Wolfs. Mit der Veränderung einzelner Parameter können die Ausgaben der Visualisierungs-Skripte an eigene Bedürfnisse angepasst werden.
 
 **Auswertung der Annotationsdaten**
 
