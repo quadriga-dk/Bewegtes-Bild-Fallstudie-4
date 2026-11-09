@@ -8,7 +8,7 @@ Die Auswertung der Annotationsdaten in diesen Kapitel kann aufgrund des begrenzt
 Im Folgenden werden wir uns nun zunächst mit den Ergebnissen der Einstellungsannotationen beschäftigen, daran anschließenden mit den Figurenannotationen.
 
 ## Visualisierung der Einstellungsdaten
-Die hier präsentierte Visualisierung der Einstellungsannotationen zu den Filmen Konrad Wolfs ist nur eine Variante von vielen Möglichkeiten. Im [Kapitel zu möglichen Fragestellungen](../filmanalyse/fragestellungen.md) wurden mögliche quantitative Annotationsdaten vorgestellt. In die vorliegende grafische Darstellung wurden folgende auf filmischen Einstellungen beruhende Werte einbezogen: Die durchschnittliche (Average Shot Length / ASL) und mittlere Einstellungslänge (Median Shot Length / MSL) in Sekunden (errechnet aus den Daten zu den Einstellungslängen eines Films), die längste und sie kürzeste Einstellung eines Films in Sekunden, die Filmlaufzeit in Minuten und die Anzahl der Einstellungen in einem Film.
+Die hier präsentierte Visualisierung der Einstellungsannotationen zu den Filmen Konrad Wolfs ist nur eine Variante von vielen Möglichkeiten. Im [Kapitel zu den Fragestellungen](../filmanalyse/fragestellungen.md) zur Fallstudie wurden mögliche quantitative Annotationsdaten vorgestellt. In die vorliegende grafische Darstellung wurden folgende auf filmischen Einstellungen beruhende Werte einbezogen: Die durchschnittliche (Average Shot Length / ASL) und mittlere Einstellungslänge (Median Shot Length / MSL) in Sekunden (errechnet aus den Daten zu den Einstellungslängen eines Films), die längste und sie kürzeste Einstellung eines Films in Sekunden, die Filmlaufzeit in Minuten und die Anzahl der Einstellungen in einem Film.
 
 Diese Werte werden als Balkendiagramme in einzelnen Grafiken untereinander ausgegeben, die einzelnen annotierten Filme folgen nacheinander.
 
@@ -27,7 +27,7 @@ Bei *Goya* fällt auf, dass die Anzahl der Einstellung am größten von allen Fi
 
 *Der geteilte Himmel* wurde bereits oft in unserer OER erwähnt und dessen Trailer in den Notbooks zur Einstellungs- und Figurenerkennung exemplarisch annotiert. Bei ASL und MSL und der Laufzeit liegt der Film hier im Mittelfeld aller Filme. Bei der längsten und bei der kürzesten Einstellung liegt *Der geteilte Himmmel* im unteren Bereich bezogen auf alle untersuchten Filme.
 
-Geht man zur chronologischen Sortierung über wird erkennbar, dass die ASL und MSL mit steigenden Erscheinungsjahr immer kürzer werden. Hier heben sich *Sterne* und *Goya* ebenfalls ab:  *Sterne* mit vergleichsweise hohen Werten, *Goya* mit vergleichsweise niedrigen Werten.
+Geht man zur chronologischen Sortierung über wird erkennbar, dass die ASL und MSL mit steigenden Erscheinungsjahr tendenziell immer kürzer werden. Hier heben sich *Sterne* und *Goya* ebenfalls ab:  *Sterne* mit vergleichsweise hohen Werten, *Goya* mit vergleichsweise niedrigen Werten.
 
 ```{figure} ../assets/auswertung/einstellungen_asl_chrono.png
 ---
@@ -54,10 +54,10 @@ An dieser Stelle wäre es sinnvoll, von der Betrachtung aller Filme wieder zurü
 
 Hierfür können wiederum andere Visualisierungen mit den Annotationsdaten für einzelne Filme erstellt werden, etwa zur Einstellungsdichte in einem Film. Zudem würde es sich anbieten, hier wie schon bei der [Überprüfung der Einstellungserkennung](../annotation/einstellung_datensichtung.md) mit dem Annotationstool VIAN zu arbeiten. In dieses können die Annotationsdaten zur Einstellungserkennung eingelesen und mit dem konkret annotierten Film abgeglichen werden. Mit der Sichtung im VIAN könnten auch Ungenauigkeiten und Fehler in den Annotationsdaten erkannt werden.
 
-## Visualisierung der Figurenpräsenz
+## Visualisierung der Screentime der Figuren
 Nach der Einstellungserkennung folgt nun die Visualisierung und Auswertung der Annotationsdaten aus der Figurenerkennung zu den Filmen *Sonnensucher*, *Der geteilte Himmel* und *Solo Sunny*. Unsere Auswahlkriterien und die Namen der zu erkennenden Figuren haben wir bereits im Kapitel zu den [Grundlagen zur Auswertung](../auswertung/grundlagen.md) dargelegt.
 
-Wir beginnen mit der Grafik zur Visualisierung der Figurenpräsenz in den Filmen.
+Wir beginnen mit der Grafik zur Visualisierung der Screentime der Figuren in den Filmen. Mit **Screentime** ist hier die Präsenz einer Figur im Bild gemeint.
 
 <iframe
   src="../_static/html/character_timeline.html"
@@ -66,7 +66,7 @@ Wir beginnen mit der Grafik zur Visualisierung der Figurenpräsenz in den Filmen
   style="border:0;">
 </iframe>
 
-Jeder Figur ist hier eine eigene Spur und eine eigene Farbe zugeordnet. Wurde eine Figur erkannt, wird dies durch einen Balken im Zeitverlauf angezeigt. Die Spuren der Figuren sind nach Gesamtdauer der Leinwandpräsenz einer Figur von oben nach unten angeordnet, die Figur mit der längsten Präsenz wird ganz oben angezeigt. Wird der Mauszeiger über einen Balken einer Figur platziert, werden die zum Balken gehörenden Werte angezeigt. Durch ein Dropdown-Menü am linken unteren Ende der Grafik kann zur Darstellung des jeweiligen Films im Diagramm gewechselt werden.
+Jeder Figur ist hier eine eigene Spur und eine eigene Farbe zugeordnet. Wurde eine Figur erkannt, wird dies durch einen Balken im Zeitverlauf angezeigt. Die Spuren der Figuren sind nach Gesamtdauer der Leinwandpräsenz einer Figur von oben nach unten angeordnet, die Figur mit der längsten Screentime wird ganz oben angezeigt. Wird der Mauszeiger über einen Balken einer Figur platziert, werden die zum Balken gehörenden Werte angezeigt. Durch ein Dropdown-Menü am linken unteren Ende der Grafik kann zur Darstellung des jeweiligen Films im Diagramm gewechselt werden.
 
 Bei *Der geteilte Himmel* fällt auf, dass Rita die präsenteste Figur mit der meisten Leinwandzeit ist, gefolgt von Manfred. Beide Figuren sind die Protagonist:innen des Films. Meternagel als wichtige Bezugsfigur für Rita ist häufig im Bild zu sehen, ebenso Wendland als politisch einflussreiche und wichtige Figur. Herr und Frau Herrfurth treten meist gemeinsam auf, ebenso wie Kuhl und Ermisch, die zusammen mit Meternagel arbeiten.
 
@@ -75,9 +75,9 @@ Bei *Der geteilte Himmel* fällt auf, dass Rita die präsenteste Figur mit der m
 align: center
 width: 100%
 name: grafik_figurenpraesenz_solo_sunny
-alt: Grafik zur Figurenpräsenz in Solo Sunny
+alt: Grafik zur Screentime der Figuren in Solo Sunny
 ---
-Grafik zur Figurenpräsenz in *Solo Sunny*.
+Grafik zur Screentime der Figuren in *Solo Sunny*.
 ```
 
 Wechselt man zur Visualisierung von *Solo Sunny* wird sofort deutlich, dass hier Sunny die dominierende Figur ist. Sie ist fast den gesamtem Film über präsent. Nach Sunny folgen mit deutlich weniger Auftritten im Bild Ralph und Harry, die nie zusammen im Bild zu sehen sind, aber wichtige Bezugspunkte zu Sunny bilden. Neben Harry tritt auch Christine allein zusammen mit Sunny im Bild auf, sie ist eine alte Freundin von ihr. Norbert, Hubert, Bernd und Benno sind als Musiker in Sunnys Band oft gemeinsam präsent.
@@ -87,9 +87,9 @@ Wechselt man zur Visualisierung von *Solo Sunny* wird sofort deutlich, dass hier
 align: center
 width: 100%
 name: grafik_figurenpraesenz_sonnensucher
-alt: Grafik zur Figurenpräsenz in Sonnensucher
+alt: Grafik zur Screentime der Figuren in Sonnensucher
 ---
-Grafik zur Figurenpräsenz in *Sonnensucher*.
+Grafik zur Screentime der Figuren in *Sonnensucher*.
 ```
 
 Bei *Sonnensucher* bietet sich wiederum ein anderes Bild. Hier scheint die Dauer des Auftretens der Figuren Beier, Lutz, Jupp und Sergej im Bild verteilt über den Film sehr ähnlich zu sein, auch wenn sie oft zu unterschiedlichen Zeitpunkten zu sehen sind. Hier kann also von einem Film mit mehreren, gemäß der des zeitlichen Auftretens im Film gleichberechtigten Protagonist:innen ausgegangen werden. Günter und Emmi sind als wichtige Nebenfiguren recht häufig präsent, Weirauch und Wera eher seltener.
