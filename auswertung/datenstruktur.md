@@ -1,6 +1,6 @@
 # Struktur der Auswertungsdaten
 
-Für die Auswertung der Ergebnisse aus den Notebooks zur Erkennung von Einstellungen und Figuren werden deren Ausgabe-Dateien benötigt. Allerdings nicht sämtliche enthaltene Daten verwendet. Der folgende kurze Abschnitt gibt eine Übersicht über jene Werte, die tatsächlich in den Visualisierungen Anwendung finden. 
+Für die Auswertung der Ergebnisse aus den Notebooks zur Erkennung von Einstellungen und Figuren werden deren Ausgabe-Dateien benötigt. Allerdings werden nicht alle darin enthaltene Daten für die Auswertung verwendet. Der folgende kurze Abschnitt gibt eine Übersicht über jene Werte, die tatsächlich in den Visualisierungen Anwendung finden. 
 
 ## Visualisierung der Einstellungserkennung
 Für die Visualisierung der Einstellungserkennung werden sechs vergleichenden Balkendiagramme erstellt. Dabei wird ausschließlich die Datei `Filmname_shots_THRESHOLD_metadata.csv` verwendet. 
@@ -32,7 +32,9 @@ Für die Erstellung des Figurennetzwerks werden drei Dateien verwendet.
 **`Filmname_characters_annotations.csv`**
 - `character`: Namen der annotierten Figuren. Diese werden bei der Vergabe der Figurenfarben berücksichtigt, damit Netzwerk und Zeitleiste dieselben Farben verwenden.
 
-Für die Screentime-Zeitleiste werden ebenfalls drei Dateien verwendet.
+### Screentime-Zeitleiste
+
+Für die Screentime-Zeitleiste werden zwei Dateien verwendet.
 
 **`Filmname_characters_metadata.csv`**
 - `title`: Filmtitel für das Auswahlmenü.
