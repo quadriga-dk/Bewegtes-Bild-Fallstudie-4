@@ -32,8 +32,8 @@ permissions:
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
-    # The book build alone can take a while; keep the deploy step from being
-    # cut off by the default job timeout.
+    # Safety cap for the whole job. The Pages deploy step is limited to
+    # 10 minutes by the action itself; the build needs the room here.
     timeout-minutes: 90
     if: github.event.workflow_run.conclusion == 'success'
     steps:
@@ -161,7 +161,3 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v5
-      with:
-        # Pages can be slow to sync large sites; the default of 10 minutes
-        # turned a slow sync into a failed deployment.
-        timeout: 1200000
