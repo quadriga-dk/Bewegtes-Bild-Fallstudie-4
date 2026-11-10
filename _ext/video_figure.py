@@ -92,6 +92,14 @@ class VideoFigureTransform(SphinxTransform):
             "", f'<video class="book-video" {" ".join(attributes)}></video>', format="html"
         )
 
+        # Mark the enclosing figure so the stylesheet can add a video icon to
+        # the caption (see _static/quadriga.css).
+        figure = node.parent
+        while figure is not None and not isinstance(figure, nodes.figure):
+            figure = figure.parent
+        if isinstance(figure, nodes.figure):
+            figure["classes"].append("figure-video")
+
         # ``{figure}`` wraps the image in a link when scaled-image links are
         # enabled; drop that wrapper so the video is not a clickable <a>.
         parent = node.parent
