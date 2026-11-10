@@ -47,7 +47,7 @@ Das Importmenü von VIAN.
 
 Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
-```{figure} ../assets/annotation/VIAN_postImport.gif
+```{figure} ../assets/annotation/VIAN_postImport.mp4
 ---
 align: center
 width: 100%
@@ -63,7 +63,7 @@ Für die folgenden Ergebnisse wurde als Schwellenwerte für den `FACE_DETECTION_
 
 So ist etwa die Figur Rita an einigen Stellen des Trailers nur von hinten zu sehen. Ihr Gesicht ist nicht im Bild, sodass auch das beste Verfahren zur Gesichtserkennung hier unmöglich Rita erkennen kann:
 
-```{figure} ../assets/annotation/Himmel_Fehler1.gif
+```{figure} ../assets/annotation/Himmel_Fehler1.mp4
 ---
 align: center
 width: 100%
@@ -75,7 +75,7 @@ Rita konnte im Trailer zu *Der geteilte Himmel* nicht von hinten erkannt werden.
 
 Anders verhält es sich bei Einstellungen, in denen die Figuren zwar gut zu sehen sind, aber dennoch nicht erkannt wurden. Dies ist in einer Einstellung des Trailers der Fall, in der Rita und Manfred gemeinsam im Bett liegen. Aufgrund der Einstellungsgröße und der Beleuchtung sind die Gesichter nicht vollständig zu sehen. Es ist nur eine Gesichtshälfte Manfreds sichtbar und Ritas Augen werden teilweise von ihren Haaren verdeckt. Wesentliche Merkmale für die Gesichtserkennung stehen also nur teilweise zur Verfügung (vgl. Kapitel zu [Grundlagen der Gesichtserkennung](../annotation/figuren_intro.md#grundlagen-der-gesichtserkennung)). Während Manfred in dieser Einstellung bei den Standard-Schwellenwerten von jeweils `0.3` gar nicht erkannt wird, wurde Rita für ein paar Frames erfasst. Daher wurde ihr trotz der schlechten Erkennung in der Spur *Rita_matched* die gesamte Einstellung zugeordnet (vgl. Kapitel [Ausgabe](../annotation/figuren_intro.md#ausgabe) die Erklärung zu `Figurenname_matched`): 
 
-```{figure} ../assets/annotation/Himmel_Fehler2.gif
+```{figure} ../assets/annotation/Himmel_Fehler2.mp4
 ---
 align: center
 width: 100%
@@ -196,7 +196,7 @@ Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" cl
 
 Mit den voreingestellten Schwellenwerten von `0.3` habe wir ein erneut gutes Ergebnis erzielen können. Die Probleme ähneln denen aus dem *Der geteilte Himmel* Trailer. So wurde etwa auch Sunny in dieser Sequenz nicht erkannt, da ihr Gesicht nicht vollständig zu sehen ist:
 
-```{figure} ../assets/annotation/SoloSunny_Figuren_Fehler1.gif
+```{figure} ../assets/annotation/SoloSunny_Figuren_Fehler1.mp4
 ---
 align: center
 width: 100%
@@ -207,7 +207,7 @@ Sunny wurde in den gezeigten Einstellungen nicht erkannt.
 ```
 Durch die Wahl geringerer Schwellenwerte von `FACE_DETECTION_THRESHOLD = 0.1` und `CHARACTER_RECOGNITION_THRESHOLD = 0.15` konnte die Erkennung in diesen Einstellungen leicht verbessert werden. Zwar wird Sunny weiterhin nicht durchgehend erkannt, jedoch reichen Treffer in einzelnen Frames aus, damit ihr in der `Sunny_matched` Spur die gesamte Einstellung zugeordnet wird. Allerdings führten dieselben Schwellenwerte auch zu Falscherkennungen, bei denen etwa die "Frau im Bett" als Sunny erkannt wurde.
 
-```{figure} ../assets/annotation/SoloSunny_Figuren_Änderung1.gif
+```{figure} ../assets/annotation/SoloSunny_Figuren_Änderung1.mp4
 ---
 align: center
 width: 100%

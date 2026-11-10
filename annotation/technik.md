@@ -138,7 +138,7 @@ Das Importmenü von VIAN.
 
 Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
-```{figure} ../assets/annotation/VIAN_postImport.gif
+```{figure} ../assets/annotation/VIAN_postImport.mp4
 ---
 align: center
 width: 100%
@@ -150,7 +150,7 @@ Das Hauptfenster von VIAN nach dem Import von Annotationen.
 
 Über den Reiter `Segmentierung` können Sie außerdem zu einer bestimmten Annotation springen. Klicken Sie dazu zuerst auf den Reiter `Segmentierung`, wählen Sie eine Annotationsspur aus und klicken Sie anschließend auf eine der Annotationen.
 
-```{figure} ../assets/annotation/VIAN_Segmentation.gif
+```{figure} ../assets/annotation/VIAN_Segmentation.mp4
 ---
 align: center
 width: 100%

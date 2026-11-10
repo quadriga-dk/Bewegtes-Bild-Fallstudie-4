@@ -1,6 +1,6 @@
 # Workflows zur automatisierten Filmannotation – Einstellungs- und Figurenerkennung am Beispiel der Filme Konrad Wolfs
 
-```{figure} assets/banner.gif
+```{figure} assets/banner.mp4
 ---
 align: left
 width: 100%
