@@ -88,7 +88,6 @@ Die Sekundenwerte werden auf zwei Nachkommastellen gerundet. Die Einzelwerte kö
 | `min_prediction_score` | Niedrigster vom Modell berechneter Vorhersagewert für eine Einstellungsgrenze im gesamten Video. |
 | `max_prediction_score` | Höchster vom Modell berechneter Vorhersagewert für eine Einstellungsgrenze im gesamten Video. |
 
-Ein Erscheinungsjahr wird nur dann erkannt, wenn der Videodateiname vor seiner Endung mit `_Jahr` endet, beispielsweise `Der_geteilte_Himmel_1964.mp4`. Der Analysezeitpunkt wird in beiden Notebooks einheitlich in UTC angegeben.
+Ein Erscheinungsjahr wird nur dann erkannt, wenn der Videodateiname vor seiner Endung mit `_Jahr` endet, beispielsweise `Der_geteilte_Himmel_1964.mp4`. Die minimalen und maximalen Vorhersagewerte (`min_prediction_score` und `max_prediction_score`) geben den niedrigsten und höchsten vom Modell berechneten Wahrscheinlichkeitswert für einen Einstellungsübergang im untersuchten Video an. Diese Werte sind allerdings kein Maß für die Genauigkeit der Erkennung. Auch ein hoher Wahrscheinlichkeitswert bedeutet nicht zwangsläufig, dass ein Einstellungsübergang korrekt erkannt wurde. Dafür müssten die Ergebnisse mit manuell überprüften Annotationen verglichen werden.
 
-Die Vorhersagewerte beschreiben die Einschätzung des Modells, nicht die überprüfte Genauigkeit seiner Ergebnisse. Die Werte zur Einstellungsdauer basieren auf den erkannten Einstellungsgrenzen und der Bildrate des Videos.
 
