@@ -366,3 +366,15 @@ div.citation .docutils {
     text-decoration: none;
     white-space: nowrap;
 }
+
+/* Videos embedded via the local video_figure extension: a `{figure}` whose
+   target is an .mp4/.webm file is rendered as <video> instead of <img>. Keep
+   the animation responsive and level with the surrounding text like images. */
+figure video.book-video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* no native controls; a click toggles playback (see video-figure.js) */
+    cursor: pointer;
+}

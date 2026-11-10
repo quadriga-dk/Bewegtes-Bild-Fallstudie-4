@@ -46,7 +46,7 @@ Das Importmenü von VIAN.
 
 Nach dem Import erscheinen die Annotationen als einzelne Spuren unter der Zeitleiste am unteren Rand des Hauptfensters. Wird das Video abgespielt, bewegt sich auch der rote Positionsanzeiger in der Zeitleiste. Sie können den Anzeiger außerdem mit der Maus verschieben oder auf die Zeitleiste klicken, um zur entsprechenden Stelle im Video zu gelangen.
 
-```{figure} ../assets/annotation/VIAN_postImport.gif
+```{figure} ../assets/annotation/VIAN_postImport.mp4
 ---
 align: center
 width: 100%
@@ -73,7 +73,7 @@ Allerdings funktioniert die Erkennung mit dem Standard-Schwellenwert von `0.5` n
 
 Im Trailer zu *Mama, ich lebe* werden zu Beginn Standbilder aus anderen Produktionen Konrad Wolfs gezeigt. Hier wurde bei einem Schwellenwert von `0.5` der Übergang zwischen zwei ähnlichen Bildern innerhalb der Einstellung 12 nicht erkannt:
 
-```{figure} ../assets/annotation/MamaIchLebe_Fehler1.gif
+```{figure} ../assets/annotation/MamaIchLebe_Fehler1.mp4
 ---
 align: center
 width: 100%
@@ -85,7 +85,7 @@ Der erste Fehler in *Mama, ich lebe*.
 
 Ein weiterer Fehler im selben Trailer findet sich beim Übergang von einer Totalen in eine Nahaufnahme in der Bewegung in Einstellung 36:
 
-```{figure} ../assets/annotation/MamaIchLebe_Fehler2.gif
+```{figure} ../assets/annotation/MamaIchLebe_Fehler2.mp4
 ---
 align: center
 width: 100%
@@ -96,7 +96,7 @@ Der zweite Fehler in *Mama, ich lebe*.
 ```
 Auch in die Einstellungserkennung zum *Solo Sunny* Trailer hat sich ein Fehler eingeschlichen. Der kurze Wechsel zu einer Einstellung am Ende von Einstellung 5 wurde nicht erkannt:
 
-```{figure} ../assets/annotation/SoloSunny_Fehler.gif
+```{figure} ../assets/annotation/SoloSunny_Fehler.mp4
 ---
 align: center
 width: 100%
@@ -201,7 +201,7 @@ Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wied
 
 Ein Schwellenwert von 0.25 bereinigt z.B. die Fehler im *Mama, ich lebe* Trailer. Im Fall des Trailers zu *Solo Sunny* führt derselbe Schwellenwert allerdings zu einer falsch erkannten Einstellung. So wurde etwa Einstellung 53 fälschlicherweise aufgeteilt, da plötzlich ein grelles Licht im Bild sichtbar wird:
 
-```{figure} ../assets/annotation/SoloSunny_Fehler2.gif
+```{figure} ../assets/annotation/SoloSunny_Fehler2.mp4
 ---
 align: center
 width: 100%
