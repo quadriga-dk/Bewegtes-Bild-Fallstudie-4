@@ -59,7 +59,7 @@ Das Hauptfenster von VIAN nach dem Import von Annotationen.
 
 Nach dem Import können Sie nun das Ergebnis der Einstellungserkennung für *Der geteilte Himmel* in VIAN sichten. Mit dem Abspielen des Trailers bzw. anhand der Navigation in der Timeline werden Sie feststellen, dass die Einstellungserkennung in diesem Fall tadellos funktioniert hat. Die einzelnen nummerierten 'Annotationsblöcke' sind perfekt mit den Einstellungswechseln synchronisiert. Insgesamt wurden 23 Einstellungen erkannt.
 
-```{figure} ../assets/annotation/Himmel_results.png
+```{figure} ../assets/annotation/Himmel_Results.png
 ---
 align: center
 width: 100%
