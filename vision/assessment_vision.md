@@ -242,7 +242,7 @@ display_quiz(multiple_choice5, colors=colors.jupyterquiz)
 
 ## Aufgabe 6
 
-In einem historischen Film erkennt ein Objekterkennungsmodell eine Handy, wo im Film eine Schusswaffe zu sehen ist. Bei einer weiblichen Figur schätzt dasselbe Modell „männlich“.
+In einem historischen Film erkennt ein Objekterkennungsmodell ein Handy, wo im Film eine Schusswaffe zu sehen ist. Bei einer weiblichen Figur schätzt dasselbe Modell „männlich“.
 
 1. Nennen Sie zwei plausible Ursachen.
 2. Nennen Sie zwei Konsequenzen für die filmanalytische Arbeit.

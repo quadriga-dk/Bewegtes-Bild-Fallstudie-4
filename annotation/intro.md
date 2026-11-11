@@ -1,16 +1,16 @@
 # Vorbemerkungen
 In den letzten Kapiteln haben wir einige [Grundlagen filmanalytischer Arbeit](../filmanalyse/einleitung.md) dargelegt und ausgeführt, wie für die automatisierte Annotation von Filmen bzw. Videodateien [Verfahren der Computer Vision](../vision/einleitung.md) eingesetzt werden können. Dabei sind wir unter anderem auf [quantitative Ansätze in der Filmwissenschaft](../filmanalyse/quantitativ.md) eingegangen und haben exemplarische [Einsatzbereiche](../vision/einsatz.md) von Computer Vision und automatisierter Annotation für die Filmanalyse vorgestellt. So können etwa Objekte in Filmen erkannt oder die Farbgestaltung filmischer Werke analysiert werden.
 
-In diesem Kapitel folgt nun die konkrete Erarbeitung und Umsetzung von Workflows zur automatisierten Annotation von Filmen. Im Kapitel zu [Fragestellungen zur Fallstudie](../filmanalyse/fragestellungen.md) haben wir zwei Bereiche der automatisierten Annotation von Filmen herausgearbeitet, die wir in dieser OER näher betrachten möchten: Die **Erkennung von Einstellungsübergängen bzw. Einstellungslängen** und die **Bestimmung des Auftretens von bestimmten Figuren in Filmen**. Für diese beiden Bereiche haben wir Skripte in der <a href="https://www.python.org/" class="external-link" target="_blank"> Programmiersprache Python</a> entwickelt, in denen die Workflows praktisch umgesetzt werden. Diese Python-Skripte wurden in Form von *Jupyter Notebooks* realisiert, die in diese OER integriert wurden. Durch diese *Jupyter Notebooks* kann der Python-Code direkt aus der OER heraus ausgeführt werden. 
+In diesem Kapitel folgt nun die konkrete Erarbeitung und Umsetzung von Workflows zur automatisierten Annotation von Filmen. Im Kapitel zu [Fragestellungen zur Fallstudie](../filmanalyse/fragestellungen.md) haben wir zwei Bereiche der automatisierten Annotation von Filmen herausgearbeitet, die wir in dieser OER näher betrachten möchten: Die **Erkennung von Einstellungsübergängen bzw. Einstellungslängen** und die **Bestimmung des Auftretens von bestimmten Figuren in Filmen**. Für diese beiden Bereiche haben wir Skripte in der <a href="https://www.python.org/" class="external-link" target="_blank">Programmiersprache Python</a> entwickelt, in denen die Workflows praktisch umgesetzt werden. Diese Python-Skripte wurden in Form von *Jupyter Notebooks* realisiert, die in diese OER integriert wurden. Durch diese *Jupyter Notebooks* kann der Python-Code direkt aus der OER heraus ausgeführt werden. 
 
 ```{admonition} Hinweise zu *Jupyter Notebooks*
 :class: hinweis 
 
-<a href="https://jupyter.org/" class="external-link" target="_blank">*Jupyter Notebooks*</a> bestehen aus Codeblöcken und Textblöcken. Die einzelnen Codeblöcke mit Python-Code können nacheinander ausgeführt werden, während die Textblöcke ausführliche Erklärungstexte liefen, in denen z.B. die Funktion der einzelnen Codeblöcke erläutert wird. So können auch Lernende, die über keine Programmierkenntnisse verfügen, den Aufbau des Codes und die einzelnen, für die Annotation notwendigen Schritte nachvollziehen. In *Jupyter Notebooks* können zudem in den jeweiligen Codeblöcken erstellte Visualisierungen von Daten oder Tabellen zu Annotationsergebnissen direkt dargestellt werden.
+<a href="https://jupyter.org/" class="external-link" target="_blank">*Jupyter Notebooks*</a> bestehen aus Codeblöcken und Textblöcken. Die einzelnen Codeblöcke mit Python-Code können nacheinander ausgeführt werden, während die Textblöcke ausführliche Erklärungstexte liefern, in denen z.B. die Funktion der einzelnen Codeblöcke erläutert wird. So können auch Lernende, die über keine Programmierkenntnisse verfügen, den Aufbau des Codes und die einzelnen, für die Annotation notwendigen Schritte nachvollziehen. In *Jupyter Notebooks* können zudem in den jeweiligen Codeblöcken erstellte Visualisierungen von Daten oder Tabellen zu Annotationsergebnissen direkt dargestellt werden.
 
 ```
 
-Durch die ausführlichen Kommentare zu den Python-Skripten in den Jupyter Notebooks sollte die Funktion der Codeblöcke auch ohne Python Programmierkenntnisse verständlich sein. Python-Kenntnisse sind daher von Vorteil, aber nicht unbedingt notwendig. 
+Durch die ausführlichen Kommentare zu den Python-Skripten in den Jupyter Notebooks sollte die Funktion der Codeblöcke auch ohne Python-Programmierkenntnisse verständlich sein. Python-Kenntnisse sind daher von Vorteil, aber nicht unbedingt notwendig. 
 
 ```{admonition} Einführungen in Python
 :class: seealso
@@ -23,7 +23,7 @@ Die Jupyter Notebooks sind im Inhaltsverzeichnis durch ein Raketensymbol 🚀 ge
 
 ```{admonition} Achtung
 :class: caution
- Für den besten Lernerfolg empfehlen wir, die Jupyter Notebooks nicht nur als Textkapitel zu lesen, sondern in einer entsprechenden Umgebung zu öffnen und die einzelnen Codeblöcke nacheinander auszuführen. Dadurch können die Kommentare zu den Codeblöcken in den Textblöcken besser verstanden und die Funktion des Codes direkt getestet werden.
+Für den besten Lernerfolg empfehlen wir, die Jupyter Notebooks nicht nur als Textkapitel zu lesen, sondern in einer entsprechenden Umgebung zu öffnen und die einzelnen Codeblöcke nacheinander auszuführen. Dadurch können die Kommentare zu den Codeblöcken in den Textblöcken besser verstanden und die Funktion des Codes direkt getestet werden.
 ```
 
 
@@ -53,7 +53,7 @@ Als zu untersuchendes Filmkorpus bei der praktischen Umsetzung der Workflows in 
 Die Verwendung und die Möglichkeit des Downloads der Trailer zu den Filmen Konrad Wolfs im Rahmen dieser OER erfolgen mit freundlicher Genehmigung der DEFA-Stiftung als ausschließliche Rechteinhaberin. Die Trailer sind von der freien CC-Lizenzierung dieser OER ausgenommen. Die Bearbeitung der Dateien zu wissenschaftlichen, Analyse- und Lehrzwecken im Rahmen dieser OER ist gestattet. Jede darüber hinausgehende Nutzung, Veränderung und Verwertung bedarf einer vorherigen Lizenzvereinbarung.
 ```
 
-Die Arbeit mit den Trailern statt mit den kompletten Filmen in Form von Videodateien hat zudem den Vorteil, dass die Verarbeitungszeiten für die automatisierte Annotation in einem angemessenen Rahmen bleiben sollten. Prozesse der Computer Vision und damit auch Annotationsprozesse zu Videodateien können sehr rechenintensiv sein und daher auch relativ viel Zeit in Anspruch nehmen. Auf dieses Problemfeld werden wir im Kapitel zu dem [technischen Grundlagen](../annotation/technik.md#verwendete-hardware) noch genauer eingehen.
+Die Arbeit mit den Trailern statt mit den kompletten Filmen in Form von Videodateien hat zudem den Vorteil, dass die Verarbeitungszeiten für die automatisierte Annotation in einem angemessenen Rahmen bleiben sollten. Prozesse der Computer Vision und damit auch Annotationsprozesse zu Videodateien können sehr rechenintensiv sein und daher auch relativ viel Zeit in Anspruch nehmen. Auf dieses Problemfeld werden wir im Kapitel zu den [technischen Grundlagen](../annotation/technik.md#verwendete-hardware) noch genauer eingehen.
 
 ```{admonition} Annotationsdaten für das Kapitel Auswertung
 :class: hinweis 

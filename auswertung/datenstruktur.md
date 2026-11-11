@@ -1,9 +1,9 @@
 # Struktur der Auswertungsdaten
 
-Für die Auswertung der Ergebnisse aus den Notebooks zur Erkennung von Einstellungen und Figuren werden deren Ausgabe-Dateien benötigt. Allerdings werden nicht alle darin enthaltene Daten für die Auswertung verwendet. Der folgende kurze Abschnitt gibt eine Übersicht über jene Werte, die tatsächlich in den Visualisierungen Anwendung finden. 
+Für die Auswertung der Ergebnisse aus den Notebooks zur Erkennung von Einstellungen und Figuren werden deren Ausgabe-Dateien benötigt. Allerdings werden nicht alle darin enthaltenen Daten für die Auswertung verwendet. Der folgende kurze Abschnitt gibt eine Übersicht über jene Werte, die tatsächlich in den Visualisierungen Anwendung finden. 
 
 ## Visualisierung der Einstellungserkennung
-Für die Visualisierung der Einstellungserkennung werden sechs vergleichenden Balkendiagramme erstellt. Dabei wird ausschließlich die Datei `Filmname_shots_THRESHOLD_metadata.csv` verwendet. 
+Für die Visualisierung der Einstellungserkennung werden sechs vergleichende Balkendiagramme erstellt. Dabei wird ausschließlich die Datei `Filmname_shots_THRESHOLD_metadata.csv` verwendet. 
 
 Daraus werden folgende Werte eingelesen:
 - `title`: Filmtitel für die Beschriftung und alphabetische Sortierung.

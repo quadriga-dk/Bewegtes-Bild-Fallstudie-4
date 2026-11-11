@@ -21,7 +21,7 @@ Für die Sichtung in VIAN (oder einem anderen Annotationsprogramm) wurde vom Jup
 
 ````{admonition} Hinweis zum Import von .eaf-Dateien in VIAN
 :class: hinweis, dropdown
-Starten Sie VIAN und wählen Sie durch einen Klick auf "Video öffnen" die entsprechende Videodatei aus, für die die Annotationen in der `.eaf` Datei importiert werden sollen.
+Starten Sie VIAN und wählen Sie durch einen Klick auf "Video öffnen" die entsprechende Videodatei aus, für die die Annotationen in der `.eaf`-Datei importiert werden sollen.
 
 ```{figure} ../assets/annotation/VIAN_open_video.png
 ---
@@ -59,7 +59,7 @@ Das Hauptfenster von VIAN nach dem Import von Annotationen.
 ````
 
 Für die folgenden Ergebnisse wurde als Schwellenwerte für den `FACE_DETECTION_THRESHOLD` und
-`CHARACTER_RECOGNITION_THRESHOLD` der voreingestellt Wert von `0.3` verwendet. Insgesamt funktioniert die Figurenerkennung für den Trailer zu *Der geteilte Himmel* mit diesen Werten gut, jedoch wurden die Figuren nicht in allen Einstellungen korrekt erkannt.
+`CHARACTER_RECOGNITION_THRESHOLD` der voreingestellte Wert von `0.3` verwendet. Insgesamt funktioniert die Figurenerkennung für den Trailer zu *Der geteilte Himmel* mit diesen Werten gut, jedoch wurden die Figuren nicht in allen Einstellungen korrekt erkannt.
 
 So ist etwa die Figur Rita an einigen Stellen des Trailers nur von hinten zu sehen. Ihr Gesicht ist nicht im Bild, sodass auch das beste Verfahren zur Gesichtserkennung hier unmöglich Rita erkennen kann:
 
@@ -144,7 +144,7 @@ Warnmeldung vor der Ausführung des Notebooks.
 
 Evtl. wird eine Warnung angezeigt, dass das Notebook nicht von Google erstellt wurde, klicken Sie auf "Trotzdem ausführen" rechts unten. Dadurch werden die Ordner "videos_characters" und "export_characters" in der Colab-Umgebung erstellt.
 
-Laden Sie nun Sie die Videodatei, hier die Trailerdatei, und die Referenzabbildungen der zu erkennenden Figuren in die Colab-Umgebung hoch.
+Laden Sie nun die Videodatei, hier die Trailerdatei, und die Referenzabbildungen der zu erkennenden Figuren in die Colab-Umgebung hoch.
 
 ```{figure} ../assets/annotation/figuren_nb_paramter_2.png
 ---
@@ -194,7 +194,7 @@ Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Sich
 
 Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> nach den beiden Hauptfiguren Sunny und Ralph suchen lassen. Für die Figurenerkennung haben wir die Referenzabbildungen verwendet, die im `.zip`-Archiv zu diesem Abschnitt unter `Trailer` → `Solo Sunny_Trailer_1980` → `Figurenreferenzen` zu finden sind.
 
-Mit den voreingestellten Schwellenwerten von `0.3` habe wir ein erneut gutes Ergebnis erzielen können. Die Probleme ähneln denen aus dem *Der geteilte Himmel* Trailer. So wurde etwa auch Sunny in dieser Sequenz nicht erkannt, da ihr Gesicht nicht vollständig zu sehen ist:
+Mit den voreingestellten Schwellenwerten von `0.3` haben wir erneut ein gutes Ergebnis erzielen können. Die Probleme ähneln denen aus dem *Der geteilte Himmel* Trailer. So wurde etwa auch Sunny in dieser Sequenz nicht erkannt, da ihr Gesicht nicht vollständig zu sehen ist:
 
 ```{figure} ../assets/annotation/SoloSunny_Figuren_Fehler1.mp4
 ---
@@ -217,7 +217,7 @@ alt: Sunny wurde in den gezeigten Einstellungen mit den Schwellenwerten FACE_DET
 Sunny wurde in den gezeigten Einstellungen mit den Schwellenwerten `FACE_DETECTION_THRESHOLD = 0.1` und `CHARACTER_RECOGNITION_THRESHOLD = 0.15` teilweise erkannt. 
 ```
 
-Was passiert, wenn wir stattdessen sehr hohe Schwellenwerte einsetzten, etwa `0.8`?
+Was passiert, wenn wir stattdessen sehr hohe Schwellenwerte einsetzen, etwa `0.8`?
 In diesem Fall verringert sich die Anzahl an Treffern deutlich:
 
 ```{figure} ../assets/annotation/SoloSunny_Figuren_Änderung2.png

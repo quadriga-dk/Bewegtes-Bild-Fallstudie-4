@@ -1,5 +1,5 @@
 # Resümee
-In diesem Kapitel werden Workflows zur automatisierten Filmannotation vorgestellt und anhand konkreter Beispiele durchgeführt. Dabei werden folgenden Teilbereichen behandelt:
+In diesem Kapitel werden Workflows zur automatisierten Filmannotation vorgestellt und anhand konkreter Beispiele durchgeführt. Dabei werden folgende Teilbereiche behandelt:
 
 ```{admonition} Keypoints
 :class: keypoint
@@ -24,4 +24,4 @@ Mithilfe der von den Notebooks ausgegebenen `.eaf-Datei` lassen sich die Annotat
 
 ```
 
-Es hat sich gezeigt, dass sie Ergebnisse der automatisierten Annotation von Videodateien zwar nicht fehlerfrei sind, aber dennoch die Grundlage für eine weitere Auswertung bilden können.
+Es hat sich gezeigt, dass die Ergebnisse der automatisierten Annotation von Videodateien zwar nicht fehlerfrei sind, aber dennoch die Grundlage für eine weitere Auswertung bilden können.

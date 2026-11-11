@@ -3,12 +3,12 @@ In den vorigen Kapiteln wurden mit Jupyter Notebooks aus den automatisiert erhob
 
 Dabei muss im Blick behalten werden, dass die Annotationsdaten und damit die hier in den Grafiken dargestellten Werte Fehler enthalten können. Schnelle Bewegungen können die [Erkennung von Einstellungsübergängen erschweren](../annotation/einstellung_datensichtung.md), schlecht erkennbare Gesichter [beeinträchtigen die Figurenerkennung](../annotation/figuren_datensichtung.md). Dennoch sind mit diesen nicht immer fehlerfreien Annotationsdaten mögliche Zusammenhänge, Tendenzen und Muster gut erkennbar. Sie können also durchaus die Grundlage für weitere Untersuchungen oder die Entwicklung von Fragestellungen bilden.
 
-Die Auswertung der Annotationsdaten in diesen Kapitel kann aufgrund des begrenzten Umfangs der Fallstudie jedoch nicht in die Tiefe gehen. Wir werden die Ergebnisse explorativ betrachten und einige Beobachtungen festhalten. Mögliche Fragestellungen haben wir in einem [eigenen Kapitel](../filmanalyse/fragestellungen.md) entwickelt, im Fokus ist dabei eine quantitative Auswertung der Annotationsdaten. An mehreren Stellen der OER haben wir betont, dass eine Verbindung dieser quantitativen Auswertung mit qualitativen Herangehensweisen wichtig ist. Dies kann im Rahmen dieser Fallstudie ebenfalls nicht geleistet werden.
+Die Auswertung der Annotationsdaten in diesem Kapitel kann aufgrund des begrenzten Umfangs der Fallstudie jedoch nicht in die Tiefe gehen. Wir werden die Ergebnisse explorativ betrachten und einige Beobachtungen festhalten. Mögliche Fragestellungen haben wir in einem [eigenen Kapitel](../filmanalyse/fragestellungen.md) entwickelt, im Fokus ist dabei eine quantitative Auswertung der Annotationsdaten. An mehreren Stellen der OER haben wir betont, dass eine Verbindung dieser quantitativen Auswertung mit qualitativen Herangehensweisen wichtig ist. Dies kann im Rahmen dieser Fallstudie ebenfalls nicht geleistet werden.
 
-Im Folgenden werden wir uns nun zunächst mit den Ergebnissen der Einstellungsannotationen beschäftigen, daran anschließenden mit den Figurenannotationen.
+Im Folgenden werden wir uns nun zunächst mit den Ergebnissen der Einstellungsannotationen beschäftigen, daran anschließend mit den Figurenannotationen.
 
 ## Visualisierung der Einstellungsdaten
-Die hier präsentierte Visualisierung der Einstellungsannotationen zu den Filmen Konrad Wolfs ist nur eine Variante von vielen Möglichkeiten. Im [Kapitel zu den Fragestellungen](../filmanalyse/fragestellungen.md) zur Fallstudie wurden mögliche quantitative Annotationsdaten vorgestellt. In die vorliegende grafische Darstellung wurden folgende auf filmischen Einstellungen beruhende Werte einbezogen: Die durchschnittliche (Average Shot Length / ASL) und mittlere Einstellungslänge (Median Shot Length / MSL) in Sekunden (errechnet aus den Daten zu den Einstellungslängen eines Films), die längste und sie kürzeste Einstellung eines Films in Sekunden, die Filmlaufzeit in Minuten und die Anzahl der Einstellungen in einem Film.
+Die hier präsentierte Visualisierung der Einstellungsannotationen zu den Filmen Konrad Wolfs ist nur eine Variante von vielen Möglichkeiten. Im [Kapitel zu den Fragestellungen](../filmanalyse/fragestellungen.md) zur Fallstudie wurden mögliche quantitative Annotationsdaten vorgestellt. In die vorliegende grafische Darstellung wurden folgende auf filmischen Einstellungen beruhende Werte einbezogen: Die durchschnittliche (Average Shot Length / ASL) und mittlere Einstellungslänge (Median Shot Length / MSL) in Sekunden (errechnet aus den Daten zu den Einstellungslängen eines Films), die längste und die kürzeste Einstellung eines Films in Sekunden, die Filmlaufzeit in Minuten und die Anzahl der Einstellungen in einem Film.
 
 Diese Werte werden als Balkendiagramme in einzelnen Grafiken untereinander ausgegeben, die einzelnen annotierten Filme folgen nacheinander.
 
@@ -23,11 +23,11 @@ Mit dem Scrollbalken am rechten Rand kann durch die Grafiken navigiert werden. D
 
 Starten wir mit der Sortierung nach Werten. Was lässt sich beobachten? *Sterne* weist sowohl bezüglich der ASL als auch der MSL die höchsten Werte auf. Auch bei der längsten Einstellung führt der Film die Grafik an. Bei der kürzesten Einstellung und der Filmlaufzeit befindet sich *Sterne* verglichen mit den restlichen Filmen im unteren Drittel.
 
-Bei *Goya* fällt auf, dass die Anzahl der Einstellung am größten von allen Filmen ist und einen sehr hohen Wert besitzt. Zwar ist auch die Laufzeit die längste aller Filme, trotzdem sticht der Wert mit 1074 Einstellung deutlich aus den restlichen Filmen hervor. Dementsprechend sind auch die ASL und MSL Werte am geringsten, da sich dadurch mehr Einstellungen innerhalb der Laufzeit ergeben.
+Bei *Goya* fällt auf, dass die Anzahl der Einstellungen am größten von allen Filmen ist und einen sehr hohen Wert besitzt. Zwar ist auch die Laufzeit die längste aller Filme, trotzdem sticht der Wert mit 1074 Einstellungen deutlich aus den restlichen Filmen hervor. Dementsprechend sind auch die ASL und MSL Werte am geringsten, da sich dadurch mehr Einstellungen innerhalb der Laufzeit ergeben.
 
-*Der geteilte Himmel* wurde bereits oft in unserer OER erwähnt und dessen Trailer in den Notbooks zur Einstellungs- und Figurenerkennung exemplarisch annotiert. Bei ASL und MSL und der Laufzeit liegt der Film hier im Mittelfeld aller Filme. Bei der längsten und bei der kürzesten Einstellung liegt *Der geteilte Himmmel* im unteren Bereich bezogen auf alle untersuchten Filme.
+*Der geteilte Himmel* wurde bereits oft in unserer OER erwähnt und dessen Trailer in den Notebooks zur Einstellungs- und Figurenerkennung exemplarisch annotiert. Bei ASL und MSL und der Laufzeit liegt der Film hier im Mittelfeld aller Filme. Bei der längsten und bei der kürzesten Einstellung liegt *Der geteilte Himmel* im unteren Bereich bezogen auf alle untersuchten Filme.
 
-Geht man zur chronologischen Sortierung über wird erkennbar, dass die ASL und MSL mit steigenden Erscheinungsjahr tendenziell immer kürzer werden. Hier heben sich *Sterne* und *Goya* ebenfalls ab:  *Sterne* mit vergleichsweise hohen Werten, *Goya* mit vergleichsweise niedrigen Werten.
+Geht man zur chronologischen Sortierung über wird erkennbar, dass die ASL und MSL mit steigendem Erscheinungsjahr tendenziell immer kürzer werden. Hier heben sich *Sterne* und *Goya* ebenfalls ab:  *Sterne* mit vergleichsweise hohen Werten, *Goya* mit vergleichsweise niedrigen Werten.
 
 ```{figure} ../assets/auswertung/einstellungen_asl_chrono.png
 ---
@@ -80,7 +80,7 @@ alt: Grafik zur Screentime der Figuren in Solo Sunny
 Grafik zur Screentime der Figuren in *Solo Sunny*.
 ```
 
-Wechselt man zur Visualisierung von *Solo Sunny* wird sofort deutlich, dass hier Sunny die dominierende Figur ist. Sie ist fast den gesamtem Film über präsent. Nach Sunny folgen mit deutlich weniger Auftritten im Bild Ralph und Harry, die nie zusammen im Bild zu sehen sind, aber wichtige Bezugspunkte zu Sunny bilden. Neben Harry tritt auch Christine allein zusammen mit Sunny im Bild auf, sie ist eine alte Freundin von ihr. Norbert, Hubert, Bernd und Benno sind als Musiker in Sunnys Band oft gemeinsam präsent.
+Wechselt man zur Visualisierung von *Solo Sunny* wird sofort deutlich, dass hier Sunny die dominierende Figur ist. Sie ist fast den gesamten Film über präsent. Nach Sunny folgen mit deutlich weniger Auftritten im Bild Ralph und Harry, die nie zusammen im Bild zu sehen sind, aber wichtige Bezugspunkte zu Sunny bilden. Neben Harry tritt auch Christine allein zusammen mit Sunny im Bild auf, sie ist eine alte Freundin von ihr. Norbert, Hubert, Bernd und Benno sind als Musiker in Sunnys Band oft gemeinsam präsent.
 
 ```{figure} ../assets/auswertung/figurenpraesenz_sonnensucher.png
 ---
@@ -133,7 +133,7 @@ alt: Grafik zur Beziehung der Figuren in der Geteilte Himmel, die einzelnen Bere
 Figurenbeziehungen in *Der geteilte Himmel*.
 ```
 
-Im unteren Teil der Grafik sind mit Kuhl, Meternagel, Ermisch und Wendland die Figuren der Arbeitswelt im Form der Wagonfabrik versammelt, rechts Schwarzenbach für die Universität. Im oberen Teil mit Herr und Frau Herrfurth und Martin der private Bereich Ritas und Manfreds.
+Im unteren Teil der Grafik sind mit Kuhl, Meternagel, Ermisch und Wendland die Figuren der Arbeitswelt in Form der Waggonfabrik versammelt, rechts Schwarzenbach für die Universität. Im oberen Teil mit Herr und Frau Herrfurth und Martin der private Bereich Ritas und Manfreds.
 
 ```{figure} ../assets/auswertung/figurenbeziehungen_himmel_2.png
 ---
@@ -146,7 +146,7 @@ Martins Figurenbeziehungen in *Der geteilte Himmel*.
 ```
 
 
-Ein Klick auf Martin zeigt, dass er bei den erfassten Stellen des Auftretens nur mit Rita und Manfred zusammen zu sehen ist, Schwarzenbach hingegen nur mit Rita
+Ein Klick auf Martin zeigt, dass er bei den erfassten Stellen des Auftretens nur mit Rita und Manfred zusammen zu sehen ist, Schwarzenbach hingegen nur mit Rita.
 
 ```{figure} ../assets/auswertung/figurenbeziehungen_solo_sunny_1.png
 ---
@@ -198,19 +198,19 @@ alt: Grafik zur Beziehung der Figur in Sonnensucher
 Figurenbeziehung in *Sonnensucher*.
 ```
 
-Die Dicke der Verbindungsstriche als Indikator für die Dauer der gemeinsamen Leinwandpräsenz variiert dabei je nach Figur. Insgesamt ist das durch ein gemeinsames Auftreten im Bild entstehende Netz der Figuren untereinander hier wesentlich dichter gestrickt. Lediglich Günter wurde z.B. nicht zusammen mit Fedossjev und Wera erfasst, und Wera nicht zusammen mit Günter. Dies könnte für eine deutlich intensivere Interaktion aller Figuren miteinander sprechen als bei den bisher betrachteten Filmen.
+Die Dicke der Verbindungsstriche als Indikator für die Dauer der gemeinsamen Leinwandpräsenz variiert dabei je nach Figur. Insgesamt ist das durch ein gemeinsames Auftreten im Bild entstehende Netz der Figuren untereinander hier wesentlich dichter gestrickt. Lediglich Günter wurde z.B. nicht zusammen mit Fedossjew und Wera erfasst, und Wera nicht zusammen mit Günter. Dies könnte für eine deutlich intensivere Interaktion aller Figuren miteinander sprechen als bei den bisher betrachteten Filmen.
 
 ```{figure} ../assets/auswertung/figurenbeziehungen_sonnensucher_2.png
 ---
 align: center
 width: 100%
 name: grafik_figurenbeziehungen_sonnensucher_2
-alt: Grafik zur Beziehung der Figur GFünter in Sonnensucher
+alt: Grafik zur Beziehung der Figur Günter in Sonnensucher
 ---
 Figurenbeziehung der Figur Günter in *Sonnensucher*.
 ```
 
-Auch hier sind die Visualisierungen mit Vorsicht zu behandeln und mit Bedacht zu interpretieren. Die Figurenerkennungen sind nicht unbedingt vollständig und nicht immer fehlerfrei. Dennoch werden wichtige Muster des gemeinsamen Auftretens von Figuren deutlich und können als Grundlage für Überlegungen bezüglich der Beziehung von Figuren untereinander dienen. Diese müssten wiederum an den konkreten Filmen untersucht und überprüft werden. Denn dass Figuren gemeinsam im Bild auftreten sagt noch nichts über die Art ihrer Beziehung untereinander aus. Letztlich muss auch hier der breitere Kontext in Form der Produktionsbedingungen und der politischen Lage zu Entstehungszeit des Films mit einbezogen werden.
+Auch hier sind die Visualisierungen mit Vorsicht zu behandeln und mit Bedacht zu interpretieren. Die Figurenerkennungen sind nicht unbedingt vollständig und nicht immer fehlerfrei. Dennoch werden wichtige Muster des gemeinsamen Auftretens von Figuren deutlich und können als Grundlage für Überlegungen bezüglich der Beziehung von Figuren untereinander dienen. Diese müssten wiederum an den konkreten Filmen untersucht und überprüft werden. Denn dass Figuren gemeinsam im Bild auftreten sagt noch nichts über die Art ihrer Beziehung untereinander aus. Letztlich muss auch hier der breitere Kontext in Form der Produktionsbedingungen und der politischen Lage zur Entstehungszeit des Films mit einbezogen werden.
 
 Hier konnte anhand einiger exemplarischer Visualisierungen nur eine kurze, sehr oberflächliche Auswertung stattfinden. Es sollte aber deutlich geworden sein, dass die automatisiert erstellten Annotationen für die Bearbeitung einer Fragestellung durchaus nützlich sein können. Quantitative Auswertungen können Auffälligkeiten sichtbar machen, die dann hinsichtlich ihrer Ursachen genauer untersucht werden müssen. Im besten Fall können sich neue Fragestellungen ergeben oder auch bisherige Annahmen untermauert und besser erfassbar gemacht werden.
 

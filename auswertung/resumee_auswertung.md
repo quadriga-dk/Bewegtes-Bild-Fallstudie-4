@@ -1,12 +1,12 @@
 # Resümee
-In diesem Kapitel werden Möglichkeiten der Auswertung der automatisiert erstellten Annotationen mithilfe von Visualisierungen dargestellt. Dabei werden folgenden Teilbereichen behandelt:
+In diesem Kapitel werden Möglichkeiten der Auswertung der automatisiert erstellten Annotationen mithilfe von Visualisierungen dargestellt. Dabei werden folgende Teilbereiche behandelt:
 
 ```{admonition} Keypoints
 :class: keypoint
 
 **Struktur der Annotationsdaten**
 
-In diesem Kapitel werden die im letzten Kapitel automatisiert erstellten Annotationsdaten zur Einstellungs- und Figurenerekennung mithilfe von Visualisierungen ausgewertet. Hierfür ist die Kenntnis der spezifischen Struktur der Annotationsdaten von grundlegender Bedeutung. Zu Beginn wird deshalb dargestellt, welche Werte die Annotationsdaten enthalten, wie diese zu lesen sind und welche Berechnungen mit den Werten durchgeführt werden können, etwa für eine quantitative Auswertung in Form einer statistischen Stilanalyse. 
+In diesem Kapitel werden die im letzten Kapitel automatisiert erstellten Annotationsdaten zur Einstellungs- und Figurenerkennung mithilfe von Visualisierungen ausgewertet. Hierfür ist die Kenntnis der spezifischen Struktur der Annotationsdaten von grundlegender Bedeutung. Zu Beginn wird deshalb dargestellt, welche Werte die Annotationsdaten enthalten, wie diese zu lesen sind und welche Berechnungen mit den Werten durchgeführt werden können, etwa für eine quantitative Auswertung in Form einer statistischen Stilanalyse. 
 
 **Visualisierung der Annotationsdaten mit Python-Skripten**
 

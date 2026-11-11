@@ -48,7 +48,7 @@
 </tr>
 <tr>
 <td><b>Website:</b></td>
-<td><a href="https://www.ntnu.edu/employees/skadi.loist" class="external-link" target="_blank">Mitarbeiter:innen-Seite Norwegian University for Science and Technology (NTNU)</td>
+<td><a href="https://www.ntnu.edu/employees/skadi.loist" class="external-link" target="_blank">Mitarbeiter:innen-Seite Norwegian University for Science and Technology (NTNU)</a></td>
 </tr>
 </table>
 
@@ -64,12 +64,12 @@
 </tr>
 <tr>
 <td><b>Website:</b></td>
-<td><a href="https://www.filmuniversitaet.de/portrait/person/lena-gieseke" class="external-link" target="_blank">Mitarbeiterinnen-Seite Filmuniversität</td>
+<td><a href="https://www.filmuniversitaet.de/portrait/person/lena-gieseke" class="external-link" target="_blank">Mitarbeiterinnen-Seite Filmuniversität</a></td>
 </tr>
 </table>
 
 
-## sonstige beteiligte Personen
+## Sonstige beteiligte Personen
 
 ### Hannes Schnaitter <span style="font-size:8pt">(er/ihm/sein)</span> <a href="https://orcid.org/0000-0002-1602-6032" target="_blank"><img src="../assets/ORCID-iD_icon_24x24.png" alt="ORCID"></a>
 
@@ -104,7 +104,7 @@
 </tr>
 <tr>
 <td><b>Website:</b></td>
-<td><a href="https://www.uni-potsdam.de/de/multimedia/team/wissenschaftliches-personal/evgenia-samoilova-phd" class="external-link" target="_blank">Mitarbeiterinnen-Seite Universität Potsdam</td>
+<td><a href="https://www.uni-potsdam.de/de/multimedia/team/wissenschaftliches-personal/evgenia-samoilova-phd" class="external-link" target="_blank">Mitarbeiterinnen-Seite Universität Potsdam</a></td>
 </tr>
 <tr>
 <td><b>GitHub:</b></td>

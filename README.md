@@ -20,6 +20,6 @@ Sie können dieses JupyterBook zu Lehr- und Lernzwecken verwenden. Sie können d
 
 QUADRIGA ist ein Verbundprojekt mehrerer Institutionen, das von der Universität Potsdam koordiniert wird. Partner sind die Fachhochschule Potsdam, die Filmuniversität Babelsberg KONRAD WOLF, das Fraunhofer FOKUS, die Freie Universität Berlin, die Humboldt-Universität zu Berlin, die Technische Universität Berlin und die Gesellschaft für Informatik.
 
-Fragen und Feedback zu dieser OER können Sie uns sowohl über GitHub Issues als auch über Email zukommen lassen.
+Fragen und Feedback zu dieser OER können Sie uns sowohl über GitHub Issues als auch über E-Mail zukommen lassen.
 
 Bei Fragen zum Projekt wenden Sie sich gerne an die [Projektkoordination](mailto:t.schick@filmuniversitaet.de?subject=[GitHub]%20Bewegtes_Bild-Fallstudie-4).

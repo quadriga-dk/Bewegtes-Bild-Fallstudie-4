@@ -1,5 +1,5 @@
 # Fragestellungen zur Fallstudie
-Nach der Darstellung verschiedener filmanalytischer Herangehensweisen und quantitativer Ansätze in der Filmwissenschaft sollen in diesem Kapitel mögliche Fragestellung für unsere Fallstudie entwickelt werden. Im Zentrum der OER soll das Themenfeld der Workflows für die automatisierte Annotation von Filmen stehen. Die Voraussetzungen für die automatisierte Filmannotation, deren Möglichkeiten und Grenzen sollen dargestellt und reflektiert werden. Als Ausgangspunkt liegen hier zunächst zwei grundlegende Fragen vor:
+Nach der Darstellung verschiedener filmanalytischer Herangehensweisen und quantitativer Ansätze in der Filmwissenschaft sollen in diesem Kapitel mögliche Fragestellungen für unsere Fallstudie entwickelt werden. Im Zentrum der OER soll das Themenfeld der Workflows für die automatisierte Annotation von Filmen stehen. Die Voraussetzungen für die automatisierte Filmannotation, deren Möglichkeiten und Grenzen sollen dargestellt und reflektiert werden. Als Ausgangspunkt liegen hier zunächst zwei grundlegende Fragen vor:
 
 - welche Annotationsdaten sollen automatisiert erhoben werden?
 - wie können diese Annotationen automatisiert werden? Also welche Modelle und Algorithmen können für die automatisierte Annotation auf welche Weise verwendet werden?
@@ -14,7 +14,7 @@ Ansätze zur quantitativen Stilanalyse haben wir im vorigen Kapitel vorgestellt.
 - die Länge der einzelnen Einstellungen in einem Film
 - die Dauer der kürzesten und der längsten Einstellung in einem Film
 - die durchschnittliche Einstellungslänge (Average Shot Length - ASL): Filmlänge geteilt durch die Anzahl der Einstellungen
-- die mittlere oder auch mediane Einstellungslänge (Median Shot Lenght - MSL): Der Wert, der genau in der Mitte aller Einstellungslängen liegt; dadurch werden Ausreißer nach unten und oben vermieden
+- die mittlere oder auch mediane Einstellungslänge (Median Shot Length - MSL): Der Wert, der genau in der Mitte aller Einstellungslängen liegt; dadurch werden Ausreißer nach unten und oben vermieden
 - die Einstellungsdichte: Zahl der Einstellungswechsel in einem bestimmten Zeitraum
 
 Anhand dieser Werte ist die Bearbeitung verschiedener Fragestellungen zu den Einstellungslängen bei den Filmen Konrad Wolfs möglich:
@@ -57,6 +57,6 @@ Abschließend sei noch exemplarisch auf einige weitere interessante Größen und
 - von welcher Art sind die Einstellungsübergänge (harter Schnitt, Überblendung, Wischblende etc.)
 - welche Objekte oder Handlungsweisen treten wiederholt in Filmen auf
 
- Mit der Annotation von Einstellungsübergängen und Auftreten von Figuren werden Daten erhoben, die für die Bearbeitung unterschiedlicher Fragestellungen dienen können. Wir haben uns für diese beiden Annotationsformen entschieden, da die Bestimmung der Einstellungslänge eine Grundlage für viele weitere Annotationen sein kann und die Figurenannotation in vielen Kontexten einsetzbar ist. Zudem sind beide Annotationsformen technisch vergleichsweise einfach umsetzbar. Bei der Auswertung der erhobenen Annotationen werden wir in der Fallstudie explorativ vorgehen, also die Daten hinsichtlich möglicher auftretender Muster untersuchen. Bei diesem Vorgehen muss nicht direkt eine einzelne, spezifische Fragestellung der Auswertung vorausgehen.
+Mit der Annotation von Einstellungsübergängen und Auftreten von Figuren werden Daten erhoben, die für die Bearbeitung unterschiedlicher Fragestellungen dienen können. Wir haben uns für diese beiden Annotationsformen entschieden, da die Bestimmung der Einstellungslänge eine Grundlage für viele weitere Annotationen sein kann und die Figurenannotation in vielen Kontexten einsetzbar ist. Zudem sind beide Annotationsformen technisch vergleichsweise einfach umsetzbar. Bei der Auswertung der erhobenen Annotationen werden wir in der Fallstudie explorativ vorgehen, also die Daten hinsichtlich möglicher auftretender Muster untersuchen. Bei diesem Vorgehen muss nicht direkt eine einzelne, spezifische Fragestellung der Auswertung vorausgehen.
 
 Theoretische und technische Fragen zu Computer Vision, die eng mit der automatisierten Annotation zusammenhängen, werden wir im [folgenden großen Kapitel](../vision/einleitung.md) angehen.
