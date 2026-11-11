@@ -1,5 +1,5 @@
 # Resümee
-In diesem Kapitel werden die Funktionsweisen von Computer Vision dargestellt und deren Einsatzmöglichkeiten für die filmanalytische Praxis thematisiert. Dabei werden folgenden Teilbereichen behandelt:
+In diesem Kapitel werden die Funktionsweisen von Computer Vision dargestellt und deren Einsatzmöglichkeiten für die filmanalytische Praxis thematisiert. Dabei werden folgende Teilbereiche behandelt:
 
 ```{admonition} Keypoints
 :class: keypoint
@@ -24,4 +24,4 @@ Automatisierte Annotation mit Computer Vision kann die filmanalytische Arbeit un
 
 ```
 
-Auch wenn sich beim Einsatz von Computer Vision für die Filmanalyse Fehler in der Erkennungen ergeben zeigt sich dennoch, dass durch die automatisierte Annotation von Filmen neue filmanalytische Möglichkeiten und Perspektiven entstehen können.
+Auch wenn sich beim Einsatz von Computer Vision für die Filmanalyse Fehler in der Erkennung ergeben, zeigt sich dennoch, dass durch die automatisierte Annotation von Filmen neue filmanalytische Möglichkeiten und Perspektiven entstehen können.
