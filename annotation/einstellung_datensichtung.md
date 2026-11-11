@@ -20,7 +20,7 @@ Für die Sichtung in VIAN (oder einem anderen Annotationsprogramm) wurde vom Jup
 
 ````{admonition} Hinweis zum Import von .eaf-Dateien in VIAN
 :class: hinweis, dropdown
-Starten Sie VIAN und wählen Sie durch einen Klick auf "Video öffnen" die entsprechende Videodatei aus, für die die Annotationen in der `.eaf` Datei importiert werden sollen.
+Starten Sie VIAN und wählen Sie durch einen Klick auf "Video öffnen" die entsprechende Videodatei aus, für die die Annotationen in der `.eaf`-Datei importiert werden sollen.
 
 ```{figure} ../assets/annotation/VIAN_open_video.png
 ---
@@ -112,7 +112,7 @@ Durch das Experimentieren mit unterschiedlichen Schwellenwerten lassen sich ggf.
 
 ``````{admonition} Übung
 :class: exercise
-Versuchen Sie, die aufgeführten Fehler in einem der Trailer durch dessen erneute Auswertung mit einem anderen Schwellenwert zu beseitigen. Die Trailer zu *Mama, ich lebe* und *Solo Sunny* liegen dem eingangs erwähnten`.zip`-Archiv zu diesem Abschnitt im Ordner `Trailer` bei.
+Versuchen Sie, die aufgeführten Fehler in einem der Trailer durch dessen erneute Auswertung mit einem anderen Schwellenwert zu beseitigen. Die Trailer zu *Mama, ich lebe* und *Solo Sunny* liegen dem eingangs erwähnten `.zip`-Archiv zu diesem Abschnitt im Ordner `Trailer` bei.
 
 
 `````{admonition}  Lösung
