@@ -14,7 +14,7 @@ Visualisierung der von Arnold und Tilton entwickelten Distant Viewing Pipeline {
 
 Für die hier vorgestellten Verfahren orientieren wir uns außerdem am <a href="https://github.com/distant-viewing/dvt" class="external-link" target="_blank">*Distant Viewing Toolkit*</a> (vgl. auch Kapitel zu [Einsatzbereichen für die Filmanalyse](../vision/einsatz.md)) und an den dazugehörigen <a href="https://github.com/distant-viewing/dvt/blob/main/tutorials/Distant_Viewing_Tutorial_2_Network_Era_Sitcoms_and_Visual_Style.ipynb" class="external-link" target="_blank">Jupyter Notebooks</a>. Wie auch das *Distant Viewing Toolkit* verwenden wir zur automatisierten Erstellung der Annotationen Skripte in der Programmiersprache <a href="https://www.python.org/" class="external-link" target="_blank">Python</a>. Python ist für diese Aufgaben sehr gut geeignet, weit verbreitet und gut dokumentiert.
 
-Unser Workflow in den beiden Jupyter Notebooks zur Einstellungs- und Figurenerkennung gliedert die Analyse der Videodateien in mehrere Schritte. Zuerst werden die benötigten Parameter für die Einstellungen des Notebooks festgelegt (z.B. angelegte Schwellenwerte) und die technische Arbeitsumgebung vorbereitet. Dann werden die Daten eingelesen und analysiert. Zum Schluss werden die Ergebnisse aufbereitet und exportiert.
+Unser Workflow in den beiden Jupyter Notebooks zur Einstellungs- und Figurenerkennung gliedert die Analyse der Videodateien in mehrere Schritte. Zuerst werden die benötigten Parameter für die Einstellungen des Notebooks festgelegt (z. B. angelegte Schwellenwerte) und die technische Arbeitsumgebung vorbereitet. Dann werden die Daten eingelesen und analysiert. Zum Schluss werden die Ergebnisse aufbereitet und exportiert.
 
 Die hier für diese Schritte verwendeten Bezeichnungen finden sich auch in den Jupyter Notebooks wieder, sodass jeder der im Folgenden beschriebenen Abschnitte einer konkreten Funktion bzw. einem konkreten Arbeitsschritt im Jupyter Notebook zugeordnet werden kann.
 
@@ -71,7 +71,7 @@ Nachdem die Videodateien vorbereitet worden sind, wird das ausgewählte Analysev
 Hier unterscheidet sich das Vorgehen je nach dem gewählten Verfahren bzw. Modell erheblich, etwa dahingehend, ob ein Film zuerst in Frames aufgeteilt werden muss oder nicht. Parameter und Schwellenwerte kommen insbesondere während dieses Schritts zum Einsatz und bestimmen maßgeblich das Ergebnis der Analyse.
 
 ### Tabellarische Aufbereitung des Ergebnisses
-Analyseergebnisse liegen zunächst oft in einer Form vor, die sich nur schwer weiterverarbeiten lässt, etwa als Liste von Werten. Bevor die Ergebnisse exportiert und verwendet werden können, z.B. für die weitere Analyse in anderen Tools, müssen diese daher in ein tabellarisches Format transformiert werden. 
+Analyseergebnisse liegen zunächst oft in einer Form vor, die sich nur schwer weiterverarbeiten lässt, etwa als Liste von Werten. Bevor die Ergebnisse exportiert und verwendet werden können, z. B. für die weitere Analyse in anderen Tools, müssen diese daher in ein tabellarisches Format transformiert werden. 
 
 ### Berechnung der Analysemetadaten
 Anschließend werden Metadaten zum Analyseergebnis gesammelt und berechnet.

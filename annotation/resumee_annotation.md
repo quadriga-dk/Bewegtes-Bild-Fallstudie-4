@@ -10,7 +10,7 @@ Für die automatisierte Annotation von Film- und Videodateien haben wir einen Wo
 
 **Auswahl von Modellen**
 
-Für unsere Fallstudie haben wir uns für die Annotation von Einstellungsübergängen und das Auftreten von Figuren in Filmen entschieden. Wir haben beschrieben, wie nach geeigneten Modellen zur Film-Annotation recherchiert werden kann und welche Kriterien dabei beachtet werden sollten, z.B. der ursprüngliche Einsatzbereich und der Entstehungskontext. Für die Einstellungs-Annotation haben wir uns für das TransNetV2 Modell entschieden, das weit verbreitet und gut dokumentiert ist, zudem liefert es gute Ergebnisse. Für die Figurenerkennung bzw. die dafür notwendige Gesichtsanalyse kommen Modell-Pakete von Insightface zum Einsatz. Insightface kombiniert verschiedene Pakete und liefert eine sehr gute Genauigkeit bei der Erkennung und Zuordnung der Gesichter bzw. Figuren.
+Für unsere Fallstudie haben wir uns für die Annotation von Einstellungsübergängen und das Auftreten von Figuren in Filmen entschieden. Wir haben beschrieben, wie nach geeigneten Modellen zur Film-Annotation recherchiert werden kann und welche Kriterien dabei beachtet werden sollten, z. B. der ursprüngliche Einsatzbereich und der Entstehungskontext. Für die Einstellungs-Annotation haben wir uns für das TransNetV2 Modell entschieden, das weit verbreitet und gut dokumentiert ist, zudem liefert es gute Ergebnisse. Für die Figurenerkennung bzw. die dafür notwendige Gesichtsanalyse kommen Modell-Pakete von Insightface zum Einsatz. Insightface kombiniert verschiedene Pakete und liefert eine sehr gute Genauigkeit bei der Erkennung und Zuordnung der Gesichter bzw. Figuren.
 
 
 **Python-Skripte zur Einstellungs- und Figurenerkennung**

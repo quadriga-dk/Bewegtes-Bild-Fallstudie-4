@@ -46,7 +46,7 @@ Anhand dieser Werte kann wiederum verschiedenen Fragen in Bezug auf einen oder m
     + kann das Auftreten von Figuren mit Narrationsstrukturen oder Genres in Verbindung gebracht werden
 - handelt es sich um 'Ensemblefilme' oder Filme mit einzelnen Protagonist:innen
 
-Aus den möglichen Fragen wird bereits deutlich, dass hier an einigen Stellen die Annotationen zu Einstellungslängen und Figurenpräsenz miteinander in Beziehung gesetzt werden sollten - z.B. bei der Frage, ob Figuren in einer Einstellung oder Szene gemeinsam auftreten. Wichtige Vorüberlegungen beim Vorgehen sind dabei, für welche Figuren das Auftreten in einem Film überhaupt bestimmt werden soll. Wie wir im [Kapitel zu Computer Vision](../vision/einleitung.md) und den von uns angewendeten Modellen noch zeigen werden, ist eine Bestimmung für alle Figuren eines Films technisch noch nicht möglich bzw. technisch zu aufwendig.
+Aus den möglichen Fragen wird bereits deutlich, dass hier an einigen Stellen die Annotationen zu Einstellungslängen und Figurenpräsenz miteinander in Beziehung gesetzt werden sollten - z. B. bei der Frage, ob Figuren in einer Einstellung oder Szene gemeinsam auftreten. Wichtige Vorüberlegungen beim Vorgehen sind dabei, für welche Figuren das Auftreten in einem Film überhaupt bestimmt werden soll. Wie wir im [Kapitel zu Computer Vision](../vision/einleitung.md) und den von uns angewendeten Modellen noch zeigen werden, ist eine Bestimmung für alle Figuren eines Films technisch noch nicht möglich bzw. technisch zu aufwendig.
 
 Abschließend sei noch exemplarisch auf einige weitere interessante Größen und Fragen hingewiesen, auf die wir jedoch in der Fallstudie nicht weiter eingehen werden:
 - welche Einstellungsgrößen treten auf

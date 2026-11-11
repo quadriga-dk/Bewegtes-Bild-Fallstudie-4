@@ -50,7 +50,7 @@ alt: Grafik mit der MSL aller Filme Konrad Wolfs chronologisch, Sterne und Goya 
 MSL der Filme Konrad Wolfs, chronologisch sortiert.
 ```
 
-An dieser Stelle wäre es sinnvoll, von der Betrachtung aller Filme wieder zurück zu einzelnen Filmen zu gehen, die sich in der Grafik mit markanten Werten abheben - wie z.B. *Sterne* oder *Goya*. Den Ursachen für diese auffälligen Werte sollte anhand einer genaueren Analyse der Filme und der Untersuchung des Produktionskontextes auf den Grund gegangen werden. Wo im Film ist etwa die längste Einstellung angesiedelt? Welche konkreten Muster der Abfolge von Einstellungslängen hat der Film vorzuweisen?
+An dieser Stelle wäre es sinnvoll, von der Betrachtung aller Filme wieder zurück zu einzelnen Filmen zu gehen, die sich in der Grafik mit markanten Werten abheben - wie z. B. *Sterne* oder *Goya*. Den Ursachen für diese auffälligen Werte sollte anhand einer genaueren Analyse der Filme und der Untersuchung des Produktionskontextes auf den Grund gegangen werden. Wo im Film ist etwa die längste Einstellung angesiedelt? Welche konkreten Muster der Abfolge von Einstellungslängen hat der Film vorzuweisen?
 
 Hierfür können wiederum andere Visualisierungen mit den Annotationsdaten für einzelne Filme erstellt werden, etwa zur Einstellungsdichte in einem Film. Zudem würde es sich anbieten, hier wie schon bei der [Überprüfung der Einstellungserkennung](../annotation/einstellung_datensichtung.md) mit dem Annotationstool VIAN zu arbeiten. In dieses können die Annotationsdaten zur Einstellungserkennung eingelesen und mit dem konkret annotierten Film abgeglichen werden. Mit der Sichtung im VIAN könnten auch Ungenauigkeiten und Fehler in den Annotationsdaten erkannt werden.
 
@@ -96,7 +96,7 @@ Bei *Sonnensucher* bietet sich wiederum ein anderes Bild. Hier scheint die Dauer
 
 Hier sind also deutliche Unterschiede in den Mustern des zeitlichen Auftretens von Figuren im Film zu erkennen, die vermutlich auch mit den behandelten Themen in den Filmen zusammenhängen. *Sonnensucher* ist eher ein Ensemblefilm, in dem DDR-Arbeiter:innen für den politisch wichtigen Uranabbau mit den sowjetischen Soldat:innen zusammenarbeiten müssen. In *Solo Sunny* sucht Sunny allein als kompromisslose Künstlerin ihren Weg im Leben und in der Gesellschaft.
 
-Auch hier würde es sich wieder anbieten, an dieser Stelle zur genauen Analyse der einzelnen Filme zurückzukehren, indem etwa die Annotationsdaten zu den Figuren in VIAN eingelesen werden. Hier kann genauer betrachtet werden, welche Figuren wann und aus welchen Gründen gemeinsam im Bild zu sehen sind. Auch Annotationsfehler werden dadurch sichtbar wie z.B. in *Solo Sunny*, bei dem der Bandleader Hubert am Ende fälschlicherweise im Bild der Szene erkannt wird, in der Sunny auf ihre möglicherweise neue Band trifft.
+Auch hier würde es sich wieder anbieten, an dieser Stelle zur genauen Analyse der einzelnen Filme zurückzukehren, indem etwa die Annotationsdaten zu den Figuren in VIAN eingelesen werden. Hier kann genauer betrachtet werden, welche Figuren wann und aus welchen Gründen gemeinsam im Bild zu sehen sind. Auch Annotationsfehler werden dadurch sichtbar wie z. B. in *Solo Sunny*, bei dem der Bandleader Hubert am Ende fälschlicherweise im Bild der Szene erkannt wird, in der Sunny auf ihre möglicherweise neue Band trifft.
 
 
 ## Visualisierung der Figurenbeziehungen
@@ -198,7 +198,7 @@ alt: Grafik zur Beziehung der Figur in Sonnensucher
 Figurenbeziehung in *Sonnensucher*.
 ```
 
-Die Dicke der Verbindungsstriche als Indikator für die Dauer der gemeinsamen Leinwandpräsenz variiert dabei je nach Figur. Insgesamt ist das durch ein gemeinsames Auftreten im Bild entstehende Netz der Figuren untereinander hier wesentlich dichter gestrickt. Lediglich Günter wurde z.B. nicht zusammen mit Fedossjew und Wera erfasst, und Wera nicht zusammen mit Günter. Dies könnte für eine deutlich intensivere Interaktion aller Figuren miteinander sprechen als bei den bisher betrachteten Filmen.
+Die Dicke der Verbindungsstriche als Indikator für die Dauer der gemeinsamen Leinwandpräsenz variiert dabei je nach Figur. Insgesamt ist das durch ein gemeinsames Auftreten im Bild entstehende Netz der Figuren untereinander hier wesentlich dichter gestrickt. Lediglich Günter wurde z. B. nicht zusammen mit Fedossjew und Wera erfasst, und Wera nicht zusammen mit Günter. Dies könnte für eine deutlich intensivere Interaktion aller Figuren miteinander sprechen als bei den bisher betrachteten Filmen.
 
 ```{figure} ../assets/auswertung/figurenbeziehungen_sonnensucher_2.png
 ---

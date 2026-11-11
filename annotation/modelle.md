@@ -1,9 +1,9 @@
 # Auswahl der Modelle
-Die Auswahl eines Machine-Learning-Modells hängt davon ab, welche Aufgabe es erfüllen soll und wie die Ergebnisse weiterverwendet werden. Existierende Literatur wie die im vorherigen Abschnitt erwähnten Fallstudien des *Distant Viewing Labs* können dabei helfen, sich einen ersten Überblick über die Möglichkeiten der Machine-Learning-gestützten Annotation zu verschaffen. Je nach Fragestellung können auch Modelle genutzt werden, die nicht zur Annotation von Videomaterial vorgesehen sind, sondern z.B. für die Auswertung von Bildern konzipiert wurden. Darüber hinaus können im Fall von Filmen etwa auch Ton und Untertitel mithilfe von Machine-Learning-Modellen ausgewertet werden.
+Die Auswahl eines Machine-Learning-Modells hängt davon ab, welche Aufgabe es erfüllen soll und wie die Ergebnisse weiterverwendet werden. Existierende Literatur wie die im vorherigen Abschnitt erwähnten Fallstudien des *Distant Viewing Labs* können dabei helfen, sich einen ersten Überblick über die Möglichkeiten der Machine-Learning-gestützten Annotation zu verschaffen. Je nach Fragestellung können auch Modelle genutzt werden, die nicht zur Annotation von Videomaterial vorgesehen sind, sondern z. B. für die Auswertung von Bildern konzipiert wurden. Darüber hinaus können im Fall von Filmen etwa auch Ton und Untertitel mithilfe von Machine-Learning-Modellen ausgewertet werden.
 
 
 ## Recherche
-Nachdem ein grundlegendes Verfahren wie z.B. die Erkennung von Figuren in Videodateien ausgewählt wurde, kann auf unterschiedlichen Plattformen anhand von englischen Stichworten nach passenden Komponenten für das Verfahren gesucht werden. In der Vorbereitung zu dieser OER haben wir u.a. diese Stichworte für die Recherche verwendet:
+Nachdem ein grundlegendes Verfahren wie z. B. die Erkennung von Figuren in Videodateien ausgewählt wurde, kann auf unterschiedlichen Plattformen anhand von englischen Stichworten nach passenden Komponenten für das Verfahren gesucht werden. In der Vorbereitung zu dieser OER haben wir u.a. diese Stichworte für die Recherche verwendet:
 
 - Shot detection
 - Face detection

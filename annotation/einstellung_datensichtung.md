@@ -106,7 +106,7 @@ alt: Der Fehler in Solo Sunny.
 Der Fehler in *Solo Sunny*.
 ```
 
-Es zeigt sich also, dass die Ergebnisse automatisiert erstellter Annotationen immer überprüft und ggf. ergänzt und korrigiert werden müssen. In den oben dargestellten Trailer-Beispielen ergeben sich z.B. insbesondere Probleme bei der Einstellungserkennung, wenn die aufeinander folgenden Frames unterschiedlicher Einstellungen für die Prozesse der Computer Vision eine zu große Ähnlichkeit aufweisen oder wenn Übergänge durch starke Bewegungen im Bild nicht erfasst werden.
+Es zeigt sich also, dass die Ergebnisse automatisiert erstellter Annotationen immer überprüft und ggf. ergänzt und korrigiert werden müssen. In den oben dargestellten Trailer-Beispielen ergeben sich z. B. insbesondere Probleme bei der Einstellungserkennung, wenn die aufeinander folgenden Frames unterschiedlicher Einstellungen für die Prozesse der Computer Vision eine zu große Ähnlichkeit aufweisen oder wenn Übergänge durch starke Bewegungen im Bild nicht erfasst werden.
 
 Durch das Experimentieren mit unterschiedlichen Schwellenwerten lassen sich ggf. bessere Erkennungsergebnisse erzielen. Die mit dem Notebook bzw. Computer Vision erstellten Annotationsergebnisse werden dabei nie vollkommen fehlerfrei sein. Dennoch lassen sich Ergebnisse erzielen, die exakt genug sind, um mit ihnen weiterzuarbeiten. 
 
@@ -199,7 +199,7 @@ Entpacken Sie ggf. die Exportdateien in einen Ordner Ihrer Wahl. Importieren Sie
 Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wiederholen Sie die Annotation mit anderen Schwellenwerten und Trailern und vergleichen Sie die Erkennungsqualität. Welche Schwellenwerte führen zu den besten Ergebnissen?
 
 
-Ein Schwellenwert von 0.25 bereinigt z.B. die Fehler im *Mama, ich lebe* Trailer. Im Fall des Trailers zu *Solo Sunny* führt derselbe Schwellenwert allerdings zu einer falsch erkannten Einstellung. So wurde etwa Einstellung 53 fälschlicherweise aufgeteilt, da plötzlich ein grelles Licht im Bild sichtbar wird:
+Ein Schwellenwert von 0.25 bereinigt z. B. die Fehler im *Mama, ich lebe* Trailer. Im Fall des Trailers zu *Solo Sunny* führt derselbe Schwellenwert allerdings zu einer falsch erkannten Einstellung. So wurde etwa Einstellung 53 fälschlicherweise aufgeteilt, da plötzlich ein grelles Licht im Bild sichtbar wird:
 
 ```{figure} ../assets/annotation/SoloSunny_Fehler2.mp4
 ---
