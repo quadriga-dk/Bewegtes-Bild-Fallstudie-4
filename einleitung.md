@@ -21,8 +21,7 @@ alt: Netzwerk der Figuren aus *Der geteilte Himmel* (Konrad Wolf, 1964)
     Geben Sie uns Feedback
 </a>
 
-Mit Ihren Rückmeldungen können wir unser Template gezielt an Ihre Bedürfnisse anpassen.
-
+Mit Ihren Rückmeldungen können wir unser interaktives Lehrbuch gezielt an Ihre Bedürfnisse anpassen.
 
 ```
 ````
