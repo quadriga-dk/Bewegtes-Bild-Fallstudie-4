@@ -22,4 +22,4 @@ QUADRIGA ist ein Verbundprojekt mehrerer Institutionen, das von der Universität
 
 Fragen und Feedback zu dieser OER können Sie uns sowohl über GitHub Issues als auch über E-Mail zukommen lassen.
 
-Bei Fragen zum Projekt wenden Sie sich gerne an die [Projektkoordination](mailto:t.schick@filmuniversitaet.de?subject=[GitHub]%20Bewegtes_Bild-Fallstudie-4).
+Bei Fragen zum Projekt wenden Sie sich gerne an die [Projektkoordination](mailto:quadriga-helpdesk@listserv.dfn.de?subject=[GitHub]%20Bewegtes_Bild-Fallstudie-4).
