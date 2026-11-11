@@ -108,7 +108,7 @@ Wie im Abschnitt [Auswahl der Modelle](modelle.md#auswahl-für-die-gesichtsanaly
 
 ## Analysematerial
 
-Auch für dieses Jupyter Notebook stellen wir als Testmaterial den Trailer zum Film Konrad Wolfs *Der geteilte Himmtel* zur Verfügung.
+Auch für dieses Jupyter Notebook stellen wir als Testmaterial den Trailer zum Film Konrad Wolfs *Der geteilte Himmel* zur Verfügung.
 
 <figure style="max-width: 640px; margin: 1.5em auto; text-align: center;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0;">
