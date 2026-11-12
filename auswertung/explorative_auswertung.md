@@ -19,7 +19,7 @@ Diese Werte werden als Balkendiagramme in einzelnen Grafiken untereinander ausge
   style="border:0;">
 </iframe>
 
-Mit dem Scrollbalken am rechten Rand kann durch die Grafiken navigiert werden. Durch Bewegung des Mauszeigers über den Balken für den jeweiligen Film wird dessen Erscheinungsjahr und der dargestellte Wert mit der jeweiligen Maßeinheit angezeigt. Unter jedem Balkendiagramm kann die Art der Sortierung der Ergebnisse ausgewählt werden: nach Werten, alphabetisch oder chronologisch.
+Mit dem Scrollbalken am rechten Rand kann durch die Grafiken navigiert werden. Durch Bewegung des Mauszeigers über den Balken für den jeweiligen Film werden dessen Erscheinungsjahr und der dargestellte Wert mit der jeweiligen Maßeinheit angezeigt. Unter jedem Balkendiagramm kann die Art der Sortierung der Ergebnisse ausgewählt werden: nach Werten, alphabetisch oder chronologisch.
 
 Starten wir mit der Sortierung nach Werten. Was lässt sich beobachten? *Sterne* weist sowohl bezüglich der ASL als auch der MSL die höchsten Werte auf. Auch bei der längsten Einstellung führt der Film die Grafik an. Bei der kürzesten Einstellung und der Filmlaufzeit befindet sich *Sterne* verglichen mit den restlichen Filmen im unteren Drittel.
 
@@ -27,7 +27,7 @@ Bei *Goya* fällt auf, dass die Anzahl der Einstellungen am größten von allen 
 
 *Der geteilte Himmel* wurde bereits oft in unserer OER erwähnt und dessen Trailer in den Notebooks zur Einstellungs- und Figurenerkennung exemplarisch annotiert. Bei ASL und MSL und der Laufzeit liegt der Film hier im Mittelfeld aller Filme. Bei der längsten und bei der kürzesten Einstellung liegt *Der geteilte Himmel* im unteren Bereich bezogen auf alle untersuchten Filme.
 
-Geht man zur chronologischen Sortierung über wird erkennbar, dass die ASL und MSL mit steigendem Erscheinungsjahr tendenziell immer kürzer werden. Hier heben sich *Sterne* und *Goya* ebenfalls ab:  *Sterne* mit vergleichsweise hohen Werten, *Goya* mit vergleichsweise niedrigen Werten.
+Geht man zur chronologischen Sortierung über, wird erkennbar, dass die ASL und MSL mit steigendem Erscheinungsjahr tendenziell immer kürzer werden. Hier heben sich *Sterne* und *Goya* ebenfalls ab: *Sterne* mit vergleichsweise hohen Werten, *Goya* mit vergleichsweise niedrigen Werten.
 
 ```{figure} ../assets/auswertung/einstellungen_asl_chrono.png
 ---
@@ -80,7 +80,7 @@ alt: Grafik zur Screentime der Figuren in Solo Sunny
 Grafik zur Screentime der Figuren in *Solo Sunny*.
 ```
 
-Wechselt man zur Visualisierung von *Solo Sunny* wird sofort deutlich, dass hier Sunny die dominierende Figur ist. Sie ist fast den gesamten Film über präsent. Nach Sunny folgen mit deutlich weniger Auftritten Ralph und Harry, die nie zusammen im Bild zu sehen sind, aber wichtige Bezugspunkte zu Sunny bilden. Neben Harry tritt auch Christine allein zusammen mit Sunny auf, sie ist eine alte Freundin von ihr. Norbert, Hubert, Bernd und Benno sind als Musiker in Sunnys Band oft gemeinsam präsent.
+Wechselt man zur Visualisierung von *Solo Sunny*, wird sofort deutlich, dass hier Sunny die dominierende Figur ist. Sie ist fast den gesamten Film über präsent. Nach Sunny folgen mit deutlich weniger Auftritten Ralph und Harry, die nie zusammen im Bild zu sehen sind, aber wichtige Bezugspunkte zu Sunny bilden. Neben Harry tritt auch Christine allein zusammen mit Sunny auf, sie ist eine alte Freundin von ihr. Norbert, Hubert, Bernd und Benno sind als Musiker in Sunnys Band oft gemeinsam präsent.
 
 ```{figure} ../assets/auswertung/figurenpraesenz_sonnensucher.png
 ---
@@ -92,7 +92,7 @@ alt: Grafik zur Screentime der Figuren in Sonnensucher
 Grafik zur Screentime der Figuren in *Sonnensucher*.
 ```
 
-Bei *Sonnensucher* bietet sich wiederum ein anderes Bild. Hier scheint die Dauer des Auftretens der Figuren Beier, Lutz, Jupp und Sergej im Bild verteilt über den Film sehr ähnlich zu sein, auch wenn sie oft zu unterschiedlichen Zeitpunkten zu sehen sind. Hier kann also von einem Film mit mehreren, gemäß der des zeitlichen Auftretens im Film gleichberechtigten Protagonist:innen ausgegangen werden. Günter und Emmi sind als wichtige Nebenfiguren recht häufig präsent, Weirauch und Wera eher seltener.
+Bei *Sonnensucher* bietet sich wiederum ein anderes Bild. Hier scheint die Dauer des Auftretens der Figuren Beier, Lutz, Jupp und Sergej im Bild verteilt über den Film sehr ähnlich zu sein, auch wenn sie oft zu unterschiedlichen Zeitpunkten zu sehen sind. Hier kann also von einem Film mit mehreren, gemäß der Dauer des zeitlichen Auftretens im Film gleichberechtigten Protagonist:innen ausgegangen werden. Günter und Emmi sind als wichtige Nebenfiguren recht häufig präsent, Weirauch und Wera eher seltener.
 
 Hier sind also deutliche Unterschiede in den Mustern des zeitlichen Auftretens von Figuren im Film zu erkennen, die vermutlich auch mit den behandelten Themen in den Filmen zusammenhängen. *Sonnensucher* ist eher ein Ensemblefilm, in dem DDR-Arbeiter:innen für den politisch wichtigen Uranabbau mit den sowjetischen Soldat:innen zusammenarbeiten müssen. In *Solo Sunny* sucht Sunny allein als kompromisslose Künstlerin ihren Weg im Leben und in der Gesellschaft.
 
@@ -109,7 +109,7 @@ Nun soll die Visualisierung zu den Figurenbeziehungen betrachtet werden. Zu sehe
   style="border:0;">
 </iframe>
 
-Die Anzeige der einzelnen Filme kann hier im Auswahlmenü am rechten Rand durch die Auswahlmenüs "Data Selection" -> "Graph" ausgewählt werden. Die Bedeutung der einzelnen Einstellungsmöglichkeiten im rechten Menü können hier nicht weiter besprochen werden, experimentieren Sie aber gerne mit verschiedenen Einstellungen. Mit einem Klick auf "Reset" können Sie jeweils zum Ausgangszustand der Visualisierung zurückkehren.
+Die Anzeige der einzelnen Filme kann hier im Auswahlmenü am rechten Rand durch die Auswahlmenüs "Data Selection" -> "Graph" ausgewählt werden. Die Bedeutung der einzelnen Einstellungsmöglichkeiten im rechten Menü kann hier nicht weiter besprochen werden, experimentieren Sie aber gerne mit verschiedenen Einstellungen. Mit einem Klick auf "Reset" können Sie jeweils zum Ausgangszustand der Visualisierung zurückkehren.
 
 ```{figure} ../assets/auswertung/figurenbeziehung_auswahl.png
 ---
@@ -128,7 +128,7 @@ In *Der geteilte Himmel* hat Rita gefolgt von Manfred über den Film verteilt di
 align: center
 width: 100%
 name: grafik_figurenbeziehungen_himmel_1
-alt: Grafik zur Beziehung der Figuren in der Geteilte Himmel, die einzelnen Bereiche sind hervorgehoben
+alt: Grafik zur Beziehung der Figuren in Der geteilte Himmel, die einzelnen Bereiche sind hervorgehoben
 ---
 Figurenbeziehungen in *Der geteilte Himmel*.
 ```
@@ -140,7 +140,7 @@ Im unteren Teil der Grafik sind mit Kuhl, Meternagel, Ermisch und Wendland die F
 align: center
 width: 100%
 name: grafik_figurenbeziehungen_himmel_2
-alt: Grafik zur Beziehung der Figuren in der Geteilte Himmel, Beziehungen Martin
+alt: Grafik zur Beziehung der Figuren in Der geteilte Himmel, Beziehungen Martin
 ---
 Martins Figurenbeziehungen in *Der geteilte Himmel*.
 ```
@@ -210,7 +210,7 @@ alt: Grafik zur Beziehung der Figur Günter in Sonnensucher
 Figurenbeziehung der Figur Günter in *Sonnensucher*.
 ```
 
-Auch hier sind die Visualisierungen mit Vorsicht zu behandeln und mit Bedacht zu interpretieren. Die Figurenerkennungen sind nicht unbedingt vollständig und nicht immer fehlerfrei. Dennoch werden wichtige Muster des gemeinsamen Auftretens von Figuren deutlich und können als Grundlage für Überlegungen bezüglich der Beziehung von Figuren untereinander dienen. Diese müssten wiederum an den konkreten Filmen untersucht und überprüft werden. Denn dass Figuren gemeinsam im Bild auftreten sagt noch nichts über die Art ihrer Beziehung untereinander aus. Letztlich muss auch hier der breitere Kontext in Form der Produktionsbedingungen und der politischen Lage zur Entstehungszeit des Films mit einbezogen werden.
+Auch hier sind die Visualisierungen mit Vorsicht zu behandeln und mit Bedacht zu interpretieren. Die Figurenerkennungen sind nicht unbedingt vollständig und nicht immer fehlerfrei. Dennoch werden wichtige Muster des gemeinsamen Auftretens von Figuren deutlich und können als Grundlage für Überlegungen bezüglich der Beziehung von Figuren untereinander dienen. Diese müssten wiederum an den konkreten Filmen untersucht und überprüft werden. Denn dass Figuren gemeinsam im Bild auftreten, sagt noch nichts über die Art ihrer Beziehung untereinander aus. Letztlich muss auch hier der breitere Kontext in Form der Produktionsbedingungen und der politischen Lage zur Entstehungszeit des Films mit einbezogen werden.
 
 Hier konnte anhand einiger exemplarischer Visualisierungen nur eine kurze, sehr oberflächliche Auswertung stattfinden. Es sollte aber deutlich geworden sein, dass die automatisiert erstellten Annotationen für die Bearbeitung einer Fragestellung durchaus nützlich sein können. Quantitative Auswertungen können Auffälligkeiten sichtbar machen, die dann hinsichtlich ihrer Ursachen genauer untersucht werden müssen. Im besten Fall können sich neue Fragestellungen ergeben oder auch bisherige Annahmen untermauert und besser erfassbar gemacht werden.
 
