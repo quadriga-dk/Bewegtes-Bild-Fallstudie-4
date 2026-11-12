@@ -109,7 +109,7 @@ chapterLIST:
     wie Machine Learning, Algorithmus oder Modell werden geklärt und welche Rolle
     Schwellenwerte in diesem Themenbereich spielen. Im Kapitel werden zudem die Möglichkeiten
     und Grenzen von Computer Vision für die Filmanalyse kritisch reflektiert.
-  url: https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html
+  url: https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/vision/einleitung.html
   timeRequired: PT1H10M
   learningGoal: Computer Vision für die Filmanalyse
   learningObjectiveLIST:
