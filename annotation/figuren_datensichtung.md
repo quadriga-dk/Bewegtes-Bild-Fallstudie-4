@@ -4,7 +4,7 @@ Nach erfolgreicher Ausführung des [Notebooks zur Figurenerkennung](figuren_note
 
 ````{admonition} Download der Übungsdateien
 :class: seealso
-Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://owncloud.gwdg.de/index.php/s/aCkAjEDa4HsCKTX/download" class="external-link" target="_blank">hier gebündelt herunterladen</a>.  Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
+Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://owncloud.gwdg.de/index.php/s/aCkAjEDa4HsCKTX/download" class="external-link" target="_blank">hier gebündelt herunterladen</a>. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
 
 <a href="https://support.microsoft.com/de-de/windows/experience/storage-filemanagement/zip-and-unzip-files" class="external-link" target="_blank">Windows</a>
 
@@ -73,7 +73,7 @@ alt: Rita konnte im Trailer zu Der geteilte Himmel nicht von hinten erkannt werd
 Rita konnte im Trailer zu *Der geteilte Himmel* nicht von hinten erkannt werden.
 ```
 
-Anders verhält es sich bei Einstellungen, in denen die Figuren zwar gut zu sehen sind, aber dennoch nicht erkannt wurden. Dies ist in einer Einstellung des Trailers der Fall, in der Rita und Manfred gemeinsam im Bett liegen. Aufgrund der Einstellungsgröße und der Beleuchtung sind die Gesichter nicht vollständig zu sehen. Es ist nur eine Gesichtshälfte Manfreds sichtbar und Ritas Augen werden teilweise von ihren Haaren verdeckt. Wesentliche Merkmale für die Gesichtserkennung stehen also nur teilweise zur Verfügung (vgl. Kapitel zu [Grundlagen der Gesichtserkennung](../annotation/figuren_intro.md#grundlagen-der-gesichtserkennung)). Während Manfred in dieser Einstellung bei den Standard-Schwellenwerten von jeweils `0.3` gar nicht erkannt wird, wurde Rita für ein paar Frames erfasst. Daher wurde ihr trotz der schlechten Erkennung in der Spur *Rita_matched* die gesamte Einstellung zugeordnet (vgl. Kapitel [Ausgabe](../annotation/figuren_intro.md#ausgabe) die Erklärung zu `Figurenname_matched`): 
+Anders verhält es sich bei Einstellungen, in denen die Figuren zwar gut zu sehen sind, aber dennoch nicht erkannt wurden. Dies ist in einer Einstellung des Trailers der Fall, in der Rita und Manfred gemeinsam im Bett liegen. Aufgrund der Einstellungsgröße und der Beleuchtung sind die Gesichter nicht vollständig zu sehen. Es ist nur eine Gesichtshälfte Manfreds sichtbar und Ritas Augen werden teilweise von ihren Haaren verdeckt. Wesentliche Merkmale für die Gesichtserkennung stehen also nur teilweise zur Verfügung (vgl. Kapitel zu [Grundlagen der Gesichtserkennung](../annotation/figuren_intro.md#grundlagen-der-gesichtserkennung)). Während Manfred in dieser Einstellung bei den Standard-Schwellenwerten von jeweils `0.3` gar nicht erkannt wird, wurde Rita für ein paar Frames erfasst. Daher wurde ihr trotz der schlechten Erkennung in der Spur *Rita_matched* die gesamte Einstellung zugeordnet (vgl. im Kapitel [Ausgabe](../annotation/figuren_intro.md#ausgabe) die Erklärung zu `Figurenname_matched`): 
 
 ```{figure} ../assets/annotation/Himmel_Fehler2.mp4
 ---
@@ -190,7 +190,7 @@ Beim mehrmaligen Ausführen des Jupyter Notebooks, etwa mit neuen Schwellenwerte
 
 Entpacken Sie ggf. die Exportdateien in einen Ordner Ihrer Wahl. Importieren Sie nun die Annotationsergebnisse mit der `.eaf-Datei` in VIAN (vgl. "Hinweis zum Import von .eaf-Dateien in VIAN" in diesem Kapitel).
 
-Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Sichten Sie die Ergebnisse in VIAN. Wiederholen Sie die Annotation mit anderen Schwellenwerten und vergleichen Sie die Erkennungsqualität. Welche Schwellenwerte führen zu den besten Ergebnissen?
+Sie können nun die Annotationsergebnisse in VIAN sichten und überprüfen. Wiederholen Sie die Annotation mit anderen Schwellenwerten und vergleichen Sie die Erkennungsqualität. Welche Schwellenwerte führen zu den besten Ergebnissen?
 
 Wir haben im Trailer zu <a href="https://www.youtube.com/watch?v=piyd6gxw63s" class="external-link" target="_blank">*Solo Sunny*</a> nach den beiden Hauptfiguren Sunny und Ralph suchen lassen. Für die Figurenerkennung haben wir die Referenzabbildungen verwendet, die im `.zip`-Archiv zu diesem Abschnitt unter `Trailer` → `Solo Sunny_Trailer_1980` → `Figurenreferenzen` zu finden sind.
 
