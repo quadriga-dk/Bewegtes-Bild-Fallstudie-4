@@ -46,14 +46,14 @@ Die Installation fügt die benötigten Bibliotheken zur Programmierumgebung hinz
 
 
 ### Import der Programmbibliotheken
-Nach der Installation müssen die Bibliotheken noch importiert werden. Beim Import wird Python mitgeteilt, welche Bibliotheken in der aktuellen Sitzung verwendet werden sollen. Eine installierte Bibliothek ist also nicht automatisch für jeden Code verfügbar, erst durch den Import kann  auf ihre Funktionen zugegriffen werden.
+Nach der Installation müssen die Bibliotheken noch importiert werden. Beim Import wird Python mitgeteilt, welche Bibliotheken in der aktuellen Sitzung verwendet werden sollen. Eine installierte Bibliothek ist also nicht automatisch für jeden Code verfügbar, erst durch den Import kann auf ihre Funktionen zugegriffen werden.
 
 Manche Arbeitsabläufe verwenden außerdem Funktionen aus der Standardbibliothek von Python, die zwar importiert, aber nicht separat installiert werden müssen.
 
 ### Download des Analysematerials
 Die zu analysierenden Dateien können lokal abgelegt oder aus einer Onlinequelle heruntergeladen werden.
 
-In den Jupyter Notebooks werden zu Übungszwecken die Trailerdateien zur Analyse aus einem Online-Repositorium heruntergeladen und in einem Ordner abgelegt  – alternativ können zudem eigene Videodateien heruntergeladen werden.
+In den Jupyter Notebooks werden zu Übungszwecken die Trailerdateien zur Analyse aus einem Online-Repositorium heruntergeladen und in einem Ordner abgelegt – alternativ können zudem eigene Videodateien heruntergeladen werden.
 
 ### Vorbereitung des Machine-Learning-Modells
 
