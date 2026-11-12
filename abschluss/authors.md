@@ -16,7 +16,6 @@
 <td><b>Website:</b></td>
 <td><a href="https://www.filmuniversitaet.de/portrait/person/thomas-schick" class="external-link" target="_blank">Mitarbeiter-Seite Filmuniversität</a></td>
 </tr>
-<tr>
 </table>
 
 ### Marco Winter <a href="https://orcid.org/0009-0000-0239-9682" target="_blank"><img src="../assets/ORCID-iD_icon_24x24.png" alt="ORCID"></a>
@@ -33,7 +32,6 @@
 <td><b>Website:</b></td>
 <td><a href="https://www.filmuniversitaet.de/portrait/person/marco-winter" class="external-link" target="_blank">Seite Filmuniversität</a></td>
 </tr>
-<tr>
 </table>
 
 ### Skadi Loist <a href="https://orcid.org/0000-0002-8299-4103" target="_blank"><img src="../assets/ORCID-iD_icon_24x24.png" alt="ORCID"></a>
@@ -44,11 +42,11 @@
 </tr>
 <tr>
 <td><b>Einrichtung:</b></td>
-<td>Filmuniversität Babelsberg KONRAD WOLF / Norwegian University for Science and Technology (NTNU)</td>
+<td>Filmuniversität Babelsberg KONRAD WOLF / Norwegian University of Science and Technology (NTNU)</td>
 </tr>
 <tr>
 <td><b>Website:</b></td>
-<td><a href="https://www.ntnu.edu/employees/skadi.loist" class="external-link" target="_blank">Mitarbeiter:innen-Seite Norwegian University for Science and Technology (NTNU)</a></td>
+<td><a href="https://www.ntnu.edu/employees/skadi.loist" class="external-link" target="_blank">Mitarbeiter:innen-Seite Norwegian University of Science and Technology (NTNU)</a></td>
 </tr>
 </table>
 
