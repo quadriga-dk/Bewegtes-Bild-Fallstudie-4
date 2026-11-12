@@ -259,7 +259,7 @@ Förderkennzeichen: 16DKZ2034</schema:funding>
         <schema:name>Computer Vision für die Filmanalyse</schema:name>
         <schema:teaches>Computer Vision für die Filmanalyse</schema:teaches>
         <schema:timeRequired>PT1H10M</schema:timeRequired>
-        <schema:url rdf:resource="https://quadriga-dk.github.io/Book_Template/inhaltskapitel/einleitung.html" />
+        <schema:url rdf:resource="https://quadriga-dk.github.io/Bewegtes-Bild-Fallstudie-4/vision/einleitung.html" />
       </schema:LearningResource>
     </schema:hasPart>
     <schema:hasPart>
