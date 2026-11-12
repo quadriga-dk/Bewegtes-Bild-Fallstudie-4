@@ -4,9 +4,9 @@ Nach der Darstellung verschiedener filmanalytischer Herangehensweisen und quanti
 - welche Annotationsdaten sollen automatisiert erhoben werden?
 - wie können diese Annotationen automatisiert werden? Also welche Modelle und Algorithmen können für die automatisierte Annotation auf welche Weise verwendet werden?
 
-Der zweiten Frage und der Frage, was Modelle, Algorithmen, Computer Vision und technische Voraussetzungen sind werden wir uns in einem [eigenen Kapitel](../vision/einleitung.md) zuwenden. Dort werden wir auch darauf eingehen, welche Modelle überhaupt für filmwissenschaftliche Fragestellungen bzw. automatisierte Filmannotation in Frage kommen und warum wir uns letztlich in unserer Fallstudie für die ***Erkennung von Einstellungsübergängen bzw. Einstellungslängen*** und die ***Bestimmung des Auftretens von bestimmten Figuren in Filmen*** entschieden haben.
+Der zweiten Frage und der Frage, was Modelle, Algorithmen, Computer Vision und technische Voraussetzungen sind, werden wir uns in einem [eigenen Kapitel](../vision/einleitung.md) zuwenden. Dort werden wir auch darauf eingehen, welche Modelle überhaupt für filmwissenschaftliche Fragestellungen bzw. automatisierte Filmannotation in Frage kommen und warum wir uns letztlich in unserer Fallstudie für die ***Erkennung von Einstellungsübergängen bzw. Einstellungslängen*** und die ***Bestimmung des Auftretens von bestimmten Figuren in Filmen*** entschieden haben.
 
-Als Untersuchungskorpus haben wir die Filme <a href="https://www.filmportal.de/person/konrad-wolf_763849fa3ea84b50a6d3ef1da3fee547" class="external-link" target="_blank">Konrad Wolfs</a> ausgewählt. Wir können dadurch die Filme eines Regisseurs und seinen filmischen Stil in den Mittelpunkt unserer Fallstudie stellen, wobei das Korpus mit 14 Spielfilmen überschaubar und auch (technisch) handhabbar bleibt. Dennoch weist sein Werk unterschiedliche Schaffensphasen und eine interessante Heterogenität auf: verschiedene Genres, Erzählweisen und Themen sind erkennbar. Nicht zuletzt liegen die Spielfilme Wolfs als DVD-Edition und damit in digitaler Form vor, was die Auswertung und Annotation mit computergestützten Verfahren ermöglicht, unseren Workflows also entgegen kommt.
+Als Untersuchungskorpus haben wir die Filme <a href="https://www.filmportal.de/person/konrad-wolf_763849fa3ea84b50a6d3ef1da3fee547" class="external-link" target="_blank">Konrad Wolfs</a> ausgewählt. Wir können dadurch die Filme eines Regisseurs und seinen filmischen Stil in den Mittelpunkt unserer Fallstudie stellen, wobei das Korpus mit 14 Spielfilmen überschaubar und auch (technisch) handhabbar bleibt. Dennoch weist sein Werk unterschiedliche Schaffensphasen und eine interessante Heterogenität auf: verschiedene Genres, Erzählweisen und Themen sind erkennbar. Nicht zuletzt liegen die Spielfilme Wolfs als DVD-Edition und damit in digitaler Form vor, was die Auswertung und Annotation mit computergestützten Verfahren ermöglicht, unseren Workflows also entgegenkommt.
 
 Ansätze zur quantitativen Stilanalyse haben wir im vorigen Kapitel vorgestellt. Auch in unserer Fallstudie wollen wir in diese Richtung gehen und filmstilistische Fragen mithilfe von *quantitativen (Annotations)daten* und mit aus diesen *errechneten Größen* angehen. Welche kommen nun hier bei der Erkennung von Einstellungswechseln in Frage?
 - die Länge des gesamten Films
@@ -18,9 +18,9 @@ Ansätze zur quantitativen Stilanalyse haben wir im vorigen Kapitel vorgestellt.
 - die Einstellungsdichte: Zahl der Einstellungswechsel in einem bestimmten Zeitraum
 
 Anhand dieser Größen ist die Bearbeitung verschiedener Fragestellungen zu den Einstellungslängen bei den Filmen Konrad Wolfs möglich:
-- wie unterscheidet sich die ASL und MSL bei den Filmen Konrad Wolfs?
+- wie unterscheiden sich die ASL und MSL bei den Filmen Konrad Wolfs?
     + welche Gründe könnte es dafür geben?
-    + wie unterscheidet sich die MSL und ASL bei einzelnen Filmen?
+    + wie unterscheiden sich die MSL und ASL bei einzelnen Filmen?
     + hängen Unterschiede mit Schaffensphasen oder Genres zusammen?
 - wie verändert sich die Schnittfrequenz im Laufe eines Films?
     + an welcher Stelle sind warum Veränderungen erkennbar?
@@ -50,7 +50,7 @@ Aus den möglichen Fragen wird bereits deutlich, dass hier an einigen Stellen di
 
 Abschließend sei noch exemplarisch auf einige weitere interessante Größen und Fragen hingewiesen, auf die wir jedoch in der Fallstudie nicht weiter eingehen werden:
 - welche Einstellungsgrößen treten auf?
-    + welche Anzahl der einzelnen Einstellungsgrößen liegen im Film vor?
+    + welche Anzahl der einzelnen Einstellungsgrößen liegt im Film vor?
     + wie sind die Einstellungsgrößen im Verlauf des Films verteilt?
     + wie verhalten sich Einstellungsgrößen und Einstellungslängen zueinander?
 - welche Kamerabewegungen werden eingesetzt?
