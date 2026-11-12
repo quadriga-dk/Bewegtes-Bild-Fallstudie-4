@@ -198,16 +198,16 @@ chapterLIST:
     competency: 4.1 Datenanalyse
     dataFlow: 4 Analyse
     bloomsCategory: 4 Analysieren
-dateIssued: '2024-05-06'
-dateModified: '2026-11-04'
-version: 1.0.0-beta
+dateIssued: '2026-07-23'
+dateModified: '2026-11-12'
+version: 1.0.0-rc
 contextOfCreation: 'Die vorliegenden Open Educational Resources wurden durch das Datenkompetenzzentrum
   QUADRIGA erstellt.
 
 
   Förderkennzeichen: 16DKZ2034'
 qualityAssurance:
-  date: '2026-11-14'
+  date: '2026-11-12'
   description: https://doi.org/10.5281/zenodo.18953896
 learningResourceType: Jupyter Book
 schemaVersion: 2.0.0
