@@ -57,7 +57,7 @@ In den Jupyter Notebooks werden zu Übungszwecken die Trailerdateien zur Analyse
 
 ### Vorbereitung des Machine-Learning-Modells
 
-Wenn ein Verfahren ein Machine-Learning-Modell verwendet, muss dieses vor der Analyse der Videodaten noch vorbereitet werden. Dazu gehören je nach Verfahren auch der Download des Modells und dessen Konfiguration. Es ist etwa wichtig, ein Modell vor der Analyse vom Trainingsmodus in den Evaluationsmodus zu versetzen. In diesem Modus berechnet es Vorhersagen, statt weiter trainiert zu werden. (Zu Modellen und deren Training vgl. auch das Kapitel ["Zentrale Begriffe und Konzepte"](../vision/begriffe.md).)
+Wenn ein Verfahren ein Machine-Learning-Modell verwendet, muss dieses vor der Analyse der Videodaten noch vorbereitet werden. Dazu gehören je nach Verfahren auch der Download des Modells und dessen Konfiguration. Es ist etwa wichtig, ein Modell vor der Analyse vom Trainingsmodus in den Evaluationsmodus zu versetzen. In diesem Modus berechnet es Vorhersagen, statt weiter trainiert zu werden. (Zu Modellen und deren Training vgl. auch das Kapitel [Zentrale Begriffe und Konzepte](../vision/begriffe.md).)
 
 ## Einlesen und Analyse des Videomaterials
 Nun beginnt die eigentliche Analyse. Welche Schritte dabei konkret nötig sind, hängt von der Analysemethode ab.
