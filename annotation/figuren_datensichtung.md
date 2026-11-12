@@ -116,7 +116,7 @@ Wählen Sie selbst die Schwellenwerte, beispielsweise von sehr geringer Höhe wi
 
 Verändern Sie nun im ersten Codeblock des Notebooks die voreingestellten Parameter.
 
-```{figure} ../assets/annotation/figuren_nb_paramter_1.png
+```{figure} ../assets/annotation/figuren_nb_parameter_1.png
 ---
 align: center
 width: 100%
@@ -146,7 +146,7 @@ Evtl. wird eine Warnung angezeigt, dass das Notebook nicht von Google erstellt w
 
 Laden Sie nun die Videodatei, hier die Trailerdatei, und die Referenzabbildungen der zu erkennenden Figuren in die Colab-Umgebung hoch.
 
-```{figure} ../assets/annotation/figuren_nb_paramter_2.png
+```{figure} ../assets/annotation/figuren_nb_parameter_2.png
 ---
 align: center
 width: 100%
@@ -160,7 +160,7 @@ Klicken Sie auf das Ordnersymbol in der linken Randspalte von Colab. (1) Es öff
 
 Führen Sie nun die weiteren Codeblöcke des Notebooks nacheinander aus.
 
-```{figure} ../assets/annotation/figuren_nb_paramter_3.png
+```{figure} ../assets/annotation/figuren_nb_parameter_3.png
 ---
 align: center
 width: 100%
