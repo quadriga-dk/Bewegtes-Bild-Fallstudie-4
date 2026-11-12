@@ -274,5 +274,5 @@ create_answer_box('Assessment_Vision')
 
 **Maßnahme:**
 
-Ergebnisse stichprobenartig mit Annotationstools wie VIAN am Videomaterial prüfen, alternative Modelle oder Schwellenwerte testen und die Unsicherheit im Forschungsbericht offenlegen. Age-/Gender-Schätzungen sollten kritisch hinterfragt und nicht ungeprüft übernommen oder gespeichert werden.
+Ergebnisse stichprobenartig mit Annotationstools wie VIAN am Videomaterial prüfen, alternative Modelle oder Schwellenwerte testen und die Unsicherheit im Forschungsbericht offenlegen. Alters-/Gender-Schätzungen sollten kritisch hinterfragt und nicht ungeprüft übernommen oder gespeichert werden.
 ````
