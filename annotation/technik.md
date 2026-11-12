@@ -120,11 +120,12 @@ Anschließend gelangen Sie zum Hauptfenster von VIAN, in dem die in unserem Work
 
 Wie wir im folgenden Kapitel genauer darstellen werden, wird nach dem Ausführen des Jupyter Notebooks eine `ELAN-Datei` mit der Dateiendung `.eaf` im Export-Ordner generiert, die für den Import der Annotationsergebnisse in VIAN gedacht ist. Klicken Sie auf "ELAN-Annotationsergebnisse importieren" und wählen Sie die erzeugte `.eaf`-Datei am entsprechenden Export-Speicherort aus. Der Import wird dann ausgeführt.
 
-```{margin} 
+````{margin}
 ```{admonition} Hinweis
 :class: hinweis
 Die einzelnen Elemente der VIAN-Bedienoberfläche lassen sich in ihrer Größe anpassen, indem man deren Rahmen verschiebt.
 ```
+````
 
 ```{figure} ../assets/annotation/VIAN_ImportMenu.png
 ---
