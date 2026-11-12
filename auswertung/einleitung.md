@@ -24,7 +24,7 @@ Die vorliegende Fallstudie befasst sich mit Workflows zur automatisierten Filman
 :end-before: "<!-- END: Auswertung der Annotationsergebnisse -->"
 ```
 
-Wir befinden uns damit beim 4. Schritt unserer Fallstudie, in dem die erzeugten automatisierten Annotationen ausgewertet werden. Zu Beginn des Kapitels wird die Struktur der erhaltenen Annotationsdaten genauer betrachtet. Mithilfe von Jupyter Notebooks und Python Skripten werden anschließend verschiedene Visualisierungen zu den Annotationsdaten erstellt, die die Grundlage einer explorativen Auswertung der Annotationsergebnisse bilden.
+Wir befinden uns damit beim 4. Schritt unserer Fallstudie, in dem die erzeugten automatisierten Annotationen ausgewertet werden. Zu Beginn des Kapitels wird die Struktur der erhaltenen Annotationsdaten genauer betrachtet. Mithilfe von Jupyter Notebooks und Python-Skripten werden anschließend verschiedene Visualisierungen zu den Annotationsdaten erstellt, die die Grundlage einer explorativen Auswertung der Annotationsergebnisse bilden.
 
 
 ```{figure} ../assets/auswertung/Grafik_Schritte_4.png
