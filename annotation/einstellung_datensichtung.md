@@ -5,7 +5,7 @@ Nachdem die Einstellungs-Annotationen für den Trailer zu *Der geteilte Himmel* 
 ````{admonition} Download der Übungsdateien
 :class: seealso
 
-Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://github.com/Myxxin/Bewegtes-Bild-Fallstudie-4_Archives/releases/download/shots_results/shots_results.zip" class="external-link" target="_blank">hier gebündelt herunterladen</a>. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
+Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://refubium.fu-berlin.de/bitstream/handle/fub188/54850/shots_results.zip?sequence=4&isAllowed=y" class="external-link" target="_blank">hier gebündelt herunterladen</a>. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
 
 <a href="https://support.microsoft.com/de-de/windows/experience/storage-filemanagement/zip-and-unzip-files" class="external-link" target="_blank">Windows</a>
 

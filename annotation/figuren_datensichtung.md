@@ -4,7 +4,7 @@ Nach erfolgreicher Ausführung des [Notebooks zur Figurenerkennung](figuren_note
 
 ````{admonition} Download der Übungsdateien
 :class: seealso
-Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://owncloud.gwdg.de/index.php/s/aCkAjEDa4HsCKTX/download" class="external-link" target="_blank">hier gebündelt herunterladen</a>. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
+Die begleitenden Dateien zu diesem Abschnitt können Sie <a href="https://refubium.fu-berlin.de/bitstream/handle/fub188/54850/characters_results.zip?sequence=5&isAllowed=y" class="external-link" target="_blank">hier gebündelt herunterladen</a>. Anleitungen zum Arbeiten mit `.zip`-Archiven finden Sie hier:
 
 <a href="https://support.microsoft.com/de-de/windows/experience/storage-filemanagement/zip-and-unzip-files" class="external-link" target="_blank">Windows</a>
 
