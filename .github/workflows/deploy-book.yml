@@ -137,6 +137,20 @@ jobs:
         cp quadriga-metadata.jsonld _build/html/quadriga-metadata.jsonld
         cp quadriga-metadata.rdf _build/html/quadriga-metadata.rdf
         echo "Copied metadata files to _build/html for discovery"
+        # Verify that ZIP archives are excluded from GitHub Pages.
+
+    # Check if the zip files in assets/zip_files are correctly excluded.
+    - name: Verify ZIP files are excluded
+      run: |
+        echo "Checking generated website for ZIP archives..."
+
+        if find _build/html -type f -iname "*.zip" -print -quit | grep -q .; then
+          echo "::error::ZIP archives found in the generated website!"
+          find _build/html -type f -iname "*.zip" -print
+          exit 1
+        else
+          echo "SUCCESS: No ZIP archives found in _build/html."
+        fi
 
     # A re-run of this workflow appends another artifact named "github-pages"
     # to the same run instead of replacing the previous one. deploy-pages then
